@@ -10,13 +10,18 @@ const showNavbar = () =>{
 }
     return(
         <header>
-            <h3 className="logo">Logo</h3>
+            <a href="/">
+                <div className="logo-image">
+                    <img src="Epistimis-logo.png"></img>
+                </div>
+            </a>
+            <h3>Episitimis</h3>
                 <nav ref={navRef}>
                     <a href="/#">Home</a>
                     <a href="/#">Contact Us</a>
                     <a href="/#">About Us</a>
                     <a href="/#">Blog</a>
-                    <a href="/#">Privacy Policy</a>
+                    <a href="/#" className="last-nav-a">Privacy Policy</a>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes>
 

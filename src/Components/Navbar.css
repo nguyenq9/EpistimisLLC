@@ -9,6 +9,7 @@
 }
 
 :root{
+    /*variables declared for colors*/
     --mainColor: #202020;
     --mainColorLight: #5c5c5c; 
     --secondaryColor: #6284cc;
@@ -24,6 +25,11 @@ header{
     background-color: var(--mainColor);
     color: var(--textColor);
 }
+.logo-image{
+    width: 60px;
+    height: 45px;
+    margin-top: -10px;
+}
 nav{
     display: flex;
     align-items: center;
@@ -37,7 +43,7 @@ nav a{
     text-decoration: none;
     position: relative;
 }
-/*Later must remove the last line*/
+/*line border*/
 nav a::after{
     content: '';
     position: absolute;
@@ -47,10 +53,15 @@ nav a::after{
     height: 70%; /* Adjust the height of the line */
     width: 1px; /* Width of the line */
     background-color: var(--textColor); /* Color of the line */
-    margin-right: -33px;/* Adjust position between links, should definitely change this later*/
+    margin-right: -33px;/* Adjust position between links*/
+    pointer-events: none;/*makes the line not clickable*/
   }
-
+/*last nav a is changed to not have border*/
+.last-nav-a::after{
+    width: 0;
+  }
 nav a:hover{
+    content: none;
     color:var(--secondaryColor);
 }
 
@@ -96,6 +107,10 @@ header .nav-btn{
     }
     nav a{
         font-size: 1.5rem;
+    }
+    nav a::after{
+        width: 0;
+        background-color: var(--mainColor);
     }
 
 }
