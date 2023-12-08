@@ -1,16 +1,22 @@
-/*.container {
+.container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
     text-align: center;
 }
+
 .MapToggle {
     position: relative;
-    width: 75px;
+    width: 100px; /* Adjust the width as needed /
     display: inline-block;
     text-align: left;
-    top: 8px;
 }
+
 .checkbox {
-    display:none;
+    display: none;
 }
+
 .label {
     display: block;
     overflow: hidden;
@@ -18,13 +24,14 @@
     border: 0 solid #bbb;
     border-radius: 20px;
 }
+
 .inner {
     display: block;
     width: 200%;
-    margin-left: - 100%;
+    margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
-
 }
+
 .inner:before,
 .inner:after {
     float: left;
@@ -36,20 +43,23 @@
     font-weight: bold;
     box-sizing: border-box;
 }
+
 .inner:before {
-    content: "YES";
+    content: "US";
     padding-left: 10px;
-    background-color: #060;
+    background-color: #4D2DB7; 
     color: #fff;
 }
+
 .inner:after {
-    content: "NO";
+    content: "World";
     padding-right: 10px;
-    background-color: #bbb;
+    background-color: #0E21A0; 
     color: #fff;
     text-align: right;
 }
-.switch{
+
+.switch {
     display: block;
     width: 24px;
     margin: 5px;
@@ -57,14 +67,25 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 40px;
+    right: 65px; 
     border: 0 solid #bbb;
     border-radius: 20px;
     transition: all 0.3s ease-in 0s;
 }
+
 .checkbox:checked + .label .inner {
     margin-left: 0;
 }
+
 .checkbox:checked + .label .switch {
-    right: 0px;
-} */
+    right: 0; / Adjusted for the switch to move to the edge /
+}
+
+.MapToggle {
+    transition: opacity 0.5s ease-in-out; / Adjust time as needed /
+    opacity: 1; / Full visibility by default /
+}
+
+.MapToggle.fade-out {
+    opacity: 0; / Fully transparent */
+}

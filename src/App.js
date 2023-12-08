@@ -9,7 +9,9 @@ function App() {
   return (
     <React.Fragment>
       <Map/>
-      {/* <Maptoggle/> */}
+      <div className={`MapToggle ${showModal ? 'fade-out' : ''}`}>
+        <Maptoggle /> {/* Assuming Maptoggle doesn't need the label anymore */}
+      </div>
       <Filter/>
     </React.Fragment>
   );
