@@ -28,4 +28,3 @@ const MapToggle = () => {
 };
 
 export default MapToggle;
-

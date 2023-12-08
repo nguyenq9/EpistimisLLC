@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { VectorMap } from "@react-jvectormap/core";
-import "./Map.css";
 import { usLcc } from "@react-jvectormap/unitedstates";
+import ReactModal from "react-modal";
 import Modal from "../Modal/Modal";
 
-function Map({ showModal, setShowModal }) {
-  const [currCode, setCode] = useState('');
+var initialArray = [];
 
-  const regionNames = {
+function Map() {
+  const [currCode, setCode] = useState('')
+  const [showModal, setShowModal] = useState(false);
+  const [regionNames, setRegionNames] = useState({
     "US-AL": "Alabama",
     "US-AK": "Alaska",
     "US-AZ": "Arizona",
@@ -58,20 +60,11 @@ function Map({ showModal, setShowModal }) {
     "US-WV": "West Virginia",
     "US-WI": "Wisconsin",
     "US-WY": "Wyoming",
-  };
-
-  const handleRegionSelected = (event, code, isSelected, label, name) => {
-    if (isSelected) {
-      setCode(regionNames[code]);
-      setShowModal(true);
-    } else {
-      setShowModal(false);
-    }
-  };
+  })
 
   const handlCloseModal = () => {
-    setShowModal(false);
-  };
+      setShowModal(false);
+  }
 
   const regionStyles = {
     initial: {
@@ -88,13 +81,29 @@ function Map({ showModal, setShowModal }) {
     },
   };
 
+  const handleRegionSelected = (event, code, isSelected, label, name) => {
+    // console.log("Region selected:", code, isSelected, label, regionNames[code]);
+    let inArr = initialArray.includes(code)
+    if (inArr) {
+      initialArray.splice(initialArray.indexOf(code), 1);
+      setCode('')
+    } else {
+      initialArray.push(code);
+      setShowModal(true);
+      setCode(regionNames[code])
+    }
+  };
+
   return (
     <React.Fragment>
       <Modal show={showModal} handlCloseModal={handlCloseModal} name={currCode}/>
       <VectorMap
         map={usLcc}
-        style={{ height: window.innerHeight - 16 }}
-        regionsSelectable={true}
+        style={{
+          height: window.innerHeight - 16,
+        }}
+        regionsSelectable={true} // Enable region selection
+          // regionsSelectableOne={true} // Optional: Allow only one region to be selected at a time
         onRegionSelected={handleRegionSelected}
         regionStyle={regionStyles}
         backgroundColor="#E6E6E6"

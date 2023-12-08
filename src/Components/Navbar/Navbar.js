@@ -1,7 +1,7 @@
 import {FaBars, FaTimes} from "react-icons/fa";
 import { useRef } from "react";
 import "./Navbar.css"
-// Test
+
 function Navbar(){
 const navRef = useRef();
 
@@ -17,11 +17,11 @@ const showNavbar = () =>{
             </a>
             <h3>Episitimis</h3>
                 <nav ref={navRef}>
-                    <a href="/#">Home</a>
-                    <a href="/#">Contact Us</a>
-                    <a href="/#">About Us</a>
-                    <a href="/#">Blog</a>
-                    <a href="/#" className="last-nav-a">Privacy Policy</a>
+                    <a href="Home">Home</a>
+                    <a href="Contact">Contact Us</a>
+                    <a href="About">About Us</a>
+                    <a href="Blog">Blog</a>
+                    <a href="Privacy" className="last-nav-a">Privacy Policy</a>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes>
 
@@ -39,5 +39,6 @@ const showNavbar = () =>{
     );
 
 }
+
 
 export default Navbar;

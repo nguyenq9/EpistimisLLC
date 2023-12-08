@@ -8,7 +8,7 @@
 
 .MapToggle {
     position: relative;
-    width: 100px; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed /
     display: inline-block;
     text-align: left;
 }
@@ -78,14 +78,14 @@
 }
 
 .checkbox:checked + .label .switch {
-    right: 0; /* Adjusted for the switch to move to the edge */
+    right: 0; / Adjusted for the switch to move to the edge /
 }
 
 .MapToggle {
-    transition: opacity 0.5s ease-in-out; /* Adjust time as needed */
-    opacity: 1; /* Full visibility by default */
+    transition: opacity 0.5s ease-in-out; / Adjust time as needed /
+    opacity: 1; / Full visibility by default /
 }
 
 .MapToggle.fade-out {
-    opacity: 0; /* Fully transparent */
+    opacity: 0; / Fully transparent */
 }
