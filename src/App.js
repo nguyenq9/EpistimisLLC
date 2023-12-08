@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
+import { Routes, Route} from "react-router-dom"
+import Home from './Components/Home/Home'
 
 function App() {
   return (
     <React.Fragment>
-        <Navbar>
-
-        </Navbar>
+    <Home/>
     </React.Fragment>
   );
 }
