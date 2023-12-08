@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { VectorMap } from "@react-jvectormap/core";
-import "./Map.css";
 import { usLcc } from "@react-jvectormap/unitedstates";
 
 const regionNames = {
