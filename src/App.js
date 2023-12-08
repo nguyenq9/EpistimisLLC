@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route} from "react-router-dom"
-import Home from './Components/Home/Home'
+import Map from './Components/Map/Map'
+// import Maptoggle from './Components/Map-toggle/Maptoggle'
 
 function App() {
   return (
     <React.Fragment>
-    <Home/>
+      <Map/>
+      {/* <Maptoggle/> */}
     </React.Fragment>
   );
 }
