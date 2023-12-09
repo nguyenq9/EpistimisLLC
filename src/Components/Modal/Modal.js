@@ -4,7 +4,6 @@ import ReactModal from "react-modal";
 import { Close } from "@mui/icons-material";
 
 function Modal(prop) {
-  console.log(prop.name);
   return (
     <ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example" closeTimeoutMS={500}>
       <Close onClick={prop.handlCloseModal} />

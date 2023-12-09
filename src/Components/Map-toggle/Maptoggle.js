@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Maptoggle.css';
 
-const MapToggle = () => {
-    const [isUSToggle, setUSToggle] = useState(true);
-
-    const handleToggleChange = () => {
-        setUSToggle(!isUSToggle); 
-    };
-
+const MapToggle = ({ isUSToggle, onToggleChange }) => {
     return (
         <div className="container">
             <div className="MapToggle">
@@ -16,7 +10,7 @@ const MapToggle = () => {
                     className="checkbox" 
                     id="mapToggleCheckbox" 
                     checked={isUSToggle} 
-                    onChange={handleToggleChange} 
+                    onChange={onToggleChange} 
                 />
                 <label className="label" htmlFor="mapToggleCheckbox">
                     <span className="inner" />
