@@ -21,10 +21,10 @@ function Filter() {
   });
   return (
     <div className='menu-container' ref={menuRef}>
-      <div className='trigger' onClick={() => {setOpen(!open)}}> 
+      <button className='trigger' onClick={() => {setOpen(!open)}}> 
         <span>Filter</span>
-        <img src='filter-icon.png'></img>
-      </div>
+        {/*<img src='filter-icon.png'></img>*/}
+      </button>
       <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
         <ul>
           <DropdownItem text = {"Option#1"}/>
