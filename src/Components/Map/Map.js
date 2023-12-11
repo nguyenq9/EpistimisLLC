@@ -5,7 +5,7 @@ import ReactModal from "react-modal";
 import Modal from "../Modal/Modal";
 import MapToggle from "../Map-toggle/Maptoggle";
 import {worldMill} from "@react-jvectormap/world";
-import { Button } from "@mui/material";
+import Filter from '../Filter/Filter'
 
 var initialArray = [];
 
@@ -162,6 +162,14 @@ function Map() {
     }
   };
 
+  let filter;
+  let toggle;
+
+  if (!showModal) {
+    filter = <Filter/>
+    // toggle = <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
+  }
+
   return (
     <React.Fragment>
       <Modal
@@ -172,18 +180,20 @@ function Map() {
       <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
         <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
       </div>
+      {/* {toggle} */}
       <VectorMap
         key={us ? 'usLcc' : 'worldMill'}
         map={us ? usLcc : worldMill} 
         style={{
-          height: window.innerHeight - 16,
+          height: window.innerHeight * .8,
         }}
         regionsSelectable={true} // Enable region selection
         // regionsSelectableOne={true} // Optional: Allow only one region to be selected at a time
         onRegionSelected={handleRegionSelected}
         regionStyle={regionStyles}
-        backgroundColor="#E6E6E6"
+        backgroundColor="transparent"
       />
+      {filter}
     </React.Fragment>
   );
 }

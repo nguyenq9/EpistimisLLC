@@ -7,29 +7,36 @@
     /*variables declared for colors*/
     --mainColor: #202020;
     --mainColorLight: #5c5c5c; 
-    --secondaryColor: #6284cc;
+    --secondaryColor: #5368f0;
     --textColor: #E6E6E6;
+    --purple: #4D2DB7;
 }
 .trigger{
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 15px;
     right: 20px;
     overflow:visible;
     cursor: pointer;
-    color: var(--mainColor);
+    background-color: var(--purple);
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    z-index: 999;
 }
 .trigger span{
     position:absolute;
-    top: 50px;
+    top: 7px;
+    right: 33px;
     pointer-events: none;
-    font-weight: 500;
-    color: var(--mainColor);
+    font-weight: 1000;
+    color: var(--textColor);
+    margin-left: 5px;
 }
 .dropdown-menu{
     position: absolute;
-    top: 100px;
+    top: 55px;
     right: 20px;
-    background-color: var(--mainColor);
+    background-color: var(--purple);
     border-radius: 10%;
     padding: 10px 20px;
     width: 180px;
@@ -37,7 +44,7 @@
 .dropdown-menu::before{
     content: '';
     position: absolute;
-    top: -5px;
+    top: 20px;
     right: 20px;
     height: 20px;
     width: 20px;
