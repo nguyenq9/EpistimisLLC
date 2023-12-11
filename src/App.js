@@ -11,11 +11,6 @@ function App() {
     <React.Fragment>
       <Title/>
       <Map/>
-      {/* <div className={`MapToggle ${showModal ? 'fade-out' : ''}`}>
-      <div className='Map'>
-        <Maptoggle />
-      </div> */}
-      <Filter/>
     </React.Fragment>
   );
 }
