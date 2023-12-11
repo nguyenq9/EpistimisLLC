@@ -1,4 +1,5 @@
 # EpistimisLLC
+Group: Joseph Karper, Dima Melnik, Thai Nguyen, Saunder VanWoerden
 
 # How to run
 To Launch the site, navigate to the EpistimissLLC folder.\
