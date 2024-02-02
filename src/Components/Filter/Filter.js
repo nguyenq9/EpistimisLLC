@@ -1,4 +1,4 @@
-import Reacr, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import "./Filter.css"
 function Filter() {
 
