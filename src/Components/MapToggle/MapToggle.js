@@ -1,7 +1,7 @@
 import React from 'react';
-import './Maptoggle.css';
+import './MapToggle.css';
 
-const MapToggle = ({ isUSToggle, onToggleChange }) => {
+const MapToggle = ({ isUS, handleSetIsUS }) => {
     return (
         <div className="container">
             <div className="MapToggle">
@@ -9,8 +9,8 @@ const MapToggle = ({ isUSToggle, onToggleChange }) => {
                     type="checkbox" 
                     className="checkbox" 
                     id="mapToggleCheckbox" 
-                    checked={isUSToggle} 
-                    onChange={onToggleChange} 
+                    checked={isUS} 
+                    onChange={handleSetIsUS}
                 />
                 <label className="label" htmlFor="mapToggleCheckbox">
                     <span className="inner" />

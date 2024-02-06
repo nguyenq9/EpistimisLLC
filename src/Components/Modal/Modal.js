@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Modal.css";
 import ReactModal from "react-modal";
 import { Close } from "@mui/icons-material";
