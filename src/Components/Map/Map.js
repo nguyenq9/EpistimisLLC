@@ -7,8 +7,8 @@ import { worldMill } from "@react-jvectormap/world";
 import Modal from "../Modal/Modal";
 
 var initialArray = [];
-
-const Map = ({isUS}) => {
+// maybbe something here??
+const Map = ({isUS, filterOption}) => {
   const [currCode, setCode] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [regionNames, setRegionNames] = useState({
@@ -132,6 +132,7 @@ const Map = ({isUS}) => {
   //   setUS(prevUs => !prevUs);
   // };
 
+
   const regionStyles = {
     initial: {
       fill: "#4D2DB7", // Initial color of the regions
@@ -147,6 +148,7 @@ const Map = ({isUS}) => {
     },
   };
 
+
   const handleRegionSelected = (event, code, isSelected, label, name) => {
     console.log("Region selected:", code, isSelected, label, regionNames[code]);
     let inArr = initialArray.includes(code);
@@ -159,7 +161,6 @@ const Map = ({isUS}) => {
       setCode(regionNames[code]);
     }
   };
-
 
   return (
     <React.Fragment>
@@ -189,3 +190,9 @@ const Map = ({isUS}) => {
 }
 
 export default Map;
+
+
+
+
+
+

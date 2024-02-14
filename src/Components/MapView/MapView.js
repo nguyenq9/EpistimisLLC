@@ -1,9 +1,8 @@
 import Map from "../Map/Map";
 
-const MapView = ({isUS}) => {
+const MapView = ({isUS, filterOption}) => {
     return (
-        <Map isUS={isUS}/>
+        <Map isUS={isUS} filterOption={filterOption}/>
     );
 }
-
 export default MapView;
