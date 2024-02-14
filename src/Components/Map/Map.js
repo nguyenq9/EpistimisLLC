@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
@@ -128,9 +128,11 @@ const Map = ({isUS, filterOption}) => {
     setShowModal(false);
   };
 
-  // const handleToggle = () => {
-  //   setUS(prevUs => !prevUs);
-  // };
+
+  // Checks it it is being passed down.
+  useEffect(() => {
+    console.log("filter option in map: ", filterOption);
+  }, [filterOption]);
 
 
   const regionStyles = {
@@ -183,6 +185,8 @@ const Map = ({isUS, filterOption}) => {
           onRegionSelected={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
+          selectedRegions={["US-CA"]}
+          regionsSelectableOne={true}
         />
       </div>
     </React.Fragment>

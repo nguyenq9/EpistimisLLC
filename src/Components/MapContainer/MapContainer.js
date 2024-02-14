@@ -38,7 +38,7 @@ import Filter from "../Filter/Filter";
 
 const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
-    const [filterOption, setFilterOption] = useState("Selected");
+    const [filterOption, setFilterOption] = useState("NULL");
 
     const handleSetIsUS = () =>  {
         setIsUS(prevUs => !prevUs);

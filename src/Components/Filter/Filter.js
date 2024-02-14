@@ -165,7 +165,7 @@ function Filter({ filterOption, handleSetFilterOption }) {
       </button>
       <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
         <ul>
-          <DropdownItem text="California" isSelected={selectedOption === "California"} onClick={() => handleOptionClick("California")} />
+          <DropdownItem text="California" isSelected={selectedOption === "California"} onClick={() => handleOptionClick("US-CA")} />
           <DropdownItem text="Option#2" isSelected={selectedOption === "Option#2"} onClick={() => handleOptionClick("Option#2")} />
           <DropdownItem text="Option#3" isSelected={selectedOption === "Option#3"} onClick={() => handleOptionClick("Option#3")} />
         </ul>
