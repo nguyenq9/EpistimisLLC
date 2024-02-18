@@ -128,10 +128,6 @@ const Map = ({isUS}) => {
     setShowModal(false);
   };
 
-  // const handleToggle = () => {
-  //   setUS(prevUs => !prevUs);
-  // };
-
   const regionStyles = {
     initial: {
       fill: "#4D2DB7", // Initial color of the regions
@@ -147,9 +143,28 @@ const Map = ({isUS}) => {
     },
   };
 
-  const handleRegionSelected = (event, code, isSelected, label, name) => {
+  const handleRegionSelected = (event, code, isSelected, label) => {
     console.log("Region selected:", code, isSelected, label, regionNames[code]);
     let inArr = initialArray.includes(code);
+
+    // Make a call to the server API
+    const name = regionNames[code];
+    fetch(`/api/${name}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          console.log("success: ", data.message);
+        } else {
+          console.error("ERROR")
+        }
+      })
+      .catch(err => {console.log("FUCCK: ", err)})
+
     if (inArr) {
       initialArray.splice(initialArray.indexOf(code), 1);
       setCode("");
