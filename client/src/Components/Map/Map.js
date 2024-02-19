@@ -9,7 +9,7 @@ import Modal from "../Modal/Modal";
 
 var initialArray = [];
 
-const Map = ({ isUS }) => {
+const Map = ({ isUS, compareActive, setCompareActive }) => {
   const [currCode, setCode] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState({});
@@ -79,6 +79,7 @@ const Map = ({ isUS }) => {
         handlCloseModal={handlCloseModal}
         name={currCode}
         modalInfo={modalInfo}
+        setCompareActive={setCompareActive}
       />
       {/* <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
         <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
@@ -92,6 +93,7 @@ const Map = ({ isUS }) => {
             height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
+          regionsSelectableOne={true}
           onRegionSelected={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
