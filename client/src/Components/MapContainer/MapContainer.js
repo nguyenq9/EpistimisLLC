@@ -6,10 +6,12 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [jursComparing, setJursComparing] = useState([]);
     const [compareActive, setCompareActive] = useState(false);
-    
+
     const handleSetIsUS = () =>  {
         setIsUS(prevUs => !prevUs);
     }
+
+    
 
     const addJurToCompare = (jurName) => {
         if (!jursComparing.includes(jurName)) {
@@ -40,6 +42,7 @@ const MapContainer = () => {
                 compareActive={compareActive}
                 addJurToCompare={addJurToCompare}
                 removeJurFromCompare={removeJurFromCompare}
+                setCompareActive={handleSetCompareActive}
             />
         </React.Fragment>
     );
