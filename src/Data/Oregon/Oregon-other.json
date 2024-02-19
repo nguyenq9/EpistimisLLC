@@ -1,0 +1,17 @@
+{
+    "Jurisdiction(s)": "Oregon",
+    "privacyLaws": [
+        {
+            "lawName": "Oregon Student Information Protection Act",
+            "type": "Minor",
+            "description": "The Oregon Student Information Protection Act (OSIPA) is a state-level legislation designed to safeguard the privacy and security of student data in educational institutions across Oregon. Enacted to address concerns regarding the collection, use, and sharing of students' personal information by schools and educational technology providers, OSIPA establishes comprehensive guidelines and safeguards.",
+            "reference": "https://www.oregonlegislature.gov/bills_laws/ors/ors336.html"
+        },
+        {
+            "lawName": "Oregon Consumer Identity Theft Protection Act",
+            "type": "Minor",
+            "description": "The Oregon Consumer Identity Theft Protection Act (OCITPA) is a piece of legislation enacted to safeguard consumers against identity theft and fraud in Oregon. This comprehensive law aims to protect the personal and financial information of Oregon residents by imposing strict requirements on businesses and organizations that handle sensitive data.",
+            "reference": "https://olis.oregonlegislature.gov/liz/2019R1/Downloads/MeasureDocument/SB684/A-Engrossed"
+        }
+    ]
+}

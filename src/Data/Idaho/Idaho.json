@@ -1,0 +1,12 @@
+{
+    "Jurisdiction(s)": "Idaho",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Title 28, Chapter  51 of the Idaho Statutes",
+            "type": "Minor",
+            "description": "Describes notification requirements when a data breach occurs, and applies to individuals and businesses.",
+            "reference": "https://legislature.idaho.gov/statutesrules/idstat/Title28/T28CH51/"
+        }
+    ]
+}

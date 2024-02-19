@@ -1,0 +1,47 @@
+{
+    "Jurisdiction(s)": "California",
+    "privacyLaws": [
+        {
+            "lawName": "California Invasion of Privacy Act",
+            "type": "Minor",
+            "description": "The California Invasion of Privacy Act (CIPA) is a state law enacted to protect individuals from various forms of invasions of privacy. The CIPA prohibits the unauthorized recording, eavesdropping, or monitoring of confidential communications, including conversations held in private places, without the consent of all parties involved.",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=8.&chapter=22.&lawCode=BPC"
+        },
+        {
+            "lawName": "Shine the Light Law",
+            "type": "Minor",
+            "description": "The California Shine the Light Law, enacted in 2003 and amended in subsequent years, is designed to enhance transparency and consumer awareness regarding the sharing of their personal information with third parties for direct marketing purposes. This law requires businesses that have customer relationships with California residents to disclose upon request, free of charge, the categories of personal information shared and the identities of any third parties with whom the information was shared for direct marketing purposes in the preceding calendar year.",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.83."
+        },
+        {
+            "lawName": "Confidentiality of Medical Information Act (CMIA)",
+            "type": "Minor",
+            "description": "The Confidentiality of Medical Information Act (CMIA) is a California state law enacted to safeguard the privacy and confidentiality of patients' medical information. Established to address concerns surrounding the unauthorized disclosure of sensitive health data, CMIA imposes strict regulations on healthcare providers, health plans, and contractors who handle medical information.",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=56.10.&lawCode=CIV"
+        },
+        {
+            "lawName": "Patient Access to Health Records Act (PAHRA)",
+            "type": "Minor",
+            "description": "The California Patient Access to Health Records Act (PAHRA) is a state law enacted to empower patients with greater control over their medical information.",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=1278.5."
+        },
+        {
+            "lawName": "California Financial Information Privacy Act (CALFIPA)",
+            "type": "Minor",
+            "description": "The California Financial Information Privacy Act (CALFIPA) is legislation aimed at safeguarding the privacy of individuals' financial information. Enacted to protect consumers' sensitive financial data, CALFIPA imposes requirements on financial institutions operating in California.",
+            "reference": "https://law.justia.com/codes/california/2010/fin/4050-4060.html"
+        },
+        {
+            "lawName": "California Labor Code",
+            "type": "Minor",
+            "description": "Outlines protections and requirements regarding employee data.",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=LAB&tocTitle=%20Labor%20Code%20-%20LAB"
+        },
+        {
+            "lawName": "Privacy Rights for California Minors in the Digital World Act (Eraser Law)",
+            "type": "Minor",
+            "description": "The Privacy Rights for California Minors in the Digital World Act, commonly known as the Eraser Law, is legislation aimed at protecting the online privacy of minors in California. Enacted in 2015, this law requires operators of websites, online services, and mobile applications directed at minors or knowingly collecting personal information from them to allow minors to request the removal of content they have posted. ",
+            "reference": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=8.&chapter=22.1.&lawCode=BPC"
+        }
+    ]
+}

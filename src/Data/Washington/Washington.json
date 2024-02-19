@@ -1,0 +1,35 @@
+{
+    "Jurisdiction(s)": "Washington",
+    "privacyLaws": [
+        {
+            "lawName": "House Bill 1616",
+            "type": "Introduced",
+            "description": "Introduced on January 25, 2023, this bill grants rights to Washington consumers and outlines penalties for data controllers who breach those rights. It was referred to the Civil Rights & Judiciary Committee.",
+            "reference": "https://app.leg.wa.gov/billsummary?BillNumber=1616&Year=2023"
+        },
+        {
+            "lawName": "Senate Bill 5643",
+            "type": "Introduced",
+            "description": "Introduced on January 31, 2023, this bill describes the People’s Privacy Act, granting rights to Washington residents regarding how their personal data gets collected, processed, and used. It was referred to the Environment, Energy, & Technology Committee.",
+            "reference": "https://app.leg.wa.gov/billsummary?BillNumber=5643&Year=2023&Initiative=false"
+        },
+        {
+            "lawName": "Data Breach Notification Law",
+            "type": "Minor",
+            "description": "Entered into effect in 2020 and requires entities to notify affected individuals about a breach if it impacts more than 500 individuals.",
+            "reference": "https://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/House%20Passed%20Legislature/1071-S.PL.pdf"
+        },
+        {
+            "lawName": "The Privacy Act",
+            "type": "Minor",
+            "description": "The Privacy Act recognizes the right of privacy for a resident in WA",
+            "reference": "https://apps.leg.wa.gov/RCW/default.aspx?cite=9.73&full=true"
+        },
+        {
+            "lawName": "Senate Bill 5062",
+            "type": "Inactive",
+            "description": "The bill made it through the third hearing then it became inactive in Feburary 2022. The bill concerned the management, oversight, and use of data.",
+            "reference": "https://app.leg.wa.gov/billsummary?BillNumber=5062&Year=2021&Initiative=False"
+        }
+    ]
+}

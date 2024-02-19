@@ -1,0 +1,23 @@
+{
+    "Jurisdiction(s)": "Alaska",
+    "privacyLaws": [
+        {
+            "lawName": "Personal Information Protection Act",
+            "type": "Minor",
+            "description": "The Alaska Personal Information Protection Act (APIPA) is a law that provides several protections for personal information.  These are: requiring entities to notify customers if there is a breach of personal information, granting customers the ability to put a freeze on their credit report for security, restrictions on the use of social security numbers, regulations pertaining to the disposal of records containing personal information, allowing victims of identity theft to petition the court for a determination of factual innocence, and a requirement of truncated payment card information on sales receipts.",
+            "reference": "https://www.alaska.edu/compliance/APIPA.php#:~:text=These%20are%3A%20requiring%20entities%20to,of%20records%20containing%20personal%20information%2C"
+        },
+        {
+            "lawName": "Consumer Personal Information Privacy Act(House Bill 159)",
+            "type": "Inactive",
+            "description": "Establishes the Consumer Personal Information Privacy Act, establishes data broker registration requirements, makes a violation of the Act an unfair or deceptive trade practice.",
+            "reference": "https://www.akleg.gov/basis/Bill/Text/32?Hsid=HB0159B#:~:text=CSHB%20159(L%26C)%3A%20%22An,practices%3B%20and%20providing%20for%20an"
+        },
+        {
+            "lawName": "House Bill 222",
+            "type": "Inactive",
+            "description": "Establishes the Consumer Personal Information Privacy Act, establishes data broker registration requirements, makes a violation of the Act an unfair or deceptive trade practice.",
+            "reference": "https://custom.statenet.com/public/resources.cgi?id=ID:bill:AK2021000H222&ciq=ncsl&client_md=e04179fdd87c99ac5f60e3473f64b311&mode=current_text"
+        }
+    ]
+}

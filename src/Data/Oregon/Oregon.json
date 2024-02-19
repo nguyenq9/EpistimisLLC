@@ -1,0 +1,189 @@
+{
+    "Jurisdiction(s)": "Oregon",
+    "privacyLaws": [
+        {
+            "lawName": "Oregon Consumer Privacy Act",
+            "description": "The Oregon Consumer Privacy Act (OCPA) is a state-level legislation aimed at safeguarding the privacy rights of consumers in Oregon, USA. Enacted with similarities to California's CCPA (California Consumer Privacy Act), the OCPA empowers consumers with greater control over their personal data held by businesses.",
+            "reference": "https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled",
+            "billStatus": "Signed",
+            "inEffect" : "July 2024",
+            "applicability": [ 
+                {
+                    "roles": ["Controller", "Third Party", "Processor"],
+                    "personalDataCategories": ["Racial or Ethnic background",
+                                               "Natoinal Origin", 
+                                               "Religous beliefs", 
+                                               "Mental or physical condition or diagnosis", 
+                                               "Sexual Orientation",
+                                               "Status as transgender or nonbinary", 
+                                               "Status as a victim of crime", 
+                                               "Citizenship or immigration status", 
+                                               "A child’s personal data", 
+                                               "Genetic or biometric data", 
+                                               "Precise geolocation data",
+                                               "Derived data or any unique identifier that is linked to or is reasonably linkable to a consumer"],
+                    "processingPurposes": ["Businesses must clearly state the specific reasons why they gather personal data, whether it's for providing services, marketing purposes, or any other legitimate business interests. The purposes put forth by the bussiness must be proportionate in relation to and limited to the purposes disclosed in the OCPA "],
+                    "consentRequired": "True"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 3.A"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 3.B"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 3.C"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 3.C"]
+                },
+                {
+                    "name": "Right to Opt Out of targeted advertising, sale of personal data, profiling in furtherance of a decision that produces a legal or similarly significant effect, or automated decision making",
+                    "reference": ["Section 3.C"]
+                },
+                {
+                    "name": "Right to Portability",
+                    "reference": ["Section 3.C"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller shall provide to consumers a reasonably accessible, clear and meaningful privacy notice",
+                        "reference": "Section 5.d"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Personal information may be processed only for limited and specified purposes specified in the subsection (3) in Section 2.",
+                        "reference": "Section 2"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "Personal information may only be collected proportionate to accomplish the limited and specified purposes specified in the subsection (3) in Section 2.",
+                        "reference": "Section 2"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "The personal data must be subject to reasonable administrative, technical and physical measures to protect the confidentiality, integrity and security of the personal data and reduce reasonably foreseeable risks of harm to consumers from the collection, use or retention.",
+                        "reference": "Section 2.6"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Processors must adhere to the instructions of controllers and assist them in responding to consumer requests, implementing appropriate safeguards for data security, and providing necessary information for data protection assessments. Additionally, processors must enter into a contract with controllers that specifies the terms of data processing, including data deletion, confidentiality, and subcontracting arrangements.",
+                        "reference": "Section 6"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "Not Specified but Implied",
+                        "reference": "string"
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "The personal data must be subject to reasonable administrative, technical and physical measures to protect the confidentiality, integrity and security of the personal data and reduce reasonably foreseeable risks of harm to consumers from the collection, use or retention.",
+                        "reference": "Section 2.6"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "registration": [ {
+                        "description": "A 'Controller' must register with the Secretary of State",
+                        "reference": "Section 5.4"
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "The legislation does not explicitly mention data transfer. However, it outlines the responsibilities of processors in assisting controllers with their obligations under the Oregon Consumer Privacy Act. This includes ensuring the security and confidentiality of personal data processed by the processor and providing necessary information for data protection assessments.",
+                        "reference": "Section 1.17"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Local Government",
+                            "description": "Body, authority, board, bureau, commission, district, or agency of this state or any political subdivision of this state"
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "Insurance Companies",
+                            "description": "An individual, firm, association, corporation, or other entity that is licensed in this state as an insurance company and transacts insurance business"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "Non-Profit organizations are exempted"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "HIPPA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        }
+
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["The Attorney General"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "Entities that violate the OCPA could receive fines of up to $7,500 per violation."],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["Consumers do not have a private right of action."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Processing Population",
+                    "description": "The personal data of 100,000 or more consumers, other than personal data controlled or processed solely for the purpose of completing a payment transaction."
+                },
+                {
+                    "type": "Annual revenue",
+                    "description": "The personal data of 25,000 or more consumers, while deriving 25% or more of the annual gross revenue from selling personal data"
+                }
+            ]
+         },
+         {
+            "lawName": "Oregon Student Information Protection Act",
+            "type": "Minor",
+            "description": "The Oregon Student Information Protection Act (OSIPA) is a state-level legislation designed to safeguard the privacy and security of student data in educational institutions across Oregon. Enacted to address concerns regarding the collection, use, and sharing of students' personal information by schools and educational technology providers, OSIPA establishes comprehensive guidelines and safeguards.",
+            "reference": "https://www.oregonlegislature.gov/bills_laws/ors/ors336.html"
+        },
+        {
+            "lawName": "Oregon Consumer Identity Theft Protection Act",
+            "type": "Minor",
+            "description": "The Oregon Consumer Identity Theft Protection Act (OCITPA) is a piece of legislation enacted to safeguard consumers against identity theft and fraud in Oregon. This comprehensive law aims to protect the personal and financial information of Oregon residents by imposing strict requirements on businesses and organizations that handle sensitive data.",
+            "reference": "https://olis.oregonlegislature.gov/liz/2019R1/Downloads/MeasureDocument/SB684/A-Engrossed"
+        }
+    ]
+}

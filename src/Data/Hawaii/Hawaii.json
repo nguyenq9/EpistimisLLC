@@ -1,0 +1,36 @@
+{
+    "Jurisdiction(s)": "Hawaii",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Seante Bill 974",
+            "type": "Introduced",
+            "description": "In January 2023, lawmakers introduced the Hawaii Consumer Data Protection Act in the Senate, SB974. The goal was to establish a framework to regulate controllers and processors with access to personal consumer data.",
+            "reference": "https://www.capitol.hawaii.gov/session/archives/measure_indiv_Archives.aspx?billtype=SB&billnumber=974&year=2023"
+        },
+        {
+            "lawName": "Seante Bill 1110",
+            "type": "Introduced",
+            "description": "The bill was introduced on January 20, 2023, and it outlines a framework to regulate how controllers and processors access and use personal data, allowing for a private right of action.",
+            "reference": "https://www.capitol.hawaii.gov/session/archives/measure_indiv_Archives.aspx?billtype=SB&billnumber=1110&year=2023#:~:text=Description%3A,of%20any%20trade%20of%20commerce."
+        },
+        {
+            "lawName": "Security Breach of Personal Information",
+            "type": "Minor",
+            "description": "Requires notification of any data to be made without unreasonable delay. This is found in Chapter 487N of Hawaii's Revised Statutes.",
+            "reference": "https://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0487N/HRS_0487N-0002.htm"
+        },
+        {
+            "lawName": "Destruction of Personal Information Records",
+            "type": "Minor",
+            "description": "Requires entities conducting business in Hawaii who collect personal information to dispose of it and take measures to protect it from unauthorized access. This is found in Chapter 487R of Hawaii's Revised Statutes.",
+            "reference": "https://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0487R/HRS_0487R-0002.htm"
+        },
+        {
+            "lawName": "Uniform Employee and Student Online Privacy Protection Act",
+            "type": "Minor",
+            "description": "The Uniform Employee and Student Online Privacy Protection Act is a statute designed to safeguard the privacy of both employees and students in Hawaii concerning their online activities. It aims to regulate the collection, use, and disclosure of personal information by employers and educational institutions in the digital realm.",
+            "reference": "https://casetext.com/statute/hawaii-revised-statutes/division-2-business/title-26-trade-regulation-and-practice/chapter-487g-uniform-employee-and-student-online-privacy-protection-act"
+        }
+    ]
+}
