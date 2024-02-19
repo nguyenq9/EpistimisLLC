@@ -12,7 +12,7 @@
 }
 .trigger{
     position: fixed;
-    top: 15px;
+    top: 60px;
     right: 20px;
     overflow:visible;
     cursor: pointer;
