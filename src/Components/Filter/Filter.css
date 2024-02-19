@@ -228,6 +228,12 @@ h3{
     cursor: pointer;
 }
 
+.dropdownItem.selected{
+    background-color: var(--secondaryColor);
+    color: #9D44C0;
+    border-radius: 10px;
+}
+
 .dropdownItem input[type="checkbox"] {
     margin-left: 10px; 
 }
