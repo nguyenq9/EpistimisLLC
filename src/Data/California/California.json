@@ -1,6 +1,6 @@
 {
     "Jurisdiction(s)": "California",
-    "filterCategories": ["", ""],
+    "filterCategories": ["comprehensive"],
     "privacyLaws": [
         {
             "lawName": "California Privacy Rights Act of 2019 (CPRA)",
@@ -494,9 +494,7 @@
                     "description": "Any commercial website or online service that has access to user's Personally Identifiable Information"
                 }
             ]
-         }
-    ],
-    "otherPrivacyLaws": [
+         },
         {
             "lawName": "California Invasion of Privacy Act",
             "type": "Minor",

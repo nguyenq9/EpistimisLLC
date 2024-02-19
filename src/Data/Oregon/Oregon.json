@@ -1,5 +1,6 @@
 {
     "Jurisdiction(s)": "Oregon",
+    "filterCategories": ["comprehensive"],
     "privacyLaws": [
         {
             "lawName": "Oregon Consumer Privacy Act",

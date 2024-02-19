@@ -1,6 +1,7 @@
 {
     "Jurisdiction(s)": "Hawaii",
-    "filterCategories": ["", ""],
+    "filterCategories": [""],
+    
     "privacyLaws": [
         {
             "lawName": "Seante Bill 974",

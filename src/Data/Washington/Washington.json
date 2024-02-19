@@ -1,5 +1,6 @@
 {
-    "Jurisdiction(s)": "Washington",
+    "jurisdiction": "Washington",
+    "filterCategories": ["", ""],
     "privacyLaws": [
         {
             "lawName": "House Bill 1616",

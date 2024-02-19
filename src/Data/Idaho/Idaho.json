@@ -1,6 +1,6 @@
 {
-    "Jurisdiction(s)": "Idaho",
-    "filterCategories": ["", ""],
+    "jurisdiction": "Idaho",
+    "filterCategories": [""],
     "privacyLaws": [
         {
             "lawName": "Title 28, Chapter  51 of the Idaho Statutes",
