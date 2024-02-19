@@ -173,7 +173,9 @@
                     "description": "The personal data of 25,000 or more consumers, while deriving 25% or more of the annual gross revenue from selling personal data"
                 }
             ]
-         },
+        }
+    ],
+    "otherPrivacyLaws": [
          {
             "lawName": "Oregon Student Information Protection Act",
             "type": "Minor",

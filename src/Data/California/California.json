@@ -494,7 +494,9 @@
                     "description": "Any commercial website or online service that has access to user's Personally Identifiable Information"
                 }
             ]
-         },
+         }
+    ],
+    "otherPrivacyLaws": [
         {
             "lawName": "California Invasion of Privacy Act",
             "type": "Minor",
