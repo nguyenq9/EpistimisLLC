@@ -9,7 +9,7 @@ const MapController = ({isUS, handleSetIsUS, setCompareActive}) => {
             <Compare
                 setCompareActive={setCompareActive}
             />
-            <Filter />
+            {/* <Filter /> */}
             <MapToggle
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
