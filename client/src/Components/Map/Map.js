@@ -1,31 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
-import RegionNames from '../../Data/RegionNames';
+import regionNames from "./regionNames.json";
 
 import Modal from "../Modal/Modal";
 
 var initialArray = [];
 
-const Map = ({isUS, jursComparing, compareActive, addJurToCompare, removeJurFromCompare}) => {
+const Map = ({ isUS }) => {
   const [currCode, setCode] = useState("");
   const [showModal, setShowModal] = useState(false);
-  const [selectedRegions, setSelectedRegions] = useState([]);
+  const [modalInfo, setModalInfo] = useState({});
 
-  const addJurToSelected = (jurName) => {
-    if (!selectedRegions.includes(jurName)) {
-      setSelectedRegions(prevJurs => [...prevJurs, jurName]);
-    }
-  };
-
-  const removeJurFromSelected = (jurName) => {
-    setSelectedRegions(prevJurs => prevJurs.filter(jur => jur !== jurName));
-  };
-
-  const handleCloseModal = () => {
+  const handlCloseModal = () => {
     setShowModal(false);
+    setModalInfo({});
   };
 
   const regionStyles = {
@@ -43,45 +34,51 @@ const Map = ({isUS, jursComparing, compareActive, addJurToCompare, removeJurFrom
     },
   };
 
-  const handleRegionSelected = (event, code, isSelected, label, name) => {
-    // console.log("Region selected:", code, isSelected, label, RegionNames[code]);
-    // console.log(compareActive);
-    // if (compareActive) {
-    //   if (isSelected) {
-    //     addJurToCompare(RegionNames[code]);
-    //   } else {
-    //     removeJurFromCompare(RegionNames[code]);
-    //   }
-    // }
+  const handleAPIcall = (code) => {
+    // Make a call to the server API
+    const name = regionNames[code];
+    fetch(`/api/${name}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === "success") {
+          console.log("success: ", res.message);
+          setModalInfo(res.data.law)
+        } else {
+          console.error("ERROR", res.message);
+        }
+      })
+      .catch((err) => {
+        console.log("FUCCK: ", err);
+      });
+  };
 
-    // label contains list of codes of selected regions
-    // name is undefined, idk what that is
-
-    addJurToSelected(code);
-
-    // console.log("mapjs: " + mapRef.current.getRegionName(code));
-
+  const handleRegionSelected = (event, code, isSelected, label) => {
+    console.log("Region selected:", code, isSelected, label, regionNames[code]);
     let inArr = initialArray.includes(code);
+
     if (inArr) {
       initialArray.splice(initialArray.indexOf(code), 1);
       setCode("");
     } else {
+      handleAPIcall(code);
       initialArray.push(code);
       setShowModal(true);
-      setCode(RegionNames[code]);
+      setCode(regionNames[code]);
     }
-
-    // mapRef.current.clearSlectedRegions();
-
   };
 
   return (
     <React.Fragment>
       <Modal
         show={showModal}
-        handleCloseModal={handleCloseModal}
+        handlCloseModal={handlCloseModal}
         name={currCode}
-        comparing={jursComparing}
+        modalInfo={modalInfo}
       />
       {/* <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
         <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
@@ -89,20 +86,19 @@ const Map = ({isUS, jursComparing, compareActive, addJurToCompare, removeJurFrom
       <Filter /> */}
       <div className="map-container">
         <VectorMap
-          key={isUS ? 'usLcc' : 'worldMill'} map={isUS ? usLcc : worldMill}
+          key={isUS ? "usLcc" : "worldMill"}
+          map={isUS ? usLcc : worldMill}
           style={{
-            height: window.innerHeight * .8,
+            height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
           onRegionSelected={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
-          selectedRegions={selectedRegions}
-          
         />
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default Map;
