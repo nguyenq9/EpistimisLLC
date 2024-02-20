@@ -1,5 +1,5 @@
 {
-    "Jurisdiction(s)": "California",
+    "jurisdiction": "California",
     "filterCategories": ["comprehensive"],
     "privacyLaws": [
         {
