@@ -6,6 +6,7 @@
     font-weight: 1000;
     color: var(--textColor);
     position: fixed;
-    top: 15px;
-    right: 20px;
+    /* bottom: 60px;
+    right: 70px; */
+    z-index: 1000;
 }

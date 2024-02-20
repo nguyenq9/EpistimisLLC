@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
@@ -9,12 +9,11 @@ import Modal from "../Modal/Modal";
 
 var initialArray = [];
 
-const Map = ({ isUS, compareActive, setCompareActive }) => {
+const Map = ({ isUS, compareActive, showModal, setShowModal, setCompareActive }) => {
   const [currCode, setCode] = useState("");
-  const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState({});
 
-  const handlCloseModal = () => {
+  const handleCloseModal = () => {
     setShowModal(false);
     setModalInfo({});
   };
@@ -72,11 +71,16 @@ const Map = ({ isUS, compareActive, setCompareActive }) => {
     }
   };
 
+  // useEffect for closing the modal when compareActive changes
+  useEffect(() => {
+    setShowModal(false);
+  }, [compareActive])
+
   return (
     <React.Fragment>
       <Modal
         show={showModal}
-        handlCloseModal={handlCloseModal}
+        handleCloseModal={handleCloseModal}
         name={currCode}
         modalInfo={modalInfo}
         setCompareActive={setCompareActive}

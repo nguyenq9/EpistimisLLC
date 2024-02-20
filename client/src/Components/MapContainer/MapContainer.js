@@ -4,28 +4,21 @@ import MapController from "../MapController/MapController";
 
 const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
-    const [jursComparing, setJursComparing] = useState([]);
+    const [showModal, setShowModal] = useState(false);
     const [compareActive, setCompareActive] = useState(false);
 
     const handleSetIsUS = () =>  {
         setIsUS(prevUs => !prevUs);
     }
 
-    
-
-    const addJurToCompare = (jurName) => {
-        if (!jursComparing.includes(jurName)) {
-            setJursComparing(prevJurs => [...prevJurs, jurName]);
-        }
-    };
-
-    const removeJurFromCompare = (jurName) => {
-        setJursComparing(prevJurs => prevJurs.filter(jur => jur !== jurName));
-    };
-
     const handleSetCompareActive = () => {
+        console.log("handleSetCompareActive");
         setCompareActive(prevCompare => !prevCompare);
     };
+
+    const handleSetShowModal = (show) => {
+        setShowModal(show);
+    }
 
     return (
         <React.Fragment>
@@ -34,15 +27,16 @@ const MapContainer = () => {
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
+                compareActive={compareActive}
                 setCompareActive={handleSetCompareActive}
+                showModal={showModal}
             />
             <MapView
                 isUS={isUS}
-                jursComparing={jursComparing}
                 compareActive={compareActive}
-                addJurToCompare={addJurToCompare}
-                removeJurFromCompare={removeJurFromCompare}
                 setCompareActive={handleSetCompareActive}
+                showModal={showModal}
+                setShowModal={handleSetShowModal}
             />
         </React.Fragment>
     );

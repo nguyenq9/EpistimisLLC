@@ -1,15 +1,13 @@
 import Map from "../Map/Map";
-// import Modal from "../Modal/Modal";
 
-const MapView = ({ isUS, jursComparing, compareActive, addJurToCompare, removeJurFromCompare, setCompareActive }) => {
+const MapView = ({ isUS, compareActive, setCompareActive, showModal, setShowModal }) => {
     return (
         <Map
             isUS={isUS}
-            jursComparing={jursComparing}
             compareActive={compareActive}
-            addJurToCompare={addJurToCompare}
-            removeJurFromCompare={removeJurFromCompare}
             setCompareActive={setCompareActive}
+            showModal={showModal}
+            setShowModal={setShowModal}
         />
     );
 }
