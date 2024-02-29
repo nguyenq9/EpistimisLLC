@@ -2,7 +2,6 @@ import React from "react";
 import "./Modal.css";
 import ReactModal from "react-modal";
 import { Close } from "@mui/icons-material";
-import Compare from "../Compare/Compare";
 
 function Modal(prop) {
   return (
@@ -22,7 +21,7 @@ function Modal(prop) {
       {prop.modalInfo.otherPrivacyLaws !== undefined && prop.modalInfo.otherPrivacyLaws.map((law, index) => (
         <p key={index}>{law.lawName}</p>
       ))}
-      <Compare setCompareActive={prop.setCompareActive}/>
+      <button onClick={prop.handleCompareClicked} style={{display: prop.comparing ? 'none' : ''}}>Compare</button>
     </ReactModal>
   );
 }

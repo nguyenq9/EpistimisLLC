@@ -5,16 +5,10 @@ import MapController from "../MapController/MapController";
 const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [showModal, setShowModal] = useState(false);
-    const [compareActive, setCompareActive] = useState(false);
 
     const handleSetIsUS = () =>  {
         setIsUS(prevUs => !prevUs);
     }
-
-    const handleSetCompareActive = () => {
-        console.log("handleSetCompareActive");
-        setCompareActive(prevCompare => !prevCompare);
-    };
 
     const handleSetShowModal = (show) => {
         setShowModal(show);
@@ -27,14 +21,9 @@ const MapContainer = () => {
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
-                compareActive={compareActive}
-                setCompareActive={handleSetCompareActive}
-                showModal={showModal}
             />
             <MapView
                 isUS={isUS}
-                compareActive={compareActive}
-                setCompareActive={handleSetCompareActive}
                 showModal={showModal}
                 setShowModal={handleSetShowModal}
             />

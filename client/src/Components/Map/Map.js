@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
@@ -7,15 +7,29 @@ import regionNames from "./regionNames.json";
 
 import Modal from "../Modal/Modal";
 
-var initialArray = [];
-
-const Map = ({ isUS, compareActive, showModal, setShowModal, setCompareActive }) => {
+const Map = ({ isUS, showModal, setShowModal }) => {
   const [currCode, setCode] = useState("");
   const [modalInfo, setModalInfo] = useState({});
+  const [comparing, setComparing] = useState(false);
+  const [selectedRegions, setSelectedRegions] = useState([]);
+
+  // Function to add a region
+  const addRegion = (region) => {
+    setSelectedRegions(prevRegions => [...prevRegions, region]);
+  }
+
+  // Function to remove a region
+  const removeRegion = (region) => {
+    setSelectedRegions(prevRegions => prevRegions.filter(r => r !== region));
+  }
 
   const handleCloseModal = () => {
     setShowModal(false);
     setModalInfo({});
+    if (comparing) {
+      setComparing(false);
+      setCode("");
+    }
   };
 
   const regionStyles = {
@@ -56,34 +70,38 @@ const Map = ({ isUS, compareActive, showModal, setShowModal, setCompareActive })
       });
   };
 
-  const handleRegionSelected = (event, code, isSelected, label) => {
-    console.log("Region selected:", code, isSelected, label, regionNames[code]);
-    let inArr = initialArray.includes(code);
+  const handleRegionSelected = (event, code) => {
+    let inArr = selectedRegions.includes(code);
 
+    console.log("code: " + code);
+    
     if (inArr) {
-      initialArray.splice(initialArray.indexOf(code), 1);
+      removeRegion(code);
+      setComparing(false);
       setCode("");
     } else {
       handleAPIcall(code);
-      initialArray.push(code);
+      addRegion(code);
       setShowModal(true);
-      setCode(regionNames[code]);
+      setCode(code);
     }
   };
 
   // useEffect for closing the modal when compareActive changes
-  useEffect(() => {
+  const handleCompareClicked = () => {
     setShowModal(false);
-  }, [compareActive])
+    setComparing(true);
+  };
 
   return (
     <React.Fragment>
       <Modal
         show={showModal}
         handleCloseModal={handleCloseModal}
-        name={currCode}
+        name={regionNames[currCode]}
         modalInfo={modalInfo}
-        setCompareActive={setCompareActive}
+        handleCompareClicked={handleCompareClicked}
+        comparing={comparing}
       />
       {/* <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
         <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
@@ -91,16 +109,17 @@ const Map = ({ isUS, compareActive, showModal, setShowModal, setCompareActive })
       <Filter /> */}
       <div className="map-container">
         <VectorMap
-          key={isUS ? "usLcc" : "worldMill"}
+          key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
           map={isUS ? usLcc : worldMill}
           style={{
             height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
-          regionsSelectableOne={true}
-          onRegionSelected={handleRegionSelected}
+          regionsSelectableOne={!comparing}
+          onRegionClick={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
+          selectedRegions={currCode}
         />
       </div>
     </React.Fragment>
