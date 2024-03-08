@@ -2,12 +2,11 @@ import React from "react";
 import "./Modal.css";
 import ReactModal from "react-modal";
 import { Close } from "@mui/icons-material";
-import Compare from "../Compare/Compare";
 
 function Modal(prop) {
   return (
     <ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example" closeTimeoutMS={500}>
-      <Close onClick={prop.handlCloseModal} />
+      <Close onClick={prop.handleCloseModal} />
       <h1>{prop.name}</h1>
       <p>{prop.modalInfo.jurisdiction}</p>
       <h2>Filter Categories</h2>
@@ -22,7 +21,7 @@ function Modal(prop) {
       {prop.modalInfo.otherPrivacyLaws !== undefined && prop.modalInfo.otherPrivacyLaws.map((law, index) => (
         <p key={index}>{law.lawName}</p>
       ))}
-      <button onClick={prop.setCompareActive}>Compare</button>
+      <button onClick={prop.handleCompareClicked} style={{display: prop.comparing ? 'none' : ''}}>Compare</button>
     </ReactModal>
   );
 }

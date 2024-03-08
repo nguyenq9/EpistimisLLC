@@ -17,7 +17,7 @@ mongoose.connect(url, {
     console.log("Successfully connected to MongoDB");
   })
   .catch((err) => {
-    console.log("Error in the Connection");
+    console.log(err);
   });
 
 // Defining the Schema
