@@ -7,19 +7,6 @@ const port = 5000;
 const url = process.env.DATABASE_URL;
 app.use(cors());
 
-// // Connect to MongoDB using Mongoose
-// mongoose.connect(url, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
-// // Check if the connection is successful
-// const db = mongoose.connection;
-// db.on("error", console.error.bind(console, "MongoDB connection error:"));
-// db.once("open", () => {
-//   console.log("Connected to MongoDB");
-// });
-
 // Connecting to database
 mongoose.connect(url, {
   useNewUrlParser: true,
