@@ -6,11 +6,16 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [jursComparing, setJursComparing] = useState([]);
     const [compareActive, setCompareActive] = useState(false);
-
+    // const [filterOption, setFilterOption] = useState("All");
     const handleSetIsUS = () =>  {
         setIsUS(prevUs => !prevUs);
     }
 
+   // add const for filter here
+    const [filter, setFilter] = useState(null);
+    // const handleFilter = (filter) => {
+    //     setFilter(filter);
+    // }
     
 
     const addJurToCompare = (jurName) => {
@@ -29,12 +34,14 @@ const MapContainer = () => {
 
     return (
         <React.Fragment>
-            {/*ToggleChange={handleToggle} filter={handleFilter}*/}
+            {/* ToggleChange={handleToggle} filter={handleFilter} */}
 
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
                 setCompareActive={handleSetCompareActive}
+                handleSetFilterOption={setFilter}
+                filterOption={filter}
             />
             <MapView
                 isUS={isUS}
@@ -43,7 +50,10 @@ const MapContainer = () => {
                 addJurToCompare={addJurToCompare}
                 removeJurFromCompare={removeJurFromCompare}
                 setCompareActive={handleSetCompareActive}
+                filterOption={filter}
             />
+            
+            
         </React.Fragment>
     );
     

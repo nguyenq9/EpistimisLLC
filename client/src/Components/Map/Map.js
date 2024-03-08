@@ -1,19 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
 import regionNames from "./regionNames.json";
+import stateMap from "./stateMap.json";
 
 import Modal from "../Modal/Modal";
 
 var initialArray = [];
 
-const Map = ({ isUS, compareActive, setCompareActive }) => {
+const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
   const [currCode, setCode] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [modalInfo, setModalInfo] = useState({});
 
+  //filter
+  const [prevStateList, setPrevStateList] = useState([]);
+  const mapRef = useRef(null);
+  useEffect(() => {
+    const stateList = stateMap[filterOption];
+    if (stateList && mapRef.current) {
+      const stateToggles = {};
+      prevStateList.forEach((state) => {
+        stateToggles[state] = false;
+      });
+      stateList.forEach((state) => {
+        stateToggles[state] = true;
+      });
+      mapRef.current.setSelectedRegions(stateToggles);
+      setPrevStateList(stateList);
+    }
+  }, [filterOption]);
+  //end filter
+  
   const handlCloseModal = () => {
     setShowModal(false);
     setModalInfo({});
@@ -94,9 +114,13 @@ const Map = ({ isUS, compareActive, setCompareActive }) => {
           }}
           regionsSelectable={true} // Enable region selection
           regionsSelectableOne={true}
-          onRegionSelected={handleRegionSelected}
+          // onRegionSelected={handleRegionSelected}
+          // new allows modal to only pop up when a region is selected
+          onRegionClick={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
+          //filter
+          mapRef={mapRef}
         />
       </div>
     </React.Fragment>
