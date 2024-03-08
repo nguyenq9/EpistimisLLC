@@ -1,8 +1,9 @@
 .container {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    top: 60px; /* Update to top */
+    right: 20px;
     text-align: center;
+    z-index: 1000;
 }
 
 .MapToggle {
@@ -46,14 +47,14 @@
 .inner:before {
     content: "US";
     padding-left: 10px;
-    background-color: #4D2DB7; 
+    background-color: #4D2DB7;
     color: #fff;
 }
 
 .inner:after {
     content: "World";
     padding-right: 10px;
-    background-color: #0E21A0; 
+    background-color: #0E21A0;
     color: #fff;
     text-align: right;
 }
@@ -66,7 +67,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 65px; 
+    right: 65px;
     border: 0 solid #bbb;
     border-radius: 20px;
     transition: all 0.3s ease-in 0s;
@@ -81,10 +82,10 @@
 }
 
 .MapToggle {
-    transition: opacity 0.5s ease-in-out; 
-    opacity: 1; 
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .MapToggle.fade-out {
-    opacity: 0; 
+    opacity: 0;
 }

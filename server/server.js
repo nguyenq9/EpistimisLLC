@@ -14,10 +14,10 @@ mongoose.connect(url, {
   dbName: 'Epistimis' // Specify your desired database name
 })
   .then((ans) => {
-    console.log("Successfully connected to MongoDB");
+    console.log("Successfully connected to MongoDB!");
   })
   .catch((err) => {
-    console.log(err);
+    console.log("Error in the connection process!");
   });
 
 // Defining the Schema

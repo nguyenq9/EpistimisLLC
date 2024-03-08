@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
@@ -12,6 +12,11 @@ const Map = ({ isUS, showModal, setShowModal }) => {
   const [modalInfo, setModalInfo] = useState({});
   const [comparing, setComparing] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState([]);
+
+  useEffect(() => {
+    setCode("")
+    setSelectedRegions([])
+  }, [modalInfo])
 
   // Function to add a region
   const addRegion = (region) => {
@@ -28,7 +33,6 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     setModalInfo({});
     if (comparing) {
       setComparing(false);
-      setCode("");
     }
   };
 
@@ -66,7 +70,7 @@ const Map = ({ isUS, showModal, setShowModal }) => {
         }
       })
       .catch((err) => {
-        console.log("FUCCK: ", err);
+        console.log(err);
       });
   };
 
@@ -87,10 +91,10 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     }
   };
 
-  // useEffect for closing the modal when compareActive changes
   const handleCompareClicked = () => {
     setShowModal(false);
     setComparing(true);
+    console.log("compare clicked")
   };
 
   return (
@@ -102,11 +106,8 @@ const Map = ({ isUS, showModal, setShowModal }) => {
         modalInfo={modalInfo}
         handleCompareClicked={handleCompareClicked}
         comparing={comparing}
+        selectedRegions={selectedRegions}
       />
-      {/* <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
-        <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
-      </div>
-      <Filter /> */}
       <div className="map-container">
         <VectorMap
           key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
