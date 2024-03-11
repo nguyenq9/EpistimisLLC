@@ -38,7 +38,8 @@ const handleCompareCall = (code1, code2, setModalInfo) => {
       if (res.status === "success") {
         console.log("success: ", res.message);
         console.log(res.data.laws);
-        setModalInfo(prev => [...prev, res.data.laws]);
+        // setModalInfo(prev => [...prev, res.data.laws]);
+        setModalInfo(res.data.laws)
       } else {
         console.error("ERROR", res.message);
       }
