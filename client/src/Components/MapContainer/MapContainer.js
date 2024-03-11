@@ -6,8 +6,8 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [showModal, setShowModal] = useState(false);
 
-    const handleSetIsUS = () =>  {
-        setIsUS(prevUs => !prevUs);
+    const handleSetIsUS = (val) =>  {
+        setIsUS(val);
     }
 
     const handleSetShowModal = (show) => {
