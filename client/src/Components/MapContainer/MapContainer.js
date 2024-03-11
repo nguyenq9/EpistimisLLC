@@ -19,6 +19,7 @@ const MapContainer = () => {
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
+                showModal={showModal}
             />
             <MapView
                 isUS={isUS}
