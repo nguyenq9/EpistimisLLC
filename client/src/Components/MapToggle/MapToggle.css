@@ -17,12 +17,12 @@
     cursor: pointer;
 }
 
-.link:hover {
+.link:hover, .active {
     text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 .active {
-    text-decoration: underline;
     color: darkblue
 }
 
