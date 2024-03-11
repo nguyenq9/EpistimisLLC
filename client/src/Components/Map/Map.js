@@ -1,17 +1,28 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
+import stateMap from "./stateMap.json";
 import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
 
-const Map = ({ isUS, showModal, setShowModal }) => {
+const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
   const [currCode, setCode] = useState("");
   const [currRegion, setRegion] = useState("");
   const [modalInfo, setModalInfo] = useState([]);
   const [comparing, setComparing] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState([]);
+  const [prevStateList, setPrevStateList] = useState([]);
+  const [regionsConfig, setRegionsConfig] = useState({
+    regions: [
+      {
+        attribute: 'fill',
+        values: {},
+      },
+    ],
+  });
+
 
   const mapRef = useRef(null);
 
@@ -27,15 +38,61 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     }
   }
 
-  // Function to add a region
   const addRegion = (region) => {
     setSelectedRegions(prevRegions => [...prevRegions, getRegionName(region)]);
   }
 
-  // Function to remove a region
-  // const removeRegion = (region) => {
-  //   setSelectedRegions(prevRegions => prevRegions.filter(r => r !== region));
-  // }
+
+  // useEffect(() => {
+  //   const stateList = stateMap[filterOption];
+  //   if (stateList && mapRef.current) {
+  //     const stateToggles = {};
+  //     prevStateList.forEach((state) => {
+  //       stateToggles[state] = false;
+  //     });
+  //     stateList.forEach((state) => {
+  //       stateToggles[state] = true;
+  //     });
+  //     mapRef.current.setSelectedRegions(stateToggles);
+  //     setPrevStateList(stateList);
+  //   }
+  // }, [filterOption]);
+
+  useEffect(() => {
+    const stateList = stateMap[filterOption];
+    clearRegionsConfig()
+    if (stateList && mapRef.current) {
+      const stateToggles = {};
+      prevStateList.forEach((state) => {
+        stateToggles[state] = false;
+      });
+      stateList.forEach((state) => {
+        stateToggles[state] = true;
+        addRegionToConfig(state)
+      });
+      console.log(regionsConfig)
+
+
+      setPrevStateList(stateList);
+    }
+  }, [filterOption]);
+
+
+  const addRegionToConfig = (code) => {
+    setRegionsConfig((prevConfig) => {
+      const newValues = { ...prevConfig.regions[0].values, [code]: '#00ff0d' };
+      const newConfig = { ...prevConfig, regions: [{ ...prevConfig.regions[0], values: newValues }] };
+      return newConfig;
+    });
+  };
+
+  const clearRegionsConfig = () => {
+    setRegionsConfig((prevConfig) => {
+      const newConfig = { ...prevConfig, regions: [{ ...prevConfig.regions[0], values: {} }] };
+      return newConfig;
+    });
+  };
+  
 
   const handleCloseModal = () => {
     setCode("")
@@ -71,7 +128,7 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     } else {
       handleSingleStateRetrieval(getRegionName(newCode), setModalInfo)
     }
-    setShowModal(true);
+    setShowModal(true)
   };
 
   const handleCompareClicked = () => {
@@ -100,11 +157,20 @@ const Map = ({ isUS, showModal, setShowModal }) => {
             height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
-          regionsSelectableOne={!comparing}
+          regionsSelectableOne={true}
+          // onRegionSelected={handleRegionSelected}
+          // new allows modal to only pop up when a region is selected
           onRegionClick={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
-          selectedRegions={currCode}
+          series={regionsConfig}
+        // =======
+        //           regionsSelectableOne={!comparing}
+        //           onRegionClick={handleRegionSelected}
+        //           regionStyle={regionStyles}
+        //           backgroundColor="transparent"
+                  selectedRegions={currCode}
+        // >>>>>>> snapshot3-11
         />
       </div>
     </React.Fragment>
