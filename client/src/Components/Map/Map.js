@@ -4,7 +4,7 @@ import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
 import regionNames from "./regionNames.json";
-
+import { handleAPIcall } from "../../js/API";
 import Modal from "../Modal/Modal";
 
 const Map = ({ isUS, showModal, setShowModal }) => {
@@ -13,14 +13,12 @@ const Map = ({ isUS, showModal, setShowModal }) => {
   const [comparing, setComparing] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState([]);
 
-  useEffect(() => {
-    setCode("")
-    setSelectedRegions([])
-  }, [modalInfo])
+
+
 
   // Function to add a region
   const addRegion = (region) => {
-    setSelectedRegions(prevRegions => [...prevRegions, region]);
+    setSelectedRegions(prevRegions => [...prevRegions, regionNames[region]]);
   }
 
   // Function to remove a region
@@ -28,11 +26,14 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     setSelectedRegions(prevRegions => prevRegions.filter(r => r !== region));
   }
 
+
   const handleCloseModal = () => {
+    setCode("")
     setShowModal(false);
     setModalInfo({});
     if (comparing) {
       setComparing(false);
+      setSelectedRegions([])
     }
   };
 
@@ -51,44 +52,16 @@ const Map = ({ isUS, showModal, setShowModal }) => {
     },
   };
 
-  const handleAPIcall = (code) => {
-    // Make a call to the server API
-    const name = regionNames[code];
-    fetch(`/api/${name}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        if (res.status === "success") {
-          console.log("success: ", res.message);
-          setModalInfo(res.data.law)
-        } else {
-          console.error("ERROR", res.message);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
 
-  const handleRegionSelected = (event, code) => {
-    let inArr = selectedRegions.includes(code);
+  const handleRegionSelected = (event, newCode) => {
+    if (comparing) {
+      addRegion(currCode)
+      addRegion(newCode)
+    } 
 
-    console.log("code: " + code);
-    
-    if (inArr) {
-      removeRegion(code);
-      setComparing(false);
-      setCode("");
-    } else {
-      handleAPIcall(code);
-      addRegion(code);
-      setShowModal(true);
-      setCode(code);
-    }
+    setCode(newCode);
+    handleAPIcall(newCode, setModalInfo);
+    setShowModal(true);
   };
 
   const handleCompareClicked = () => {

@@ -6,10 +6,10 @@ import MapContainer from './Components/MapContainer/MapContainer';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='whole-bg'>
       <Title/>
       <MapContainer/>
-    </React.Fragment>
+    </div>
   );
 }
 

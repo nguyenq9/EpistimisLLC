@@ -8,16 +8,19 @@ function Modal(prop) {
   return (
     prop.comparing ?
       // When comparing is ✔️✔️✔️ TRUE ✔️✔️✔️
-      (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example" closeTimeoutMS={500}>
+      (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example"  ariaHideApp={false}>
         <Close onClick={prop.handleCloseModal} />
-        <h1>{prop.name}</h1>
+        {prop.selectedRegions && prop.selectedRegions.map((region, index) => (
+          <h1 key={index}>{region}</h1>
+        ))}
+        {/* <h1>{prop.name}</h1> */}
       </ReactModal>) :
 
       // When comparing is ❌❌❌ FALSE ❌❌❌
-      (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example" closeTimeoutMS={500}>
+      (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example"  ariaHideApp={false}>
         <Close onClick={prop.handleCloseModal} />
         <h1>{prop.name}</h1>
-        <p>{prop.modalInfo.jurisdiction}</p>
+        <p>{prop.modalInfo.jurisdiction}❌</p>
         <h2>Filter Categories</h2>
         {prop.modalInfo.filterCategories !== undefined && prop.modalInfo.filterCategories.map((option, index) => (
           <p key={index}>{option}</p>

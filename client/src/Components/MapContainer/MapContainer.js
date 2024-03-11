@@ -16,8 +16,6 @@ const MapContainer = () => {
 
     return (
         <React.Fragment>
-            {/*ToggleChange={handleToggle} filter={handleFilter}*/}
-
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}

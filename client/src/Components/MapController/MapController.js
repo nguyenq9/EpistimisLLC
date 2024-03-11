@@ -2,15 +2,12 @@ import React from 'react';
 import Filter from '../Filter/Filter';
 // import Compare from '../Compare/Compare';
 import MapToggle from '../MapToggle/MapToggle';
+import MUIToggle from '../MapToggle/MUIToggle';
 
 const MapController = ({isUS, handleSetIsUS }) => {
     return (
         <React.Fragment>
-            {/* <Compare
-                compareActive={compareActive}
-                setCompareActive={setCompareActive}
-                showModal={showModal}
-            /> */}
+            {/* <MUIToggle/> */}
             <Filter />
             <MapToggle
                 isUS={isUS}
