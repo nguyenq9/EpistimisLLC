@@ -10,10 +10,13 @@ function Modal(prop) {
       // When comparing is ✔️✔️✔️ TRUE ✔️✔️✔️
       (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example"  ariaHideApp={false}>
         <Close onClick={prop.handleCloseModal} />
-        {prop.selectedRegions && prop.selectedRegions.map((region, index) => (
-          <h1 key={index}>{region}</h1>
-        ))}
-        {/* <h1>{prop.name}</h1> */}
+        <div className="regions-container">
+          {prop.selectedRegions && prop.selectedRegions.map((region, index) => (
+            <div key={index} className="region">
+              <h1>{region}</h1>
+            </div>
+          ))}
+        </div>
       </ReactModal>) :
 
       // When comparing is ❌❌❌ FALSE ❌❌❌
