@@ -7,19 +7,16 @@ const MapContainer = () => {
     const [showModal, setShowModal] = useState(false);
     const [filter, setFilter] = useState(null);
 
-    const handleSetIsUS = () =>  {
-        setIsUS(prevUs => !prevUs);
+    const handleSetIsUS = (val) =>  {
+        setIsUS(val);
     }
 
     const handleSetShowModal = (show) => {
         setShowModal(show);
     }
-
     
     return (
         <React.Fragment>
-   
-
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
@@ -33,11 +30,8 @@ const MapContainer = () => {
                 setShowModal={handleSetShowModal}
                 filterOption={filter}
             />
-            
-            
         </React.Fragment>
     );
-    
 }
 
 export default MapContainer;

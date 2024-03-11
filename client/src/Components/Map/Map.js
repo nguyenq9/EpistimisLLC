@@ -42,22 +42,6 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
     setSelectedRegions(prevRegions => [...prevRegions, getRegionName(region)]);
   }
 
-
-  // useEffect(() => {
-  //   const stateList = stateMap[filterOption];
-  //   if (stateList && mapRef.current) {
-  //     const stateToggles = {};
-  //     prevStateList.forEach((state) => {
-  //       stateToggles[state] = false;
-  //     });
-  //     stateList.forEach((state) => {
-  //       stateToggles[state] = true;
-  //     });
-  //     mapRef.current.setSelectedRegions(stateToggles);
-  //     setPrevStateList(stateList);
-  //   }
-  // }, [filterOption]);
-
   useEffect(() => {
     const stateList = stateMap[filterOption];
     clearRegionsConfig()
@@ -70,9 +54,7 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
         stateToggles[state] = true;
         addRegionToConfig(state)
       });
-      console.log(regionsConfig)
-
-
+      // console.log(regionsConfig)
       setPrevStateList(stateList);
     }
   }, [filterOption]);
@@ -156,21 +138,13 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
           style={{
             height: window.innerHeight * 0.8,
           }}
-          regionsSelectable={true} // Enable region selection
+          regionsSelectable={true}
           regionsSelectableOne={true}
-          // onRegionSelected={handleRegionSelected}
-          // new allows modal to only pop up when a region is selected
           onRegionClick={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
           series={regionsConfig}
-        // =======
-        //           regionsSelectableOne={!comparing}
-        //           onRegionClick={handleRegionSelected}
-        //           regionStyle={regionStyles}
-        //           backgroundColor="transparent"
-                  selectedRegions={currCode}
-        // >>>>>>> snapshot3-11
+          selectedRegions={currCode}
         />
       </div>
     </React.Fragment>
