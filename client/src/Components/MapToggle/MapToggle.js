@@ -5,17 +5,19 @@ const MapToggle = ({ isUS, handleSetIsUS }) => {
     return (
         <div className="container">
             <div className="MapToggle">
-                <input 
-                    type="checkbox" 
-                    className="checkbox" 
-                    id="mapToggleCheckbox" 
-                    checked={isUS} 
-                    onChange={handleSetIsUS}
-                />
-                <label className="label" htmlFor="mapToggleCheckbox">
-                    <span className="inner" />
-                    <span className="switch" />
-                </label>
+                <span 
+                    className={`link ${isUS ? "active" : ""}`} 
+                    onClick={() => { if (!isUS) handleSetIsUS(true) }}
+                >
+                    USA 
+                </span>
+                <span className="separator"> / </span>
+                <span 
+                    className={`link ${!isUS ? "active" : ""}`} 
+                    onClick={() => { if (isUS) handleSetIsUS(false) }}
+                >
+                    INTL
+                </span>
             </div>
         </div>
     );

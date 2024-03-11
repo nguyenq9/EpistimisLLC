@@ -5,16 +5,48 @@ import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
 import regionNames from "./regionNames.json";
 import stateMap from "./stateMap.json";
-
+import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
 
 var initialArray = [];
 
 const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
-  const [currCode, setCode] = useState("");
-  const [showModal, setShowModal] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
+import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
+// import Modal from "../Modal/Modal";
 
+// const Map = ({ isUS, showModal, setShowModal }) => {
+// >>>>>>> snapshot3-11
+  const [currCode, setCode] = useState("");
+  const [currRegion, setRegion] = useState("");
+  const [modalInfo, setModalInfo] = useState([]);
+  const [comparing, setComparing] = useState(false);
+  const [selectedRegions, setSelectedRegions] = useState([]);
+
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (currCode !== "") {
+      setRegion(getRegionName(currCode));
+    }
+  }, [currCode]);
+
+  const getRegionName = (code) => {
+    if (mapRef.current) {
+      return mapRef.current.getMapObject().getRegionName(code);
+    }
+  }
+
+  // Function to add a region
+  const addRegion = (region) => {
+    setSelectedRegions(prevRegions => [...prevRegions, getRegionName(region)]);
+  }
+
+  // Function to remove a region
+  // const removeRegion = (region) => {
+  //   setSelectedRegions(prevRegions => prevRegions.filter(r => r !== region));
+  // }
+
+// <<<<<<< Joseph
   //filter
   const [prevStateList, setPrevStateList] = useState([]);
   const mapRef = useRef(null);
@@ -34,9 +66,17 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
   }, [filterOption]);
   //end filter
   
-  const handlCloseModal = () => {
+//   const handlCloseModal = () => {
+// =======
+  const handleCloseModal = () => {
+    setCode("")
+// >>>>>>> snapshot3-11
     setShowModal(false);
-    setModalInfo({});
+    setModalInfo([]);
+    if (comparing) {
+      setComparing(false);
+      setSelectedRegions([])
+    }
   };
 
   const regionStyles = {
@@ -54,65 +94,45 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
     },
   };
 
-  const handleAPIcall = (code) => {
-    // Make a call to the server API
-    const name = regionNames[code];
-    fetch(`/api/${name}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        if (res.status === "success") {
-          console.log("success: ", res.message);
-          setModalInfo(res.data.law)
-        } else {
-          console.error("ERROR", res.message);
-        }
-      })
-      .catch((err) => {
-        console.log("FUCCK: ", err);
-      });
+  const handleRegionSelected = (event, newCode) => {
+    setCode(newCode);
+    if (comparing) {
+      addRegion(currCode)
+      addRegion(newCode)
+      handleCompareCall(getRegionName(currCode), getRegionName(newCode), setModalInfo)
+    } else {
+      handleSingleStateRetrieval(getRegionName(newCode), setModalInfo)
+    }
+    setShowModal(true);
   };
 
-  const handleRegionSelected = (event, code, isSelected, label) => {
-    console.log("Region selected:", code, isSelected, label, regionNames[code]);
-    let inArr = initialArray.includes(code);
-
-    if (inArr) {
-      initialArray.splice(initialArray.indexOf(code), 1);
-      setCode("");
-    } else {
-      handleAPIcall(code);
-      initialArray.push(code);
-      setShowModal(true);
-      setCode(regionNames[code]);
-    }
+  const handleCompareClicked = () => {
+    setShowModal(false);
+    setComparing(true);
+    console.log("compare clicked")
   };
 
   return (
     <React.Fragment>
       <Modal
         show={showModal}
-        handlCloseModal={handlCloseModal}
-        name={currCode}
+        handleCloseModal={handleCloseModal}
+        name={currRegion}
         modalInfo={modalInfo}
-        setCompareActive={setCompareActive}
+        handleCompareClicked={handleCompareClicked}
+        comparing={comparing}
+        selectedRegions={selectedRegions}
       />
-      {/* <div className={`MapToggle ${showModal ? "fade-out" : ""}`}>
-        <MapToggle isUSToggle={us} onToggleChange={handleToggle} />
-      </div>
-      <Filter /> */}
       <div className="map-container">
         <VectorMap
-          key={isUS ? "usLcc" : "worldMill"}
+          mapRef={mapRef}
+          key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
           map={isUS ? usLcc : worldMill}
           style={{
             height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
+// <<<<<<< Joseph
           regionsSelectableOne={true}
           // onRegionSelected={handleRegionSelected}
           // new allows modal to only pop up when a region is selected
@@ -121,6 +141,13 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
           backgroundColor="transparent"
           //filter
           mapRef={mapRef}
+// =======
+//           regionsSelectableOne={!comparing}
+//           onRegionClick={handleRegionSelected}
+//           regionStyle={regionStyles}
+//           backgroundColor="transparent"
+//           selectedRegions={currCode}
+// >>>>>>> snapshot3-11
         />
       </div>
     </React.Fragment>

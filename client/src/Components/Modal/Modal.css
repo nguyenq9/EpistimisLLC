@@ -13,3 +13,17 @@
   opacity: 0;
   transform: translateY(-100px);
 }
+
+.regions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 95%;
+  margin:auto
+}
+
+.region {
+  flex: 1;
+  width: 50%;
+}

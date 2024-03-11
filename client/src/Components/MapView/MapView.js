@@ -1,5 +1,5 @@
 import Map from "../Map/Map";
-// import Modal from "../Modal/Modal";
+import "./MapView.css"
 
 const MapView = ({ isUS, jursComparing, compareActive, addJurToCompare, removeJurFromCompare, setCompareActive, filterOption }) => {
     return (

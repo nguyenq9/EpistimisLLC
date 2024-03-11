@@ -1,91 +1,32 @@
 .container {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 1000;
+    top: 20px; /* Update to top */
+    right: 150px;
     text-align: center;
+    z-index: 1000;
 }
 
 .MapToggle {
-    position: relative;
-    width: 100px;
-    display: inline-block;
-    text-align: left;
+    color: white;
+    font-family: 'MPLUS1';
+    font-weight: 900;
+    user-select: none;
 }
 
-.checkbox {
-    display: none;
-}
-
-.label {
-    display: block;
-    overflow: hidden;
+.link {
     cursor: pointer;
-    border: 0 solid #bbb;
-    border-radius: 20px;
 }
 
-.inner {
-    display: block;
-    width: 200%;
-    margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
+.link:hover, .active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
-.inner:before,
-.inner:after {
-    float: left;
-    width: 50%;
-    height: 36px;
-    padding: 0;
-    line-height: 36px;
-    color: #fff;
-    font-weight: bold;
-    box-sizing: border-box;
+.active {
+    color: darkblue
 }
 
-.inner:before {
-    content: "US";
-    padding-left: 10px;
-    background-color: #4D2DB7; 
-    color: #fff;
-}
-
-.inner:after {
-    content: "World";
-    padding-right: 10px;
-    background-color: #0E21A0; 
-    color: #fff;
-    text-align: right;
-}
-
-.switch {
-    display: block;
-    width: 24px;
-    margin: 5px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 65px; 
-    border: 0 solid #bbb;
-    border-radius: 20px;
-    transition: all 0.3s ease-in 0s;
-}
-
-.checkbox:checked + .label .inner {
-    margin-left: 0;
-}
-
-.checkbox:checked + .label .switch {
-    right: 0;
-}
-
-.MapToggle {
-    transition: opacity 0.5s ease-in-out; 
-    opacity: 1; 
-}
-
-.MapToggle.fade-out {
-    opacity: 0; 
+.separator {
+    margin: 0 10px;
+    cursor: default;
 }
