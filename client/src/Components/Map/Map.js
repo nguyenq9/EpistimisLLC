@@ -1,12 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Map.css";
 import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
+import regionNames from "./regionNames.json";
+import stateMap from "./stateMap.json";
 import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
 
-const Map = ({ isUS, showModal, setShowModal }) => {
+var initialArray = [];
+
+const Map = ({ isUS, compareActive, setCompareActive, filterOption }) => {
+import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
+// import Modal from "../Modal/Modal";
+
+// const Map = ({ isUS, showModal, setShowModal }) => {
+// >>>>>>> snapshot3-11
   const [currCode, setCode] = useState("");
   const [currRegion, setRegion] = useState("");
   const [modalInfo, setModalInfo] = useState([]);
@@ -37,8 +46,31 @@ const Map = ({ isUS, showModal, setShowModal }) => {
   //   setSelectedRegions(prevRegions => prevRegions.filter(r => r !== region));
   // }
 
+// <<<<<<< Joseph
+  //filter
+  const [prevStateList, setPrevStateList] = useState([]);
+  const mapRef = useRef(null);
+  useEffect(() => {
+    const stateList = stateMap[filterOption];
+    if (stateList && mapRef.current) {
+      const stateToggles = {};
+      prevStateList.forEach((state) => {
+        stateToggles[state] = false;
+      });
+      stateList.forEach((state) => {
+        stateToggles[state] = true;
+      });
+      mapRef.current.setSelectedRegions(stateToggles);
+      setPrevStateList(stateList);
+    }
+  }, [filterOption]);
+  //end filter
+  
+//   const handlCloseModal = () => {
+// =======
   const handleCloseModal = () => {
     setCode("")
+// >>>>>>> snapshot3-11
     setShowModal(false);
     setModalInfo([]);
     if (comparing) {
@@ -100,11 +132,22 @@ const Map = ({ isUS, showModal, setShowModal }) => {
             height: window.innerHeight * 0.8,
           }}
           regionsSelectable={true} // Enable region selection
-          regionsSelectableOne={!comparing}
+// <<<<<<< Joseph
+          regionsSelectableOne={true}
+          // onRegionSelected={handleRegionSelected}
+          // new allows modal to only pop up when a region is selected
           onRegionClick={handleRegionSelected}
           regionStyle={regionStyles}
           backgroundColor="transparent"
-          selectedRegions={currCode}
+          //filter
+          mapRef={mapRef}
+// =======
+//           regionsSelectableOne={!comparing}
+//           onRegionClick={handleRegionSelected}
+//           regionStyle={regionStyles}
+//           backgroundColor="transparent"
+//           selectedRegions={currCode}
+// >>>>>>> snapshot3-11
         />
       </div>
     </React.Fragment>
