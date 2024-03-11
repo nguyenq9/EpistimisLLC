@@ -4,7 +4,11 @@ import Filter from '../Filter/Filter';
 import MapToggle from '../MapToggle/MapToggle';
 import MUIToggle from '../MapToggle/MUIToggle';
 
-const MapController = ({isUS, handleSetIsUS }) => {
+const MapController = ({isUS, handleSetIsUS, showModal }) => {
+    if (showModal) {
+        return null;
+    }
+    
     return (
         <React.Fragment>
             {/* <MUIToggle/> */}
