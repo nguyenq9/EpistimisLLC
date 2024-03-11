@@ -1,0 +1,204 @@
+{
+    "jurisdiction": "Tennessee",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Tennessee Information Privacy Act (TIPA)",
+            "description": "The TIPA was signed into law in May 2023, giving businesses just over two years to prepare for the new privacy bill. The Tennessee privacy law takes effect July 1, 2025.",
+            "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0408.pdf",
+            "billStatus": "Signed",
+            "inEffect" : "July 1, 2025",
+            "applicability": [ 
+                {
+                    "roles": ["Controller", "Processor", "Third Party"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Religious beliefs", 
+                                               "Mental or physical health diagnosis", 
+                                               "Sexual orientation", 
+                                               "Citizenship or immigration status", 
+                                               "Personal information collected from a known child", 
+                                               "Precise geolocation data"],
+                    "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 47-18-3203.a.2.A"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 47-18-3203.a.2.A"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 47-18-3203.a.2.B"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 47-18-3203.a.2.C"]
+                },
+                {
+                    "name": "Right to Portability",
+                    "reference": ["Section 47-18-3203.a.2.D"]
+                },
+                {
+                    "name": "Right to Opt Out of targeted advertising, sale of personal data, profiling, automated decision making",
+                    "reference": ["Section 47-18-3203.a.2.E"]
+                },
+                {
+                    "name": "Right to Non-Discrimination",
+                    "reference": ["Section 47-18-3204.a"]
+                },
+                {
+                    "name": "Right to Opt-in for processing of sensitive data",
+                    "reference": ["Section 47-18-3204.d"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller is required to provide a privacy notice that is easily accessible, clear, and meaningful to consumers. This notice should include: (1) the types of personal information that the controller processes, (2) the reasons for processing this personal information, (3) instructions on how consumers can exercise their rights under the law, including the process for appealing a decision made by the controller, (4) details about any categories of personal information that the controller sells to third parties, and (5) information about the categories of third parties to whom the controller sells personal information. This comprehensive notice aims to inform consumers about how their personal information is handled and shared by the controller.",
+                        "reference": "Section 47-18-3204.c"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Must not process personal data for purposes beyond what is reasonably necessary to achieve the objectives for the processing, as disclosed to the consumer, unless you obtain consumer consent.",
+                        "reference": "Section 47-18-3204.a"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices, as described in§ 47-18-3213, to protect the confidentiality, integrity, and accessibility of personal information. The data security practices must be appropriate to the volume and nature of the personal information at issue",
+                        "reference": "Section 47-18-3204"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": " Processors must follow the instructions of the controller and aid them in meeting their duties under the law. This assistance includes implementing appropriate technical and organizational measures to help the controller respond to consumer rights requests effectively and providing necessary information for data protection assessments. Additionally, contracts between controllers and processors must specify data processing procedures, including instructions for processing data, the duration, and the rights and obligations of both parties. Processors must ensure confidentiality, delete or return personal information as directed by the controller, and cooperate with assessments.",
+                        "reference": "Section 47-18-3205"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "Controllers must conduct and properly document data protection assessments for specific processing activities involving personal information.",
+                        "reference": "Section 4 7-18-3206"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "The sale of personal information excludes the disclosure or transfer of personal information as part of specific business transactions like mergers, acquisitions, or bankruptcies where control of the controller's assets is assumed by a third party.",
+                        "reference": "Section 47-18-3201.25"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Local Government",
+                            "description": "Political subdivisions of the state, as well as bodies, authorities, boards, bureaus, commissions, districts, or other agencies of the state"
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "Non-Profit organizations are exempted"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "Patient identifying information",
+                            "description": "Patient identifying information for purposes of 42 U.S.C. § 290dd-2"
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": ["This act supersedes and preempts any conflicting provisions of any public or private act and laws, ordinances, resolutions, regulations, or the equivalent adopted by a home rule municipality, county, including a metropolitan government, or city regarding the processing of personal data by controllers or processors"]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["The Attorney General"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "A court may impose a civil penalty of up to seven thousand five hundred dollars ($7,500) for each violation of this part. If the court finds the controller or processor willfully or knowingly violated this part, then the court may, in its discretion, award treble damages"],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["If a business violates the TIPA, customers are not permitted to file a class action lawsuit or take a private right of action against it."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Revenue",
+                    "description": "Exceed $25,000,000 in revenue AND must satisfies at least one of the other thresholds"
+                },
+                {
+                    "type": "Processing and Revenue percentile",
+                    "description": "Control or process personal information of at least 25,000 consumers and derive more than 50% of gross revenue from the sale of personal information"
+                },
+                {
+                    "type": "Annual processing",
+                    "description": "Control or process personal information of at least 175,000 consumers"
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Tennessee",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "TN Code § 47-18-2107, Release of Personal Consumer Information",
+                    "type": "Minor",
+                    "description": "Outlines regulations regarding the release of personal consumer information, particularly in the event of a breach of system security.",
+                    "reference": "https://law.justia.com/codes/tennessee/2021/title-47/chapter-18/part-21/section-47-18-2107/#:~:text=The%20disclosure%20must%20be%20made,provided%20in%20subsection%20(d)."
+                },
+                {
+                    "lawName": "Genetic Information Privacy Act",
+                    "type": "Minor",
+                    "description": "The Genetic Information Privacy Act aims to establish robust privacy safeguards to ensure that consumers' genetic information is handled responsibly and ethically by direct-to-consumer genetic testing companies operating in Tennessee.",
+                    "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0324.pdf"
+                }
+            ]
+        }
+    ]
+}

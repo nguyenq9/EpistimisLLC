@@ -1,0 +1,30 @@
+{
+    "jurisdiction": "Georgia",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Personal Identity Protection Act (PIPA)",
+            "type": "Minor",
+            "description": "The Personal Identity Protection Act aims to enhance the protection of personal information and provide guidelines for data collectors and individuals in the event of a security breach.",
+            "reference": "https://www.legis.ga.gov/api/legislation/document/20072008/75800"
+        },
+        {
+            "lawName": "Student Data Privacy, Accessibility, and Transparency Act (SDPAT)",
+            "type": "Minor",
+            "description": "The Student Data Privacy, Accessibility, and Transparency Act (SDPAT) is essential for educational institutions to adhere to applicable federal and state laws, as well as to implement robust policies and practices to protect the confidentiality and security of student data.",
+            "reference": "https://www.legis.ga.gov/api/legislation/document/20152016/153829"
+        },
+        {
+            "lawName": "Georgia Open Records Act",
+            "type": "Minor",
+            "description": "This Act makes all public records available to the public and can be copied by any person.",
+            "reference": "https://sos.ga.gov/sites/default/files/2022-03/GA_-_Official_Code_of_Georgia_Annotated.pdf"
+        },
+        {
+            "lawName": "Georgia Data Privacy Act (House Bill 798)",
+            "type": "Inactive",
+            "description": "The House Bill was introduced March 23, 2023 but it died after the second hearing. The bill aimed to establish provisions related to selling and other trade practices, so as to prohibit a manufacturer of consumer electronic devices from allowing consumers to opt out of certain data collection",
+            "reference": "https://www.legis.ga.gov/legislation/65484"
+        }
+    ]
+}

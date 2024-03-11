@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "North Dakota",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Notice of Security Breach for Personal Information",
+            "type": "Minor",
+            "description": "The Notice of Security Breach for Personal Information legislation in North Dakota is a legal statute concerning the notification of security breaches involving personal information.",
+            "reference": "https://ndlegis.gov/cencode/t51c30.pdf?20130808054158"
+        },
+        {
+            "lawName": "Legislative Management Study of Consumer Personal Data Disclosures",
+            "type": "Minor",
+            "description": "This bill proposes conducting a legislative management study during the 2019-20 interim period to examine protections, enforcement, and remedies concerning the disclosure of consumers' personal data.",
+            "reference": "https://ndlegis.gov/assembly/66-2019/documents/19-0780-04000.pdf"
+        }
+    ]
+}

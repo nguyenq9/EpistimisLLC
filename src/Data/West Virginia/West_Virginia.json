@@ -1,0 +1,48 @@
+{
+    "jurisdiction": "West Virginia",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "House Bill 3453",
+            "type": "Introduced",
+            "description": "Introduced on February 14, 2023, and it has been passed to the House Technology and Infrastructure Committee. This bill would create a private right of action and give consumers rights over the privacy of their data.",
+            "reference": "https://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=3453&year=2023&sessiontype=RS&btype=bill"
+        },
+        {
+            "lawName": "House Bill 3498",
+            "type": "Introduced",
+            "description": "Introduced on February 14, 2023, and it has been passed to the House Finance Committee. This bill aims to establish a framework for controlling and processing personal data in the State.",
+            "reference": "https://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=3498&year=2023&sessiontype=RS&btype=bill"
+        },
+        {
+            "lawName": "Article 2A, Breach of Security of Consumer Information",
+            "type": "Minor",
+            "description": "The purpose of this article is to ensure transparency and accountability in the event of a breach of security involving consumer information, thereby safeguarding the interests and privacy of consumers in West Virginia.",
+            "reference": "https://code.wvlegislature.gov/46A-2A/"
+        },
+        {
+            "lawName": "West Virginia Health Care Records Law",
+            "type": "Minor",
+            "description": "The Health Care Records Law was out in place to protect the privacy and security of individuals' health care records.",
+            "reference": "https://code.wvlegislature.gov/16-29/"
+        },
+        {
+            "lawName": "Article 5H, Employee Personal Social Media",
+            "type": "Minor",
+            "description": "This article pertains to employer access to employee or potential employee personal accounts and outlines certain prohibitions and exceptions.",
+            "reference": "https://code.wvlegislature.gov/21-5H/"
+        },
+        {
+            "lawName": "Electronic Mail Protection Act",
+            "type": "Minor",
+            "description": "The Electronic Mail Protection Act addresses violations and the right of action for injunction and damages regarding unauthorized bulk electronic mail messages.",
+            "reference": "https://code.wvlegislature.gov/46A-6G-5/"
+        },
+        {
+            "lawName": "Student Data Accessibility, Transparency and Accountability Act",
+            "type": "Minor",
+            "description": "This act focuses on ensuring transparency and accountability regarding student data accessibility.",
+            "reference": "https://code.wvlegislature.gov/18-2-5h/"
+        }
+    ]
+}

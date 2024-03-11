@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "North Carolina",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "North Carolina Consumer Privacy Act (Senate Bill 525)",
+            "type": "Introduced",
+            "description": "Senate Bill 525 was introduced on April 3, 2023 and is currently in the Committee on rules and Operations of the Senate. Under this bill customers would be able to opt out of targeted advertising and the sale of their data, as well as have access to and the ability to delete the personal data that controllers have gathered.",
+            "reference": "https://www.ncleg.gov/BillLookUp/2023/s525"
+        },
+        {
+            "lawName": "Article 2A, Identity Theft Protection Act (ITPA)",
+            "type": "Minor",
+            "description": "This article aims to enhance the security of personal information, reduce the risk of identity theft, and ensure that individuals are promptly informed in the event of a data breach affecting their personal data.",
+            "reference": "https://www.ncleg.net/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_75/Article_2A.html"
+        }
+    ]
+}

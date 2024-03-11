@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Oklahoma",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Oklahoma Computer Data Privacy Act",
+            "type": "Inactive",
+            "description": "The Oklahoma Computer Data Privacy Act or House Bill 1030 was introduced Feburary 2023 but became inactive after the second hearing and its referral to the Rules Committee in March of 2023",
+            "reference": "http://www.oklegislature.gov/BillInfo.aspx?Bill=HB1030"
+        },
+        {
+            "lawName": "Security Breach Notification Act",
+            "type": "Minor",
+            "description": "The Security Breach Notification Act in Oklahoma mandates certain requirements for entities that maintain personal information of residents in their databases.",
+            "reference": "https://oklahoma.gov/content/dam/ok/en/orec/documents/archive/Security%20Breach%20Notification%20Act.pdf"
+        }
+    ]
+}

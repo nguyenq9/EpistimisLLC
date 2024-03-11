@@ -1,0 +1,30 @@
+{
+    "jurisdiction": "Nebraska",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Personal Privacy Protection Act",
+            "type": "Introduced",
+            "description": "This bill introduced in January of 2023, aims to enhance privacy protections by restricting public agencies' ability to collect, use, and disclose personal information, while also providing certain exemptions and exceptions for specific circumstances.",
+            "reference": "https://nebraskalegislature.gov/FloorDocs/108/PDF/Intro/LB297.pdf"
+        },
+        {
+            "lawName": "Financial Data Protection & Consumer Notification of Data Security Breach Act",
+            "type": "Minor",
+            "description": "The Act establishes a framework for addressing data breaches, ensuring timely notification to affected parties, and enforcing measures to protect personal information.",
+            "reference": "https://www.dataguidance.com/sites/default/files/87-801_to_87-808_financial_data_protection.pdf"
+        },
+        {
+            "lawName": "The Mental Health Practice Act",
+            "type": "Minor",
+            "description": "This Act prohibits mental health practitioners from releasing information about their patients unless they have obtained consent or are required by law.",
+            "reference": "https://nebraskalegislature.gov/laws/statutes.php?statute=38-2101"
+        },
+        {
+            "lawName": "The Workplace Privacy Act",
+            "type": "Minor",
+            "description": "The Workplace Privacy Act in Nebraska regulates the relationship between employers and employees regarding personal Internet account privacy.",
+            "reference": "https://nebraskalegislature.gov/laws/display_html.php?begin_section=48-3501&end_section=48-3511"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Kansas",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Protection of Consumer Information Act",
+            "type": "Minor",
+            "description": "The Kansas Protection of Consumer Information Act outlines regulations concerning consumer information security breaches.",
+            "reference": "https://www.kslegislature.org/li_2022/b2021_22/statute/050_000_0000_chapter/050_007a_0000_article/"
+        },
+        {
+            "lawName": "Kansas Consumer Protection Act",
+            "type": "Minor",
+            "description": "The Kansas Consumer Protection Act aims to create a fair and transparent marketplace where consumers are empowered to make informed decisions and are protected from unfair or deceptive practices by suppliers.",
+            "reference": "https://www.kslegislature.org/li_2022/b2021_22/statute/050_000_0000_chapter/050_006_0000_article/050_006_0023_section/050_006_0023_k/"
+        }
+    ]
+}

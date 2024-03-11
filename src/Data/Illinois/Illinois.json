@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "Illinois",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Chapter 815, Personal Information Protection Act",
+            "type": "Minor",
+            "description": "The Personal Information Protection Act aims to safeguard personal information and enforce accountability for its protection.",
+            "reference": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2702&ChapterID=67"
+        },
+        {
+            "lawName": "Chapter 740, Biometric Information Privacy Act",
+            "type": "Minor",
+            "description": "The Biometric Information Privacy Act establishes regulations concerning the collection, use, safeguarding, handling, storage, retention, and destruction of biometric identifiers and biometric information.",
+            "reference": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57"
+        },
+        {
+            "lawName": "House Bill 3385",
+            "type": "Inactive",
+            "description": "This bill was introduced on February 17, 2023, and was sent to the House Rules Committee in March before all progress has been halted. This bill, titled the Illinois Data Privacy and Protection Act, aimed to establish comprehensive regulations for the collection, processing, and transfer of covered data by covered entities, with an emphasis on necessity, proportionality, transparency, individual rights, data security, and enforcement mechanisms.",
+            "reference": "https://ilga.gov/legislation/BillStatus.asp?GA=103&SessionID=112&DocTypeID=HB&DocNum=3385#actions"
+        }
+    ]
+}

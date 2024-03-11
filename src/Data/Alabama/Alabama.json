@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "Alabama",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Alabama Data Breach Notification Act of 2018",
+            "type": "Minor",
+            "description": "The Alabama Data Breach Notification Act of 2018 is a legislative measure aimed at protecting the personal information of Alabama residents and establishing procedures for notifying individuals and appropriate authorities in the event of a data breach",
+            "reference": "https://www.legislature.state.al.us/legacy/CodeOfAlabama/1975/174919.htm"
+        },
+        {
+            "lawName": "Alabama Insurance Data Security Law",
+            "type": "Minor",
+            "description": "The development, implementation, and maintenance of an information security program about the extent of its operations and the sensitivity of the non-public information under its ownership, custody, or control are requirements for covered entities licensed by the Alabama Department of Insurance.",
+            "reference": "https://www.aldoi.gov/pdf/legal/Bulletin%202019-05.pdf"
+        },
+        {
+            "lawName": "Alabama Right of Publicity Act",
+            "type": "Minor",
+            "description": "The Alabama Right of Publicity Act aims to protect individuals' interests in controlling the commercial exploitation of their identity and provides legal recourse for unauthorized use by third parties.",
+            "reference": "https://www.legislature.state.al.us/legacy/CodeOfAlabama/1975/123825.htm"
+        }
+    ]
+}

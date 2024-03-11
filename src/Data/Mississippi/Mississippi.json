@@ -1,0 +1,30 @@
+{
+    "jurisdiction": "Mississippi",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Senate Bill 2080",
+            "type": "Inactive",
+            "description": "Senate Bill 2080 also known as Mississippi Consumer Data Privacy Act was introduced in January 2023 but then was discontinued in the committee after being introduced",
+            "reference": "https://billstatus.ls.state.ms.us/documents/2023/html/SB/2001-2099/SB2080IN.htm"
+        },
+        {
+            "lawName": "Section 97-45-33, Online impersonation",
+            "type": "Minor",
+            "description": "Any person who knowingly and without consent impersonates another actual person through or on an Internet website or by other electronic means for purposes of harming, intimidating, threatening or defrauding another person is guilty of a misdemeanor.",
+            "reference": "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=c90d8596-b3e6-4f10-a100-24e0f7899ac9&nodeid=ABYAAZAAT&nodepath=%2fROOT%2fABY%2fABYAAZ%2fABYAAZAAT&level=3&haschildren=&populated=false&title=%c2%a7+97-45-33.+Online+impersonation%3b+penalties.&indicator=true&config=00JABhZDIzMTViZS04NjcxLTQ1MDItOTllOS03MDg0ZTQxYzU4ZTQKAFBvZENhdGFsb2f8inKxYiqNVSihJeNKRlUp&pddocfullpath=%2fshared%2fdocument%2fstatutes-legislation%2furn%3acontentItem%3a8P6B-8B52-8T6X-745N-00008-00&ecomp=7gf5kkk&prid=db0c891d-9ac5-4221-aaa0-7d6de102d59a"
+        },
+        {
+            "lawName": "Section 97-45-5, Offense against computer users",
+            "type": "Minor",
+            "description": "This section outlines various offenses against computer users and the corresponding penalties based on the extent of damage or loss caused by the offense",
+            "reference": "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=93fd196c-b26d-40e7-8390-28bd7a136ea1&nodeid=ABYAAZAAF&nodepath=%2FROOT%2FABY%2FABYAAZ%2FABYAAZAAF&level=3&haschildren=&populated=false&title=%C2%A7+97-45-5.+Offense+against+computer+users%3B+penalties.&indicator=true&config=00JABhZDIzMTViZS04NjcxLTQ1MDItOTllOS03MDg0ZTQxYzU4ZTQKAFBvZENhdGFsb2f8inKxYiqNVSihJeNKRlUp&pddocfullpath=%2Fshared%2Fdocument%2Fstatutes-legislation%2Furn%3AcontentItem%3A8P6B-8B52-8T6X-7455-00008-00&ecomp=7gf5kkk&prid=074880c6-29ed-4559-85b3-16f22b8f67f9"
+        },
+        {
+            "lawName": "Section 75-24-29, Notice of a breach of security",
+            "type": "Minor",
+            "description": "This section outlines the requirements for businesses operating in Mississippi regarding the notification of breaches of security involving personal information",
+            "reference": "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=6d3b2be5-1ab7-49d2-891c-066e4ff37803&nodeid=ABNAAWAABAAS&nodepath=%2FROOT%2FABN%2FABNAAW%2FABNAAWAAB%2FABNAAWAABAAS&level=4&haschildren=&populated=false&title=%C2%A7+75-24-29.+Persons+conducting+business+in+Mississippi+required+to+provide+notice+of+a+breach+of+security+involving+personal+information+to+all+affected+individuals%3B+enforcement.&indicator=true&config=00JABhZDIzMTViZS04NjcxLTQ1MDItOTllOS03MDg0ZTQxYzU4ZTQKAFBvZENhdGFsb2f8inKxYiqNVSihJeNKRlUp&pddocfullpath=%2Fshared%2Fdocument%2Fstatutes-legislation%2Furn%3AcontentItem%3A627R-MSW3-GXJ9-31CB-00008-00&ecomp=7gf5kkk&prid=ec45c4f9-4ddb-4c43-b8fa-aeb1ef4f7c6c"
+        }
+    ]
+}

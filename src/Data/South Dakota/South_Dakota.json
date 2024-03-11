@@ -1,0 +1,12 @@
+{
+    "jurisdiction": "South Dakota",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "South Dakota Codified Laws, Chapter 40, Title 22",
+            "type": "Minor",
+            "description": "This title includes a law that requires disclosure of breaches of system security that compromise personal or protected information to affected individuals and the attorney general. It provides provisions for notification methods and exceptions.",
+            "reference": "https://sdlegislature.gov/Statutes/22-40"
+        }
+    ]
+}

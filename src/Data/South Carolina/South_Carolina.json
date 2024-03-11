@@ -1,0 +1,30 @@
+{
+    "jurisdiction": "South Carolina",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Personal Financial Security Act",
+            "type": "Minor",
+            "description": "Makes using personal information to commit financial identity fraud or theft illegal and lays out the precise criminal offenses.",
+            "reference": "https://www.scstatehouse.gov/code/t16c013.php"
+        },
+        {
+            "lawName": "South Carolina Freedom of Information Act",
+            "type": "Minor",
+            "description": "A state law that provides the public with the right to access government records and meetings",
+            "reference": "https://www.scstatehouse.gov/code/t30c004.php"
+        },
+        {
+            "lawName": "Insurance Data Security Act",
+            "type": "Minor",
+            "description": "Mandates that all covered entities keep up security protocols and set up procedures for data breach investigation and notification.",
+            "reference": "https://www.scstatehouse.gov/code/t38c099.php"
+        },
+        {
+            "lawName": "Physicians' Patient Records Act",
+            "type": "Minor",
+            "description": "Outlines regulations regarding the handling, ownership, and release of medical records by physicians.",
+            "reference": "https://www.scstatehouse.gov/code/t44c115.php"
+        }
+    ]
+}

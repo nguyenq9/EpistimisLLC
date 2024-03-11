@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Nevada",
+    "filterCategories": ["", ""],
+    "otherPrivacyLaws": [
+        {
+            "lawName": "Senate Bill 260",
+            "type": "Minor",
+            "description": "This bill pertains to internet privacy and aims to exempt certain individuals and information collected about consumers in Nevada from certain requirements imposed on operators, data brokers, and covered information.",
+            "reference": "https://www.leg.state.nv.us/App/NELIS/REL/81st2021/Bill/7805/Text"
+        },
+        {
+            "lawName": "Chapter 603A, Security and Privacy of Personal Information",
+            "type": "Minor",
+            "description": "This chapter  aims to protect individuals' personal information by imposing security obligations on data collectors and requiring prompt notification of data breaches to affected individuals, ensuring transparency and accountability in handling personal data.",
+            "reference": "https://www.leg.state.nv.us/NRS/NRS-603A.html#NRS603ASec300"
+        }
+    ]
+}

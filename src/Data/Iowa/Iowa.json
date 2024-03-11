@@ -1,0 +1,183 @@
+{
+    "jurisdiction": "Iowa",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Iowa Consumer Data Protection Act (Iowa CDPA)",
+            "description": "On March 29, Iowa became the sixth state to enact a comprehensive privacy law. The law, which will take effect on January 1, 2025, would give organizations 21 months to meet the new standards set by this state.",
+            "reference": "https://www.legis.iowa.gov/docs/publications/LGE/90/SF262.pdf",
+            "billStatus": "Signed",
+            "inEffect" : "January 1, 2025",
+            "applicability": [ 
+                {
+                    "roles": ["Controller", "Processor", "Third Party"],
+                    "personalDataCategories": ["Racial and ethnic origin", 
+                                               "Religious beliefs", 
+                                               "Mental or physical health diagnosis", 
+                                               "Sexual orientation", 
+                                               "Citizenship and immigration status", 
+                                               "Genetic or Biometric data", 
+                                               "Personal data of a known child", 
+                                               "Precise geolocation data"],
+                    "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 715D.3.a"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 715D.3.a"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 715D.3.b"]
+                },
+                {
+                    "name": "Right to Portability",
+                    "reference": ["Section 715D.3.c"]
+                },
+                {
+                    "name": "Right to Opt Out sale of personal data",
+                    "reference": ["Section 715D.3.d"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 715D.3"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller shall not process sensitive data collected from a consumer for a nonexempt purpose without the consumer having been presented with clear notice",
+                        "reference": "Section 715D.4"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Personal data processed by a controller Adequate, relevant, and limited to what is necessary in relation to the specific purposes listed in this section",
+                        "reference": "Section 715D.7"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall adopt and implement reasonable administrative, technical, and physical data security practices to protect the confidentiality, integrity, and accessibility of personal data. Such data security practices shall be appropriate to the volume and nature of the personal data at issue",
+                        "reference": "Section 715D.4"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Processors are required to assist controllers in fulfilling their obligations under the chapter by employing appropriate technical and organizational measures. Contracts between controllers and processors must govern data processing procedures and include instructions for processing personal data, the nature and purpose of processing, data subject types, duration of processing, and the rights and duties of both parties. ",
+                        "reference": "Section 715D.5"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "Controllers are obligated in relation to the security of processing the personal data and in relation to the notification of a breach of the security of the system",
+                        "reference": "Section 715C.2"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "The sale of persoanl data does not include the disclosure or transfer of personal data to an affiliate of the controller",
+                        "reference": "Section 715D.1"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Government entities",
+                            "description": "State, judicial department, or local government entities"
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "Non-Profit organizations are exempted"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": ["This chapter supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, municipality, or local agency regarding the processing of personal data by controllers or processors"]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["The Attorney General"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "The attorney general may initiate an action in the name of the state and may seek an injunction to restrain any violations of this chapter and civil penalties of up to 7,500 dollars for each violation under this chapter"],
+                "personalLiability": ["Nothing in this section shall be construed to relieve a controller or a processor from imposed liabilities by virtue of the controller or processor’s role in the processing relationship as defined by this chapter"],
+                "privateRightOfAction" : ["Nothing in this legislation shall be construed as providing the basis for, or being subject to, a private right of action for violations of this legislation or any other law."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Annual processing",
+                    "description": "Control or process personal data of 100,000 or more consumers."
+                },
+                {
+                    "type": "Annual revenue",
+                    "description": "The personal data of 25,000 or more consumers, while deriving 50% or more of the annual gross revenue from selling personal data"
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Iowa",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Personal Information Security Breach Protection",
+                    "type": "Minor",
+                    "description": "Chapter 715C of the Iowa Code, titled Personal Information Security Breach Protection, defines various terms related to personal information security breaches and outlines notification requirements and remedies in case of a breach.",
+                    "reference": "https://www.legis.iowa.gov/docs/code/715c.pdf"
+                }
+            ]
+        }
+    ]
+}

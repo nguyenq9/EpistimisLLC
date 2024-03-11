@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Louisiana",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Louisiana Consumer Privacy Act (Senate Bill 199)",
+            "type": "Introduced",
+            "description": "This bill was introduced on March 31, 2023 and it aims to develop relative protections of persoanl data of residents in Louisiana. The bill is currently in the Committee on Commerce, Consumer Protection, and International Affairs as of April 10, 2023",
+            "reference": "https://www.legis.la.gov/legis/BillInfo.aspx?s=23rs&b=SB199&sbi=y"
+        },
+        {
+            "lawName": "Data Security Breach Notification Act",
+            "type": "Minor",
+            "description": "This bill applies to anyone who owns data from Louisiana residents and requires them to notify individuals if their information is accessed without authorization.",
+            "reference": "https://legis.la.gov/legis/Law.aspx?p=y&d=322027"
+        }
+    ]
+}

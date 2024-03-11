@@ -1,0 +1,36 @@
+{
+    "jurisdiction": "Kentucky",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Section 365.732 of Kentucky's Revised Statutes",
+            "type": "Minor",
+            "description": "This section pertains to the notification of affected persons in the event of a computer security breach involving their unencrypted personally identifiable information.",
+            "reference": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43326"
+        },
+        {
+            "lawName": "The Genetic Information Privacy Act",
+            "type": "Minor",
+            "description": "Regulates the collection, use, and disclosure of genetic data and to create a civil cause of action for violations of the prohibitions",
+            "reference": "https://apps.legislature.ky.gov/record/22rs/hb502.html"
+        },
+        {
+            "lawName": "The Insurance Data Security Act",
+            "type": "Minor",
+            "description": "The Insurance Data Security Act aims to establish comprehensive cybersecurity measures, provide clear guidelines for compliance, and ensure effective enforcement to protect sensitive data held by licensees.",
+            "reference": "https://apps.legislature.ky.gov/record/22rs/hb474.html"
+        },
+        {
+            "lawName": "House Bill 301",
+            "type": "Inactive",
+            "description": "This bill was introduced on February 15, 2023, but died in the House Small Business & Information Technology Committee on February 17, 2023. The bill proposes to establish comprehensive consumer rights pertaining to personal data, aiming to empower individuals with control over their digital information.",
+            "reference": "https://apps.legislature.ky.gov/record/23rs/hb301.html"
+        },
+        {
+            "lawName": "Senate Bill 15",
+            "type": "Inactive",
+            "description": "This bill was introduced on January 3, 2023, but died after being returned to the House Committee on Committees on March 16, 2023. The proposed bill, titled the Kentucky Consumer Protection Data Act, was designed to comprehensively regulate the collection and processing of personal data, aiming to establish clear definitions, applicability parameters, and robust consumer rights",
+            "reference": "https://apps.legislature.ky.gov/record/23rs/sb15.html"
+        }
+    ]
+}

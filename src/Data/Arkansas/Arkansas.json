@@ -1,0 +1,12 @@
+{
+    "jurisdiction": "Arkansas",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Arkansas Personal Information Protection Act",
+            "type": "Minor",
+            "description": "This bill introduces the Personal Information Protection Act, which aims to safeguard sensitive personal information of Arkansas residents and outlines procedures for disclosing security breaches",
+            "reference": "https://www.transform.ar.gov/wp-content/uploads/2020/05/Act1526.pdf"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Missouri",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "House Bill 667",
+            "type": "Introduced",
+            "description": "This bill was introduced in January 5, 2023 and it aims to ammend the Personal Prvacy Protection Act and limit the collection, use, and disclosure of personal information by public entities.",
+            "reference": "https://house.mo.gov/BillContent.aspx?bill=HB667&year=2023&code=R&style=new"
+        },
+        {
+            "lawName": "Notice to Consumer for Breach of Security",
+            "type": "Minor",
+            "description": "This legislation defines various terms related to data breaches and outlines notification procedures and enforcement measures.",
+            "reference": "https://revisor.mo.gov/main/OneSection.aspx?section=407.1500&bid=23329&hl="
+        }
+    ]
+}

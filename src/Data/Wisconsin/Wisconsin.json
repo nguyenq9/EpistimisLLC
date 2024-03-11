@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "Wisconsin",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Assembly Bill 466",
+            "type": "Introduced",
+            "description": "Introduced on October 5, 2023, this bill establishes requirements for controllers and processors of personal data and gives rights to Wisconsin residents. As of February 15, 2024, the bill was reported available for scheduling in the Senate.",
+            "reference": "https://docs.legis.wisconsin.gov/2023/proposals/ab466"
+        },
+        {
+            "lawName": "Section 134.98, Notice of unauthorized acquisition of personal information",
+            "type": "Minor",
+            "description": "This section aims to ensure that individuals are notified promptly if their personal information is compromised, while also providing certain exemptions and exceptions for regulated entities and law enforcement purposes.",
+            "reference": "https://docs.legis.wisconsin.gov/statutes/statutes/134/98"
+        },
+        {
+            "lawName": "Insurance Data Security",
+            "type": "Minor",
+            "description": "This legislation introduces regulations regarding insurance data security, establishing definitions, standards, and procedures for safeguarding nonpublic information and responding to cybersecurity events.",
+            "reference": "https://docs.legis.wisconsin.gov/2021/related/acts/73"
+        }
+    ]
+}

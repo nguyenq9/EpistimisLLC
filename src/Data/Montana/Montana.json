@@ -1,0 +1,201 @@
+{
+    "jurisdiction": "Montana",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Montana Consumer Data Privacy Act (MCDPA)",
+            "description": "string",
+            "reference": "https://leg.mt.gov/bills/2023/billpdf/SB0384.pdf",
+            "billStatus": "Signed",
+            "inEffect" : "October 1, 2024",
+            "applicability": [ 
+                {
+                    "roles": ["controller", "processor", "third party"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Religious beliefs", 
+                                               "Mental or physical health condition or diagnosis",
+                                               "Infomation about a person's sex life",
+                                               "Sexual orientation",
+                                               "Citizen or immigration status",
+                                               "Genetic or biometric data",
+                                               "Personal data of children",
+                                               "Geolocation data"
+                                            ],
+                    "processingPurposes": ["Collection", "Use", "Retention"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 5.1.a"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 5.1.a"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 5.1.b"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 5.1.c"]
+                },
+                {
+                    "name": "Right to Portability",
+                    "reference": ["Section 5.1.d"]
+                },
+                {
+                    "name": "Right to Opt out of processing personal data for specific purposes, including targeted advertising, sale of personal data, and automated decision-making",
+                    "reference": ["Section 5.1.e"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller shall provide consumers with a reasonably accessible, clear, and meaningful privacy notice that includes: (a) the categories of personal data processed by the controller, (b) the purpose for processing personal data, (c) the categories of personal data that the controller shares with third parties, if any, (d) the categories of third parties, if any, with which the controller shares personal data; and (e) an active e-mail address or other mechanism that the consumer may use to contact the controller; and (f) how consumers may exercise their consumer rights, including how a consumer may appeal a controller's decision regarding the consumer's request",
+                        "reference": "Section 7.5"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Personal data processed by a controller pursuant to this section may be processed to the extent that the processing is: reasonably necessary and proportionate to the purposes listed in this section; and adequate, relevant, and limited to what is necessary in relation to the specific purposes listed in this section. The controller or processor must, when applicable, consider the nature and purpose of the collection, use, or retention of the personal data collected, used, or retained pursuant to subsection",
+                        "reference": "Section 11.6"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": " A controller shall: limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the purposes for which the personal data is processed, as disclosed to the consumer",
+                        "reference": "Section 7.1.a"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall: establish, implement, and maintain reasonable administrative, technical, and physical data security practices to protect the confidentiality, integrity, and accessibility of personal data appropriate to the volume and nature of the personal data at issue",
+                        "reference": "Section 7.1.b"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Data processors must follow the instructions of the data controller and assist the controller in fulfilling their obligations regarding consumer rights requests, security of processing, breach notifications, and data protection assessments. Contracts between data controllers and processors must clearly outline the data processing procedures, including instructions for processing data, confidentiality obligations, data deletion or return, compliance reporting, subcontractor engagement, and cooperation with assessments.",
+                        "reference": "Section 8"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "Implied but Not Specified",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "A controller shall conduct and document a data protection assessment for each of the controller's processing activities that presents a heightened risk of harm to a consumer.",
+                        "reference": "Section 9"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "Processors must assist controllers in meeting their obligations regarding the notification of a breach of security",
+                        "reference": "Section 8.1.b"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Local Government",
+                            "description": "Body, authority, board, bureau, commission, district, or agency of this state or any political subdivision of this state"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "nonprofit organization"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "National Securities Association",
+                            "description": "National securities association that is registered under the Securities Exchange Act of 1934"
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": ["Certain provisions of the legislation regarding personal data may not apply if they conflict with or are preempted by the Airline Deregulation Act."]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["Not Specified"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "The legislation does not specify amount or limit regarding penalities."],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["Consumers have no private right of action"]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Annual processing",
+                    "description": "Control or process the personal data of not less than 50,000 consumers, excluding personal data controlled or processed solely for the purpose of completing a payment transaction"
+                },
+                {
+                    "type": "Gross annual revenue",
+                    "description": "Control or process the personal data of not less than 25,000 consumers and derive more than 25% of gross revenue from the sale of personal dat"
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Montana",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Montana Pupil Online Personal Information Protection Act",
+                    "type": "Minor",
+                    "description": "The Montana Pupil Online Personal Information Protection Act with detailed provisions aims at safeguarding pupil online privacy in K-12 educational settings.",
+                    "reference": "https://leg.mt.gov/bills/2019/billpdf/HB0745.pdf"
+                },
+                {
+                    "lawName": "Montana TikTok Ban Act",
+                    "type": "Minor",
+                    "description": "The Montana TikTok Ban Act prohibits the operation of TikTok within the territorial jurisdiction of Montana.",
+                    "reference": "https://leg.mt.gov/bills/2023/billpdf/SB0419.pdf"
+                },
+                {
+                    "lawName": "Montana Code Annotated, Computer Security Breach",
+                    "type": "Minor",
+                    "description": "The Computer Security Breach section outlines regulations regarding the disclosure of computer security breaches that involve personal information. ",
+                    "reference": "https://leg.mt.gov/bills/mca/title_0300/chapter_0140/part_0170/section_0040/0300-0140-0170-0040.html"
+                }
+            ]
+        }
+    ]
+}

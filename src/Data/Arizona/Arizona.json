@@ -1,0 +1,12 @@
+{
+    "jurisdiction": "Arizona",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Title 18 - Information Technology, Chapter 4",
+            "type": "Minor",
+            "description": "This chapter outlines regulations data security breaches and security breach notification requirements in the state of Arizona.",
+            "reference": ""
+        }
+    ]
+}

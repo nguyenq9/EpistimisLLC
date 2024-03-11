@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "New Mexico",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "New Mexico’s Privacy Protection Act (PPA)",
+            "type": "Minor",
+            "description": " The PPA is designed to enhance privacy protections for individuals by imposing certain requirements on businesses that collect, use, and disclose personal information. It incorporates various principles and provisions typically found in privacy laws to safeguard individuals' privacy rights.",
+            "reference": "https://nmonesource.com/nmos/nmsa/en/item/4423/index.do#!fragment//BQCwhgziBcwMYgK4DsDWszIQewE4BUBTADwBdoByCgSgBpltTCIBFRQ3AT0otokLC4EbDtyp8BQkAGU8pAELcASgFEAMioBqAQQByAYRW1SYAEbRS2ONWpA"
+        },
+        {
+            "lawName": "Data Breach Notification Act",
+            "type": "Minor",
+            "description": "New Mexico's Data Breach Notification Act definitions personal information and outlines notification requirements following a data breach.",
+            "reference": "https://nmonesource.com/nmos/nmsa/en/item/4423/index.do#!fragment//BQCwhgziBcwMYgK4DsDWszIQewE4BUBTADwBdoByCgSgBpltTCIBFRQ3AT0otojlzYANkIDCSNNACEyPoTC4EbDtypyFCAMp5SAIW4AlAKIAZIwDUAggDlRR2qTAAjaKWxxq1IA"
+        },
+        {
+            "lawName": "Article 6, Health and Hospital Records",
+            "type": "Minor",
+            "description": "New Mexico's Article 6, Health and Hospital Records addresses the confidentiality of health information in New Mexico.",
+            "reference": "https://nmonesource.com/nmos/nmsa/en/item/4383/index.do#!fragment/undefined/BQCwhgziBcwMYgK4DsDWsBGB7LqC2YATqgJIAm0A5AIwAsAtAGz3WUCUANMlgC4CmEAIqI+hAJ5VKHCHyIJhoiZSky5IAMpZCPAEISASgFEAMoYBqAQQByAYUMceYDNB5Y4bNkA"
+        }
+    ]
+}

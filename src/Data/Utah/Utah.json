@@ -1,0 +1,219 @@
+{
+    "jurisdiction": "Utah",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Utah Consumer Privacy Act (UCPA)",
+            "description": "The Utah Consumer Privacy Act is a legislative measure designed to protect the privacy rights of individuals within the state of Utah. It establishes clear definitions for terms related to personal data and grants consumers several important rights, including the ability to access and delete certain personal data held by businesses, as well as the right to opt out of data collection and usage for specific purposes.",
+            "reference": "https://le.utah.gov/~2022/bills/static/SB0227.html",
+            "billStatus": "In force",
+            "inEffect" : "December 31st, 2024",
+            "applicability": [ 
+                {
+                    "roles": ["controller", "processor", "business", "third party"],
+                    "personalDataCategories": ["Racial or ethnic origin",
+                                               "Religious beliefs",
+                                               "Sexual orientation",
+                                               "Citizen or immigration status",
+                                               "Medical history, mental or physical health condition, or medical treatment or diagnosis by a health care professional",
+                                               "Genetic data",
+                                               "Biometric data",
+                                               "Specific geolocation data"],
+                    "processingPurposes": [" A controller shall provide consumers with a reasonably accessible and clear privacy notice that includes: the purposes for which the categories of personal data are processed"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["13-61-201.1.a"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["13-61-201.1.b"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["13-61-201.2"]
+                },
+                {
+                    "name": "Right to Data Portability",
+                    "reference": ["13-61-201.3"]
+                },
+                {
+                    "name": "Right to Opt Out of Processing of Personal information for purposes of Target Advertising or Sale of Personal information",
+                    "reference": ["13-61-201.4"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "Controllers are required to offer consumers a privacy notice that is reasonably accessible and clear, containing specific information such as the categories of personal data processed, the purposes for processing, and instructions on how consumers can exercise their rights. Additionally, if a controller sells consumers' personal data to third parties or engages in targeted advertising, they must explicitly disclose to consumers how they can opt out of such practices.",
+                        "reference": "13-61-302.1"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "A violation of this chapter does not provide a basis for, nor is a violation of this chapter subject to, a private right of action under this chapter or any other law.",
+                        "reference": "13-61-305"
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "While it may not be explicitly labeled as 'data minimization,' the requirement for controllers to provide consumers with a clear privacy notice that includes the categories of personal data processed and the purposes for which these categories of personal data are processed implies a principle of data minimization.",
+                        "reference": "13-61-302.1"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices designed to: protect the confidentiality and integrity of personal data; and reduce reasonably foreseeable risks of harm to consumers relating to the processing of personal data.",
+                        "reference": "13-61-302.2"
+                    }
+                ],
+                "privacyByDesign": [  {
+                    "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices designed to: protect the confidentiality and integrity of personal data; and reduce reasonably foreseeable risks of harm to consumers relating to the processing of personal data.",
+                    "reference": "13-61-302.2"
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Processors are mandated to strictly adhere to the instructions provided by the controller regarding data processing activities. Additionally, processors are obligated to assist controllers in meeting their obligations, particularly those related to the security of processing personal data and the notification of any security breaches. Before engaging in any processing activities on behalf of a controller, processors and controllers must enter into a contract that clearly delineates instructions for data processing, the nature and purpose of the processing, data subject details, processing duration, and the rights and obligations of both parties. Furthermore, this contract must mandate that processors ensure confidentiality among personnel handling personal data and engage any subcontractors under written agreements that impose identical obligations regarding the protection of personal data.",
+                        "reference": "13-61-301"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "Not Specified but Implied",
+                        "reference": "string"
+                    }
+                ],
+                "riskImpact": [ {
+                    "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices designed to: protect the confidentiality and integrity of personal data; and reduce reasonably foreseeable risks of harm to consumers relating to the processing of personal data.",
+                    "reference": "13-61-302.2"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "A person who owns or licenses computerized data that includes personal information concerning a Utah resident shall, when the person becomes aware of a breach of system security, conduct in good faith a reasonable and prompt investigation to determine the likelihood that personal information has been or will be misused for identity theft or fraud purposes.",
+                        "reference": "13-44-202"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Tribes",
+                            "description": ""
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "nonprofit organization"
+                        },
+                        {
+                            "type": "Government organizations",
+                            "description": ""
+                        },
+                        {
+                            "type": "Air Carriers",
+                            "description": ""
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        },
+                        {
+                            "type": "Consumer reporting agencies",
+                            "description": "Activities subject to regulation under the federal Fair Credit Reporting Act, involving the collection, maintenance, disclosure, sale, communication, or use of personal data bearing on a consumer's credit worthiness, credit standing, credit capacity, character, reputation, personal characteristics, or mode of living."
+                        },
+                        {
+                            "type": "Third parties under contract with a government organization",
+                            "description": ""
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": ["Firstly, it states that the provisions within the chapter supersede and preempt any local ordinances, resolutions, rules, or regulations pertaining to the processing of personal data by controllers or processors enacted by local political subdivisions. Secondly, the section clarifies that any reference to federal law within the Utah Consumer Privacy Act also encompasses any rules or regulations issued under federal law."]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["Office of the Attorney General"],
+                "rulemakingAuthority": [""],
+                "finingAuthority": ["Office of the Attorney General"],
+                "penalties": [ "A maximum fine of $7,500 per violation"],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["A violation of this chapter does not provide a basis for, nor is a violation of this chapter subject to, a private right of action under this chapter or any other law."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Gross annual revenue",
+                    "description": "Gross annual revenue of over $25 million."
+                },
+                {
+                    "type": "Annual processing",
+                    "description": "Control or process personal data of 100,000 or more consumers."
+                },
+                {
+                    "type": "Annual revenue",
+                    "description": "Deriving 50% or more of their annual revenue from selling Utah residents’ personal information."
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Utah",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Electronic Information Privacy Act",
+                    "type": "Minor",
+                    "description": "The Electronic Information Privacy Act outlines definitions and regulations related to electronic information privacy, including the circumstances under which law enforcement agencies can obtain, use, copy, or disclose electronic information and the requirements for notification to the owner of the electronic device or electronic information.",
+                    "reference": "https://www.dataguidance.com/sites/default/files/c77-23c_2023050320230503.pdf"
+                },
+                {
+                    "lawName": "Genetic Testing Privacy Act",
+                    "type": "Minor",
+                    "description": "The Genetic Testing Privacy Act outlines regulations concerning genetic information privacy, particularly focusing on restrictions imposed on employers and health insurers. ",
+                    "reference": "https://www.dataguidance.com/sites/default/files/utah_genetic_testing.pdf"
+                },
+                {
+                    "lawName": "Genetic Information Privacy Act",
+                    "type": "Minor",
+                    "description": "The Genetic Information Privacy Act outlines regulations concerning genetic information privacy, focusing on limitations imposed on direct-to-consumer genetic testing companies, employers, and health insurers.",
+                    "reference": "https://le.utah.gov/xcode/Title13/Chapter60/C13-60_2021050520210505.pdf"
+                },
+                {
+                    "lawName": "Utah E-Commerce Integrity Act",
+                    "type": "Minor",
+                    "description": "The Utah E-Commerce Integrity Act outlines definitions and provisions related to computer crimes, particularly focusing on phishing, pharming, and spyware protection.",
+                    "reference": "https://le.utah.gov/xcode/Title13/Chapter40/C13-40_1800010118000101.pdf"
+                },
+                {
+                    "lawName": "Utah Protection of Personal Information Act",
+                    "type": "Minor",
+                    "description": "The Utah Protection of Personal Information Act outlines provisions related to the protection of personal information and enforcement measures under Utah law.",
+                    "reference": "https://le.utah.gov/xcode/Title13/Chapter44/C13-44_1800010118000101.pdf"
+                }
+            ]
+        }
+    ]
+}

@@ -76,8 +76,8 @@
                     }
                 ],
                 "lawfulBasis": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "purposeLimitation": [  {
@@ -149,7 +149,7 @@
                         }
                     ],             
                     "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : ["N/A"],
+                    "verticalCarveouts" : [""],
                     "preemption": ["This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers' personal information by a business. "]
                 }
             ],

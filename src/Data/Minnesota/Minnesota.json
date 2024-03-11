@@ -1,0 +1,66 @@
+{
+    "jurisdiction": "Minnesota",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Senate File 950",
+            "type": "Introduced",
+            "description": "Introduced in January of 2023, this bill would require the consumer's consent prior to collecting persoanl information. ",
+            "reference": "https://www.revisor.mn.gov/bills/bill.php?b=senate&f=SF950&ssn=0&y=2023"
+        },
+        {
+            "lawName": "Senate File 2915",
+            "type": "Introduced",
+            "description": "Also known as the Minnesota Consumer Data Privacy Act, this bill was introduced in March of 2023 and is currently in recess with the Senate Commerce and Consumer Protection Committee.",
+            "reference": "https://www.revisor.mn.gov/bills/bill.php?b=senate&f=SF2915&ssn=0&y=2023"
+        },
+        {
+            "lawName": "House File 1367",
+            "type": "Introduced",
+            "description": "The House File 1367 was introduced in Feburary 2023 and it would grant various rights to consumers regarding personal data, data transparency obligations placed on businesses, private right of action created, and enforcement by attorney general provided.",
+            "reference": "https://www.revisor.mn.gov/bills/bill.php?f=HF1367&y=2023&ssn=0&b=house#actions"
+        },
+        {
+            "lawName": "Chapter 325M Internet Privacy",
+            "type": "Minor",
+            "description": "This chapter in Minnesota's statues related to Consumer Protection, explains the conditions under which it is acceptable and necessary to disclose personal information on the Internet, as well as the guidelines for permissions and authorizations for Internet service providers (ISPs).",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/325M"
+        },
+        {
+            "lawName": "Chapter 325E, Section 61 Breach Notification Law",
+            "type": "Minor",
+            "description": "This section fo the chapter outlines the duties of the covered entity and the procedures for informing people if a breach exposes their personal information.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/325E.61"
+        },
+        {
+            "lawName": "Chapter 325E, Section 64 Plastic Card Security Act",
+            "type": "Minor",
+            "description": "This section fo the chapter explains the requirements for financial institutions to notify of breaches.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/325e.64"
+        },
+        {
+            "lawName": "Chapter 325E, Section 59 Use of Social Security Numbers",
+            "type": "Minor",
+            "description": "This section fo the chapter prohibits businesses from asking customers to share their social security numbers online if appropriate safeguards aren't in place.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/325E.59"
+        },
+        {
+            "lawName": "Chapter 626A, Section 02 Intersection and Disclosure of Communications",
+            "type": "Minor",
+            "description": "This section fo the chapter prohibits entities from using wire, electronic, or other methods to intercept specific types of communication.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/626A.02"
+        },
+        {
+            "lawName": "Chapter 609, Section 527 Identity Theft",
+            "type": "Minor",
+            "description": "This section fo the chapter outlines the consequences for transferring or using someone else's identity or data for illegal purposes.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/609.527"
+        },
+        {
+            "lawName": "Chapter 13, the Minnesota Government Data Practices Act (MGDPA)",
+            "type": "Minor",
+            "description": "This chapter outlines the requirements that must be met for government organizations to collect and use personal data.",
+            "reference": "https://www.revisor.mn.gov/statutes/cite/13"
+        }
+    ]
+}

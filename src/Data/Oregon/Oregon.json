@@ -144,7 +144,7 @@
                             "description": "Institutions of higher education are exempted"
                         },
                         {
-                            "type": "HIPPA",
+                            "type": "HIPAA",
                             "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
                         }
 

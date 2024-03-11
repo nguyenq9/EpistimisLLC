@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "Wyoming",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Wyoming Genetic Data Privacy Act",
+            "type": "Minor",
+            "description": "The Wyoming Genetic Data Privacy Act aims to regulate the collection, retention, and disclosure of genetic data to protect the privacy of individuals.",
+            "reference": "https://www.wyoleg.gov/2022/Introduced/HB0086.pdf"
+        },
+        {
+            "lawName": "Wyoming Consumer Protection Act",
+            "type": "Minor",
+            "description": "The Wyoming Consumer Protection Act aims to prevent businesses from taking unfair advantage of consumers in the state.",
+            "reference": "https://wyoleg.gov/statutes/compress/title40.pdf"
+        },
+        {
+            "lawName": "Wyoming Data Breach Notification Law",
+            "type": "Minor",
+            "description": "The Wyoming Data Breach Notification Law outlines regulations regarding credit freeze reports and security breaches of personal identifying information.",
+            "reference": "https://www.dataguidance.com/sites/default/files/wyoming_credit_freeze_reports_40-12-501_through_509.pdf"
+        }
+    ]
+}
