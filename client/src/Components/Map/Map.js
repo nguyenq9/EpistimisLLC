@@ -4,17 +4,14 @@ import { VectorMap } from "@react-jvectormap/core";
 import { usLcc } from "@react-jvectormap/unitedstates";
 import { worldMill } from "@react-jvectormap/world";
 import regionNames from "./regionNames.json";
-import { handleAPIcall } from "../../js/API";
+import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
 
 const Map = ({ isUS, showModal, setShowModal }) => {
   const [currCode, setCode] = useState("");
-  const [modalInfo, setModalInfo] = useState({});
+  const [modalInfo, setModalInfo] = useState([]);
   const [comparing, setComparing] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState([]);
-
-
-
 
   // Function to add a region
   const addRegion = (region) => {
@@ -30,7 +27,7 @@ const Map = ({ isUS, showModal, setShowModal }) => {
   const handleCloseModal = () => {
     setCode("")
     setShowModal(false);
-    setModalInfo({});
+    setModalInfo([]);
     if (comparing) {
       setComparing(false);
       setSelectedRegions([])
@@ -54,13 +51,14 @@ const Map = ({ isUS, showModal, setShowModal }) => {
 
 
   const handleRegionSelected = (event, newCode) => {
+    setCode(newCode);
     if (comparing) {
       addRegion(currCode)
       addRegion(newCode)
-    } 
-
-    setCode(newCode);
-    handleAPIcall(newCode, setModalInfo);
+      handleCompareCall(currCode, newCode, setModalInfo)
+    } else {
+      handleSingleStateRetrieval(newCode, setModalInfo)
+    }
     setShowModal(true);
   };
 
