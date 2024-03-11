@@ -41,6 +41,7 @@ const lawSchema = new mongoose.Schema({
 // Creating a mongoose model
 const Laws = mongoose.model("Laws", lawSchema);
 
+// Get information for a single state
 app.get("/api/:stateName", (req, res) => {
   const stateName = req.params.stateName;
   console.log(stateName, " gets called!!");
@@ -71,6 +72,40 @@ app.get("/api/:stateName", (req, res) => {
   });
 
 });
+
+// Get information for state comparison
+app.get("/api/compare/:stateName1/:stateName2", (req, res) => {
+  const stateName1 = req.params.stateName1;
+  const stateName2 = req.params.stateName2;
+  console.log(stateName1, stateName2, " gets called!!");
+  
+  // Assuming Laws is your mongoose model
+  Laws.find({ jurisdiction: { $in: [stateName1, stateName2] } })
+    .then((laws) => {
+      if (!laws || laws.length === 0) {
+        return res.json({
+          status: "fail",
+          message: "No laws found for the specified states",
+        });
+      }
+
+      res.json({
+        status: "success",
+        message: `API called for states: ${stateName1} and ${stateName2}`,
+        data: {
+          laws,
+        },
+      });
+    })
+    .catch((err) => {
+      console.error("Error:", err);
+      res.json({
+        status: "fail",
+        message: "Failed to retrieve law information",
+      });
+    });
+});
+
 
 app.listen(port, () => {
   console.log("Server is running on port ", port);
