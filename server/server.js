@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path")
 const app = express();
 require("dotenv").config();
 const port = 5001;
@@ -106,6 +107,11 @@ app.get("/api/compare/:stateName1/:stateName2", (req, res) => {
     });
 });
 
+//Script for production
+app.use(express.static("/client/build"));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+})
 
 app.listen(port, () => {
   console.log("Server is running on port ", port);
