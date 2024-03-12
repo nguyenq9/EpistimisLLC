@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61c1f0e1.css",
+    "main.js": "/static/js/main.bf334a56.js",
+    "static/media/MPLUS1-VariableFont_wght.ttf": "/static/media/MPLUS1-VariableFont_wght.097702348c60f1195e85.ttf",
+    "index.html": "/index.html",
+    "main.61c1f0e1.css.map": "/static/css/main.61c1f0e1.css.map",
+    "main.bf334a56.js.map": "/static/js/main.bf334a56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c1f0e1.css",
+    "static/js/main.bf334a56.js"
+  ]
+}
