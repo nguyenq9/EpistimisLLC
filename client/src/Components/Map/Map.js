@@ -6,6 +6,7 @@ import { worldMill } from "@react-jvectormap/world";
 import stateMap from "./stateMap.json";
 import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
+import regionNames from "./regionNames.json"
 
 const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
   const [currCode, setCode] = useState("");
@@ -33,9 +34,10 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
   }, [currCode]);
 
   const getRegionName = (code) => {
-    if (mapRef.current) {
-      return mapRef.current.getMapObject().getRegionName(code);
-    }
+      // if (mapRef.current) {
+      //   return mapRef.current.getMapObject().getRegionName(code);
+      // }
+      return regionNames[code]
   }
 
   const addRegion = (region) => {
