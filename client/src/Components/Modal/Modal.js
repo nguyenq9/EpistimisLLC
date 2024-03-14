@@ -13,9 +13,9 @@ function Modal(prop) {
         <div className="regions-container">
 
           {/* ❗❗❗❗❗❗ REWRITE THIS TO MAP ❗❗❗❗❗ */}
-          <div className="region">
+          <div className="region1">
             <h1>{prop.modalInfo[0]?.jurisdiction}</h1>
-            <h2>Filter Categories</h2>
+            {/* <h2>Filter Categories</h2>
             {prop.modalInfo[0]?.filterCategories !== undefined && prop.modalInfo[0]?.filterCategories.map((option, index) => (
               <p key={index}>{option}</p>
             ))}
@@ -26,12 +26,13 @@ function Modal(prop) {
             <h2>Other Privacy Laws</h2>
             {prop.modalInfo[0]?.otherPrivacyLaws !== undefined && prop.modalInfo[0]?.otherPrivacyLaws.map((law, index) => (
               <p key={index}>{law.lawName}</p>
-            ))}
+            ))} */}
+            <p>{JSON.stringify(prop.modalInfo[0])}</p>
           </div>
 
-          <div className="region">
+          <div className="region2">
             <h1>{prop.modalInfo[1]?.jurisdiction}</h1>
-            <h2>Filter Categories</h2>
+            {/* <h2>Filter Categories</h2>
             {prop.modalInfo[1]?.filterCategories !== undefined && prop.modalInfo[1]?.filterCategories.map((option, index) => (
               <p key={index}>{option}</p>
             ))}
@@ -42,7 +43,8 @@ function Modal(prop) {
             <h2>Other Privacy Laws</h2>
             {prop.modalInfo[1]?.otherPrivacyLaws !== undefined && prop.modalInfo[1]?.otherPrivacyLaws.map((law, index) => (
               <p key={index}>{law.lawName}</p>
-            ))}
+            ))} */}
+            <p>{JSON.stringify(prop.modalInfo[1])}</p>
           </div>
         </div>
       </ReactModal>) :
@@ -51,8 +53,10 @@ function Modal(prop) {
       (<ReactModal isOpen={prop.show} contentLabel="Minimal Modal Example" ariaHideApp={false}>
         <Close onClick={prop.handleCloseModal} />
         <h1>{prop.name}</h1>
-        <p>{prop.modalInfo[0]?.jurisdiction}</p>
-        <h2>Filter Categories</h2>
+
+        <p>{JSON.stringify(prop.modalInfo[0])}</p>
+
+        {/* <h2>Filter Categories</h2>
         {prop.modalInfo[0]?.filterCategories !== undefined && prop.modalInfo[0]?.filterCategories.map((option, index) => (
           <p key={index}>{option}</p>
         ))}
@@ -63,7 +67,7 @@ function Modal(prop) {
         <h2>Other Privacy Laws</h2>
         {prop.modalInfo[0]?.otherPrivacyLaws !== undefined && prop.modalInfo[0]?.otherPrivacyLaws.map((law, index) => (
           <p key={index}>{law.lawName}</p>
-        ))}
+        ))} */}
         <button onClick={prop.handleCompareClicked} style={{ display: prop.comparing ? 'none' : '' }}>Compare</button>
       </ReactModal>)
 
