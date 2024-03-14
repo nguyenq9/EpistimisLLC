@@ -1,0 +1,48 @@
+{
+    "jurisdiction": "Pennsylvania",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Pennsylvania Consumer Data Privacy Act (House Bill 1201)",
+            "type": "Introduced",
+            "description": "House Bill 1201 was introsuced on May 19, 2023 and the last action recorded for House Bill 1201 was its re-commitment to the Appropriations committee on December 13, 2023. This bill aims to provide a comprehesive law for consumer data privacy, define duties of controllers processors, and imposing penalties for violations. Though this bill does differ in scope and specifications from the House Bill 708.",
+            "reference": "https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1201"
+        },
+        {
+            "lawName": "Consumer Data Protection Act (House Bill 708)",
+            "type": "Introduced",
+            "description": "House Bill 708 was introduced on March 27, 2023 and was referred to the Commerce committee on March 27, 2023. This bill specifies protection of certain personal data of consumers, imposing duties on controllers and processors of personal data of consumers, providing for enforcement; prescribing penalties, and establishing the Consumer Privacy Fund.",
+            "reference": "https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&sInd=0&body=H&type=B&bn=708#:~:text=Short%20Title%3A,establishing%20the%20Consumer%20Privacy%20Fund."
+        },
+        {
+            "lawName": "Breach of Personal Information Notification Act",
+            "type": "Minor",
+            "description": "The Breach of Personal Information Notification Act aims to ensure the security of computerized data containing personal information and mandates notification to residents in the event of a breach.",
+            "reference": "https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/2005/0/0094..PDF"
+        },
+        {
+            "lawName": "Privacy of Social Security Numbers Law",
+            "type": "Minor",
+            "description": "The Privacy of Social Security Numbers Law establishes regulations regarding the confidentiality and usage of Social Security numbers (SSNs)",
+            "reference": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2006/0/0060..HTM"
+        },
+        {
+            "lawName": "Chapter 57, Wiretapping and Electronic Surveillance",
+            "type": "Minor",
+            "description": "Chapter 57 aims to balance the protection of privacy rights with the needs of law enforcement and national security by establishing procedures and limitations on wiretapping and electronic surveillance activities within the state of Pennsylvania.",
+            "reference": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18&div=0&chpt=57"
+        },
+        {
+            "lawName": "Title 18, Chapter 75 of the Pennsylvania Statutes",
+            "type": "Minor",
+            "description": "This chapter criminalizes communication facilities intercepting, eavesdropping, and access to private electic communications. This protects individuals' privacy interests in their electronic communications and data.",
+            "reference": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18&div=0&chpt=75"
+        },
+        {
+            "lawName": "Title 42 of the Pennsylvania Statutes",
+            "type": "Minor",
+            "description": "This title provides a clear right of action for individuals who have suffered harm due to the unlawful dissemination of intimate images, allowing them to seek damages and other relief through civil litigation.",
+            "reference": "https://www.legis.state.pa.us/CFDOCS/LEGIS/LI/consCheck.cfm?txtType=HTM&ttl=42&div=00.&chpt=083.&sctn=016.&subSctn=001.#:~:text=%C2%A7%208316.1.,as%20defined%20in%2018%20Pa."
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Ohio",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Section 1349.19, Private disclosure of security breach of computerized personal information data",
+            "type": "Minor",
+            "description": "This section aims to establish procedures for the private disclosure of security breaches involving computerized personal information data, with the goal of protecting the privacy and security of individuals' personal information.",
+            "reference": "https://codes.ohio.gov/ohio-revised-code/section-1349.19"
+        },
+        {
+            "lawName": "House Bill 376",
+            "type": "Inactive",
+            "description": "The House Bill 376, called the Ohio Personal Privacy Act, after being introduced, the bill underwent committee review, resulting in a substitute version being reported. It then proceeded to be informally passed in the House. However, as of February 22, 2022, it was subsequently re-referred to the Rules and Reference Committee, indicating that further action or consideration may be required before it can advance to the next stage of the legislative process.",
+            "reference": "https://www.legislature.ohio.gov/legislation/134/hb376"
+        }
+    ]
+}

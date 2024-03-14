@@ -1,0 +1,48 @@
+{
+    "jurisdiction": "New York",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "New York Data Protection Act (Assembly Bill 2587)",
+            "type": "Introduced",
+            "description": "Assembly Bill 2587 was introduced on January 26, 2023, and is currently in the Assembly Committee. This bill aims to establish the New York Data Protection Act which would require  government entities and contractors to disclose certain personal information collected about individuals.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2023/A2587"
+        },
+        {
+            "lawName": "Assembly Bill 7423",
+            "type": "Introduced",
+            "description": "Assembly Bill 7423 was introduced on May 19, 2023 and was referred to the Assembly Committee on Codes on January 3, 2024. This bill enacts the New York privacy act to require companies to disclose their methods of de-identifying personal information, to place special safeguards around data sharing and to allow consumers to obtain the names of all entities with whom their information is shared.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2023/A7423"
+        },
+        {
+            "lawName": "Senate Bill 365",
+            "type": "Introduced",
+            "description": "Senate Bill 365 was introduced on January 4, 2023 and was reported and committed to the Senate Committee on Internet and Technology on February 6, 2024. This bill would make businesses reveal how they de-identify personal data, put security measures in place to protect it, and let customers know with whom their data is shared.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2023/S365/amendment/B"
+        },
+        {
+            "lawName": "Senate Bill 5555",
+            "type": "Introduced",
+            "description": "Senate Bill 5555 was introduced on March 8, 2023 and was referred to the Committee on Codes on January 3, 2024. This bill establishes the purposes of providing protections and transparency in the collection, use, retention, and sharing of personal information.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2023/S5555"
+        },
+        {
+            "lawName": "Senate Bill 2998",
+            "type": "Introduced",
+            "description": "Senate Bill 2998 was introduced on  January 26, 2023 and was referred to the Committee on Consumer Protection on January 3, 2024. This bill relates to establishing the online consumer protection act; defines terms; provides that an advertising network shall post clear and conspicuous notice on the home page of its own website about its privacy policy and its data collection and use practices related to its advertising delivery activities; makes related provisions.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2023/S2998"
+        },
+        {
+            "lawName": "Stop Hacks and Improve Electronic Data Security Act (SHIELD Act), Senate Bill 5575",
+            "type": "Minor",
+            "description": "Relates to notification of a security breach, includes credit and debit cards, and increases civil penalties.",
+            "reference": "https://www.nysenate.gov/legislation/bills/2019/S5575"
+        },
+        {
+            "lawName": "Senate Bill 2628",
+            "type": "Minor",
+            "description": "This bill requires employers in the state to provide prior written notice to employees regarding any electronic monitoring conducted on them",
+            "reference": "https://www.dataguidance.com/sites/default/files/s2628.pdf"
+        }
+    ]
+}

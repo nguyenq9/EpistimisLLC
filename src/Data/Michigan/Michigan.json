@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Michigan",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Identity Theft Protection Act",
+            "type": "Minor",
+            "description": "The Identity Theft Protection Act aims to protect consumers from identity theft by requiring entities that collect personal information to implement security measures and notify individuals in the event of a data breach.",
+            "reference": "https://www.legislature.mi.gov/(S(zvz2vy4532pyqv45wcite555))/documents/mcl/pdf/mcl-Act-452-of-2004.pdf"
+        },
+        {
+            "lawName": "Internet Privacy Protection Act",
+            "type": "Minor",
+            "description": "The Internet Privacy Protection Act is designed to uphold the privacy rights of individuals by restricting the ability of employers and educational institutions to compel individuals to provide access to their personal internet accounts for non-business or non-educational purposes.",
+            "reference": "https://www.legislature.mi.gov/(S(yopfe0axmswoulsgy2teohro))/mileg.aspx?page=GetObject&objectname=mcl-Act-478-of-2012"
+        }
+    ]
+}

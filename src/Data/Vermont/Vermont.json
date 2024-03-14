@@ -1,0 +1,24 @@
+{
+    "jurisdiction": "Vermont",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "House Bill 121",
+            "type": "Introduced",
+            "description": "This bill was introduced on January 26, 2023 and was referred to the Committee on Commerce and Economic Development. This bill proposes regulations for data privacy protections to Vermonters",
+            "reference": "https://legislature.vermont.gov/bill/status/2024/H.121"
+        },
+        {
+            "lawName": "Security Breach Notice Act",
+            "type": "Minor",
+            "description": "This Act mandates that any data collector owning or licensing computerized personally identifiable information or login credentials must promptly notify consumers of any security breach discovered or reported to the data collector. The notification must occur within 45 days of discovery or notification of the breach, allowing reasonable time for investigation and restoration of system integrity.",
+            "reference": "https://legislature.vermont.gov/statutes/fullchapter/09/062"
+        },
+        {
+            "lawName": "Document Safe Destruction Act",
+            "type": "Minor",
+            "description": "This Act mandates businesses to ensure the secure destruction of customer records containing personal information that is no longer needed.",
+            "reference": "https://legislature.vermont.gov/statutes/section/09/062/02445"
+        }
+    ]
+}

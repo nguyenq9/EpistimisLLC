@@ -1,0 +1,215 @@
+{
+    "jurisdiction": "New Hampshire",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "New Hampshire Privacy Act (NHPA)",
+            "description": "On January 18, 2024, the New Hampshire Senate passed by voice vote SB255, the New Hampshire Privacy Act (NHPA), amended by the New Hampshire House of Representatives.",
+            "reference": "https://legiscan.com/NH/text/SB255/id/2750381",
+            "billStatus": "Signed",
+            "inEffect" : "January 1, 2025",
+            "applicability": [ 
+                {
+                    "roles": ["Controller", "Processor", "Third Party", "Consumer"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Religious beliefs", 
+                                               "Mental or physical health condition or diagnosis", 
+                                               "Sex life",
+                                               "Sexual orientation",
+                                               "Citizenship or immigration status", 
+                                               "Genetic or biometric data for the purpose of uniquely identifying an individual", 
+                                               "Personal data collected from a known child", 
+                                               "Precise geolocation data."
+                                            ],
+                    "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 507-H:4.1.a"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 507-H:4.1.a"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 507-H:4.1.b"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 507-H:4.1.c"]
+                },
+                {
+                    "name": "Right to Opt Out of targeted advertising, sale of personal data, or profiling in furtherance of a decision that produces a legal or similarly significant effect",
+                    "reference": ["Section 507-H:4.1.e"]
+                },
+                {
+                    "name": "Right to Portability",
+                    "reference": ["Section 507-H:4.1.d"]
+                },
+                {
+                    "name": "Right to Non-Discrimination",
+                    "reference": ["Section 507-H:6.1.e"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller shall provide consumers with a reasonably accessible, clear and meaningful privacy notice that includes the types of personal data managed by the controller, the purposes for which this data is processed, and details on how consumers can exercise their rights, along with procedures for appealing any decisions made by the controller regarding these requests. Additionally, the notice must outline the categories of personal data shared with third parties, if applicable, and specify the types of third parties involved in such data sharing arrangements. Finally, the controller must provide an active email address or other online means through which consumers can directly communicate with the controller regarding their privacy concerns or inquiries.",
+                        "reference": "Section 507-H:6.3"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "A controller shall not process personal data for purposes that are neither reasonably necessary to, nor compatible with, the disclosed purposes for which such personal data is processed, as disclosed to the consumer.",
+                        "reference": "Section 507-H:6.1.b"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "A controller shall limit the collection of personal data to what is adequate, relevant and reasonably necessary in relation to the purposes for which such data is processed, as disclosed to the consumer",
+                        "reference": "Section 507-H:6.1.a"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall establish, implement and maintain reasonable administrative, technical and physical data security practices to protect the confidentiality, integrity and accessibility of personal data appropriate to the volume and nature of the personal data at issue",
+                        "reference": "Section 507-H:6.1.c"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Processors must comply with the instructions provided by controllers and assist them in fulfilling their obligations outlined in the act. This assistance includes implementing appropriate technical and organizational measures to respond to consumer rights requests, ensuring the security of personal data processing, and facilitating breach notifications. Processors are also required to enter into contracts with controllers that clearly define the terms of data processing, confidentiality duties, data deletion or return at the end of service provision, and the provision of necessary compliance information. Additionally, processors must engage subcontractors under written contracts that uphold the same obligations and cooperate with assessments conducted by controllers or designated assessors to verify compliance with the act's requirements. It's emphasized that both controllers and processors remain liable for their respective roles in the data processing relationship as outlined in the act, and determining the status of a person as a controller or processor depends on the specifics of the data processing context. Failure to adhere to a controller's instructions designates a person as a controller, while continued adherence maintains their status as a processor.",
+                        "reference": "Section 507-H:7"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "Controllers are required to perform and document a data protection assessment for each processing activity that poses an elevated risk of harm to consumers. Such activities include processing for targeted advertising, sale of personal data, profiling with foreseeable risks of unfair treatment or harm to consumers, and processing sensitive data. These assessments must evaluate the benefits of processing against potential risks to consumer rights, considering safeguards to mitigate risks, use of de-identified data, consumer expectations, and the processing context. The Attorney General may request disclosure of these assessments for investigation purposes, ensuring compliance with the act, while maintaining confidentiality exempt from public disclosure laws. A single assessment may cover similar processing activities, and assessments conducted to comply with other laws may suffice if reasonably similar in scope and effect.",
+                        "reference": "Section 507-H:8"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Local Government",
+                            "description": "Body, authority, board, bureau, commission, district or agency of this state or of any political subdivision of this state"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "Non-Profit organizations are exempted"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "National Securities Associations",
+                            "description": "National securities associations registered under Section 15A of the Securities Exchange Act of 1934."
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        },
+                        {
+                            "type": "Personal information covered by the Fair Credit Reporting Act",
+                            "description": "Personally identifiable information collected, processed, sold, or disclosed by a consumer reporting agency, as defined in 15 U.S.C. s.1681a(f), if the collection, processing, sale, or disclosure of the personally identifiable information is limited by the federal “Fair Credit Reporting Act,” 15 U.S.C. s.1681 et seq., and implementing regulations."
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["The Attorney General"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "The NHPA allows for a total of up to $10,000 in fines for each violation."],
+                "personalLiability": ["Nothing in this section shall be construed to relieve a controller or processor from the liabilities imposed on the controller or processor by virtue of such controller's or processor's role in the processing relationship."],
+                "privateRightOfAction" : ["Nothing in this chapter shall be construed as providing the basis for, or be subject to, a private right of action for violations under this chapter."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Annual Processing",
+                    "description": "Controls or processes the personal data of at least 35,000 unique New Hampshire consumers, excluding personal data controlled or processed solely for the purpose of completing a payment transaction."
+                },
+                {
+                    "type": "Annual Gross Revenue",
+                    "description": "Controls or processes the personal data of at least 10,000 unique New Hampshire consumers and derives more than 25% of its gross revenue from the sale of personal data."
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "New Hampshire",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "House Bill 314",
+                    "type": "Introduced",
+                    "description": "This bill was introduced on January 5, 2023 and is scheduled for a hearing on March 19, 2024. This bill describes the privacy requirements for the personal data of New Hampshire customers.",
+                    "reference": "https://www.gencourt.state.nh.us/bill_status/billinfo.aspx?id=455&inflect=2"
+                },
+                {
+                    "lawName": "New Hampshire Right to Privacy Act",
+                    "type": "Minor",
+                    "description": "This Act establishes guidelines and regulations to protect the privacy and confidentiality of personal and financial information maintained by financial institutions and creditors in New Hampshire.",
+                    "reference": "https://www.gencourt.state.nh.us/rsa/html/xxxi/359-c/359-c-mrg.htm?cookiesession8341=6938F3A20340C0C9A34C66178D448A6B"
+                },
+                {
+                    "lawName": "Student and Teacher Information Protection and Privacy Act",
+                    "type": "Minor",
+                    "description": "This Act outlines provisions for protecting the privacy of student and teacher information within the Student Longitudinal Data System (SLDS) and regarding the use of technology in schools.",
+                    "reference": "https://www.gencourt.state.nh.us/rsa/html/xv/189/189-68.htm"
+                },
+                {
+                    "lawName": "Regulation of Business Practices for Consumer Protection",
+                    "type": "Minor",
+                    "description": "This law affirms that organizations are prohibited from unfair or dishonest commercial practices, such as the use of false or fraudulent privacy policies.",
+                    "reference": "https://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-XXXI-358-A.htm"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,198 @@
+{
+    "jurisdiction": "Connecticut",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Connecticut Personal Data Privacy and Online Monitoring Act (CTDPA)",
+            "description": "string",
+            "reference": "https://www.cga.ct.gov/2022/ACT/PA/PDF/2022PA-00015-R00SB-00006-PA.PDF",
+            "billStatus": "In force",
+            "inEffect" : "July 1, 2023",
+            "applicability": [ 
+                {
+                    "roles": ["Consumer", "Controller", "Processor", "Third Party"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Religious beliefs", 
+                                               "Mental or physical health condition or diagnosis", 
+                                               "Sex life", 
+                                               "Sexual orientation", 
+                                               "Citizenship or immigration status",
+                                               "Genetic or biometric data for the purpose of uniquely identifying an individual", 
+                                               "Personal data collected from a known child", 
+                                               "Precise geolocation data"],
+                    "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Know if a controller is processing the consumer’s personal information",
+                    "reference": ["Section 4.a.1"]
+                },
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 4.a.1"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 4.a.2"]
+                },
+                {
+                    "name": "Right to Delete",
+                    "reference": ["Section 4.a.3"]
+                },
+                {
+                    "name": "Right to Data Portability",
+                    "reference": ["Section 4.a.4"]
+                },
+                {
+                    "name": "Right to Opt Out of Targeted Advertising, Sale of Personal information, or Automated Profiling",
+                    "reference": ["Section 4.a.5"]
+                },
+                {
+                    "name": "Right to Non-Discrimination",
+                    "reference": ["Section 6.a.5"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "A controller shall provide consumers with a reasonably accessible, clear and meaningful privacy notice that includes several key elements: firstly, it must outline the categories of personal data processed by the controller. Secondly, it should elucidate the purposes for which personal data is being processed. Thirdly, consumers should be informed about how they can exercise their rights, including the process for appealing a decision made by the controller regarding their request. Additionally, the notice should delineate the categories of personal data shared with third parties, if any, as well as the specific categories of those third parties. Lastly, the controller must provide an active electronic mail address or another online mechanism through which consumers can reach out to them.",
+                        "reference": "Section 6.c"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "A controller shall not process personal data for purposes that are neither reasonably necessary to, nor compatible with, the disclosed purposes for which such personal data is processed, as disclosed to the consumer.",
+                        "reference": "Section 6.a.2"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "A controller shall limit the collection of personal data to what is adequate, relevant and reasonably necessary in relation to the purposes for which such data is processed, as disclosed to the consumer.",
+                        "reference": "Section 6.a.1"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A controller shall establish, implement and maintain reasonable administrative, technical and physical data security practices to protect the confidentiality, integrity and accessibility of personal data appropriate to the volume and nature of the personal data at issue.",
+                        "reference": "Section 6.a.3"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "A processor must comply with the instructions provided by the controller and assist them in meeting their obligations outlined in the relevant sections of the act. This assistance includes implementing appropriate technical and organizational measures to respond to consumer rights requests, ensuring the security of processing personal data, and providing necessary information for data protection assessments. Contracts between controllers and processors must detail data processing procedures and include instructions for processing data, confidentiality obligations, data deletion or return at the end of services, and engagement of subcontractors. Processors must also facilitate assessments by the controller or designated assessors and provide reports upon request. Importantly, this section clarifies that both controllers and processors remain liable for their respective roles in data processing relationships. Additionally, it distinguishes between controllers and processors based on their actions and responsibilities in specific data processing activities.",
+                        "reference": "Section 7"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "Controllers must conduct and document a data protection assessment for each processing activity that poses a heightened risk of harm to consumers. Such activities include processing for targeted advertising, sale of personal data, profiling with foreseeable risks of harm, and processing sensitive data. The assessment must weigh the benefits to the controller, consumers, and other stakeholders against potential risks, considering safeguards to mitigate these risks.",
+                        "reference": "Section 9"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Local Government",
+                            "description": "Body, authority, board, bureau, commission, district or agency of this state or of any political subdivision of this state"
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "Non-Profit organizations are exempted"
+                        },
+                        {
+                            "type": "Higher Education",
+                            "description": "Institutions of higher education are exempted"
+                        },
+                        {
+                            "type": "National Securities Associations",
+                            "description": "Registered national securities associations"
+                        },
+                        {
+                            "type": "Financial Institutions",
+                            "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
+                        },
+                        {
+                            "type": "HIPAA",
+                            "description": "Covered entity or business associate as defined in the privacy regulations of HIPAA"
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
+                    "verticalCarveouts" : ["A controller shall not be required to authenticate an opt-out request, but a controller may deny an opt-out request if the controller has a good faith, reasonable and documented belief that such request is fraudulent"],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Attorney General"],
+                "rulemakingAuthority": ["The Attorney General"],
+                "finingAuthority": ["The Attorney General"],
+                "penalties": [ "The Connecticut Attorney General has the authority to enforce violations and may issue fines of up to $5,000 per violation."],
+                "personalLiability": ["Nothing in this section shall be construed to relieve a controller or processor from the liabilities imposed on the controller or processor by virtue of such controller's or processor's role in the processing relationship, as described in sections 1 to 11, inclusive, of this act"],
+                "privateRightOfAction" : ["Nothing in sections 1 to 10, inclusive, of this act shall be construed as providing the basis for, or be subject to, a private right of action for violations of said sections or any other law."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Annual Processing",
+                    "description": "Controlled or processed the personal data of 100,000 or more consumers annually, excluding personal data controlled or processed solely for the purpose of completing a payment transaction"
+                },
+                {
+                    "type": "Gross Annual Revenue",
+                    "description": "Controlled or processed the personal data of 25,000 or more consumers annually and derived more than 25% of their gross annual revenue from the sale of personal data"
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Connecticut",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Section 36a-701b, Breach of security re computerized data containing personal information",
+                    "type": "Minor",
+                    "description": "Section 36a-701b outlines provisions regarding the breach of security concerning computerized data containing personal information.",
+                    "reference": "https://cga.ct.gov/current/pub/chap_669.htm#sec_36a-701b"
+                },
+                {
+                    "lawName": "Chapter 743dd, Protection of Social Security Numbers And Personal Information",
+                    "type": "Minor",
+                    "description": "This chapter outline regulations regarding the posting, display, transmission, and use of Social Security numbers and personal information.",
+                    "reference": "https://www.cga.ct.gov/current/pub/chap_743dd.htm"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "jurisdiction": "Maryland",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Maryland Personal Information Protection Act",
+            "type": "Minor",
+            "description": "The Maryland Personal Information Protection Act aims to enhance consumer privacy and mitigate the risks associated with identity theft and data breaches.",
+            "reference": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3501&enactments=False&archived=False"
+        },
+        {
+            "lawName": "Medical Records Act",
+            "type": "Minor",
+            "description": "The Medical Records Act aims to strike a balance between protecting patients' privacy rights and ensuring that healthcare providers can appropriately access and disclose medical information when necessary for patient care, legal compliance, or public health purposes.",
+            "reference": "https://health.maryland.gov/psych/pdfs/Medicalreports.pdf"
+        }
+    ]
+}

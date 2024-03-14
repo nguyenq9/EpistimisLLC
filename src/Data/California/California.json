@@ -10,7 +10,7 @@
             "inEffect" : "January 2023",
             "applicability": [ 
                 {
-                    "roles": ["businesses, thrid party, service provider, contractor (same as CCPA)"],
+                    "roles": ["Businesses", "Third party", "Service provider", "Contractor (same as CCPA)"],
                     "personalDataCategories": ["Social security, driver’s license, passport, state ID card numbers", 
                                                 "Account log-in", 
                                                 "Financial account combined with any required security or access code, password, or credentials allowing access to an account", 
@@ -106,8 +106,8 @@
                 }
                 ],
                 "recordKeeper": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "riskImpact": [ {
@@ -121,13 +121,13 @@
                     }
                 ],
                 "registration": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dpo": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
@@ -186,7 +186,7 @@
             "inEffect" : "January 2020",
             "applicability": [
                 {
-                    "roles": ["businesses", "third party", "service provider", "contractor"],
+                    "roles": ["Businesses", "Third party", "Service provider", "Contractor"],
                     "personalDataCategories": ["Social security, driver’s license, passport, state ID card numbers", 
                                                "Account log-in", 
                                                "Financial account combined with any required security or access code, password, or credentials allowing access to an account", 

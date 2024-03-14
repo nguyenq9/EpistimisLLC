@@ -1,0 +1,48 @@
+{
+    "jurisdiction": "Massachusetts",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Massachusetts Data Privacy Protection Act (HD 2281)",
+            "type": "Introduced",
+            "description": "This bill was introduced on January 19, 2023 and as of now, the House extended the reporting date for the bill to Monday, April 8, 2024, pending concurrence. This bill describes requirements for data brokers, small businesses, and covered entities regarding the processing of personal data of Massachusetts consumers.",
+            "reference": "https://malegislature.gov/Bills/193/HD2281"
+        },
+        {
+            "lawName": "Massachusetts Information Privacy and Security Act (HD 3263)",
+            "type": "Introduced",
+            "description": "This bill was introduced on January 20, 2023 and as of now, the House extended the reporting date for the bill to Monday, April 8, 2024, pending concurrence. This bill describes obligations for controllers who process personal information from Massachusetts residents.",
+            "reference": "https://malegislature.gov/Bills/193/HD3263"
+        },
+        {
+            "lawName": "Internet Bill of Rights (HD 3245)",
+            "type": "Introduced",
+            "description": "This bill was introduced on January 20, 2023 and was referred to the Joint Committee on the Judiciary in November 2023. This bill seeks to create a bill of rights governing the processing and use of personal data by covered companies, as well as outlining duties for stopping and handling data breaches.",
+            "reference": "https://malegislature.gov/Bills/193/HD3245"
+        },
+        {
+            "lawName": "Chapter 93H: Security Breaches",
+            "type": "Minor",
+            "description": "This legislation aims to enhance the security and privacy of personal information held by entities within Massachusetts and ensure appropriate responses to breaches or unauthorized use.",
+            "reference": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93H"
+        },
+        {
+            "lawName": "Standards for the Protection of Personal Information",
+            "type": "Minor",
+            "description": "This regulation establishes minimum standards to be met in connection with the safeguarding of personal information contained in both paper and electronic records.",
+            "reference": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+        },
+        {
+            "lawName": "Chapter 93A: Regulation of Business Practices for Consumers Protection",
+            "type": "Minor",
+            "description": "Chapter 93A aims to protect consumers from unfair or deceptive business practices and ensure accountability and transparency in commercial transactions.",
+            "reference": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A"
+        },
+        {
+            "lawName": "Chapter 93I: Dispositions and Destruction of Records",
+            "type": "Minor",
+            "description": "Chapter 93I aims to protect individuals' privacy by regulating the proper disposal of records containing personal information to prevent unauthorized access or misuse.",
+            "reference": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93I"
+        }
+    ]
+}

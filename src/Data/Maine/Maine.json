@@ -1,0 +1,30 @@
+{
+    "jurisdiction": "Maine",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Data Privacy and Protection Act (House LD 1977)",
+            "type": "Introduced",
+            "description": "This bill was introduced on May 23, 2023, and has been referred to the Committee on Judiciary on July 26, 2023. This bill sets forth guidelines for small enterprises, data brokers, and controllers handling the personal information.",
+            "reference": "https://legislature.maine.gov/LawMakerWeb/summary.asp?ID=280089669"
+        },
+        {
+            "lawName": "Maine Consumer Privacy Act (Senate LD 1973)",
+            "type": "Introduced",
+            "description": "This bill was introduced on May 18, 2023, and has been referred to the Committee on Judiciary on July 26, 2023. The act lays out rules for data controllers on how to handle Maine residents' personal data.",
+            "reference": "https://legislature.maine.gov/LawMakerWeb/summary.asp?paper=SP0807&SessionID=15"
+        },
+        {
+            "lawName": "Notice of Risk to Personal Data Act",
+            "type": "Minor",
+            "description": "This Act is designed to protect the personal data of individuals in Maine, establish requirements for handling security breaches, and outline enforcement mechanisms and penalties for non-compliance",
+            "reference": "https://www.mainelegislature.org/legis/statutes/10/title10ch210-bsec0.html"
+        },
+        {
+            "lawName": "Chapter 94, Broadband Internet Access Service Customer Privacy",
+            "type": "Minor",
+            "description": "This chapter prohibits providers from using, disclosing, selling, or permitting access to customer personal information, except as outlined in specific exceptions, such as customer consent, service provision, billing, or compliance with lawful orders. ",
+            "reference": "https://legislature.maine.gov/legis/bills/bills_129th/chapters/PUBLIC216.asp"
+        }
+    ]
+}

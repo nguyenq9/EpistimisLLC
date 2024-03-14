@@ -1,0 +1,42 @@
+{
+    "jurisdiction": "Rhode_Island",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Rhode Island Personal Data And Online Privacy Protection Act (House Bill 5745)",
+            "type": "Introduced",
+            "description": "This bill was introduced on February 21, 2023 and was recommended to be held for further study on March 2, 2023. This bill aims to establish the Rhode Island personal data and online privacy protection act.",
+            "reference": "https://legiscan.com/RI/bill/H5745/2023"
+        },
+        {
+            "lawName": "Senate Bill 754",
+            "type": "Introduced",
+            "description": "This bill was introduced on March 23 2023 and was recommended to be held for further study on May 2, 2023 by the Senate. This bill aims to provide data privacy protections for the personal identifiable information of Rhode Islanders.",
+            "reference": "https://legiscan.com/RI/bill/S0754/2023"
+        },
+        {
+            "lawName": "House Bill 6263",
+            "type": "Introduced",
+            "description": "This bill was introduced on March 30, 2023 and was recommended to be held for further study on April 4, 2023 by the House. This bill would mandate that organizations provide customers with more information about the types of personally identifiable information they exchange with other companies.",
+            "reference": "https://legiscan.com/RI/bill/H6236/2023"
+        },
+        {
+            "lawName": "House Bill 5354",
+            "type": "Introduced",
+            "description": "This bill was introduced on February 3, 2023 and was recommended to be held for further study on March 2, 2023. This bill describes opt-in and opt-out requirements for consumers concerning the collection and processing of personal data.",
+            "reference": "https://legiscan.com/RI/bill/H5354/2023"
+        },
+        {
+            "lawName": "Identity Theft Protection Act of 2015",
+            "type": "Minor",
+            "description": "The Identity Theft Protection Act aims to ensure prompt and comprehensive notification to affected individuals in the event of a breach of personal information, while also emphasizing cooperation with law enforcement and providing adequate remediation services.",
+            "reference": "http://webserver.rilin.state.ri.us/Statutes/TITLE11/11-49.3/INDEX.HTM"
+        },
+        {
+            "lawName": "Consumer Empowerment and Identity Theft Prevention Act of 2006",
+            "type": "Minor",
+            "description": "This act establishes the right of consumers to protect themselves from identity theft or fraud by conferring upon them the right to voluntarily place a security freeze on their credit report.",
+            "reference": "http://webserver.rilin.state.ri.us/Statutes/TITLE6/6-48/INDEX.HTM"
+        }
+    ]
+}
