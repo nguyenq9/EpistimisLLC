@@ -108,10 +108,10 @@ app.get("/api/compare/:stateName1/:stateName2", (req, res) => {
 });
 
 //Script for production
-app.use(express.static("/client/build"));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
-})
+// app.use(express.static("/client/build"));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+// })
 
 app.listen(port, () => {
   console.log("Server is running on port ", port);
