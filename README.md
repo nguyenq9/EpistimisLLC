@@ -11,7 +11,7 @@ npm start
 https://www.figma.com/file/0ia0WrbUrXdLhmNNPbrAlv/Epistimis-REAL?type=design&node-id=0-1&mode=design&t=1HgqZaHhhhjmtj27-0
 
 # Q2 Demo
-
+[![Epistimis U.S DATA PRIVACY LAWS TRACKER](q2demo.png)](https://youtu.be/JRdDvdl6Las)
 
 # Final Database Schema
 {
