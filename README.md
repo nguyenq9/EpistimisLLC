@@ -2,10 +2,15 @@
 Group: Joseph Karper, Dima Melnik, Thai Nguyen, Saunder VanWoerden
 
 ## How to run
-To Launch the site, navigate to the EpistimissLLC folder.\
+To launch the web app, navigate to the /client folder.\
 Then use the following commands:\
 npm install\
 npm start
+
+To the server, navigate to the /server folder.\
+Then use the following commands:\
+npm install\
+npm run dev
 
 ## Figma Design
 https://www.figma.com/file/0ia0WrbUrXdLhmNNPbrAlv/Epistimis-REAL?type=design&node-id=0-1&mode=design&t=1HgqZaHhhhjmtj27-0
