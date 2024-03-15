@@ -1,19 +1,24 @@
 # EpistimisLLC
 Group: Joseph Karper, Dima Melnik, Thai Nguyen, Saunder VanWoerden
 
-# How to run
+## How to run
 To Launch the site, navigate to the EpistimissLLC folder.\
 Then use the following commands:\
 npm install\
 npm start
 
-# Figma Design
+## Figma Design
 https://www.figma.com/file/0ia0WrbUrXdLhmNNPbrAlv/Epistimis-REAL?type=design&node-id=0-1&mode=design&t=1HgqZaHhhhjmtj27-0
 
-# Q2 Demo
+## Q2 Demo
+Click on the image below to navigate to the video:
+
 [![Epistimis U.S DATA PRIVACY LAWS TRACKER](q2demo.png)](https://youtu.be/JRdDvdl6Las)
 
-# Final Database Schema
+## MongoDB
+![Laws collection in MongoDB](mongodb.png)
+
+## Final Database Schema
 {
     "jurisdiction": "string",
     "filterCategories": ["", ""],
