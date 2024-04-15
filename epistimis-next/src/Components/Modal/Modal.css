@@ -1,0 +1,36 @@
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.regions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 95%;
+  margin:auto
+}
+
+.region1 {
+  /* flex: 1; */
+  width: 50%;
+  /* background-color: red; */
+}
+
+.region2 {
+  /* flex: 1; */
+  width: 50%;
+  /* background-color: green; */
+}
