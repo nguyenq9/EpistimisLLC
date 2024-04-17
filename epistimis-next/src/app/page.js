@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.css";
+import "./page.css";
 import Title from "@/Components/Title/Title";
 import MapContainer from "@/Components/MapContainer/MapContainer";
 
