@@ -1,5 +1,4 @@
 const handleSingleStateRetrieval = (name, setModalInfo) => {
-  // Make a call to the server API
   fetch(`/api/${name}`, {
     method: "GET",
     headers: {
@@ -32,7 +31,6 @@ const handleCompareCall = (name1, name2, setModalInfo) => {
       if (res.status === "success") {
         console.log("success: ", res.message);
         console.log(res.data.laws);
-        // setModalInfo(prev => [...prev, res.data.laws]);
         setModalInfo(res.data.laws)
       } else {
         console.error("ERROR", res.message);

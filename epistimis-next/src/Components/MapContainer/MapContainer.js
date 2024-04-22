@@ -1,3 +1,4 @@
+"use client"; // This is a client component 👈🏽
 import React, { useState } from "react";
 import MapView from "../MapView/MapView";
 import MapController from "../MapController/MapController";
