@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="whole-bg">
       <Title/>
-      <MapContainer/>
+      {/* <MapContainer/> */}
     </main>
   );
 }
