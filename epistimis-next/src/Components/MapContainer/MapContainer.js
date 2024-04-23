@@ -15,14 +15,9 @@ const MapContainer = () => {
     const handleSetShowModal = (show) => {
         setShowModal(show);
     }
-
-    const test = () => {
-        console.log("testing")
-    }
     
     return (
         <div>
-            <button onClick={test}>TEST</button>
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
