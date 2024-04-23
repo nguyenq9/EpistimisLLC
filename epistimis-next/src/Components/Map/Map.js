@@ -7,6 +7,7 @@ import Modal from "../Modal/Modal";
 import regionNames from "./regionNames.json"
 import worldMill from '@react-jvectormap/world/worldMill.json';
 import usLcc from '@react-jvectormap/unitedstates/usLcc.json';
+import useWindowDimensions from "../../hooks/useWindowDimensions"; // Import the hook
 
 const VectorMap = dynamic(
   // @ts-ignore
@@ -32,6 +33,8 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
 
 
   const mapRef = useRef(null);
+  const { height: windowHeight } = useWindowDimensions(); // Get window height using the hook
+
 
   useEffect(() => {
     if (currCode !== "") {
@@ -139,13 +142,12 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
         selectedRegions={selectedRegions}
       />
       <div className="map-container">
-        <h2>Vector Map</h2>
         <VectorMap
           mapRef={mapRef}
           key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
           map={isUS ? usLcc : worldMill}
           style={{
-            height: 500,
+            height: windowHeight * 0.8
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}
