@@ -1,12 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Map.css";
-import { VectorMap } from "@react-jvectormap/core";
-import { usLcc } from "@react-jvectormap/unitedstates";
-import { worldMill } from "@react-jvectormap/world";
+import dynamic from "next/dynamic";
 import stateMap from "./stateMap.json";
 import { handleSingleStateRetrieval, handleCompareCall } from "../../js/API";
 import Modal from "../Modal/Modal";
 import regionNames from "./regionNames.json"
+import worldMill from '@react-jvectormap/world/worldMill.json';
+import usLcc from '@react-jvectormap/unitedstates/usLcc.json';
+
+const VectorMap = dynamic(
+  // @ts-ignore
+  () => import("@react-jvectormap/core").then((m) => m.VectorMap),
+  { ssr: false, }
+);
 
 const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
   const [currCode, setCode] = useState("");
@@ -122,7 +128,7 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
   };
 
   return (
-    <React.Fragment>
+    <div>
       <Modal
         show={showModal}
         handleCloseModal={handleCloseModal}
@@ -133,12 +139,14 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
         selectedRegions={selectedRegions}
       />
       <div className="map-container">
+        <h2>Vector Map</h2>
         <VectorMap
           mapRef={mapRef}
-          key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
-          map={isUS ? usLcc : worldMill}
+          // key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
+          // map={isUS ? usLcc : worldMill}
+          map={usLcc}
           style={{
-            height: window.innerHeight * 0.8,
+            height: 500,
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}
@@ -149,8 +157,19 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
           selectedRegions={currCode}
         />
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
 export default Map;
+// const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
+//   return (
+//     <div>
+//       <VectorMap
+//         map={usLcc}
+//       />
+//     </div>
+//   );
+// }
+
+// export default Map;

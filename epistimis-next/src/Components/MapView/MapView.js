@@ -3,12 +3,15 @@ import "./MapView.css"
 
 const MapView = ({ isUS, showModal, setShowModal, filterOption }) => {
     return (
-        <Map
-            isUS={isUS}
-            showModal={showModal}
-            setShowModal={setShowModal}
-            filterOption={filterOption}
-        />
+        <div>
+            <h1>MAP</h1>
+            <Map
+                isUS={isUS}
+                showModal={showModal}
+                setShowModal={setShowModal}
+                filterOption={filterOption}
+            />
+        </div>
     );
 }
 

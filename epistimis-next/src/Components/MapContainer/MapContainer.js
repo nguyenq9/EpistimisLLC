@@ -1,5 +1,5 @@
 "use client"; // This is a client component 👈🏽
-import React, { useState } from "react";
+import { useState } from "react";
 import MapView from "../MapView/MapView";
 import MapController from "../MapController/MapController";
 
@@ -15,9 +15,14 @@ const MapContainer = () => {
     const handleSetShowModal = (show) => {
         setShowModal(show);
     }
+
+    const test = () => {
+        console.log("testing")
+    }
     
     return (
-        <React.Fragment>
+        <div>
+            <button onClick={test}>TEST</button>
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
@@ -31,7 +36,7 @@ const MapContainer = () => {
                 setShowModal={handleSetShowModal}
                 filterOption={filter}
             />
-        </React.Fragment>
+        </div>
     );
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Filter from '../Filter/Filter';
 // import Compare from '../Compare/Compare';
 import MapToggle from '../MapToggle/MapToggle';
@@ -10,13 +10,13 @@ const MapController = ({isUS, handleSetIsUS, showModal, filterOption, handleSetF
     }
     
     return (
-        <React.Fragment>
+        <div>
             <Filter filterOption={filterOption} handleSetFilterOption={handleSetFilterOption}/>
             <MapToggle
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
             />
-        </React.Fragment>
+        </div>
     )
 }
 
