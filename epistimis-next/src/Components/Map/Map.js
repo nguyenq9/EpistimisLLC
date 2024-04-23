@@ -142,9 +142,8 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
         <h2>Vector Map</h2>
         <VectorMap
           mapRef={mapRef}
-          // key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
-          // map={isUS ? usLcc : worldMill}
-          map={usLcc}
+          key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
+          map={isUS ? usLcc : worldMill}
           style={{
             height: 500,
           }}
