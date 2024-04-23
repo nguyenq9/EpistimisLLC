@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
+// Define the schema
 const lawSchema = new Schema({
     jurisdiction: {
       type: String,
@@ -15,9 +16,9 @@ const lawSchema = new Schema({
     otherPrivacyLaws: {
       type: Array,
     },
-  });
+});
 
-// Creating a mongoose model
-const Laws = mongoose.model.Laws || mongoose.model("Laws", lawSchema);
+// Check if the model already exists, if not, create it
+const Laws = mongoose.models.Laws || mongoose.model("Laws", lawSchema);
 
 export default Laws;

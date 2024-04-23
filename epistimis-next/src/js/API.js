@@ -1,5 +1,5 @@
 const handleSingleStateRetrieval = (name, setModalInfo) => {
-  fetch(`/api/${name}`, {
+  fetch(`/api/laws/info?jurisdiction=${name}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
