@@ -20,7 +20,7 @@ const handleSingleStateRetrieval = (name, setModalInfo) => {
 };
 
 const handleCompareCall = (name1, name2, setModalInfo) => {
-  fetch(`/api/compare/${name1}/${name2}`, {
+  fetch(`/api/laws/compare?jurisdiction1=${name1}&jurisdiction2=${name2}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
