@@ -1,21 +1,23 @@
 // import React from 'react';
 import Filter from '../Filter/Filter';
-// import Compare from '../Compare/Compare';
+import Title from "../Title/Title";
 import MapToggle from '../MapToggle/MapToggle';
+import "./MapController.css"
 
-const MapController = ({isUS, handleSetIsUS, showModal, filterOption, handleSetFilterOption}) => {
+const MapController = ({ isUS, handleSetIsUS, showModal, filterOption, handleSetFilterOption }) => {
 
-    if (showModal) {
-        return null;
-    }
-    
+    // if (showModal) {
+    //     return null;
+    // }
+
     return (
-        <div>
-            <Filter filterOption={filterOption} handleSetFilterOption={handleSetFilterOption}/>
+        <div id="map_controller">
             <MapToggle
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
             />
+            <Title />
+            <Filter filterOption={filterOption} handleSetFilterOption={handleSetFilterOption} />
         </div>
     )
 }

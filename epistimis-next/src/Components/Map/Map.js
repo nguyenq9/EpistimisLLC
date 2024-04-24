@@ -156,6 +156,7 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
           backgroundColor="transparent"
           series={regionsConfig}
           selectedRegions={currCode}
+  
         />
       </div>
     </div>
@@ -163,14 +164,3 @@ const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, s
 };
 
 export default Map;
-// const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
-//   return (
-//     <div>
-//       <VectorMap
-//         map={usLcc}
-//       />
-//     </div>
-//   );
-// }
-
-// export default Map;
