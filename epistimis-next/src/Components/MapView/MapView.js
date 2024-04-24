@@ -1,7 +1,7 @@
 import Map from "../Map/Map";
 import "./MapView.css"
 
-const MapView = ({ isUS, showModal, setShowModal, filterOption }) => {
+const MapView = ({ isUS, showModal, setShowModal, filterOption, comparing, setComparing }) => {
     return (
         <div>
             <Map
@@ -9,6 +9,8 @@ const MapView = ({ isUS, showModal, setShowModal, filterOption }) => {
                 showModal={showModal}
                 setShowModal={setShowModal}
                 filterOption={filterOption}
+                comparing={comparing}
+                setComparing={setComparing}
             />
         </div>
     );

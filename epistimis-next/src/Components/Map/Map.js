@@ -15,11 +15,10 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, compareActive, setCompareActive, filterOption, showModal, setShowModal }) => {
+const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setComparing }) => {
   const [currCode, setCode] = useState("");
   const [currRegion, setRegion] = useState("");
   const [modalInfo, setModalInfo] = useState([]);
-  const [comparing, setComparing] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState([]);
   const [prevStateList, setPrevStateList] = useState([]);
   const [regionsConfig, setRegionsConfig] = useState({
