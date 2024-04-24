@@ -180,15 +180,15 @@ function Filter({ filterOption, handleSetFilterOption }) {
           </li>
           {showConsumerRightsOptions && (
             <>
-              <DropdownItem text="Right to Access" isSelected={filterOption === "Right to Access"} onClick={() => handleOptionClick("Right to Access")} />
-              <DropdownItem text="Right to Correct" isSelected={filterOption === "Right to Correct"} onClick={() => handleOptionClick("Right to Correct")} />
-              <DropdownItem text="Right to Delete" isSelected={filterOption === "Right to Delete"} onClick={() => handleOptionClick("Right to Delete")} />
-              <DropdownItem text="Right to opt out of certain processing" isSelected={filterOption === "Right to opt out of certain processing"} onClick={() => handleOptionClick("Right to opt out of certain processing")} />
-              <DropdownItem text="Right to Portability" isSelected={filterOption === "Right to Portability"} onClick={() => handleOptionClick("Right to Portability")} />
-              <DropdownItem text="Right to opt out of sales" isSelected={filterOption === "Right to opt out of sales"} onClick={() => handleOptionClick("Right to opt out of sales")} />
-              <DropdownItem text="Right to opt in for sensitive data processing" isSelected={filterOption === "Right to opt in for sensitive data processing"} onClick={() => handleOptionClick("Right to opt in for sensitive data processing")} />
-              <DropdownItem text="Right against automated decision-making" isSelected={filterOption === "Right against automated decision-making"} onClick={() => handleOptionClick("Right against automated decision-making")} />
-              <DropdownItem text="Private right of action" isSelected={filterOption === "Private right of action"} onClick={() => handleOptionClick("Private right of action")} />
+              <DropdownItem text="Access" isSelected={filterOption === "Access"} onClick={() => handleOptionClick("Access")} />
+              <DropdownItem text="Correct" isSelected={filterOption === "Correct"} onClick={() => handleOptionClick("Correct")} />
+              <DropdownItem text="Delete" isSelected={filterOption === "Delete"} onClick={() => handleOptionClick("Delete")} />
+              <DropdownItem text="Opt-Out(Processing)" isSelected={filterOption === "Opt-Out(Processing)"} onClick={() => handleOptionClick("Opt-Out(Processing)")} />
+              <DropdownItem text="Portability" isSelected={filterOption === "Portability"} onClick={() => handleOptionClick("Portability")} />
+              <DropdownItem text="Opt-Out(Sales)" isSelected={filterOption === "Opt-Out(Sales)"} onClick={() => handleOptionClick("Opt-Out(Sales)")} />
+              <DropdownItem text="Opt-In(Processing)" isSelected={filterOption === "Opt-In(Processing)"} onClick={() => handleOptionClick("Opt-In(Processing)")} />
+              <DropdownItem text="Anti-Automation" isSelected={filterOption === "Anti-Automation"} onClick={() => handleOptionClick("Anti-Automation")} />
+              <DropdownItem text="Private Action" isSelected={filterOption === "Private Action"} onClick={() => handleOptionClick("Private Action")} />
             </>
           )}
           {/* Business Obligations main option and its suboptions */}
@@ -197,11 +197,11 @@ function Filter({ filterOption, handleSetFilterOption }) {
           </li>
           {showBusinessObligationsOptions && (
             <>
-              <DropdownItem text="Opt in default (Requirement Age)" isSelected={filterOption === "Opt in default (Requirement Age)"} onClick={() => handleOptionClick("Opt in default (Requirement Age)")} />
-              <DropdownItem text="Notice/transparancy requirement" isSelected={filterOption === "Notice/transparancy requirement"} onClick={() => handleOptionClick("Notice/transparancy requirement")} />
+              <DropdownItem text="Opt-In(Default)" isSelected={filterOption === "Opt-In(Default)"} onClick={() => handleOptionClick("Opt-In(Default)")} />
+              <DropdownItem text="Notice/Transparancy" isSelected={filterOption === "Notice/Transparancy"} onClick={() => handleOptionClick("Notice/Transparancy")} />
               <DropdownItem text="Risk Assessments" isSelected={filterOption === "Risk Assessments"} onClick={() => handleOptionClick("Risk Assessments")} />
-              <DropdownItem text="Prohibition on discrimination (Exercising Rights)" isSelected={filterOption === "Prohibition on discrimination (Exercising Rights)"} onClick={() => handleOptionClick("Prohibition on discrimination (Exercising Rights)")} />
-              <DropdownItem text="Purpose/processing limitation" isSelected={filterOption === "Purpose/processing limitation"} onClick={() => handleOptionClick("Purpose/processing limitation")} />
+              <DropdownItem text="No Discrimination" isSelected={filterOption === "No Discrimination"} onClick={() => handleOptionClick("No Discrimination")} />
+              <DropdownItem text="Processing Limits" isSelected={filterOption === "Processing Limits"} onClick={() => handleOptionClick("Processing Limits")} />
             </>
           )}
         </ul>
