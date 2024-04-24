@@ -1,20 +1,24 @@
-// import React from 'react';
+import React from 'react';
 import './MapToggle.css';
 
-const MapToggle = ({ isUS, handleSetIsUS }) => {
+const MapToggle = ({ isUS, handleSetIsUS, comparing }) => {
     return (
         <div className="container">
             <div className="MapToggle">
                 <span 
                     className={`link ${isUS ? "active" : ""}`} 
-                    onClick={() => { if (!isUS) handleSetIsUS(true) }}
+                    onClick={() => { 
+                        if (!isUS && !comparing) handleSetIsUS(true) 
+                    }}
                 >
                     USA 
                 </span>
                 <span className="separator"> / </span>
                 <span 
                     className={`link ${!isUS ? "active" : ""}`} 
-                    onClick={() => { if (isUS) handleSetIsUS(false) }}
+                    onClick={() => { 
+                        if (isUS && !comparing) handleSetIsUS(false) 
+                    }}
                 >
                     INTL
                 </span>

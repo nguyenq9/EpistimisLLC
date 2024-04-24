@@ -7,6 +7,7 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [filter, setFilter] = useState(null);
+    const [comparing, setComparing] = useState(false);
 
     const handleSetIsUS = (val) =>  {
         setIsUS(val);
@@ -24,12 +25,15 @@ const MapContainer = () => {
                 handleSetFilterOption={setFilter}
                 showModal={showModal}
                 filterOption={filter}
+                comparing={comparing}
             />
             <MapView
                 isUS={isUS}
                 showModal={showModal}
                 setShowModal={handleSetShowModal}
                 filterOption={filter}
+                comparing={comparing}
+                setComparing={setComparing}
             />
         </div>
     );
