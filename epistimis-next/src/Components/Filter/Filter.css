@@ -114,7 +114,7 @@ h3{
 }
 
 .trigger {
-    position: fixed;
+    /* position: fixed; */
     top: 15px;
     right: 20px;
     overflow: visible;
@@ -127,7 +127,7 @@ h3{
 }
 
 .trigger span {
-    position: absolute;
+    /* position: absolute; */
     top: 7px;
     right: 33px;
     pointer-events: none;
@@ -138,8 +138,8 @@ h3{
 
 .dropdown-menu {
     position: absolute;
-    top: 55px;
-    right: 20px;
+    /* top: 55px;
+    right: 20px; */
     background-color: var(--purple);
     border-radius: 10%;
     padding: 10px 20px;
