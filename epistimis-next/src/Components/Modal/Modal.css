@@ -14,13 +14,19 @@
   transform: translateY(-100px);
 }
 
+.modal {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 2%;
+  height: 100%;
+}
+
 .regions-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color: red; */
   width: 95%;
-  margin:auto
+  margin:auto;
 }
 
 .region1 {
