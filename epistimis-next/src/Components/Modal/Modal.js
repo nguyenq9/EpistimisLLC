@@ -3,14 +3,19 @@ import "./Modal.css";
 import ReactModal from "react-modal";
 import { Close } from "@mui/icons-material";
 
-const customStyles = {
-  content: {
-    border: "none",
-    padding: "0",
-  }
-};
-
 function Modal(prop) {
+
+  let modalWidth = prop.comparing ? "80%" : "40%";
+
+  const customStyles = {
+    content: {
+      border: "none",
+      padding: "0",
+      marginRight: "auto",
+      marginLeft: "auto",
+      width: modalWidth
+    }
+  };
 
   return (
     prop.comparing ?
@@ -23,7 +28,6 @@ function Modal(prop) {
           {/* ❗❗❗❗❗❗ REWRITE THIS TO MAP ❗❗❗❗❗ */}
           <div className="region1">
             <h1>{prop.modalInfo[0]?.jurisdiction}</h1>
-            <h1>TEST</h1>
             {/* <h2>Filter Categories</h2>
             {prop.modalInfo[0]?.filterCategories !== undefined && prop.modalInfo[0]?.filterCategories.map((option, index) => (
               <p key={index}>{option}</p>

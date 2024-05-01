@@ -1,9 +1,13 @@
+@font-face {
+  font-family: "MPLUS1";
+  src: local("MPLUS1"), url(../fonts/MPLUS1-VariableFont_wght.ttf) format("truetype-varitations");
+  font-weight: 100 900;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-family: "MPLUS1", sans-serif;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -40,8 +44,13 @@
   --card-border-rgb: 131, 134, 135;
 
   --text: #000;
-  --background: #fff;
-
+  --background: #f5f5f5;
+  --background-secondary: #f5f5f5;
+  --modal-background: #f5f5f5;
+  --region-initial: #4D2DB7;
+  --region-hover: #0E21A0;
+  --region-selected: #9D44C0;
+  --region-selected-hover: #EC53B0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,6 +86,8 @@
 
     --text: #fff;
     --background: #000;
+    --background-secondary: #111;
+    --modal-background: #111;
   }
 }
 
@@ -93,13 +104,16 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background-color: var(--background);
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 200;
 }
 
 a {
@@ -107,8 +121,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
