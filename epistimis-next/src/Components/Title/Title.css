@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size:calc(10px + 0.4vw);
     text-align: center;
 }
