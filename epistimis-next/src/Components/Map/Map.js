@@ -146,7 +146,7 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
           key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
           map={isUS ? usLcc : worldMill}
           style={{
-            height: windowHeight * 0.8
+            height: windowHeight * .85
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}
