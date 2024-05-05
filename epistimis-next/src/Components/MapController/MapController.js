@@ -17,7 +17,7 @@ const MapController = ({ isUS, handleSetIsUS, showModal, filterOption, handleSet
                 handleSetIsUS={handleSetIsUS}
                 comparing={comparing}
             />
-            <Title />
+            <Title isUS={isUS}/>
             <Filter filterOption={filterOption} handleSetFilterOption={handleSetFilterOption} />
         </div>
     )
