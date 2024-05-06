@@ -1,0 +1,607 @@
+{
+    "jurisdiction": "Canada",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Personal Information Protection and Electronic Documents Act (PIPEDA)",
+            "description": "The Personal Information Protection and Electronic Documents Act (PIPEDA) was introduced in Canada on April 13, 2000. The Personal Information Protection and Electronic Documents Act (PIPEDA) is a Canadian federal law that regulates the collection, use, and disclosure of personal information by private sector organizations in Canada.",
+            "reference": "https://laws-lois.justice.gc.ca/eng/acts/p-8.6/FullText.html",
+            "billStatus": "In force",
+            "inEffect" : "April 13, 2000",
+            "applicability": [ 
+                {
+                    "roles": ["Organizations", "Individual"],
+                    "personalDataCategories": ["Age", 
+                                               "Name", 
+                                               "ID numbers", 
+                                               "Income", 
+                                               "Ethnic origin", 
+                                               "Blood type", 
+                                               "Opinions", 
+                                               "Evaluations", 
+                                               "Comments", 
+                                               "Social status", 
+                                               "Disciplinary actions",
+                                               "Employee files", 
+                                               "Credit records", 
+                                               "Loan records", 
+                                               "Medical records", 
+                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+                    "processingPurposes": ["Collect", "Use", "Disclose"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Access",
+                    "reference": ["Principle 9"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Principle 9"]
+                },
+                {
+                    "name": "Right to Withdraw Consent",
+                    "reference": ["Principle 3"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "The identified purposes should be specified at or before the time of collection to the individual from whom the personal information is collected. Depending upon the way in which the information is collected, this can be done orally or in writing. An application form, for example, may give notice of the purposes.",
+                        "reference": "Principle 2, Clause 4.2.3"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Organizations shall not collect personal information indiscriminately. Both the amount and the type of information collected shall be limited to that which is necessary to fulfil the purposes identified.",
+                        "reference": "Principle 4, Clause 4.4.1"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "Principle 7 emphasizes the importance of safeguarding personal information through appropriate security measures. It specifies that these safeguards should protect against loss, theft, unauthorized access, disclosure, copying, use, or modification of personal data, regardless of its format. The level of protection should be determined by the sensitivity of the information, its distribution, amount, and storage method. Physical, organizational, and technological measures are recommended, such as locked filing cabinets, restricted access, security clearances, encryption, and password protection. Additionally, organizations are tasked with ensuring that their employees understand the significance of maintaining the confidentiality of personal information and exercising caution during the disposal or destruction of such data to prevent unauthorized access.",
+                        "reference": "Principle 7"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Principle 1 emphasizes the concept of accountability within organizations regarding the handling of personal information. It mandates that organizations designate specific individuals who are responsible for ensuring compliance with the principles outlined in the code. These designated individuals bear accountability for the organization's adherence to the principles, even if other staff members are directly involved in the day-to-day collection and processing of personal data. The identity of these designated individuals must be made known upon request. Moreover, organizations are held responsible for safeguarding personal information within their possession or control, even if it is transferred to third parties for processing. To fulfill these responsibilities, organizations must implement policies and practices aimed at protecting personal information, establishing procedures for addressing complaints and inquiries, training staff, and communicating relevant information about the organization's policies and procedures. These measures collectively ensure that organizations maintain a high standard of data protection and accountability in their operations.",
+                        "reference": "Principle 1"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "Unless otherwise prohibited by law, an organization shall notify an individual of any breach of security safeguards involving the individual’s personal information under the organization’s control if it is reasonable in the circumstances to believe that the breach creates a real risk of significant harm to the individual.",
+                        "reference": "Division 1.1 Section 10.1(1)"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "Accountability for the organization’s compliance with the principles rests with the designated individual(s), even though other individuals within the organization may be responsible for the day-to-day collection and processing of personal information. In addition, other individuals within the organization may be delegated to act on behalf of the designated individual(s).",
+                        "reference": "Principle 1, Clause 4.1.1"
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "An organization is responsible for personal information in its possession or custody, including information that has been transferred to a third party for processing. The organization shall use contractual or other means to provide a comparable level of protection while the information is being processed by a third party.",
+                        "reference": "Principle 1, Clause 4.1.3"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Government Institutions",
+                            "description": "Any government institution to which the Privacy Act applies"
+                        },
+                        {
+                            "type": "Personal Use",
+                            "description": "Any individual in respect of personal information that the individual collects, uses or discloses for personal or domestic purposes and does not collect, use or disclose for any other purpose"
+                        },
+                        {
+                            "type": "Journalistic, Artistic, or Literary purposes",
+                            "description": "Any organization in respect of personal information that the organization collects, uses or discloses for journalistic, artistic or literary purposes and does not collect, use or disclose for any other purpose."
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Commissioner"],
+                "rulemakingAuthority": ["The Commissioner"],
+                "finingAuthority": ["The Commissioner"],
+                "penalties": [ "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000."],
+                "personalLiability": [""],
+                "privateRightOfAction" : [""]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Commercial Use",
+                    "description": "All organizations that collect, use or disclose personal information in the course of commercial activities"
+                }
+            ]
+         },
+         {
+            "lawName": "Personal Information Protection Act (PIPA Alberta)",
+            "description": "The Personal Information Protection Act (PIPA) Alberta is provincial legislation in Alberta, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations in the province. PIPA Alberta is similar in purpose to the federal Personal Information Protection and Electronic Documents Act (PIPEDA), but it specifically applies to organizations operating within Alberta's jurisdiction.",
+            "reference": "https://kings-printer.alberta.ca/1266.cfm?page=P06P5.cfm&leg_type=Acts&isbncln=9780779843312&display=html",
+            "billStatus": "In force",
+            "inEffect" : "April 01, 2023",
+            "applicability": [ 
+                {
+                    "roles": ["Organizations", "Individual"],
+                    "personalDataCategories": ["Age", 
+                                               "Name", 
+                                               "ID numbers", 
+                                               "Income", 
+                                               "Ethnic origin", 
+                                               "Blood type", 
+                                               "Opinions", 
+                                               "Evaluations", 
+                                               "Comments", 
+                                               "Social status", 
+                                               "Disciplinary actions",
+                                               "Employee files", 
+                                               "Credit records", 
+                                               "Loan records", 
+                                               "Medical records", 
+                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+                    "processingPurposes": ["Collection", "Use", "Disclosure"],
+                    "consentRequired": "True"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 24"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 25"]
+                },
+                {
+                    "name": "Right to Withdraw Consent",
+                    "reference": ["Section 9"]
+                },
+                {
+                    "name": "Right to Know how their personal information is being processed",
+                    "reference": ["Section 24"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "Before or at the time of collecting personal information about an individual from the individual, an organization must notify that individual in writing or orally as to the purposes for which the information is collected, and of the name or position name or title of a person who is able to answer on behalf of the organization the individual’s questions about the collection",
+                        "reference": "Section 13"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "An organization may collect personal information only for purposes that are reasonable. Where an organization collects personal information, it may do so only to the extent that is reasonable for meeting the purposes for which the information is collected.",
+                        "reference": "Section 11"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "An organization must protect personal information that is in its custody or under its control by making reasonable security arrangements against such risks as unauthorized access, collection, use, disclosure, copying, modification, disposal or destruction.",
+                        "reference": "Section 34"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Organizations are held responsible for all personal information under their custody or control, including data handled by third parties engaged by the organization. Designating specific individuals within the organization to oversee compliance is mandatory, highlighting the importance of accountability. Additionally, organizations must develop and adhere to reasonable policies and practices tailored to meet their obligations under the Act, ensuring effective privacy management. Specifically, if an organization utilizes service providers located outside Canada, its policies must disclose the countries involved and the purposes for which these providers are authorized to handle personal information. Furthermore, organizations must make written information about their privacy policies and practices, including those concerning international data transfers, available upon request, promoting transparency and enabling individuals to understand how their personal information is managed.",
+                        "reference": "Section 5 and 6"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "An organization having personal information under its control must, without unreasonable delay, provide notice to the Commissioner of any incident involving the loss of or unauthorized access to or disclosure of the personal information where a reasonable person would consider that there exists a real risk of significant harm to an individual as a result of the loss or unauthorized access or disclosure.",
+                        "reference": "Section 34.1"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "An organization that, directly or indirectly, transfers to a service provider outside Canada personal information about an individual that was collected with the individual’s consent must notify the individual in accordance with subsection.",
+                        "reference": "Section 13.1"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Public Bodies",
+                            "description": "This Act does not apply to a public body or any personal information that is in the custody of or under the control of a public body."
+                        },
+                        {
+                            "type": "Non-Profits",
+                            "description": "This Act does not apply to a non‑profit organization or any personal information that is in the custody of or under the control of a non‑profit organization."
+                        }
+
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Commissioner"],
+                "rulemakingAuthority": ["The Commissioner"],
+                "finingAuthority": ["The Commissioner"],
+                "penalties": [ "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000."],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["No action lies and no proceeding may be brought against an organization, or any person acting on behalf of or under the direction of an organization, for damages resulting from the disclosure of or failure to disclose, in good faith, all or part of a record or personal information under this Act, or any consequences of that disclosure or failure to disclose, or the failure to give a notice required under this Act if reasonable care was taken to give the required notice."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Commercial Use",
+                    "description": "Except as provided in this Act and subject to the regulations, this Act applies to every organization and in respect of all personal information."
+                }
+            ]
+         },
+         {
+            "lawName": "Personal Information Protection Act (PIPA BC)",
+            "description": "The Personal Information Protection Act (PIPA BC) is provincial legislation in British Columbia, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations. It outlines rules and principles for handling personal information responsibly and protecting individuals' privacy rights.",
+            "reference": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
+            "billStatus": "In force",
+            "inEffect" : "January 1, 2004",
+            "applicability": [ 
+                {
+                    "roles": ["Organizations", "Individual"],
+                    "personalDataCategories": ["Age", 
+                                               "Name", 
+                                               "ID numbers", 
+                                               "Income", 
+                                               "Ethnic origin", 
+                                               "Blood type", 
+                                               "Opinions", 
+                                               "Evaluations", 
+                                               "Comments", 
+                                               "Social status", 
+                                               "Disciplinary actions",
+                                               "Employee files", 
+                                               "Credit records", 
+                                               "Loan records", 
+                                               "Medical records", 
+                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+                    "processingPurposes": ["Collection, Use and Disclosure"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 23"]
+                },
+                {
+                    "name": "Right to Correct",
+                    "reference": ["Section 24"]
+                },
+                {
+                    "name": "Right to Withdraw Consent",
+                    "reference": ["Section 9"]
+                },
+                {
+                    "name": "Right to Know how their personal information is being processed",
+                    "reference": ["Section 23"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "An organization may collect, use or disclose personal information about an individual for specified purposes if the organization provides the individual with a notice, in a form the individual can reasonably be considered to understand, that it intends to collect, use or disclose the individual's personal information for those purposes",
+                        "reference": "Section 8"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "An organization may use personal information only for purposes that a reasonable person would consider appropriate in the circumstances and that fulfill the purposes that the organization discloses under section 10, for information collected before this Act comes into force, fulfill the purposes for which it was collected, or are otherwise permitted under this Act.",
+                        "reference": "Section 14"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "An organization must protect personal information in its custody or under its control by making reasonable security arrangements to prevent unauthorized access, collection, use, disclosure, copying, modification or disposal or similar risks.",
+                        "reference": "Section 34"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Organizations must act in a manner that a reasonable person would consider appropriate in the circumstances to meet their responsibilities under the Act. They are responsible for all personal information under their control, even if it's not physically in their possession. Additionally, organizations must designate individuals to ensure compliance with the Act, and these individuals can delegate their duties. Furthermore, organizations must make the contact information of these designated individuals available to the public. Organizations must develop and adhere to policies and practices necessary for compliance with the Act, including procedures to address complaints. They must also provide information upon request about their policies, practices, and complaint process.",
+                        "reference": "Section 4 and 5"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "An organization must designate one or more individuals to be responsible for ensuring that the organization complies with this Act.",
+                        "reference": "Section 4"
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "Organizations are allowed to disclose personal information about employees, customers, directors, officers, or shareholders to prospective parties without their consent if necessary for evaluating a potential business transaction. However, this disclosure is permitted only if the organization and prospective party have an agreement ensuring that the information will be used solely for transaction-related purposes. If the business transaction proceeds, the organization may disclose personal information to the party under certain conditions, including notifying the individuals affected. Prospective parties are also allowed to collect and use personal information under specific conditions outlined in the Act. If a business transaction does not proceed, the prospective party must destroy or return any personal information collected.",
+                        "reference": "Section 20"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Public Bodies",
+                            "description": "This Act does not apply to Ministries of the government of British Columbia; Agencies, boards, commissions, corporations, offices, or other bodies specified in, or added to, Schedule 2 of the Freedom of Information and Protection of Privacy Act through regulation. And local public bodies as defined in the Freedom of Information and Protection of Privacy Act."
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Commissioner"],
+                "rulemakingAuthority": ["The Commissioner"],
+                "finingAuthority": ["The Commissioner"],
+                "penalties": [ "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000."],
+                "personalLiability": [""],
+                "privateRightOfAction" : ["If the commissioner has made an order under this Act against an organization and the order has become final as a result of there being no further right of appeal, an individual affected by the order has a cause of action against the organization for damages for actual harm that the individual has suffered as a result of the breach by the organization of obligations under this Act."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "All Organizations",
+                    "description": "Applies to all organizations and to all personal information held by organizations unless PIPA says that it does not apply."
+                }
+            ]
+         },
+         {
+            "lawName": "Act Respecting the Protection of Personal Information in the Private Sector ('Quebec Private Sector Act')",
+            "description": "At the provincial level, the Act Respecting the Protection of Personal Information in the Private Sector, CQLR P-39.1 ('the Quebec Private Sector Act') regulates the collection, use, and disclosure of personal information by private organizations.",
+            "reference": "https://www.legisquebec.gouv.qc.ca/en/document/cs/p-39.1",
+            "billStatus": "In force",
+            "inEffect" : "1 January, 1994",
+            "applicability": [ 
+                {
+                    "roles": ["Enterprises", "Persons"],
+                    "personalDataCategories": ["Age", 
+                                               "Name", 
+                                               "ID numbers", 
+                                               "Income", 
+                                               "Ethnic origin", 
+                                               "Blood type", 
+                                               "Opinions", 
+                                               "Evaluations", 
+                                               "Comments", 
+                                               "Social status", 
+                                               "Disciplinary actions",
+                                               "Employee files", 
+                                               "Credit records", 
+                                               "Loan records", 
+                                               "Medical records", 
+                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+                    "processingPurposes": ["Collect, Held, Use or Communicate"],
+                    "consentRequired": "true"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 8"]
+                },
+                {
+                    "name": "Right to Rectification",
+                    "reference": ["Section 8"]
+                },
+                {
+                    "name": "Right to Withdraw Consent",
+                    "reference": ["Section 8"]
+                },
+                {
+                    "name": "Right to Know how their personal information is being processed",
+                    "reference": ["Section 8"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "Any person who collects personal information through technological means must publish on the enterprise’s website, if applicable, a confidentiality policy drafted in clear and simple language and disseminate it by any appropriate means to reach the persons concerned. The person must do the same for the notice required for any amendment to such a policy.",
+                        "reference": "Section 8.2"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "Unless the person concerned gives his consent, personal information may not be used within the enterprise except for the purposes for which it was collected.",
+                        "reference": "Setion 12"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "Any person collecting personal information on another person may collect only the information necessary for the purposes determined before collecting it. Such information must be collected by lawful means.",
+                        "reference": "Section 5"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "A person carrying on an enterprise must take the security measures necessary to ensure the protection of the personal information collected, used, communicated, kept or destroyed and that are reasonable given the sensitivity of the information, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
+                        "reference": "Section 10"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "The person must also ensure that the project allows computerized personal information collected from the person concerned to be communicated to him in a structured, commonly used technological format.",
+                        "reference": "Section 3.3"
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "The Act mandates that any person engaged in an enterprise must ensure the protection of personal data held by them, with the highest-ranking individual in the enterprise overseeing compliance with the Act and serving as the person responsible for personal information protection, whose contact details must be publicly available. Enterprises are further required to establish governance policies and practices governing personal information protection, including procedures for data retention and disposal, delineating roles and responsibilities, and establishing a complaint resolution process, with detailed information about these policies made accessible to the public. Additionally, enterprises must conduct privacy impact assessments for projects involving personal information and consult the designated individual responsible for personal information protection within the enterprise. The Act also empowers this individual to propose protection measures during projects, and enterprises are obligated to take reasonable measures to mitigate the risk of confidentiality incidents involving personal information, with serious incidents requiring prompt notification to relevant authorities and affected individuals. Finally, enterprises must maintain a register of confidentiality incidents, with its contents subject to government regulation.",
+                        "reference": "Division I.1"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "The conduct of a privacy impact assessment under this Act must be proportionate to the sensitivity of the information concerned, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
+                        "reference": "Section 3.3"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "If the incident presents a risk of serious injury, the person carrying on an enterprise must promptly notify the Commission d’accès à l’information established by section 103 of the Act respecting Access to documents held by public bodies and the Protection of personal information (chapter A-2.1). He must also notify any person whose personal information is concerned by the incident, failing which the Commission may order him to do so. He may also notify any person or body that could reduce the risk, by communicating to the person or body only the personal information necessary for that purpose without the consent of the person concerned. In the latter case, the person in charge of the protection of personal information must record the communication of the information.",
+                        "reference": "Section 3.5"
+                    }
+                ],
+                "registration": [ {
+                        "description": "Every personal information agent carrying on an enterprise in Québec must be registered with the Commission.",
+                        "reference": "Section 70"
+                    }
+                ],
+                "dpo": [ {
+                        "description": "Any person carrying on an enterprise is responsible for protecting the personal information held by the person. Within the enterprise, the person exercising the highest authority shall see to ensuring that this Act is implemented and complied with. That person shall exercise the function of person in charge of the protection of personal information; he may delegate all or part of that function in writing to any person. The title and contact information of the person in charge of the protection of personal information must be published on the enterprise’s website or, if the enterprise does not have a website, be made available by any other appropriate means.",
+                        "reference": "Section 3.1"
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": " A person carrying on an enterprise may, without the consent of the person concerned, communicate personal information concerning another person to an archival agency if the archival agency is a person carrying on an enterprise whose object is the acquisition, preservation and distribution of documents for their general informational value and if the information is communicated as part of the transfer or deposit of the archives of the enterprise.",
+                        "reference": "Section 18.2"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "Public Bodies",
+                            "description": "This Act does not apply to a public body within the meaning of the Act respecting Access to documents held by public bodies and the Protection of personal information and to information held on behalf of a public body by a person other than a public body."
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Commission"],
+                "rulemakingAuthority": ["The Commission"],
+                "finingAuthority": ["The Commission"],
+                "penalties": [ "The maximum amount of the monetary administrative penalty is $50,000 in the case of a natural person and, in all other cases, $10,000,000 or, if greater, the amount corresponding to 2% of worldwide turnover for the preceding fiscal year. Anyone who commits an offence and is liable to a fine of $5,000 to $100,000 in the case of a natural person and, in all other cases, of $15,000 to $25,000,000, or, if greater, the amount corresponding to 4% of worldwide turnover for the preceding fiscal year."],
+                "personalLiability": ["Where an offence under this Act is committed by a legal person, the administrator, director or representative of the legal person who ordered or authorized the act or omission constituting the offence, or who consented thereto, is a party to the offence and is liable to the prescribed penalty."],
+                "privateRightOfAction" : [""]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "All Enterprises",
+                    "description": "The Act applies to such information, whether the enterprise keeps the information itself or through the agency of a third person, whatever the nature of its medium and whatever the form in which it is accessible, whether written, graphic, taped, filmed, computerized, or other."
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "Canada",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Bill C-27",
+                    "type": "Introduced",
+                    "description": "The federal government introduced Bill C-27, a comprehensive piece of legislation, on June 16, 2022. Its goals are to modernize and enhance consumer privacy protection in Canada and to give companies in the private sector clear guidelines. This is the second effort to update federal privacy laws for the private sector; the first one was killed on the order paper in 2021. Bill C-27, if it is passed, will replace PIPEDA with laws pertaining to electronic documents (the Electronic Documents Act) and consumer privacy rights (the Consumer Privacy Protection Act). The Artificial Intelligence and Data Act, which seeks to establish guidelines for the application of AI technologies, will also be introduced by Bill C-27.",
+                    "reference": "https://www.parl.ca/legisinfo/en/bill/44-1/c-27"
+                },
+                {
+                    "lawName": "Ontario's Personal Health Information Protection Act",
+                    "type": "Minor",
+                    "description": "The Personal Health Information Protection Act (PHIPA) in Ontario governs the collection, use, and disclosure of personal health information within the health sector.",
+                    "reference": "https://www.ontario.ca/laws/statute/04p03"
+                }
+            ]
+        }
+    ]
+}

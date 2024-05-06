@@ -1,0 +1,168 @@
+{
+    "jurisdiction": "The United Kingdom",
+    "filterCategories": ["", ""],
+    "privacyLaws": [
+        {
+            "lawName": "Data Protection Act 2018",
+            "description": "Although the United Kingdom is no longer an EU memember, the Data Protection act of 2018 remains in place as a national data protection law but with a couple of technical changes to thr law in order for it to have the status as a national law of the United Kingdom. There were also some changes made that slightly differ from the EU's GDPR.",
+            "reference": "https://www.legislation.gov.uk/ukpga/2018/12/enacted/data.pdf",
+            "billStatus": "In force",
+            "inEffect" : "May 23, 2018",
+            "applicability": [ 
+                {
+                    "roles": ["Controller", "Processor", "Data Subject"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Political opinions", 
+                                               "Religious or philosophical beliefs", 
+                                               "Trade union membership", 
+                                               "Genetic data", 
+                                               "Biometric data", 
+                                               "Data concerning health", 
+                                               "An individual’s sex life", 
+                                               "Sexual orientation"],
+                    "processingPurposes": ["Collection", "Recording", "Organisation", "Structuring", "Storage","Adaptation", "Alteration", "Retrieval", "Consultation", "Use", "Disclosure by transmission", "Dissemination or otherwise making available", "Alignment or Combination", "Restriction", "Erasure", "Destruction"],
+                    "consentRequired": "True"
+                }
+            ],
+            "individualRights": [
+                {
+                    "name": "Right to Access",
+                    "reference": ["Section 45"]
+                },
+                {
+                    "name": "Right to Rectification",
+                    "reference": ["Section 46"]
+                },
+                {
+                    "name": "Right to Erasure",
+                    "reference": ["Section 47"]
+                },
+                {
+                    "name": "Right not to be subject to automated decision-making",
+                    "reference": ["Section 49"]
+                },
+                {
+                    "name": "Right to Object",
+                    "reference": ["Section 99"]
+                }
+            ],
+            "businessObligations": {
+                "notice": [ {
+                        "description": "The controller is obligated to provide the data subject with specific information regarding the processing of their personal data. This includes disclosing the controller's identity and contact details, along with the legal basis and purposes for processing the data. Additionally, the data subject should be informed about the categories of personal data being processed and any recipients or categories of recipients of the data. They must be made aware of their right to lodge a complaint with the Commissioner, along with the necessary contact details. Furthermore, the controller must explain how the data subject can exercise their rights under the relevant data protection regulations. Finally, any additional information necessary to ensure that the processing of personal data is conducted fairly and transparently should also be provided to the data subject.",
+                        "reference": "Section 93"
+                    }
+                ],
+                "lawfulBasis": [ {
+                        "description": "The controller must provide infomraiton abouit the legal basis for their processing to the data subject and in their records of processing activities.",
+                        "reference": "Section 44 and 61"
+                    }
+                ],
+                "purposeLimitation": [  {
+                        "description": "The purpose for which personal data is collected on any occasion must be specified, explicit and legitimate, and personal data so collected must not be processed in a manner that is incompatible with the purpose for which it is collected.",
+                        "reference": "Section 87"
+                    }
+                ],
+                "dataMinimization": [ {
+                        "description": "The processing of personal data must be adequate, relevant and not excessive in relation to the purpose for which it is processed.",
+                        "reference": "Section 88"
+                    }
+                ],
+                "securityReqs": [ {
+                        "description": "Each controller and each processor must implement appropriate technical and organisational measures to ensure a level of security appropriate to the risks arising from the processing of personal data.",
+                        "reference": "Section 66"
+                    }
+                ],
+                "privacyByDesign": [  {
+                        "description": "A controller must implement appropriate technical and organisational measures which are designed to ensure that the data protection principles are implemented, and risks to the rights and freedoms of data subjects are minimised.",
+                        "reference": "Section 103"
+                    }
+                ],
+                "processorReqs": [ {
+                        "description": "Processors must implement appropriate technical and organizational measures to ensure compliance with data protection regulations and safeguard the rights of data subjects. They are not allowed to engage sub-processors without prior written authorization from the controller, and any changes to the list of sub-processors must be communicated to the controller for approval. Processors must enter into a written contract with the controller, specifying the subject matter, duration, nature, and purpose of the processing, as well as outlining the obligations and rights of both parties. Additionally, processors must act only on the instructions of the controller, ensure confidentiality, assist the controller in ensuring data subject rights compliance, and either delete or return personal data to the controller at the end of their service. They must also provide the controller with necessary compliance information and comply with instructions regarding international data transfers. ",
+                        "reference": "Section 59"
+                    }
+                ],
+                "recordKeeper": [ {
+                        "description": "Each controller must maintain a comprehensive record of all processing activities for which they are responsible. This record must include details such as the controller's contact information, the purposes of the processing, categories of recipients of personal data, descriptions of data subjects and personal data categories, legal basis for processing, and security measures implemented. Additionally, controllers must indicate any profiling activities, categories of data transfers to third countries or international organizations, and time limits for erasure of personal data where possible. Similarly, processors must maintain records of processing activities carried out on behalf of a controller, including their own contact information, details of the controller they are acting on behalf of, categories of processing, details of data transfers, and descriptions of security measures. Both controllers and processors are required to provide these records to the Commissioner upon request, ensuring transparency and compliance with data protection regulations.",
+                        "reference": "Section 61"
+                    }
+                ],
+                "riskImpact": [ {
+                        "description": "When a type of processing is expected to pose a significant risk to the rights and freedoms of individuals, the controller must conduct a data protection impact assessment before commencing the processing. This assessment involves evaluating the potential impact of the planned processing operations on the protection of personal data. The assessment must cover several key aspects, including providing a general description of the intended processing activities, assessing the risks to the rights and freedoms of data subjects, outlining measures to mitigate those risks, and specifying safeguards and security measures to ensure compliance with data protection regulations. Additionally, the assessment should consider the rights and legitimate interests of the data subjects and other individuals involved. When determining whether processing is likely to result in a high risk, controllers must consider factors such as the nature, scope, context, and purposes of the processing.",
+                        "reference": "Section 64"
+                    }
+                ],
+                "breachNotification": [ {
+                        "description": "Controllers must promptly notify the Commissioner if they become aware of a personal data breach, ideally within 72 hours, unless the breach is unlikely to pose a risk to individuals' rights and freedoms. The notification should include detailed information about the breach, its consequences, and the measures taken or proposed to address it. Additionally, controllers must maintain records of breach-related facts, effects, and remedial actions for verification by the Commissioner. If the breach involves data transmitted from or to another EU member state, the affected controller must also be informed. Furthermore, if a breach is likely to result in a high risk to individuals, controllers must inform the data subjects without undue delay, providing comprehensive details about the breach and mitigation measures, unless certain exemptions apply. The Commissioner has the authority to require data subjects to be notified if the controller fails to do so, except in specific circumstances outlined in the Act. Additionally, controllers may restrict the provision of breach information to data subjects in certain situations to safeguard essential interests such as ongoing investigations or public security.",
+                        "reference": "string"
+                    }
+                ],
+                "registration": [ {
+                        "description": "",
+                        "reference": ""
+                    }
+                ],
+                "dpo": [ {
+                        "description": "Controllers, except for judicial authorities acting in their judicial capacity, are mandated to designate a DPO who possesses expert knowledge of data protection law and practice and the ability to carry out specific tasks mentioned in the Act. The same individual may serve as a DPO for multiple controllers, considering organizational structure and size. Controllers must ensure that DPOs are involved in all matters related to personal data protection, providing them with necessary resources and access to data and processing operations. DPOs must not receive conflicting instructions, perform tasks outside their designated role, or face dismissal or penalty for fulfilling their duties. Data subjects can contact the DPO regarding their personal data processing and rights. The tasks of a DPO include informing and advising on data protection obligations, assisting with data protection impact assessments, cooperating with the Commissioner, acting as a contact point for data protection issues, monitoring compliance with policies, and conducting audits.",
+                        "reference": "Section 69, 70 and 71"
+                    }
+                ],
+                "dataTransfer": [ {
+                        "description": "Controllers are prohibited from transferring personal data unless certain conditions are met. Firstly, the transfer must be necessary for law enforcement purposes. Secondly, the transfer must comply with one of three conditions: it is based on an adequacy decision, appropriate safeguards are in place, or special circumstances justify the transfer. Thirdly, the intended recipient must be a relevant authority in a third country or international organization, or if the controller is a competent authority specified in the Act, additional conditions must be met.",
+                        "reference": "Section 73"
+                    }
+                ]
+            },
+            "scope": [
+                {
+                    "exemptions": [
+                        {
+                            "type": "National Security",
+                            "description": "Certain provisions of the Act do not apply to personal data processed for the purposes of safeguarding national security."
+                        },
+                        {
+                            "type": "Regulatory bodies",
+                            "description": "Personal data processed for regulatory functions, including investigations and disciplinary actions by regulatory bodies, may be exempt from certain provisions of the Act."
+                        },
+                        {
+                            "type": "Crime and taxation",
+                            "description": "The Act provides exemptions for personal data processing for the prevention or detection of crime, assessment or collection of taxes, and other related purposes."
+                        }
+                    ],             
+                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
+                }
+            ],
+            "enforcement": [ {
+                "enforcementAuthority": ["The Commissioner"],
+                "rulemakingAuthority": ["The Commissioner"],
+                "finingAuthority": ["The Information Commissioner's Office (ICO)"],
+                "penalties": [ "For unauthorized disclosure by a processor, on conviction the fine not exceeding €50,000 or imprisonment for a term not exceeding 5 years, or both. For administrative fines for infringements, the Act allows the ICO to decide whether to impose an administrative fine and, if applicable, determine the amount of the fine. This decision is made in accordance with the Act and relevant provisions. For public authorities or bodies that are not classified as undertakings under the Competition Act 2002, the maximum fine is €1,000,000."],
+                "personalLiability": ["It is an offence for a person, in response to an information notice to make a statement which the person knows to be false in a material respect, or recklessly to make a statement which is false in a material respect"],
+                "privateRightOfAction" : ["The data subject has the right to apply to a court in their rights are infringed."]
+                }
+            ],
+            "threshold": [
+                {
+                    "type": "Any organization",
+                    "description": "The Act applies broadly to any organization that processes personal data, regardless of its size or sector."
+                }
+            ]
+         }
+    ],
+    "otherPrivacyLaws":[
+        {
+            "jurisdiction": "The United Kingdom",
+            "filterCategories": ["", ""],
+            "privacyLaws": [
+                {
+                    "lawName": "Data Protection and Digital Information Bill (No. 2)",
+                    "type": "Introduced",
+                    "description": "This bill was introduced to the UK Parliment on 8 March 2023, marking a significant change to the United Kingdom's approach to data protection and digital information management. The bill is currently in the House of Lords in the reporting stage as of April 25, 2024. The initiative seeks to reduce obstacles faced by scientific researchers and to lessen the regulatory requirements on businesses, especially small and medium-sized enterprises (SMEs). Additionally, the government projects that the Bill will boost the UK economy by over £4 billion over the course of the following decade.",
+                    "reference": "https://bills.parliament.uk/bills/3430#timeline"
+                }
+            ]
+        }
+    ]
+}
