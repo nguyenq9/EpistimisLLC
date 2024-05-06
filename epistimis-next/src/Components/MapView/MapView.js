@@ -6,8 +6,6 @@ const MapView = ({ isUS, showModal, setShowModal, filterOption, comparing, setCo
         <div>
             <Map
                 isUS={isUS}
-                showModal={showModal}
-                setShowModal={setShowModal}
                 filterOption={filterOption}
                 comparing={comparing}
                 setComparing={setComparing}

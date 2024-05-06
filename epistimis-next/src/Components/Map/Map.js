@@ -15,8 +15,9 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setComparing }) => {
+const Map = ({ isUS, filterOption, comparing, setComparing }) => {
   const [currCode, setCode] = useState("");
+  const [modal, setModal] = useState(false);
   const [currRegion, setRegion] = useState("");
   const [modalInfo, setModalInfo] = useState([]);
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -34,7 +35,6 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
   const mapRef = useRef(null);
   const { height: windowHeight } = useWindowDimensions(); // Get window height using the hook
 
-
   useEffect(() => {
     if (currCode !== "") {
       setRegion(getRegionName(currCode));
@@ -42,10 +42,7 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
   }, [currCode]);
 
   const getRegionName = (code) => {
-      // if (mapRef.current) {
-      //   return mapRef.current.getMapObject().getRegionName(code);
-      // }
-      return regionNames[code]
+    return regionNames[code]
   }
 
   const addRegion = (region) => {
@@ -87,8 +84,9 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
   
 
   const handleCloseModal = () => {
-    setCode("")
-    setShowModal(false);
+    console.log("closing modal");
+    setCode("");
+    setModal(false);
     setModalInfo([]);
     if (comparing) {
       setComparing(false);
@@ -114,24 +112,24 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
   const handleRegionSelected = (event, newCode) => {
     setCode(newCode);
     if (comparing) {
-      addRegion(currCode)
-      addRegion(newCode)
+      addRegion(currCode);
+      addRegion(newCode);
       handleCompareCall(getRegionName(currCode), getRegionName(newCode), setModalInfo)
     } else {
-      handleSingleStateRetrieval(getRegionName(newCode), setModalInfo)
+      handleSingleStateRetrieval(getRegionName(newCode), setModalInfo);
     }
-    setShowModal(true)
+    setModal(true);
   };
 
   const handleCompareClicked = () => {
-    setShowModal(false);
+    setModal(false);
     setComparing(true);
     console.log("compare clicked")
   };
 
   return (
     <div>
-      <Modal
+      {/* <Modal
         show={showModal}
         handleCloseModal={handleCloseModal}
         name={currRegion}
@@ -139,6 +137,14 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
         handleCompareClicked={handleCompareClicked}
         comparing={comparing}
         selectedRegions={selectedRegions}
+      /> */}
+      <Modal
+        openModal={modal}
+        closeModal={handleCloseModal}
+        handleCompareClicked={handleCompareClicked}
+        comparing={comparing}
+        modalInfo={modalInfo}
+        name={currRegion}
       />
       <div className="map-container">
         <VectorMap
@@ -155,7 +161,6 @@ const Map = ({ isUS, filterOption, showModal, setShowModal, comparing, setCompar
           backgroundColor="transparent"
           series={regionsConfig}
           selectedRegions={currCode}
-  
         />
       </div>
     </div>
