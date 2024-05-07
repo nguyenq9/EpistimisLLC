@@ -129,15 +129,6 @@ const Map = ({ isUS, filterOption, comparing, setComparing }) => {
 
   return (
     <div>
-      {/* <Modal
-        show={showModal}
-        handleCloseModal={handleCloseModal}
-        name={currRegion}
-        modalInfo={modalInfo}
-        handleCompareClicked={handleCompareClicked}
-        comparing={comparing}
-        selectedRegions={selectedRegions}
-      /> */}
       <Modal
         openModal={modal}
         closeModal={handleCloseModal}
