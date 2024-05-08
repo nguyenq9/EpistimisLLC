@@ -4,12 +4,7 @@ import Title from "../Title/Title";
 import MapToggle from '../MapToggle/MapToggle';
 import "./MapController.css"
 
-const MapController = ({ isUS, handleSetIsUS, showModal, filterOption, handleSetFilterOption, comparing }) => {
-
-    // if (showModal) {
-    //     return null;
-    // }
-
+const MapController = ({ isUS, handleSetIsUS, filterOption, handleSetFilterOption, comparing }) => {
     return (
         <div id="map_controller">
             <MapToggle

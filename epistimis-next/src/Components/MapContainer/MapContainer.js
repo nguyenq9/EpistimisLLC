@@ -5,7 +5,6 @@ import MapController from "../MapController/MapController";
 
 const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
-    const [showModal, setShowModal] = useState(false);
     const [filter, setFilter] = useState(null);
     const [comparing, setComparing] = useState(false);
 
@@ -13,8 +12,8 @@ const MapContainer = () => {
         setIsUS(val);
     }
 
-    const handleSetShowModal = (show) => {
-        setShowModal(show);
+    const handleSetComparing = (val) => {
+        setComparing(val);
     }
     
     return (
@@ -23,17 +22,14 @@ const MapContainer = () => {
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}
                 handleSetFilterOption={setFilter}
-                showModal={showModal}
                 filterOption={filter}
                 comparing={comparing}
             />
             <MapView
                 isUS={isUS}
-                showModal={showModal}
-                setShowModal={handleSetShowModal}
                 filterOption={filter}
                 comparing={comparing}
-                setComparing={setComparing}
+                setComparing={handleSetComparing}
             />
         </div>
     );
