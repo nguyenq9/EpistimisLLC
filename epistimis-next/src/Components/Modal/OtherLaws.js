@@ -7,13 +7,11 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import './Modal.css'
-
 function createData(lawName, type, description, reference) {
     return { lawName, type, description, reference };
 }
 
-export default function LawTable({ otherPrivacyLaws }) {
+export default function OtherLaws({ otherPrivacyLaws }) {
 
     const rows = otherPrivacyLaws.map((law) => {
         return createData(law.lawName, law.type, law.description, law.reference);
