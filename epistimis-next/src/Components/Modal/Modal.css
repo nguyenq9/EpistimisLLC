@@ -90,14 +90,23 @@
   overflow: auto; /* In case content is longer than the modal */
 }
 
-.modal textarea {
-  resize: none;
-  border: none;
-  background-color: var(--modal-background);
-  color: var(--text);
-  font-family: inherit;
+.editable {
+  resize: none; /* Prevents resizing */
+  border: none; /* Removes border */
+  overflow: auto; /* Keeps the scrollbar behavior if content overflows */
+  background-color: transparent; /* Makes the background transparent */
+  outline: none; /* Removes focus outline */
+  color: inherit; /* Inherits text color from parent */
+  font-family: inherit; /* Inherits font properties */
+  font-size: inherit; /* Inherits font size */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+  width: 100%; /* Full width */
+  height: auto; /* Height set to auto, adjust as necessary */
+  white-space: pre-wrap; /* Maintains whitespace formatting */
+  word-wrap: break-word; /* Ensures long words do not cause layout issues */
 }
 
-.modal textarea:focus {
+.editable:focus {
   outline: none;
 }

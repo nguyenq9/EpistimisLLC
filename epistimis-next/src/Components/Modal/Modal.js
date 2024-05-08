@@ -5,9 +5,11 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import "./Modal.css";
 
 import Law from './Law.js';
+import LawTable from './LawTable.js';
 
 function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo, name }) {
   const [ admin, setAdmin ] = useState(false);
+  const [ activeTab, setActiveTab ] = useState(0);
 
   const ref = useRef();
 
@@ -34,20 +36,55 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
                 Compare
               </button>
             </div>
-            <textarea readOnly={!admin}>
+            <textarea readOnly={!admin} className="editable">
               {
                 (item.privacyLaws.length + item.otherPrivacyLaws.length) > 0 
                 ? `Privacy Laws: ${item.privacyLaws.length + item.otherPrivacyLaws.length}` 
                 : 'No Privacy Laws'
               }
             </textarea>
-            <ButtonGroup variant="contained" aria-label="contained primary button group">
-              {(item.privacyLaws.length > 0) ? item.privacyLaws.map((law, index) => (
-                <Button key={index}>Law {index + 1}</Button>
-              )) : null}
-              <Button>Other Privacy Laws</Button>
-            </ButtonGroup>
+
+            {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
+            {/* {item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? ( */}
+              <div>
+                <ButtonGroup variant="contained" aria-label="contained primary button group">
+                  {item.privacyLaws.map((law, lawIndex) => (
+                    <Button key={lawIndex} onClick={() => setActiveTab(lawIndex)}>
+                      Law {lawIndex + 1}
+                    </Button>
+                  ))}
+                  <Button onClick={() => setActiveTab(item.privacyLaws.length)}>Other Laws</Button>
+                </ButtonGroup>
+                <div className="law-container">
+                  {item.privacyLaws.map((law, lawIndex) => (
+                    <div key={lawIndex} style={{ display: activeTab === lawIndex ? 'block' : 'none' }}>
+                      <Law law={law}/>
+                    </div>
+                  ))}
+                  <div style={{ display: activeTab === item.privacyLaws.length ? 'block' : 'none' }}>
+                    <LawTable otherPrivacyLaws={item.otherPrivacyLaws}/>
+                  </div>
+                </div>
+              </div>
+            {/* ) : null} */}
+
+            {/* {item.privacyLaws.length === 0 && item.otherPrivacyLaws.length > 0 ? (
+              <p>Table of other privacy laws would go here.</p>
+            ) : null}
             
+            {(item.privacyLaws.length === 1) ? (
+              <Law law={item.privacyLaws[0]}/>
+            ) : null}
+
+            {item.privacyLaws.length > 1 ? (
+              <div className="law-container">
+                {item.privacyLaws.map((law, index) => (
+                  <Law key={index} law={law}/>
+                ))}
+              </div>
+            ) : null} */}
+
+
           </div>
         ))}
       </div>
