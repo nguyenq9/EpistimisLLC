@@ -302,17 +302,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "string",
                     "type": "Introduced, Minor or Inactive",
                     "description": "string",
                     "reference": ""
                 }
-            ]
-        }
     ]
 }

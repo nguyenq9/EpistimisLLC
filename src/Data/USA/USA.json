@@ -793,16 +793,10 @@
             ],
             "otherPrivacyLaws":[
                 {
-                    "jurisdiction": "Colorado",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
-                        {
-                            "lawName": "Colorado Consumer Protection Act (CCPA)",
-                            "type": "Minor",
-                            "description": "The Colorado Consumer Protection Act (CCPA) provides instructions for elements of liability and definitions related to deceptive trade practices under the CCPA.",
-                            "reference": "https://www.courts.state.co.us/userfiles/file/Court_Probation/Supreme_Court/Committees/Civil_Jury_Instructions_Committee/Chapter%2029.pdf"
-                        }
-                    ]
+                    "lawName": "Colorado Consumer Protection Act (CCPA)",
+                    "type": "Minor",
+                    "description": "The Colorado Consumer Protection Act (CCPA) provides instructions for elements of liability and definitions related to deceptive trade practices under the CCPA.",
+                    "reference": "https://www.courts.state.co.us/userfiles/file/Court_Probation/Supreme_Court/Committees/Civil_Jury_Instructions_Committee/Chapter%2029.pdf"
                 }
             ]
         },
@@ -1184,10 +1178,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Delaware",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "Chapter 12C, Online and Personal Privacy Protection",
                             "type": "Minor",
@@ -1206,8 +1196,6 @@
                             "description": "This Act seeks to strengthen data security practices and ensure timely notification of security breaches to affected individuals.",
                             "reference": "https://delcode.delaware.gov/title6/c012b/index.html"
                         }
-                    ]
-                }
             ]
         },
         {
@@ -1387,24 +1375,18 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Florida",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "Chapter 501, Title 33, Security of confidential personal information",
                             "type": "Minor",
                             "description": "The section outlines definitions and requirements for safeguarding personal information in electronic form, including provisions for breach notification.",
                             "reference": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0500-0599/0501/Sections/0501.171.html"
                         }
-                    ]
-                }
             ]
         },
         {
             "jurisdiction": "Georgia",
             "filterCategories": ["", ""],
-            "privacyLaws": [
+            "otherPrivacyLaws": [
                 {
                     "lawName": "Personal Identity Protection Act (PIPA)",
                     "type": "Minor",
@@ -1686,22 +1668,16 @@
             ],
             "otherPrivacyLaws":[
                 {
-                    "jurisdiction": "string",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
-                        {
-                            "lawName": "House Bill 1554, Consumer data protection.",
-                            "type": "Introduced",
-                            "description": "Would establish in the Indiana Code a new article concerning consumer data protection, to take effect January 1, 2024. The bill as of January 19, 2023, has been referred to the Committee on Commerce, Small Business and Economic Development.",
-                            "reference": "https://iga.in.gov/legislative/2023/bills/house/1554/actions"
-                        },
-                        {
-                            "lawName": "Article 4.9, Disclosure of Security Breach",
-                            "type": "Minor",
-                            "description": "This legislation outlines Indiana's legislation on the disclosure of security breaches, specifically addressing the obligations and definitions associated with such incidents.",
-                            "reference": "https://iga.in.gov/laws/2021/ic/titles/24#24-4.9"
-                        }
-                    ]
+                    "lawName": "House Bill 1554, Consumer data protection.",
+                    "type": "Introduced",
+                    "description": "Would establish in the Indiana Code a new article concerning consumer data protection, to take effect January 1, 2024. The bill as of January 19, 2023, has been referred to the Committee on Commerce, Small Business and Economic Development.",
+                    "reference": "https://iga.in.gov/legislative/2023/bills/house/1554/actions"
+                },
+                {
+                    "lawName": "Article 4.9, Disclosure of Security Breach",
+                    "type": "Minor",
+                    "description": "This legislation outlines Indiana's legislation on the disclosure of security breaches, specifically addressing the obligations and definitions associated with such incidents.",
+                     "reference": "https://iga.in.gov/laws/2021/ic/titles/24#24-4.9"
                 }
             ]
         },
@@ -1875,16 +1851,10 @@
             ],
             "otherPrivacyLaws":[
                 {
-                    "jurisdiction": "Iowa",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
-                        {
-                            "lawName": "Personal Information Security Breach Protection",
-                            "type": "Minor",
-                            "description": "Chapter 715C of the Iowa Code, titled Personal Information Security Breach Protection, defines various terms related to personal information security breaches and outlines notification requirements and remedies in case of a breach.",
-                            "reference": "https://www.legis.iowa.gov/docs/code/715c.pdf"
-                        }
-                    ]
+                    "lawName": "Personal Information Security Breach Protection",
+                    "type": "Minor",
+                    "description": "Chapter 715C of the Iowa Code, titled Personal Information Security Breach Protection, defines various terms related to personal information security breaches and outlines notification requirements and remedies in case of a breach.",
+                    "reference": "https://www.legis.iowa.gov/docs/code/715c.pdf"
                 }
             ]
         },
@@ -2363,10 +2333,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Montana",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "Montana Pupil Online Personal Information Protection Act",
                             "type": "Minor",
@@ -2385,8 +2351,6 @@
                             "description": "The Computer Security Breach section outlines regulations regarding the disclosure of computer security breaches that involve personal information. ",
                             "reference": "https://leg.mt.gov/bills/mca/title_0300/chapter_0140/part_0170/section_0040/0300-0140-0170-0040.html"
                         }
-                    ]
-                }
             ]
         },
         {
@@ -2616,10 +2580,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "New Jersey",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "New Jersey Disclosure and Accountability Transparency Act (NJ DATA)",
                             "type": "Introduced",
@@ -2632,207 +2592,6 @@
                             "description": "This Act outlines the precautions that companies must take to prevent identity theft and breaches of personal information that is obtained from clients, staff members, and individuals.",
                             "reference": "https://www.ncleg.net/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_75/Article_2A.html"
                         }
-                    ]
-                }
-            ]
-        },
-        {
-            "jurisdiction": "New Jersey",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
-                {
-                    "lawName": "New Jersey Data Privacy Act (NJDPA)",
-                    "description": "The New Jersey Data Protection Act (NJDPA) gives people of New Jersey authority over their personal data. It also gives certain rights and places requirements on those that handle and control consumer data. The legislation is applicable to companies and organizations that operate within the state or that create goods or services intended for New Jersey residents.",
-                    "reference": "https://www.njleg.state.nj.us/bill-search/2022/S332/bill-text?f=S0500&n=332_R6",
-                    "billStatus": "Signed",
-                    "inEffect" : "January 15, 2025",
-                    "applicability": [ 
-                        {
-                            "roles": ["Consumer", "Controller", "Processor", "Third Party"],
-                            "personalDataCategories": ["Racial or ethnic origin", 
-                                                       "Religious beliefs", 
-                                                       "Mental or physical health condition, treatment, or diagnosis", 
-                                                       "Sex life or sexual orientation", 
-                                                       "Citizenship or immigration status", 
-                                                       "Status as a transgender or nonbinary person", 
-                                                       "Genetic or biometric data that may be process for identifying an individual", 
-                                                       "Personal data collected from a known child", 
-                                                       "Precise geolocation data", 
-                                                       "Financial information"],
-                            "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
-                            "consentRequired": "true"
-                        }
-                    ],
-                    "individualRights": [
-                        {
-                            "name": "Right to Know if a controller is processing the consumer’s personal information",
-                            "reference": ["Section 7.a.1"]
-                        },
-                        {
-                            "name": "Right to Access",
-                            "reference": ["Section 7.a.1"]
-                        },
-                        {
-                            "name": "Right to Correct",
-                            "reference": ["Section 7.a.2"]
-                        },
-                        {
-                            "name": "Right to Delete",
-                            "reference": ["Section 7.a.3"]
-                        },
-                        {
-                            "name": "Right to Data Portability",
-                            "reference": ["Section 7.a.4"]
-                        },
-                        {
-                            "name": "Right to Opt Out of Targeted Advertising, sale of personal information, or automated profiling",
-                            "reference": ["Section 7.a.5"]
-                        },
-                        {
-                            "name": "Right to Appeal",
-                            "reference": ["Section 3.5"]
-                        }
-                    ],
-                    "businessObligations": {
-                        "notice": [ {
-                                "description": "A controller is obligated to furnish consumers with a comprehensive and easily accessible privacy notice that must contain specific information. This notice should encompass details such as the categories of personal data processed by the controller, the purposes for which the data is processed, and the identities of any third parties with whom the data may be shared. Additionally, it should outline any categories of personal data shared with third parties, if applicable, and provide instructions on how consumers can exercise their rights, including contact information for the controller and avenues for appealing decisions regarding consumer requests. Furthermore, the notice must elucidate the process for notifying consumers of significant changes to the provided information and specify an active electronic mail address or other online mechanism for consumer inquiries.",
-                                "reference": "Section 3.a"
-                            }
-                        ],
-                        "lawfulBasis": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "purposeLimitation": [  {
-                                "description": "A controller shall not process personal data for purposes that are neither reasonably necessary to, nor compatible with, the purposes for which such personal data is processed, as disclosed to the consumer.",
-                                "reference": "Section 9.a.2"
-                            }
-                        ],
-                        "dataMinimization": [ {
-                                "description": "A controller shall limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the purposes for which such data is processed, as disclosed to the consumer.",
-                                "reference": "Section 9.a.1"
-                            }
-                        ],
-                        "securityReqs": [ {
-                                "description": "A controller shall take reasonable measures to establish, implement, and maintain administrative, technical, and physical data security practices to protect the confidentiality, integrity, and accessibility of personal data and to secure personal data during both storage and use from unauthorized acquisition. The data security practices shall be appropriate to the volume and nature of the personal data at issue.",
-                                "reference": "Section 9.a.2"
-                            }
-                        ],
-                        "privacyByDesign": [  {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "processorReqs": [ {
-                                "description": "Processors are required to comply with the instructions of the controller and assist them in fulfilling their obligations. This assistance includes implementing appropriate technical and organizational measures to respond to consumer requests, ensuring data security, and providing necessary information for data protection assessments. Processors must also maintain confidentiality and engage subcontractors under written contracts that uphold the processor's obligations. Contracts between controllers and processors must detail processing instructions, types of data processed, duration of processing, and compliance requirements. Processors must also facilitate the controller's ability to demonstrate compliance and allow for assessments or inspections. Additionally, contracts cannot absolve either party of their liabilities under the legislation.",
-                                "reference": "Section 13"
-                            }
-                        ],
-                        "recordKeeper": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "riskImpact": [ {
-                                "description": "Controllers are required to conduct and document data protection assessments for processing activities involving personal data that pose a heightened risk of harm to consumers. These assessments must evaluate the benefits of the processing against potential risks to consumer rights, considering factors such as the use of de-identified data, consumer expectations, and the controller-consumer relationship. Controllers must make these assessments available to the Division of Consumer Affairs upon request, and the division may review them for compliance with the law. Data protection assessments are confidential and exempt from public inspection. Heightened risk activities include targeted advertising, profiling with foreseeable risks of harm, selling personal data, and processing sensitive data.",
-                                "reference": "Section 9.9"
-                            }
-                        ],
-                        "breachNotification": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "registration": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "dpo": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ],
-                        "dataTransfer": [ {
-                                "description": "",
-                                "reference": ""
-                            }
-                        ]
-                    },
-                    "scope": [
-                        {
-                            "exemptions": [
-                                {
-                                    "type": "HIPAA and HITECH",
-                                    "description": "Data subject to the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and the Health Information Technology for Economic and Clinical Health Act (HITECH)"
-                                },
-                                {
-                                    "type": "Financial Institutions",
-                                    "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
-                                },
-                                {
-                                    "type": "Secondary Market Institutions",
-                                    "description": "The secondary market institutions identified in 15 U.S.C. s.6809(3)(D) and 12 C.F.R. s.1016.3(l)(3)(iii)"
-                                },
-                                {
-                                    "type": "Insurance Companies",
-                                    "description": "An individual, firm, association, corporation, or other entity that is licensed in this state as an insurance company and transacts insurance business"
-                                },
-                                {
-                                    "type": "The state’s Motor Vehicle Commission",
-                                    "description": "The sale of a consumer’s personally identifiable information by the New Jersey Motor Vehicle Commission that is permitted by the federal Drivers' Privacy Protection Act of 1994."
-                                },
-                                {
-                                    "type": "Personal information covered by the Fair Credit Reporting Act",
-                                    "description": "Personally identifiable information collected, processed, sold, or disclosed by a consumer reporting agency, as defined in 15 U.S.C. s.1681a(f), if the collection, processing, sale, or disclosure of the personally identifiable information is limited by the federal “Fair Credit Reporting Act,” 15 U.S.C. s.1681 et seq., and implementing regulations."
-                                }
-                            ],             
-                            "nonProfitsCovered": ["NonProfits are not explicitly exempted"],
-                            "verticalCarveouts" : [""],
-                            "preemption": [""]
-                        }
-                    ],
-                    "enforcement": [ {
-                        "enforcementAuthority": ["The Office of the Attorney General"],
-                        "rulemakingAuthority": ["The Division of Consumer Affairs in the Department of Law and Public Safety"],
-                        "finingAuthority": [" The Office of the Attorney General"],
-                        "penalties": [ "No monetary amount is defined in the law’s text, but a violation of the NJDPA will constitute a violation of the New Jersey Consumer Fraud Act, which can entail fines of up to $10,000 for the initial violation and up to $20,000 for subsequent violations."],
-                        "personalLiability": [""],
-                        "privateRightOfAction" : ["No provision within the bill can be interpreted as establishing or allowing for a private right of action for violations of the legislation."]
-                        }
-                    ],
-                    "threshold": [
-                        {
-                            "type": "Annual Processing",
-                            "description": "Control or process the personal data of at least 100,000 consumers, excluding personal data processed solely for the purpose of completing a payment transaction"
-                        },
-                        {
-                            "type": "Annual Revenue",
-                            "description": "control or process the personal data of at least 25,000 consumers and the controller derives revenue, or receives a discount on the price of any goods or services, from the sale of personal data."
-                        }
-                    ]
-                 }
-            ],
-            "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "New Jersey",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
-                        {
-                            "lawName": "New Jersey Disclosure and Accountability Transparency Act (NJ DATA)",
-                            "type": "Introduced",
-                            "description": "This Act was introduced on January 9 2024 and was sent to the Senate Commerce Committee. The NJ DATA establishes certain requirements for disclosure, processing of personally identifiable information and establishes Office of Data Protection and Responsible Use in Division of Consumer Affairs.",
-                            "reference": "https://legiscan.com/NJ/bill/S2052/2024#:~:text=%22New%20Jersey%20Disclosure%20and%20Accountability,in%20Division%20of%20Consumer%20Affairs."
-                        },
-                        {
-                            "lawName": "Identity Theft Protection Act",
-                            "type": "Minor",
-                            "description": "This Act outlines the precautions that companies must take to prevent identity theft and breaches of personal information that is obtained from clients, staff members, and individuals.",
-                            "reference": "https://www.ncleg.net/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_75/Article_2A.html"
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -3487,10 +3246,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Tennessee",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "TN Code § 47-18-2107, Release of Personal Consumer Information",
                             "type": "Minor",
@@ -3503,8 +3258,6 @@
                             "description": "The Genetic Information Privacy Act aims to establish robust privacy safeguards to ensure that consumers' genetic information is handled responsibly and ethically by direct-to-consumer genetic testing companies operating in Tennessee.",
                             "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0324.pdf"
                         }
-                    ]
-                }
             ]
         },
         {
@@ -3685,10 +3438,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Texas",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "Texas Identify Theft Enforcement and Protection Act",
                             "type": "Minor",
@@ -3701,8 +3450,6 @@
                             "description": "The Texas Medical Records Privacy Act prevents the publication of private medical data and sensitive health information for commercial purposes without the consent of the individual in question.",
                             "reference": "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.181.htm"
                         }
-                    ]
-                }
             ]
         },
         {
@@ -3886,10 +3633,7 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Utah",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
+                
                         {
                             "lawName": "Electronic Information Privacy Act",
                             "type": "Minor",
@@ -3920,8 +3664,6 @@
                             "description": "The Utah Protection of Personal Information Act outlines provisions related to the protection of personal information and enforcement measures under Utah law.",
                             "reference": "https://le.utah.gov/xcode/Title13/Chapter44/C13-44_1800010118000101.pdf"
                         }
-                    ]
-                }
             ]
         },
         {
@@ -4125,10 +3867,6 @@
                  }
             ],
             "otherPrivacyLaws":[
-                {
-                    "jurisdiction": "Virginia",
-                    "filterCategories": ["", ""],
-                    "privacyLaws": [
                         {
                             "lawName": "Section 18.2-186.6, Breach of personal information notification",
                             "type": "Minor",
@@ -4153,8 +3891,6 @@
                             "description": "The Virginia Telephone Privacy Protection Act aims to regulate and restrict unwanted telephone solicitation calls in Virginia, protecting consumers from harassment and invasion of privacy.",
                             "reference": "https://law.lis.virginia.gov/vacodepopularnames/virginia-telephone-privacy-protection-act/"
                         }
-                    ]
-                }
             ]
         },                
         {

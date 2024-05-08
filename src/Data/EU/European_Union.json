@@ -156,17 +156,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "The European Union",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "The Treaty of European Union (TEU) and the Functioning of the European Union (TFEU)",
                     "type": "Minor",
                     "description": "The Treaty of European Union (TEU) and the Treaty on the Functioning of the European Union (TFEU) are two core treaties that form the constitutional basis of the European Union (EU). They outline the objectives, powers, and functioning of the EU institutions, as well as the legal framework within which the EU operates. The TEU explicitly recognizes the right to the protection of personal data as a fundamental right of EU citizens. This provision emphasizes the importance of data protection within the EU legal order and provides a basis for the development of comprehensive data protection legislation such as the GDPR.",
                     "reference": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:12012M/TXT"
                 }
-            ]
-        }
     ]
 }

@@ -315,17 +315,11 @@
         }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Iceland",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "",
                     "type": "Introduced, Minor or Inactive",
                     "description": "",
                     "reference": ""
                 }
-            ]
-        }
     ]
 }

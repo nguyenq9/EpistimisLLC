@@ -299,17 +299,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Germany",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Telecommunications-Telemedia-Data Protection Act (Telekommunikation-Telemedien-Datenschutzgesetz – TTDSG)",
                     "type": "Minor",
                     "description": "This Act provides data protection regulations for telecommunication and telemedia providers.",
                     "reference": "https://www.gesetze-im-internet.de/ttdsg/TTDSG.pdf"
                 }
-            ]
-        }
     ]
 }

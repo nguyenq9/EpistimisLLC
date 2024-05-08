@@ -1,13 +1,13 @@
 {
-    "jurisdiction": "string",
+    "jurisdiction": "Finland",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "string",
+            "lawName": "Data Protection Act of Finland (Tietosuojalaki)",
             "description": "string",
-            "reference": "string",
-            "billStatus": "introduced, signed or in force",
-            "inEffect" : "date",
+            "reference": "https://www.finlex.fi/en/laki/kaannokset/2018/en20181050.pdf",
+            "billStatus": "In force",
+            "inEffect" : "1 January 2019",
             "applicability": [ 
                 {
                     "roles": ["string"],
@@ -120,11 +120,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "lawName": "string",
-            "type": "Introduced, Minor or Inactive",
-            "description": "string",
-            "reference": ""
-        }
+                {
+                    "lawName": "string",
+                    "type": "Introduced, Minor or Inactive",
+                    "description": "string",
+                    "reference": ""
+                }
     ]
 }

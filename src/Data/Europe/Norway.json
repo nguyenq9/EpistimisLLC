@@ -1,13 +1,13 @@
 {
-    "jurisdiction": "string",
+    "jurisdiction": "Norway",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "string",
-            "description": "string",
-            "reference": "string",
-            "billStatus": "introduced, signed or in force",
-            "inEffect" : "date",
+            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
+            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
+            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "billStatus": "In force",
+            "inEffect" : "July 20, 2018",
             "applicability": [ 
                 {
                     "roles": ["string"],
@@ -120,11 +120,12 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "lawName": "string",
-            "type": "Introduced, Minor or Inactive",
-            "description": "string",
-            "reference": ""
-        }
+                {
+                    "lawName": "string",
+                    "type": "Introduced, Minor or Inactive",
+                    "description": "string",
+                    "reference": ""
+                }
+
     ]
 }

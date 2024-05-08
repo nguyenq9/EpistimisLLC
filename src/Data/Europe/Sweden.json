@@ -1,13 +1,13 @@
 {
-    "jurisdiction": "string",
+    "jurisdiction": "Sweden",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
             "lawName": "string",
             "description": "string",
-            "reference": "string",
-            "billStatus": "introduced, signed or in force",
-            "inEffect" : "date",
+            "reference": "https://www.government.se/contentassets/467ef1335aac404c8840c29f9d02305a/act-containing-supplementary-provisions-to-the-eu-general-data-protection-regulation-sfs-2018218/#:~:text=This%20Act%20applies%20to%20the,law%20applies%20under%20international%20law.",
+            "billStatus": "In force",
+            "inEffect" : "25 May 2018",
             "applicability": [ 
                 {
                     "roles": ["string"],
@@ -120,11 +120,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "lawName": "string",
-            "type": "Introduced, Minor or Inactive",
-            "description": "string",
-            "reference": ""
-        }
+                {
+                    "lawName": "string",
+                    "type": "Introduced, Minor or Inactive",
+                    "description": "string",
+                    "reference": ""
+                }
     ]
 }

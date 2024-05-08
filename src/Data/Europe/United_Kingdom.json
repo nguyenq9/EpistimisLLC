@@ -152,17 +152,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "The United Kingdom",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Data Protection and Digital Information Bill (No. 2)",
                     "type": "Introduced",
                     "description": "This bill was introduced to the UK Parliment on 8 March 2023, marking a significant change to the United Kingdom's approach to data protection and digital information management. The bill is currently in the House of Lords in the reporting stage as of April 25, 2024. The initiative seeks to reduce obstacles faced by scientific researchers and to lessen the regulatory requirements on businesses, especially small and medium-sized enterprises (SMEs). Additionally, the government projects that the Bill will boost the UK economy by over £4 billion over the course of the following decade.",
                     "reference": "https://bills.parliament.uk/bills/3430#timeline"
                 }
-            ]
-        }
     ]
 }

@@ -147,10 +147,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Mexico",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "The Privacy Notice Guidelines (the Guidelines)",
                     "type": "Minor",
@@ -163,7 +159,5 @@
                     "description": "",
                     "reference": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf"
                 }
-            ]
-        }
     ]
 }

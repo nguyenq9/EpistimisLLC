@@ -1,11 +1,11 @@
 {
-    "jurisdiction": "string",
+    "jurisdiction": "Poland",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
             "lawName": "string",
             "description": "string",
-            "reference": "string",
+            "reference": "https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20180001000/T/D20181000L.pdf",
             "billStatus": "introduced, signed or in force",
             "inEffect" : "date",
             "applicability": [ 
@@ -120,11 +120,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "lawName": "string",
-            "type": "Introduced, Minor or Inactive",
-            "description": "string",
-            "reference": ""
-        }
+                {
+                    "lawName": "string",
+                    "type": "Introduced, Minor or Inactive",
+                    "description": "string",
+                    "reference": ""
+                }
     ]
 }
