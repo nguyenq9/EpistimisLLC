@@ -79,6 +79,7 @@
             "privacyLaws": [
                 {
                     "lawName": "California Privacy Rights Act of 2019 (CPRA)",
+                    "acronym": "CPRA",
                     "description": "The CPRA is an expansion of the California Consumer Privacy Act (CCPA) and aims to enhance consumer privacy rights in California. It was approved by California voters through a ballot initiative in the 2020 election and is intended to strengthen and clarify provisions in the CCPA.",
                     "reference": "https://www.sidley.com/-/media/uploads/190021a1-consumer-privacy--version-3_1.pdf?la=en&rev=333087c2fd3a43c19e676373fe40a30c",
                     "billStatus": "In Force",
@@ -254,6 +255,7 @@
                 },
                 {
                     "lawName": "California Consumer Privacy Act of 2018 (CCPA)",
+                    "acronym": "CCPA",
                     "description": "The California Consumer Privacy Act of 2018 (CCPA) is a data privacy law that outlines standards for data collection, consequences for businesses that cannot protect user data, and rights that California consumers can exercise over their data.",
                     "reference": "https://www.sidley.com/en/us/sidley-pages/ccpa-text/#:~:text=1798.100.,information%20the%20business%20has%20collected.",
                     "enforcementAgency": "State Of California Department of Justice",
@@ -441,6 +443,7 @@
                 },
                 {
                     "lawName": "California Online Privacy Protection Act of 2003 (CalOPPA)",
+                    "acronym": "CalOPPA",
                     "description": "The California Online Privacy Protection Act (CalOPPA) is a state law designed to safeguard the privacy of individuals who use websites and online services. Enacted in 2003, CalOPPA mandates that operators of commercial websites and online services that collect personally identifiable information (PII) from California residents must conspicuously post a privacy policy on their websites. This policy must detail the types of information collected, how it's used, and whether it's shared with third parties. ",
                     "reference": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=8.&chapter=22.&lawCode=BPC",
                     "billStatus": "In force",
@@ -622,6 +625,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Colorado Privacy Act (CPA)",
+                    "acronym": "CPA",
                     "description": "Colorado is the third US state to enact comprehensive data privacy legislation. Colorado Governor Jared Polis signed the Colorado Privacy Act (CPA) into law on July 7, 2021, with an effective date of July 1, 2023. The statute strives to preserve Colorado residents' privacy. Once in effect, the new Colorado privacy law will oblige certain organizations who do business or manufacture products for Colorado citizens to provide specific personal data privacy protections.",
                     "reference": "https://leg.colorado.gov/sites/default/files/documents/2021A/bills/2021a_190_enr.pdf",
                     "billStatus": "In force",
@@ -806,7 +810,8 @@
             "privacyLaws": [
                 {
                     "lawName": "Connecticut Personal Data Privacy and Online Monitoring Act (CTDPA)",
-                    "description": "string",
+                    "acronym": "CTDPA",
+                    "description": "On 10 May 2022, the Connecticut State Governor signed Senate Bill 6 for an Art Concerning Personal Data Privacy and Online Monitor into law, thereby enacting the CTDPA which went into effect on 1 July 2023. The CTDPA introduces various new consumer rights such as access, rectification, deletion, portability, and the right to opt out of targeted advertising, sale of personal data, and profiling.",
                     "reference": "https://www.cga.ct.gov/2022/ACT/PA/PDF/2022PA-00015-R00SB-00006-PA.PDF",
                     "billStatus": "In force",
                     "inEffect" : "July 1, 2023",
@@ -1004,6 +1009,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Delaware Personal Data Privacy Act (DPDPA)",
+                    "acronym": "DPDPA",
                     "description": "The Act delineates a consumer’s personal data rights and provides that residents of this State will have the right to know what information is being collected about them, see the information, correct any inaccuracies, or request deletion of their personal data that is being maintained by entities or people.",
                     "reference": "https://legis.delaware.gov/BillDetail?LegislationId=140388",
                     "billStatus": "Signed",
@@ -1204,6 +1210,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Florida Digital Bill of Rights (FDBR)",
+                    "acronym": "FDBR",
                     "description": "Governor Ron DeSantis signed SB 262, the Florida Digital Bill of Rights, into law. The targeted legislation carries comprehensive privacy requirements for covered Big Tech companies, while also requiring children's privacy protections for a broader swath of covered entities.",
                     "reference": "https://www.flsenate.gov/Session/Bill/2023/262/BillText/er/PDF",
                     "billStatus": "Signed",
@@ -1492,6 +1499,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Indiana Consumer Data Protection Act (Indiana CDPA)",
+                    "acronym": "Indiana CDPA",
                     "description": "Senate Bill 5's Indiana Consumer Data Protection Act (Indiana CDPA) safeguards the rights to privacy and personal information of the state's 6.8 million citizens and imposes data privacy obligations on businesses operating in the state or offering products or services to residents.",
                     "reference": "https://legiscan.com/IN/text/SB0005/id/2779850/Indiana-2023-SB0005-Enrolled.pdf",
                     "billStatus": "Signed",
@@ -1687,6 +1695,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Iowa Consumer Data Protection Act (Iowa CDPA)",
+                    "acronym": "Iowa CDPA",
                     "description": "On March 29, Iowa became the sixth state to enact a comprehensive privacy law. The law, which will take effect on January 1, 2025, would give organizations 21 months to meet the new standards set by this state.",
                     "reference": "https://www.legis.iowa.gov/docs/publications/LGE/90/SF262.pdf",
                     "billStatus": "Signed",
@@ -2164,7 +2173,8 @@
             "privacyLaws": [
                 {
                     "lawName": "Montana Consumer Data Privacy Act (MCDPA)",
-                    "description": "string",
+                    "acronym": "MCDPA",
+                    "description": "On May 18, 2023, the Governor of Montana approved Senate Bill No. 384 for An Act Establishing the CDPA. It will go into effect on October 1, 2024. Under the CDPA, controllers are required to do Data Protection Assessments, limit the collection of personal data to that which is appropriate, relevant, and reasonably necessary in relation to its purposes, and implement administrative, technical, and physical data security practices.",
                     "reference": "https://leg.mt.gov/bills/2023/billpdf/SB0384.pdf",
                     "billStatus": "Signed",
                     "inEffect" : "October 1, 2024",
@@ -2407,6 +2417,7 @@
             "privacyLaws": [
                 {
                     "lawName": "New Jersey Data Privacy Act (NJDPA)",
+                    "acronym": "NJDPA",
                     "description": "The New Jersey Data Protection Act (NJDPA) gives people of New Jersey authority over their personal data. It also gives certain rights and places requirements on those that handle and control consumer data. The legislation is applicable to companies and organizations that operate within the state or that create goods or services intended for New Jersey residents.",
                     "reference": "https://www.njleg.state.nj.us/bill-search/2022/S332/bill-text?f=S0500&n=332_R6",
                     "billStatus": "Signed",
@@ -2744,6 +2755,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Oregon Consumer Privacy Act",
+                    "acronym": "OCPA",
                     "description": "The Oregon Consumer Privacy Act (OCPA) is a state-level legislation aimed at safeguarding the privacy rights of consumers in Oregon, USA. Enacted with similarities to California's CCPA (California Consumer Privacy Act), the OCPA empowers consumers with greater control over their personal data held by businesses.",
                     "reference": "https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled",
                     "billStatus": "Signed",
@@ -3068,6 +3080,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Tennessee Information Privacy Act (TIPA)",
+                    "acronym": "TIPA",
                     "description": "The TIPA was signed into law in May 2023, giving businesses just over two years to prepare for the new privacy bill. The Tennessee privacy law takes effect July 1, 2025.",
                     "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0408.pdf",
                     "billStatus": "Signed",
@@ -3266,6 +3279,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Texas Data Privacy and Security Act (TDPSA)",
+                    "acronym": "TDPSA",
                     "description": "The Texas Data Privacy and Security Act, or TDPSA, seeks to govern how corporations gather, utilize, and handle Texas consumers' personal data.",
                     "reference": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=HB4",
                     "billStatus": "Signed",
@@ -3458,6 +3472,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Utah Consumer Privacy Act (UCPA)",
+                    "acronym": "UCPA",
                     "description": "The Utah Consumer Privacy Act is a legislative measure designed to protect the privacy rights of individuals within the state of Utah. It establishes clear definitions for terms related to personal data and grants consumers several important rights, including the ability to access and delete certain personal data held by businesses, as well as the right to opt out of data collection and usage for specific purposes.",
                     "reference": "https://le.utah.gov/~2022/bills/static/SB0227.html",
                     "billStatus": "In force",
@@ -3696,6 +3711,7 @@
             "privacyLaws": [
                 {
                     "lawName": "Virginia Consumer Data Protection Act (VCDPA)",
+                    "acronym": "VCDPA",
                     "description": "The Virginia Consumer Data Protection Act (“VCDPA”) went into effect on January 1, 2023. This law provides Virginia residents certain rights for personal data collected by businesses under conditions outlined in the law",
                     "reference": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter53/",
                     "billStatus": "In force",

@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Federal Act on Data Protection (FADP)",
+            "acronym": "FADP",
             "description": "The Federal Act on Data Protection (FADP) was introduced in fall 202 and came into effect Septembet 1, 2023. The General Data Protection Regulation (GDPR) and other European laws are mostly compliant with the Federal Act on Data Protection (in German), with a few notable exceptions. Although there have been minor revisions in 2009 and 2019, the FADP is a comprehensive replacement of the previous Swiss Data Protection Act from 1992.",
             "reference": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
             "billStatus": "In force",
@@ -142,9 +143,9 @@
     ],
     "otherPrivacyLaws":[
                 {
-                    "lawName": "string",
+                    "lawName": "",
                     "type": "Introduced, Minor or Inactive",
-                    "description": "string",
+                    "description": "",
                     "reference": ""
                 }
     ]

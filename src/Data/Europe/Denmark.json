@@ -1,12 +1,11 @@
 {
-    "jurisdiction": "string",
+    "jurisdiction": "Denmark",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
             "lawName": "string",
-            "acronym": "string",
             "description": "string",
-            "reference": "string",
+            "reference": "https://www.datatilsynet.dk/media/7753/danish-data-protection-act.pdf",
             "billStatus": "introduced, signed or in force",
             "inEffect" : "date",
             "applicability": [ 

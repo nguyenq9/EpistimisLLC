@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Federal Law on Protection of Personal Data Held by Private Parties",
+            "acronym": "LFPDPPP",
             "description": "The Federal Law on the Protection of Personal Data Held by Private Parties in Mexico, commonly referred to as the 'Ley Federal de Protección de Datos Personales en Posesión de los Particulares' (LFPDPPP), is a comprehensive legal framework designed to regulate the processing of personal data by private entities operating in Mexico. Enacted in 2010, the law aims to safeguard the privacy of individuals by establishing principles for the lawful collection, use, storage, and disclosure of personal data.",
             "reference": "https://www.duanemorris.com/site/static/Mexico_Federal_Protection_Law_Personal_Data.pdf",
             "billStatus": "In force",

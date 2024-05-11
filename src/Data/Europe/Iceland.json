@@ -3,7 +3,8 @@
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Act 90/2018 on Privacy and Processing of Personal Data (the DPA)",
+            "lawName": "Act 90/2018 on Privacy and Processing of Personal Data (DPA)",
+            "acronym": "DPA",
             "description": "Iceland is not a member of the EU, but it is a part of the European Economic Area (EEA). Decision No. 154/2018 of the EEA Joint Committee establishes the applicability of the GDPR throughout the EEA; the Act in Iceland brought this regulation into effect. As long as they do not conflict with the Act or the GDPR, all rules and regulations published under the previous Law 77/2000 on the Protection of Privacy as Regarding the Processing of Personal Data shall remain in effect, according to the Act's transitional provisions.",
             "reference": "https://www.personuvernd.is/media/uncategorized/Act_No_90_2018_on_Data_Protection_and_the_Processing_of_Personal_Data.pdf",
             "billStatus": "In force",
@@ -163,6 +164,7 @@
          },
          {
             "lawName": "General Data Protection Regulation (GDPR)",
+            "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
             "reference": "https://gdpr-info.eu/",
             "billStatus": "In force",

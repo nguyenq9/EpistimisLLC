@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "German Federal Data Protection Act (Bundesdatenschutzgesetz – BDSG)",
+            "acronym": "BDSG",
             "description": "The BDSG was initially enacted in 1977 to regulate the processing of personal data by government agencies and private entities in Germany. It has since undergone several revisions to align with European Union (EU) data protection laws, particularly the General Data Protection Regulation (GDPR), which became enforceable in 2018.",
             "reference": "https://www.gesetze-im-internet.de/englisch_bdsg/englisch_bdsg.html",
             "billStatus": "In force",
@@ -147,6 +148,7 @@
          },
          {
             "lawName": "General Data Protection Regulation (GDPR)",
+            "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
             "reference": "https://gdpr-info.eu/",
             "billStatus": "In force",
