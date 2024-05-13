@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
+            "acronym": "PDA",
             "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
             "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
             "billStatus": "In force",

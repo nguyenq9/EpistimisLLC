@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Oregon Consumer Privacy Act",
+            "acronym": "OCPA",
             "description": "The Oregon Consumer Privacy Act (OCPA) is a state-level legislation aimed at safeguarding the privacy rights of consumers in Oregon, USA. Enacted with similarities to California's CCPA (California Consumer Privacy Act), the OCPA empowers consumers with greater control over their personal data held by businesses.",
             "reference": "https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled",
             "billStatus": "Signed",

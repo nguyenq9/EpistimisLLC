@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "New Jersey Data Privacy Act (NJDPA)",
+            "acronym": "NJDPA",
             "description": "The New Jersey Data Protection Act (NJDPA) gives people of New Jersey authority over their personal data. It also gives certain rights and places requirements on those that handle and control consumer data. The legislation is applicable to companies and organizations that operate within the state or that create goods or services intended for New Jersey residents.",
             "reference": "https://www.njleg.state.nj.us/bill-search/2022/S332/bill-text?f=S0500&n=332_R6",
             "billStatus": "Signed",
@@ -177,10 +178,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "New Jersey",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "New Jersey Disclosure and Accountability Transparency Act (NJ DATA)",
                     "type": "Introduced",
@@ -193,7 +190,5 @@
                     "description": "This Act outlines the precautions that companies must take to prevent identity theft and breaches of personal information that is obtained from clients, staff members, and individuals.",
                     "reference": "https://www.ncleg.net/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_75/Article_2A.html"
                 }
-            ]
-        }
     ]
 }

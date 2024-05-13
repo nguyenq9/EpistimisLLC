@@ -4,7 +4,8 @@
     "privacyLaws": [
         {
             "lawName": "Montana Consumer Data Privacy Act (MCDPA)",
-            "description": "string",
+            "acronym": "MCDPA",
+            "description": "On May 18, 2023, the Governor of Montana approved Senate Bill No. 384 for An Act Establishing the CDPA. It will go into effect on October 1, 2024. Under the CDPA, controllers are required to do Data Protection Assessments, limit the collection of personal data to that which is appropriate, relevant, and reasonably necessary in relation to its purposes, and implement administrative, technical, and physical data security practices.",
             "reference": "https://leg.mt.gov/bills/2023/billpdf/SB0384.pdf",
             "billStatus": "Signed",
             "inEffect" : "October 1, 2024",
@@ -173,10 +174,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Montana",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Montana Pupil Online Personal Information Protection Act",
                     "type": "Minor",
@@ -195,7 +192,5 @@
                     "description": "The Computer Security Breach section outlines regulations regarding the disclosure of computer security breaches that involve personal information. ",
                     "reference": "https://leg.mt.gov/bills/mca/title_0300/chapter_0140/part_0170/section_0040/0300-0140-0170-0040.html"
                 }
-            ]
-        }
     ]
 }

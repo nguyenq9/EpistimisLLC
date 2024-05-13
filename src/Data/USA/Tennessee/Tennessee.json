@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Tennessee Information Privacy Act (TIPA)",
+            "acronym": "TIPA",
             "description": "The TIPA was signed into law in May 2023, giving businesses just over two years to prepare for the new privacy bill. The Tennessee privacy law takes effect July 1, 2025.",
             "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0408.pdf",
             "billStatus": "Signed",
@@ -182,10 +183,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Tennessee",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "TN Code § 47-18-2107, Release of Personal Consumer Information",
                     "type": "Minor",
@@ -198,7 +195,5 @@
                     "description": "The Genetic Information Privacy Act aims to establish robust privacy safeguards to ensure that consumers' genetic information is handled responsibly and ethically by direct-to-consumer genetic testing companies operating in Tennessee.",
                     "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0324.pdf"
                 }
-            ]
-        }
     ]
 }

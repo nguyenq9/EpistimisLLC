@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Indiana Consumer Data Protection Act (Indiana CDPA)",
+            "acronym": "Indiana CDPA",
             "description": "Senate Bill 5's Indiana Consumer Data Protection Act (Indiana CDPA) safeguards the rights to privacy and personal information of the state's 6.8 million citizens and imposes data privacy obligations on businesses operating in the state or offering products or services to residents.",
             "reference": "https://legiscan.com/IN/text/SB0005/id/2779850/Indiana-2023-SB0005-Enrolled.pdf",
             "billStatus": "Signed",
@@ -180,22 +181,16 @@
     ],
     "otherPrivacyLaws":[
         {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
-                {
-                    "lawName": "House Bill 1554, Consumer data protection.",
-                    "type": "Introduced",
-                    "description": "Would establish in the Indiana Code a new article concerning consumer data protection, to take effect January 1, 2024. The bill as of January 19, 2023, has been referred to the Committee on Commerce, Small Business and Economic Development.",
-                    "reference": "https://iga.in.gov/legislative/2023/bills/house/1554/actions"
-                },
-                {
-                    "lawName": "Article 4.9, Disclosure of Security Breach",
-                    "type": "Minor",
-                    "description": "This legislation outlines Indiana's legislation on the disclosure of security breaches, specifically addressing the obligations and definitions associated with such incidents.",
-                    "reference": "https://iga.in.gov/laws/2021/ic/titles/24#24-4.9"
-                }
-            ]
+            "lawName": "House Bill 1554, Consumer data protection.",
+            "type": "Introduced",
+            "description": "Would establish in the Indiana Code a new article concerning consumer data protection, to take effect January 1, 2024. The bill as of January 19, 2023, has been referred to the Committee on Commerce, Small Business and Economic Development.",
+            "reference": "https://iga.in.gov/legislative/2023/bills/house/1554/actions"
+        },
+        {
+            "lawName": "Article 4.9, Disclosure of Security Breach",
+            "type": "Minor",
+            "description": "This legislation outlines Indiana's legislation on the disclosure of security breaches, specifically addressing the obligations and definitions associated with such incidents.",
+             "reference": "https://iga.in.gov/laws/2021/ic/titles/24#24-4.9"
         }
     ]
 }

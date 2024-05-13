@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Florida Digital Bill of Rights (FDBR)",
+            "acronym": "FDBR",
             "description": "Governor Ron DeSantis signed SB 262, the Florida Digital Bill of Rights, into law. The targeted legislation carries comprehensive privacy requirements for covered Big Tech companies, while also requiring children's privacy protections for a broader swath of covered entities.",
             "reference": "https://www.flsenate.gov/Session/Bill/2023/262/BillText/er/PDF",
             "billStatus": "Signed",
@@ -142,7 +143,7 @@
                     ],             
                     "nonProfitsCovered": ["Non-Profit organizations are exempted"],
                     "verticalCarveouts" : [""],
-                    "preemption": ["—This part is a matter of statewide concern and supersedes all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection, processing, sharing, or sale of consumer personal data by a controller or processor. The regulation of the collection, processing, sharing, or sale of consumer personal data by a controller or processor is preempted to the state"]
+                    "preemption": ["This part is a matter of statewide concern and supersedes all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection, processing, sharing, or sale of consumer personal data by a controller or processor. The regulation of the collection, processing, sharing, or sale of consumer personal data by a controller or processor is preempted to the state"]
                 }
             ],
             "enforcement": [ {
@@ -175,17 +176,11 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Florida",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Chapter 501, Title 33, Security of confidential personal information",
                     "type": "Minor",
                     "description": "The section outlines definitions and requirements for safeguarding personal information in electronic form, including provisions for breach notification.",
                     "reference": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0500-0599/0501/Sections/0501.171.html"
                 }
-            ]
-        }
     ]
 }

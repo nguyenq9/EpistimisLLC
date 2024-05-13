@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Texas Data Privacy and Security Act (TDPSA)",
+            "acronym": "TDPSA",
             "description": "The Texas Data Privacy and Security Act, or TDPSA, seeks to govern how corporations gather, utilize, and handle Texas consumers' personal data.",
             "reference": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=HB4",
             "billStatus": "Signed",
@@ -154,8 +155,8 @@
                         }
                     ],             
                     "nonProfitsCovered": ["Non-Profit organizations are exempted"],
-                    "verticalCarveouts" : ["string"],
-                    "preemption": ["string"]
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
                 }
             ],
             "enforcement": [ {
@@ -176,10 +177,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Texas",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Texas Identify Theft Enforcement and Protection Act",
                     "type": "Minor",
@@ -192,7 +189,5 @@
                     "description": "The Texas Medical Records Privacy Act prevents the publication of private medical data and sensitive health information for commercial purposes without the consent of the individual in question.",
                     "reference": "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.181.htm"
                 }
-            ]
-        }
     ]
 }

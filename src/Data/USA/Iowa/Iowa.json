@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Iowa Consumer Data Protection Act (Iowa CDPA)",
+            "acronym": "Iowa CDPA",
             "description": "On March 29, Iowa became the sixth state to enact a comprehensive privacy law. The law, which will take effect on January 1, 2025, would give organizations 21 months to meet the new standards set by this state.",
             "reference": "https://www.legis.iowa.gov/docs/publications/LGE/90/SF262.pdf",
             "billStatus": "Signed",
@@ -168,16 +169,10 @@
     ],
     "otherPrivacyLaws":[
         {
-            "jurisdiction": "Iowa",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
-                {
-                    "lawName": "Personal Information Security Breach Protection",
-                    "type": "Minor",
-                    "description": "Chapter 715C of the Iowa Code, titled Personal Information Security Breach Protection, defines various terms related to personal information security breaches and outlines notification requirements and remedies in case of a breach.",
-                    "reference": "https://www.legis.iowa.gov/docs/code/715c.pdf"
-                }
-            ]
+            "lawName": "Personal Information Security Breach Protection",
+            "type": "Minor",
+            "description": "Chapter 715C of the Iowa Code, titled Personal Information Security Breach Protection, defines various terms related to personal information security breaches and outlines notification requirements and remedies in case of a breach.",
+            "reference": "https://www.legis.iowa.gov/docs/code/715c.pdf"
         }
     ]
 }

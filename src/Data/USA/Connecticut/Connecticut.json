@@ -4,7 +4,8 @@
     "privacyLaws": [
         {
             "lawName": "Connecticut Personal Data Privacy and Online Monitoring Act (CTDPA)",
-            "description": "string",
+            "acronym": "CTDPA",
+            "description": "On 10 May 2022, the Connecticut State Governor signed Senate Bill 6 for an Art Concerning Personal Data Privacy and Online Monitor into law, thereby enacting the CTDPA which went into effect on 1 July 2023. The CTDPA introduces various new consumer rights such as access, rectification, deletion, portability, and the right to opt out of targeted advertising, sale of personal data, and profiling.",
             "reference": "https://www.cga.ct.gov/2022/ACT/PA/PDF/2022PA-00015-R00SB-00006-PA.PDF",
             "billStatus": "In force",
             "inEffect" : "July 1, 2023",
@@ -150,7 +151,7 @@
                         }
                     ],             
                     "nonProfitsCovered": ["Non-Profit organizations are exempted"],
-                    "verticalCarveouts" : ["A controller shall not be required to authenticate an opt-out request, but a controller may deny an opt-out request if the controller has a good faith, reasonable and documented belief that such request is fraudulent"],
+                    "verticalCarveouts" : [""],
                     "preemption": [""]
                 }
             ],

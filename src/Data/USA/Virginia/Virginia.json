@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Virginia Consumer Data Protection Act (VCDPA)",
+            "acronym": "VCDPA",
             "description": "The Virginia Consumer Data Protection Act (“VCDPA”) went into effect on January 1, 2023. This law provides Virginia residents certain rights for personal data collected by businesses under conditions outlined in the law",
             "reference": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter53/",
             "billStatus": "In force",
@@ -175,10 +176,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Virginia",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Section 18.2-186.6, Breach of personal information notification",
                     "type": "Minor",
@@ -203,7 +200,5 @@
                     "description": "The Virginia Telephone Privacy Protection Act aims to regulate and restrict unwanted telephone solicitation calls in Virginia, protecting consumers from harassment and invasion of privacy.",
                     "reference": "https://law.lis.virginia.gov/vacodepopularnames/virginia-telephone-privacy-protection-act/"
                 }
-            ]
-        }
     ]
 }

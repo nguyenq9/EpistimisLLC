@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Delaware Personal Data Privacy Act (DPDPA)",
+            "acronym": "DPDPA",
             "description": "The Act delineates a consumer’s personal data rights and provides that residents of this State will have the right to know what information is being collected about them, see the information, correct any inaccuracies, or request deletion of their personal data that is being maintained by entities or people.",
             "reference": "https://legis.delaware.gov/BillDetail?LegislationId=140388",
             "billStatus": "Signed",
@@ -178,10 +179,6 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Delaware",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
                 {
                     "lawName": "Chapter 12C, Online and Personal Privacy Protection",
                     "type": "Minor",
@@ -200,7 +197,5 @@
                     "description": "This Act seeks to strengthen data security practices and ensure timely notification of security breaches to affected individuals.",
                     "reference": "https://delcode.delaware.gov/title6/c012b/index.html"
                 }
-            ]
-        }
     ]
 }

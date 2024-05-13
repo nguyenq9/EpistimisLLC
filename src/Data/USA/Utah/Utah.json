@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Utah Consumer Privacy Act (UCPA)",
+            "acronym": "UCPA",
             "description": "The Utah Consumer Privacy Act is a legislative measure designed to protect the privacy rights of individuals within the state of Utah. It establishes clear definitions for terms related to personal data and grants consumers several important rights, including the ability to access and delete certain personal data held by businesses, as well as the right to opt out of data collection and usage for specific purposes.",
             "reference": "https://le.utah.gov/~2022/bills/static/SB0227.html",
             "billStatus": "In force",
@@ -179,10 +180,7 @@
          }
     ],
     "otherPrivacyLaws":[
-        {
-            "jurisdiction": "Utah",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
+        
                 {
                     "lawName": "Electronic Information Privacy Act",
                     "type": "Minor",
@@ -213,7 +211,5 @@
                     "description": "The Utah Protection of Personal Information Act outlines provisions related to the protection of personal information and enforcement measures under Utah law.",
                     "reference": "https://le.utah.gov/xcode/Title13/Chapter44/C13-44_1800010118000101.pdf"
                 }
-            ]
-        }
     ]
 }

@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "Colorado Privacy Act (CPA)",
+            "acronym": "CPA",
             "description": "Colorado is the third US state to enact comprehensive data privacy legislation. Colorado Governor Jared Polis signed the Colorado Privacy Act (CPA) into law on July 7, 2021, with an effective date of July 1, 2023. The statute strives to preserve Colorado residents' privacy. Once in effect, the new Colorado privacy law will oblige certain organizations who do business or manufacture products for Colorado citizens to provide specific personal data privacy protections.",
             "reference": "https://leg.colorado.gov/sites/default/files/documents/2021A/bills/2021a_190_enr.pdf",
             "billStatus": "In force",
@@ -175,16 +176,10 @@
     ],
     "otherPrivacyLaws":[
         {
-            "jurisdiction": "Colorado",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
-                {
-                    "lawName": "Colorado Consumer Protection Act (CCPA)",
-                    "type": "Minor",
-                    "description": "The Colorado Consumer Protection Act (CCPA) provides instructions for elements of liability and definitions related to deceptive trade practices under the CCPA.",
-                    "reference": "https://www.courts.state.co.us/userfiles/file/Court_Probation/Supreme_Court/Committees/Civil_Jury_Instructions_Committee/Chapter%2029.pdf"
-                }
-            ]
+            "lawName": "Colorado Consumer Protection Act (CCPA)",
+            "type": "Minor",
+            "description": "The Colorado Consumer Protection Act (CCPA) provides instructions for elements of liability and definitions related to deceptive trade practices under the CCPA.",
+            "reference": "https://www.courts.state.co.us/userfiles/file/Court_Probation/Supreme_Court/Committees/Civil_Jury_Instructions_Committee/Chapter%2029.pdf"
         }
     ]
 }

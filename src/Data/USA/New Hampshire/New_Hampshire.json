@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "New Hampshire Privacy Act (NHPA)",
+            "acronym": "NHPA",
             "description": "On January 18, 2024, the New Hampshire Senate passed by voice vote SB255, the New Hampshire Privacy Act (NHPA), amended by the New Hampshire House of Representatives.",
             "reference": "https://legiscan.com/NH/text/SB255/id/2750381",
             "billStatus": "Signed",

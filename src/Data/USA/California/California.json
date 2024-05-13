@@ -4,6 +4,7 @@
     "privacyLaws": [
         {
             "lawName": "California Privacy Rights Act of 2019 (CPRA)",
+            "acronym": "CPRA",
             "description": "The CPRA is an expansion of the California Consumer Privacy Act (CCPA) and aims to enhance consumer privacy rights in California. It was approved by California voters through a ballot initiative in the 2020 election and is intended to strengthen and clarify provisions in the CCPA.",
             "reference": "https://www.sidley.com/-/media/uploads/190021a1-consumer-privacy--version-3_1.pdf?la=en&rev=333087c2fd3a43c19e676373fe40a30c",
             "billStatus": "In Force",
@@ -179,6 +180,7 @@
         },
         {
             "lawName": "California Consumer Privacy Act of 2018 (CCPA)",
+            "acronym": "CCPA",
             "description": "The California Consumer Privacy Act of 2018 (CCPA) is a data privacy law that outlines standards for data collection, consequences for businesses that cannot protect user data, and rights that California consumers can exercise over their data.",
             "reference": "https://www.sidley.com/en/us/sidley-pages/ccpa-text/#:~:text=1798.100.,information%20the%20business%20has%20collected.",
             "enforcementAgency": "State Of California Department of Justice",
@@ -366,6 +368,7 @@
         },
         {
             "lawName": "California Online Privacy Protection Act of 2003 (CalOPPA)",
+            "acronym": "CalOPPA",
             "description": "The California Online Privacy Protection Act (CalOPPA) is a state law designed to safeguard the privacy of individuals who use websites and online services. Enacted in 2003, CalOPPA mandates that operators of commercial websites and online services that collect personally identifiable information (PII) from California residents must conspicuously post a privacy policy on their websites. This policy must detail the types of information collected, how it's used, and whether it's shared with third parties. ",
             "reference": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=8.&chapter=22.&lawCode=BPC",
             "billStatus": "In force",
