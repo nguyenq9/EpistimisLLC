@@ -4,6 +4,8 @@ import { Close } from "@mui/icons-material";
 import "./Modal.css";
 
 import LawTabs from './LawTabs.js';
+import OtherLaws from "./OtherLaws.js";
+import ComprehensiveLaw from "./ComprehensiveLaw.js";
 
 function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo, name }) {
   const [ admin, setAdmin ] = useState(false);
@@ -42,26 +44,15 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
             </textarea>
 
             {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
-            {/* {item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? ( */}
+            {item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
               <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} />
-            {/* ) : null} */}
-
-            {/* {item.privacyLaws.length === 0 && item.otherPrivacyLaws.length > 0 ? (
-              <p>Table of other privacy laws would go here.</p>
+            ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
+              <ComprehensiveLaw law={item.privacyLaws[0]} />
+            ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} />
+            ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
+              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} />
             ) : null}
-            
-            {(item.privacyLaws.length === 1) ? (
-              <Law law={item.privacyLaws[0]}/>
-            ) : null}
-
-            {item.privacyLaws.length > 1 ? (
-              <div className="law-container">
-                {item.privacyLaws.map((law, index) => (
-                  <Law key={index} law={law}/>
-                ))}
-              </div>
-            ) : null} */}
-
 
           </div>
         ))}

@@ -22,10 +22,14 @@ export default function LawTabs({ comprehensiveLaws, otherPrivacyLaws }) {
             <ButtonGroup variant="contained" aria-label="contained primary button group">
                 {comprehensiveLaws.map((law, lawIndex) => (
                     <Button key={lawIndex} onClick={() => setActiveTab(lawIndex)}>
-                        Law {lawIndex + 1}
+                        {law.acronym ? law.acronym : law.lawName}
                     </Button>
                 ))}
-                <Button onClick={() => setActiveTab(comprehensiveLaws.length)}>Other Laws</Button>
+                {otherPrivacyLaws && (
+                    <Button onClick={() => setActiveTab(comprehensiveLaws.length)}>
+                        Other Laws
+                    </Button>
+                )}
             </ButtonGroup>
             <div className="law-container">
                 {comprehensiveLaws.map((law, lawIndex) => (
@@ -33,9 +37,11 @@ export default function LawTabs({ comprehensiveLaws, otherPrivacyLaws }) {
                         <ComprehensiveLaw law={law}/>
                     </div>
                 ))}
-                <div style={{ display: activeTab === comprehensiveLaws.length ? 'block' : 'none' }}>
-                    <OtherLaws otherPrivacyLaws={otherPrivacyLaws}/>
-                </div>
+                {otherPrivacyLaws && (
+                    <div style={{ display: activeTab === comprehensiveLaws.length ? 'block' : 'none' }}>
+                        <OtherLaws otherPrivacyLaws={otherPrivacyLaws}/>
+                    </div>
+                )}
             </div>
         </div>
     )
