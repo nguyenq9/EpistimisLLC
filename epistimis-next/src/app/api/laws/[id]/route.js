@@ -1,5 +1,6 @@
 import connectMongoDB from "@/lib/mongodb";
 import Laws from "@/models/laws";
+import usLaws from "@/models/uslaws";
 import { NextResponse } from "next/server"
 
 export async function GET(request, { params }) {
@@ -22,7 +23,7 @@ export async function GET(request, { params }) {
         await connectMongoDB();
 
         try {
-            const law = await Laws.findOne({ jurisdiction });
+            const law = await usLaws.findOne({ jurisdiction });
             console.log(jurisdiction)
             if (!law) {
                 return NextResponse.json({
@@ -59,7 +60,7 @@ export async function GET(request, { params }) {
         await connectMongoDB();
 
         try {
-            const laws = await Laws.find({ jurisdiction: { $in: [stateName1, stateName2] } });
+            const laws = await usLaws.find({ jurisdiction: { $in: [stateName1, stateName2] } });
 
             if (!laws || laws.length === 0) {
                 return NextResponse.json({

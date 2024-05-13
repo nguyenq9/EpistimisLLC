@@ -9,6 +9,12 @@ const connectMongoDB = async () => {
       useUnifiedTopology: true,
       dbName: 'Epistimis' // Specify your desired database name
     })
+
+    // const db = mongoose.connection;
+    
+    // // // Rename the collection from 'usLaws' to 'us'
+    // await db.collection('usLaws').rename('uslaws');
+
     console.log("Successfully connected to MongoDB!");
   } catch (error) {
     console.log("Error in the connection process!", error);
