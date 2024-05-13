@@ -110,3 +110,7 @@
 .editable:focus {
   outline: none;
 }
+
+.law-name {
+  font-size: 1.5em;
+}
