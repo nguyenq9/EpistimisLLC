@@ -144,7 +144,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
           key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
           map={isUS ? usLcc : worldMill}
           style={{
-            height: windowHeight * .85
+            height: windowHeight * .85,
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}

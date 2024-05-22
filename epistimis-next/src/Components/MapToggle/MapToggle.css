@@ -9,12 +9,12 @@
     cursor: pointer;
 }
 
-.link:hover, .active {
+.link:hover, .maptoggled {
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
 
-.active {
+.maptoggled {
     color: var(--region-initial);
 }
 

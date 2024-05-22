@@ -3,7 +3,7 @@ import "./MapView.css"
 
 const MapView = ({ isUS, filterOption, comparing, setComparing, editable, setEditable }) => {
     return (
-        <div>
+        <div id="map_view">
             <Map
                 isUS={isUS}
                 filterOption={filterOption}
