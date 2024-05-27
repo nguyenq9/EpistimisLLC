@@ -19,7 +19,7 @@
     right: 20px;
     overflow: visible;
     cursor: pointer;
-    background-color: var(--purple);
+    background-color: var(--region-initial);
     width: 100px;
     height: 36px;
     /* border-radius: 20px; */

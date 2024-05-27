@@ -162,3 +162,15 @@ Click on the image below to navigate to the video:
 }
 
 
+## New Color Theme Proposals
+
+### Blue - Productivity
+Some research sugests that people are more productive in a blue environment. Blue in general is a relaxing and calming color.
+![](./themes/Blue.png)
+
+### Green - Concentration
+Low wavelength colors promote restfulness and calm, and they improve efficiency and focus. Easiest color on the eyes.
+![](./themes/Green.png)
+
+### Teal - A Mix of Both
+![](./themes/Teal.png)
