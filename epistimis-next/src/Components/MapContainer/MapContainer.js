@@ -7,6 +7,7 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [filter, setFilter] = useState(null);
     const [comparing, setComparing] = useState(false);
+    const [editable, setEditable] = useState(false);
 
     const handleSetIsUS = (val) =>  {
         setIsUS(val);
@@ -14,6 +15,10 @@ const MapContainer = () => {
 
     const handleSetComparing = (val) => {
         setComparing(val);
+    }
+
+    const handleSetEditable = (val) => {
+        setEditable(val);
     }
     
     return (
@@ -30,6 +35,8 @@ const MapContainer = () => {
                 filterOption={filter}
                 comparing={comparing}
                 setComparing={handleSetComparing}
+                editable={editable}
+                setEditable={handleSetEditable}
             />
         </div>
     );

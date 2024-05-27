@@ -34,7 +34,7 @@ function Filter({ filterOption, handleSetFilterOption }) {
       </button>
       <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
         <ul>
-          <li className="dropdownItem" onClick={toggleConsumerRightsOptions}>
+          <li className="dropdownItem filterCategory" onClick={toggleConsumerRightsOptions}>
             Consumer Rights
           </li>
           {showConsumerRightsOptions && (
@@ -51,7 +51,7 @@ function Filter({ filterOption, handleSetFilterOption }) {
             </>
           )}
           {/* Business Obligations main option and its suboptions */}
-          <li className="dropdownItem" onClick={toggleBusinessObligationsOptions}>
+          <li className="dropdownItem filterCategory" onClick={toggleBusinessObligationsOptions}>
             Business Obligations
           </li>
           {showBusinessObligationsOptions && (

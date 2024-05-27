@@ -36,8 +36,8 @@ export default function OtherLaws({ otherPrivacyLaws }) {
                             <TableCell component="th" scope="row">
                                 <a target="_blank" href={row.reference}>{row.lawName}</a>
                             </TableCell>
-                            <TableCell><textarea className="editable">{row.type}</textarea></TableCell>
-                            <TableCell><textarea className="editable">{row.description}</textarea></TableCell>
+                            <TableCell>{row.type}</TableCell>
+                            <TableCell>{row.description}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

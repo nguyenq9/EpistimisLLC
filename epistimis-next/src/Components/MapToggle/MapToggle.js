@@ -6,7 +6,7 @@ const MapToggle = ({ isUS, handleSetIsUS, comparing }) => {
         <div className="container">
             <div className="MapToggle">
                 <span 
-                    className={`link ${isUS ? "active" : ""}`} 
+                    className={`link ${isUS ? "maptoggled" : ""}`} 
                     onClick={() => { 
                         if (!isUS && !comparing) handleSetIsUS(true) 
                     }}
@@ -15,7 +15,7 @@ const MapToggle = ({ isUS, handleSetIsUS, comparing }) => {
                 </span>
                 <span className="separator"> / </span>
                 <span 
-                    className={`link ${!isUS ? "active" : ""}`} 
+                    className={`link ${!isUS ? "maptoggled" : ""}`} 
                     onClick={() => { 
                         if (isUS && !comparing) handleSetIsUS(false) 
                     }}

@@ -1,0 +1,8 @@
+.law-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.law-reference {
+    text-decoration: underline;
+}
