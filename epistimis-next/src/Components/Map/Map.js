@@ -96,16 +96,16 @@ const Map = ({ isUS, filterOption, comparing, setComparing }) => {
 
   const regionStyles = {
     initial: {
-      fill: "#4D2DB7", // Initial color of the regions
+      fill: "#38A8A3", // Initial color of the regions
     },
     hover: {
-      fill: "#0E21A0", // Color when hovered
+      fill: "#0F2E2C", // Color when hovered
     },
     selected: {
-      fill: "#9D44C0", // Color when selected
+      fill: "#68CAC7", // Color when selected
     },
     selectedHover: {
-      fill: "#EC53B0", // Color when hovered and selected
+      fill: "#95DAD8", // Color when hovered and selected
     },
   };
 
