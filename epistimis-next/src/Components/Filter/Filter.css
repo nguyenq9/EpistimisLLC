@@ -5,13 +5,13 @@
     text-decoration: none;
 }
 
-:root {
+/* :root {
     --mainColor: #202020;
     --mainColorLight: #5c5c5c; 
     --secondaryColor: #353f85; 
     --textColor: #E6E6E6;
     --purple: #4D2DB7;
-}
+} */
 
 .trigger {
     /* position: fixed; */
@@ -33,7 +33,7 @@
     right: 33px;
     pointer-events: none;
     font-weight: 1000;
-    color: var(--textColor);
+    color: var(--text);
     margin-left: 5px;
 }
 
@@ -84,13 +84,13 @@
 .dropdown-menu ul li {
     padding: 5px 15px;
     /* border-top: 1px solid var(--mainColorLight); */
-    color: var(--textColor);
+    color: var(--text);
     align-items: center;
     position: relative;
     /* border-radius: 10px; */
     font-size: 13px;
     text-decoration: none;
-    background-color: var(--secondaryColor);
+    background-color: var(--region-selected);
 }
 
 .dropdown-menu ul li a {
@@ -109,7 +109,7 @@
 
 .dropdown-menu ul li:hover a, .dropdown-menu ul li.selected a,
 .dropdown-menu .sub-options li:hover a, .dropdown-menu .sub-options li.selected a {
-    color: var(--secondaryColor);
+    color: var(--region-hover);
 }
 
 .dropdown-menu .sub-options {
@@ -118,7 +118,7 @@
     /* position: absolute; */
     left: 100%; 
     top: 0;
-    background-color: var(--textColor);
+    background-color: var(--text);
     /* border-radius: 10%; */
     width: 180px;
     z-index: 997;
@@ -128,9 +128,9 @@
 .dropdown-menu .sub-options li {
     padding: 5px 20px;
     /* border-top: 1px solid var(--mainColorLight); */
-    background-color: var(--secondaryColor);
+    background-color: var(--region-selected);
     color: #5c5c5c;
-    color: var(--textColor);
+    color: var(--text);
     position: relative;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -147,17 +147,14 @@
 }
 
 .dropdownItem.filterCategory {
-    background-color: var(--mainColorLight)
+    background-color: var(--region-initial)
 }
 
 .dropdownItem.selected{
-    background-color: var(--secondaryColor);
-    color: #9D44C0;
-    border-radius: 10px;
+    background-color: var(--region-hover);
     transition: 0.5s ease;
 }
 
 .dropdownItem input[type="checkbox"] {
     margin-left: 10px; 
-    
 }
