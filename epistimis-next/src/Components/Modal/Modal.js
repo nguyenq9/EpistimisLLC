@@ -10,6 +10,17 @@ import ComprehensiveLaw from "./ComprehensiveLaw.js";
 function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo }) {
   const [editable, setEditable] = useState(false);
 
+  const displayEditableObject = (obj) => {
+    // Convert the object to a formatted JSON string
+    const formattedJson = JSON.stringify(obj, null, 2);
+
+    // Find the editor text area
+    const editor = document.getElementById('editor');
+
+    // Set the formatted JSON string as the text area's value
+    editor.value = formattedJson;
+  }
+
   const handleSetEditable = (val) => {
     setEditable(val);
   }
@@ -22,7 +33,15 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
     } else {
       ref.current?.close();
     }
+    setEditable(false)
   }, [openModal]);
+
+  useEffect(() => {
+    if (editable) {
+      // Call displayEditableObject with the required object when entering editable mode
+      displayEditableObject(modalInfo[0] /* or any relevant object */);
+    }
+  }, [editable]);
 
   return (
     <dialog ref={ref} onCancel={closeModal} className={`modal ${comparing ? 'comparing' : 'not-comparing'}`}>
@@ -44,20 +63,25 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
             </div>
 
             {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
-            {item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable}/>
+            {!editable ? (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
             ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
-              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable}/>
+              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
             ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable}/>
+              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
             ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
-              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable}/>
-            ) : null}
+              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+            ) : null) : 
+            (
+              <textarea id="editor">hehe</textarea>
+            )}
+
+
 
           </div>
         ))}
       </div>
-      <Close onClick={closeModal} className="close-button"/>
+      <Close onClick={closeModal} className="close-button" />
     </dialog>
   );
 }
