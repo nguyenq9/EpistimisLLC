@@ -3,3 +3,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.jvectormap-region {
+    stroke: var(--background) !important; /* Replace #yourBorderColor with the color you want */
+    stroke-width: 0.5px !important; /* Adjust the border width as needed */
+}

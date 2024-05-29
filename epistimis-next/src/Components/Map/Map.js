@@ -151,8 +151,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
           map={isUS ? usLcc : worldMill}
           style={{
             height: windowHeight * .85,
-            filter: "drop-shadow(0 0 50px rgba(56, 168, 163, 0.5))",
-            // borderColor: getCSSVariableValue("--background")
+            filter: "drop-shadow(0 0 50px rgba(56, 168, 163, 0.7))",
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}
