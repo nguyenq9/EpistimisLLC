@@ -1,22 +1,35 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect, use } from 'react';
 import "./Filter.css";
 
-function Filter({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen }) {
-    const dropdownRef = useRef(null);
-
+const Filter = ({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen }) => {
     const [showConsumerRightsOptions, setShowConsumerRightsOptions] = useState(false);
     const [showBusinessObligationsOptions, setShowBusinessObligationsOptions] = useState(false);
+    const dropdownRef = useRef(null);
 
     const handleOptionClick = (option) => {
         if (filterOption === option) {
-            console.log(`${option} unselected`); // Log unselected option
-            handleSetFilterOption(''); // Clear the current filter option
+            console.log(`${option} unselected`);
+            handleSetFilterOption('');
         } else {
-            console.log(`${option} selected`); // Log selected option
-            handleSetFilterOption(option); // Set the new filter option
+            console.log(`${option} selected`);
+            handleSetFilterOption(option);
         }
-        setFilterOpen(false); // Close the dropdown after selecting an option
+        // setFilterOpen(false);
     };
+
+    useEffect(() => {
+        const handleClick = (event) => {
+            if (filterOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setFilterOpen(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClick);
+        }
+    }, [filterOpen]);
 
     const toggleConsumerRightsOptions = () => {
         setShowConsumerRightsOptions(prev => !prev);
@@ -28,7 +41,7 @@ function Filter({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen
 
     return (
         <div className='menu-container filter-component' ref={dropdownRef}>
-            <button className='trigger' onClick={() => setFilterOpen(prev => !prev)}>
+            <button className='trigger' onClick={() => setFilterOpen(!filterOpen)}>
                 <span>Filter</span>
             </button>
             <div className={`dropdown-menu ${filterOpen ? 'active' : 'inactive'}`}>
@@ -65,7 +78,7 @@ function Filter({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen
             </div>
         </div>
     );
-}
+};
 
 function DropdownItem({ text, onClick, isSelected }) {
     return (
