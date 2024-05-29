@@ -7,14 +7,6 @@ height:100%;
 font-family: 'MPLUS1', sans-serif;
 }
 
-.whole-bg {
-  /* background: linear-gradient(-45deg, #008080, #40E0D0, #23a6d5, #23c0d5);
-  background-size: 400% 400%;
-  height: 100vh;
-  animation: gradient 15s ease infinite; */
-  /* background-color: var(--background); */
-}
-
 @keyframes gradient {
   0% {
       background-position: 0% 50%;
