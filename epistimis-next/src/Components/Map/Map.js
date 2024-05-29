@@ -15,7 +15,7 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditable }) => {
+const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditable, filterOpen, setFilterOpen }) => {
   const [currCode, setCode] = useState("");
   const [modal, setModal] = useState(false);
   const [currRegion, setRegion] = useState("");
@@ -30,7 +30,6 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
       },
     ],
   });
-
 
   const mapRef = useRef(null);
   const { height: windowHeight } = useWindowDimensions(); // Get window height using the hook
@@ -92,7 +91,6 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
   
 
   const handleCloseModal = () => {
-    console.log("closing modal");
     setCode("");
     setModal(false);
     setModalInfo([]);
@@ -127,16 +125,16 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
       handleSingleStateRetrieval(getRegionName(newCode), setModalInfo);
     }
     setModal(true);
+    setFilterOpen(false);
   };
 
   const handleCompareClicked = () => {
     setModal(false);
     setComparing(true);
-    console.log("compare clicked")
   };
 
   return (
-    <div>
+    <div id="map">
       <Modal
         openModal={modal}
         closeModal={handleCloseModal}
@@ -153,6 +151,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
           map={isUS ? usLcc : worldMill}
           style={{
             height: windowHeight * .85,
+            filter: "drop-shadow(0 0 50px rgba(56, 168, 163, 0.7))",
           }}
           regionsSelectable={true}
           regionsSelectableOne={true}
