@@ -51,7 +51,8 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
 
   useEffect(() => {
     const stateList = stateMap[filterOption];
-    clearRegionsConfig()
+    clearRegionsConfig();
+    setSelectedRegions([]);
     if (stateList && mapRef.current) {
       const stateToggles = {};
       prevStateList.forEach((state) => {
@@ -66,10 +67,17 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
     }
   }, [filterOption]);
 
+  const getCSSVariableValue = (variable) => {
+    if (typeof window !== "undefined") {
+      return getComputedStyle(document.documentElement).getPropertyValue(variable);
+    } 
+    return '';
+  };
 
   const addRegionToConfig = (code) => {
+    const color = getCSSVariableValue("--region-selected");
     setRegionsConfig((prevConfig) => {
-      const newValues = { ...prevConfig.regions[0].values, [code]: '#00ff0d' };
+      const newValues = { ...prevConfig.regions[0].values, [code]: color };
       const newConfig = { ...prevConfig, regions: [{ ...prevConfig.regions[0], values: newValues }] };
       return newConfig;
     });
@@ -96,16 +104,16 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
 
   const regionStyles = {
     initial: {
-      fill: "#38A8A3", // Initial color of the regions
+      fill: getCSSVariableValue("--region-initial"), // Initial color of the regions
     },
     hover: {
-      fill: "#0F2E2C", // Color when hovered
+      fill: getCSSVariableValue("--region-hover"), // Color when hovered
     },
     selected: {
-      fill: "#68CAC7", // Color when selected
+      fill: getCSSVariableValue("--region-selected"), // Color when selected
     },
     selectedHover: {
-      fill: "#95DAD8", // Color when hovered and selected
+      fill: getCSSVariableValue("--region-selected-hover"), // Color when hovered and selected
     },
   };
 
@@ -141,7 +149,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
       <div className="map-container">
         <VectorMap
           mapRef={mapRef}
-          key={isUS ? "usLcc" + comparing : "worldMill" + comparing}
+          key={isUS ? "usLcc" + comparing + filterOption : "worldMill" + comparing + filterOption}
           map={isUS ? usLcc : worldMill}
           style={{
             height: windowHeight * .85,
