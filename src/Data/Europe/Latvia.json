@@ -1,14 +1,14 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Latvia",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Latvia's Personal Data Processing Law",
+            "acronym": "PDPL",
+            "description": "Latvia's Personal Data Processing Law (PDPL) is the legal framework governing the protection and processing of personal data in Latvia. The law is designed to safeguard individuals' privacy rights and aligns closely with the European Union's General Data Protection Regulation (GDPR).",
+            "reference": "https://likumi.lv/ta/en/en/id/300099-personal-data-processing-law",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "23 May, 2019",
             "applicability": [ 
                 {
                     "roles": [""],
@@ -80,8 +80,8 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
@@ -104,9 +104,9 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["The Data State Inspectorate (DSI)"],
+                "rulemakingAuthority": ["The Data State Inspectorate (DSI)"],
+                "finingAuthority": ["The Data State Inspectorate (DSI)"],
                 "penalties": [ ""],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -278,12 +278,11 @@
          }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "",
+            "type": "Introduced, Minor or Inactive",
+            "description": "",
+            "reference": ""
+        }
     ]
 }

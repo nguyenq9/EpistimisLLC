@@ -9,7 +9,7 @@
             "reference": "https://leg.colorado.gov/sites/default/files/documents/2021A/bills/2021a_190_enr.pdf",
             "billStatus": "In force",
             "inEffect" : "July 1, 2023",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Processor", "Third Party", "Businesses"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -21,100 +21,86 @@
                                                "Personal data from known child"],
                     "processingPurposes": ["Collection", "Use", "Sale", "Maintanence", "Disclosure", "Communication"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Opt Out of Targeted Advertising, Profiling via a Universal Opt Out Mechanism, or Sale of Personal information",
-                    "reference": ["Section 6-1-1306.1.a"]
+                    "reference": "Section 6-1-1306.1.a"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 6-1-1306.1.b"]
+                    "reference": "Section 6-1-1306.1.b"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 6-1-1306.1.c"]
+                    "reference": "Section 6-1-1306.1.c"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 6-1-1306.1.d"]
+                    "reference": "Section 6-1-1306.1.d"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Section 6-1-1306.1.e"]
+                    "reference": "Section 6-1-1306.1.e"
                 },
                 {
                     "name": "Right to Appeal",
-                    "reference": ["Section 6-1-1306.2"]
+                    "reference": "Section 6-1-1306.2"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice":  {
                         "description": "A controller shall provide the consumer with a clear and conspicuous notice informing the consumer about the choices available under this section, describing the categories of personal data to be processed and the purposes for which they will be processed, and explaining how and where the consumer may withdraw consent",
                         "reference": "Section 6-1-1306.1.a"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation":  {
                         "description": "A controller shall not process personal data for purposes that are not reasonably necessary to or compatible with the specified purposes for which the personal data are processed, unless the controller first obtains the consumer's consent.",
                         "reference": "Section 6-1-1308.4"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "A controller's collection of personal data must be adequate, relevant, and limited to what is reasonably necessary in relation to the specified purposes for which the data are processed",
                         "reference": "Section 6-1-1308.3"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "A controller shall take reasonable measures to secure personal data during both storage and use from unauthorized acquisition. the data security practices must be appropriate to the volume, scope, and nature of the personal data processed and the nature of the business.",
                         "reference": "Section 6-1-1308.5"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": " Processors are obligated to follow the instructions provided by the data controller and assist them in fulfilling their obligations. This assistance includes implementing appropriate technical and organizational measures to facilitate consumer requests regarding their data rights, aiding in ensuring the security of personal data processing, including notifying of any breaches, and providing necessary information to conduct and document data protection assessments. Both the controller and processor are accountable for their allocated measures in ensuring compliance with the regulation.",
                         "reference": "Section 6-1-1305.2"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "The controller and the processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk and establish a clear allocation of the responsibilities between them to implement the measures",
                         "reference": "Section 6-1-1305.4"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "Controllers are obligated in relation to the security of processing the personal data and in relation to the notification of a breach of the security of the system",
                         "reference": "Section 6-1-716"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration":  {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "'Sale', 'sell', or 'sold' does not include the disclosure or transfer of personal data to an affiliate of the controller or the disclosure or transfer to a third party of personal data as an asset that is part of a proposed or actual merger, acquisition, bankruptcy, or other transaction in which the third party assumes control of all or part of the controller's assets.",
                         "reference": "Section 6-1-1303.23"
                     }
-                ]
             },
             "scope": [
                 {
@@ -148,20 +134,19 @@
                             "description": "Financial institution or an affiliate of a financial institution governed by, or personal data collected, processed, sold, or disclosed in accordance with the GLBA"
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": ["This legislation supersedes and preempts laws, ordinances, resolutions, regulations, or the equivalent adopted by any statutory or home rule municipality, county, or city and county regarding the processing of personal data by controllers or processors"]
+                    "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": "This legislation supersedes and preempts laws, ordinances, resolutions, regulations, or the equivalent adopted by any statutory or home rule municipality, county, or city and county regarding the processing of personal data by controllers or processors"
                 }
             ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General and District Attorneys"],
-                "rulemakingAuthority": ["Attorney General"],
-                "finingAuthority": ["State Treasurer"],
-                "penalties": [ "Violations are considered deceptive trade practices for enforcement purposes but specific fines are not mentioned"],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Nothing in this legislation shall be construed as providing the basis for, or being subject to, a private right of action for violations of this legislation or any other law."]
-                }
-            ],
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General and District Attorneys",
+                "rulemakingAuthority": "Attorney General",
+                "finingAuthority": "State Treasurer",
+                "penalties": "Violations are considered deceptive trade practices for enforcement purposes but specific fines are not mentioned",
+                "personalLiability": "",
+                "privateRightOfAction": "Nothing in this legislation shall be construed as providing the basis for, or being subject to, a private right of action for violations of this legislation or any other law."
+                },
             "threshold": [
                 {
                     "type": "Annual processing",

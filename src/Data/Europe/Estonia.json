@@ -1,14 +1,14 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Estonia",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Estonia's Personal Data Protection Act",
+            "acronym": "PDPA",
+            "description": "Estonia's PDPA aligns closely with the European Union's General Data Protection Regulation (GDPR), ensuring that Estonia meets its obligations under EU law. This alignment means that the principles, rights, and obligations under the PDPA are very similar to those under the GDPR, providing a consistent data protection regime across the EU.",
+            "reference": "https://www.riigiteataja.ee/en/eli/523012019001/consolide",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "15th January, 2019",
             "applicability": [ 
                 {
                     "roles": [""],
@@ -80,8 +80,8 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
@@ -104,9 +104,9 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["Estonian Data Protection Inspectorate"],
+                "rulemakingAuthority": ["Estonian Data Protection Inspectorate"],
+                "finingAuthority": ["Estonian Data Protection Inspectorate"],
                 "penalties": [ ""],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -278,12 +278,11 @@
          }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "Personal Data Protection Law of 2000",
+            "type": "Inactive",
+            "description": "Estonia's Personal Data Protection Law of 2000, known as the Isikuandmete kaitse seadus, established the legal framework for the protection of personal data in Estonia. It outlines the principles for processing personal data, the rights of data subjects, and the obligations of data controllers and processors. The law was influenced by the EU Data Protection Directive 95/46/EC, which aimed to harmonize data protection laws across the EU.",
+            "reference": "https://www.refworld.org/legal/legislation/natlegbod/2000/en/71561"
+        }
     ]
 }

@@ -1,7 +1,7 @@
 {
     "Jurisdiction(s)": "Alaska",
     "filterCategories": [""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Personal Information Protection Act",
             "type": "Minor",

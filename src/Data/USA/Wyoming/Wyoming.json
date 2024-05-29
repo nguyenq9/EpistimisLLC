@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Wyoming",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Wyoming Genetic Data Privacy Act",
             "type": "Minor",

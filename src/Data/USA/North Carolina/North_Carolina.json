@@ -1,7 +1,7 @@
 {
     "jurisdiction": "North Carolina",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "North Carolina Consumer Privacy Act (Senate Bill 525)",
             "type": "Introduced",

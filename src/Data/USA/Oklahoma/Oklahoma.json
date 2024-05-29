@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Oklahoma",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Oklahoma Computer Data Privacy Act",
             "type": "Inactive",

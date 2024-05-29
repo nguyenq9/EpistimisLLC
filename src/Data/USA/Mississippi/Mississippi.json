@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Mississippi",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Senate Bill 2080",
             "type": "Inactive",

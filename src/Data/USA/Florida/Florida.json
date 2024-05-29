@@ -9,7 +9,7 @@
             "reference": "https://www.flsenate.gov/Session/Bill/2023/262/BillText/er/PDF",
             "billStatus": "Signed",
             "inEffect" : "July 1, 2024",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Processor", "Third Party"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -22,102 +22,88 @@
                                                "Precise geolocation data"],
                     "processingPurposes": ["Collection", "Use", "Retention"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 501.705.2.a"]
+                    "reference": "Section 501.705.2.a"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 501.705.2.a"]
+                    "reference": "Section 501.705.2.a"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 501.705.2.b"]
+                    "reference": "Section 501.705.2.b"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 501.705.2.c"]
+                    "reference": "Section 501.705.2.c"
                 },
                 {
                     "name": "Right to Portability",
-                    "reference": ["Section 501.705.2.d"]
+                    "reference": "Section 501.705.2.d"
                 },
                 {
                     "name": "Right to Right to Opt Out of targeted advertising, sale of personal data, profiling in furtherance of a decision that produces a legal or similarly significant effect, the collection of sensitive data (including precise geolocation data), the processing of sensitive data, or the collection of personal data collected through the operation of a voice recognition or facial recognition feature",
-                    "reference": ["Section 501.705.2"]
+                    "reference": "Section 501.705.2"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "A controller shall provide consumers with a reasonably accessible and clear privacy notice",
                         "reference": "Section 501.711.1"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis":{
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Limit the collection of personal data to data that is adequate, relevant, and reasonably necessary in relation to the purposes for which it is processed",
                         "reference": "Section 501.71.1"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization":{
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "For purposes of protecting the confidentiality, integrity, and accessibility of personal data, establish, implement, and maintain reasonable administrative, technical, and physical data security practices appropriate to the volume and nature of the personal data at issue",
                         "reference": "Section 501.71.1"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "The duties of a processor under the specified legislation outline the responsibilities to adhere to the instructions of a controller and assist in meeting the controller's obligations, including responding to consumer rights requests, ensuring the security of processing personal data, and providing necessary information for data protection assessments. A contract between the controller and processor must specify processing procedures, data types, duration, rights, and obligations, including confidentiality obligations, data deletion or return, information sharing for compliance demonstration, and engagement of subcontractors. The processor may arrange for independent assessments of compliance and must provide reports to the controller upon request. Importantly, the legislation does not absolve either the controller or processor from their respective liabilities, and the determination of their roles depends on the specific context of data processing, with a processor remaining in their role as long as they adhere to the controller's instructions.",
                         "reference": "Section 501.712"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers must conduct and document data protection assessments for certain processing activities involving personal data, including targeted advertising, sale of personal data, profiling with foreseeable risks, processing of sensitive data, and activities presenting heightened risks to consumers.",
                         "reference": "Section 501.713"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "Mention in the duties of the processor where processors are rewuired to assist in regard to complying with the requirement relating to the security of processing personal data and to the notification of a breach of security of the processor’s system under s. 501.171",
                         "reference": "Section 501.712"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Sale of personal data means the sharing, disclosing, or transferring of personal data for monetary or other valuable consideration by the controller to a third party",
                         "reference": "Section 501.702.29"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -144,17 +130,15 @@
                     "nonProfitsCovered": ["Non-Profit organizations are exempted"],
                     "verticalCarveouts" : [""],
                     "preemption": ["This part is a matter of statewide concern and supersedes all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection, processing, sharing, or sale of consumer personal data by a controller or processor. The regulation of the collection, processing, sharing, or sale of consumer personal data by a controller or processor is preempted to the state"]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General"],
-                "rulemakingAuthority": ["The Attorney General"],
-                "finingAuthority": ["Department of Legal Affairs"],
-                "penalties": [ "The department may collect a civil penalty of up to $50,000 per violation of this section. Civil penalties may be tripled for any violation involving a Florida child who the online platform has actual knowledge is under 18 years of age"],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["There is no private cause of action"]
-                }
-            ],
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General",
+                "rulemakingAuthority": "The Attorney General",
+                "finingAuthority": "Department of Legal Affairs",
+                "penalties": "The department may collect a civil penalty of up to $50,000 per violation of this section. Civil penalties may be tripled for any violation involving a Florida child who the online platform has actual knowledge is under 18 years of age",
+                "personalLiability": "",
+                "privateRightOfAction" : "There is no private cause of action"
+                },
             "threshold": [
                 {
                     "type": "Global revenue",

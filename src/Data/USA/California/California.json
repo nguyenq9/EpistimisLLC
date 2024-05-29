@@ -9,7 +9,7 @@
             "reference": "https://www.sidley.com/-/media/uploads/190021a1-consumer-privacy--version-3_1.pdf?la=en&rev=333087c2fd3a43c19e676373fe40a30c",
             "billStatus": "In Force",
             "inEffect" : "January 2023",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Businesses", "Third party", "Service provider", "Contractor (same as CCPA)"],
                     "personalDataCategories": ["Social security, driver’s license, passport, state ID card numbers", 
@@ -25,119 +25,105 @@
                                                 "Sexual orientation data"],
                     "processingPurposes": ["Collection", "Use", "Retention", "Sharing"],
                     "consentRequired": "True"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know what personal information is collected, shared or sold",
-                    "reference": ["Section 1798.100.1"]
+                    "reference": "Section 1798.100.1"
                 },
                 {
                     "name": "Right to Know if personal information is shared or sold and to whom",
-                    "reference": ["Section 1798.100.2"]
+                    "reference": "Section 1798.100.2"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Opt Out of Share or Sale",
-                    "reference": ["Section 1798.120"]
+                    "reference": "Section 1798.120"
                 },
                 {
                     "name": "Right to Non-Discrimination",
-                    "reference": ["Section 1798.125"]
+                    "reference": "Section 1798.125"
                 },
                 {
                     "name": "Right to Limit Use and Disclosure of Sensitive Personal Information",
-                    "reference": ["Section 1798.121"]
+                    "reference": "Section 1798.121"
                 },
                 {
                     "name": "Right to No Retaliation for Following Opt Out or Exercise of Other Rights",
-                    "reference": ["Section 1798.125"]
+                    "reference": "Section 1798.125"
                 }
 
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice":  {
                     "description": "Businesses are required to provide notice to consumers at or before the point of data collection regarding the categories of personal information collected and the purposes for which it will be used.",
                     "reference": "Section 1798.100.b"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis":  {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation":  {
                     "description": "Personal information is sold or disclosed by the business only for limited and specified purposes",
                     "reference": "Section 1798.100.d"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                     "description": "The collection of personal information must be reasonably necessary and proportionate to the purposes for which it is collected.",
                     "reference": "Section 1798.100.c"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                     "description": "A business that collects a consumer’s personal information shall implement reasonable security procedures and practices appropriate to the nature of the personal information to protect the personal information from unauthorized or illegal access, destruction, use, modification, or disclosure in accordance with Section 1798.81.5.",
                     "reference": "Section 1798.100.e"
-                    }
-                ],
-                "privacyByDesign": [   {
+                    },
+                "privacyByDesign": {
                     "description": "Perform all other acts necessary or appropriate in the exercise of its power, authority, and jurisdiction and seek to balance the goals of strengthening consumer privacy while giving attention to the impact on businesses.",
                     "reference": "Section 1798.199.40"
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                     "description": "Businesses using service providers must ensure they meet contractual obligations regarding the handling of personal information.",
                     "reference": "Section 1798.100.d.2"
-                }
-                ],
-                "recordKeeper": [ {
+                },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                     "description": "Assessing and mitigating risks to consumer privacy is a mandatory obligation.",
                     "reference": "Section 1798.185.15"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                     "description": "Notify consumers and the relevant authorities in case of a data breach.",
                     "reference": "Section 1798.82"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo":{
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                     "description": "Grants the business rights to take reasonable and appropriate steps to help ensure that the third party, service provider, or contractor uses the personal information transferred in a manner consistent with the business’ obligations under this title.",
                     "reference": "Section 1798.100.d.3"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -149,20 +135,18 @@
                             "description": "California State and local governmental entities"
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": ["This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers' personal information by a business. "]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The State of California Department of Justice"],
-                "rulemakingAuthority": ["Attorney General"],
-                "finingAuthority": ["The Consumer Privacy Fund within the General Fund of the state"],
-                "penalties": [ "Administrative fine of up to two thousand five hundred dollars ($2,500) for each violation, or up to seven thousand five hundred dollars ($7,500) for each intentional violation and each violation involving the personal information of minor consumers to the Consumer Privacy Fund within the General Fund of the state."],
-                "personalLiability": ["Individuals within the business may have personal liability for violations"],
-                "privateRightOfAction" : ["The private right of action is limited to data breaches, and consumers that have the right to seek statutory damages between $100 and $750 per consumer per incident, or actual damages, whichever is greater."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": "This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers' personal information by a business."
+                },
+            "enforcement": {
+                "enforcementAuthority": "The State of California Department of Justice",
+                "rulemakingAuthority": "Attorney General",
+                "finingAuthority": "The Consumer Privacy Fund within the General Fund of the state",
+                "penalties": "Administrative fine of up to two thousand five hundred dollars ($2,500) for each violation, or up to seven thousand five hundred dollars ($7,500) for each intentional violation and each violation involving the personal information of minor consumers to the Consumer Privacy Fund within the General Fund of the state.",
+                "personalLiability": "Individuals within the business may have personal liability for violations",
+                "privateRightOfAction" : "The private right of action is limited to data breaches, and consumers that have the right to seek statutory damages between $100 and $750 per consumer per incident, or actual damages, whichever is greater."
+                },
             "threshold": [
                 {
                     "type": "Gross annual revenue",
@@ -186,7 +170,7 @@
             "enforcementAgency": "State Of California Department of Justice",
             "billStatus": "In Force",
             "inEffect" : "January 2020",
-            "applicability": [
+            "applicability":
                 {
                     "roles": ["Businesses", "Third party", "Service provider", "Contractor"],
                     "personalDataCategories": ["Social security, driver’s license, passport, state ID card numbers", 
@@ -202,131 +186,117 @@
                                                "Sexual orientation data"],
                     "processingPurposes": ["Collection", "Use", "Retention", "Sharing"],
                     "consentRequired": "True"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know what personal information is collected",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Know if personal information is shared or sold and to whom",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 1798.106"]
+                    "reference": "Section 1798.106"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 1798.105"]
+                    "reference": "Section 1798.105"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Section 1798.100"]
+                    "reference": "Section 1798.100"
                 },
                 {
                     "name": "Right to Opt Out of Share or Sale",
-                    "reference": ["Section 1798.120"]
+                    "reference": "Section 1798.120"
                 },
                 {
                     "name": "Right to Non-Discrimination",
-                    "reference": ["Section 1798.125"]
+                    "reference": "Section 1798.125"
                 },
                 {
                     "name": "Right to Limit Use and Disclosure of Sensitive Personal Information",
-                    "reference": ["Section 1798.121"]
+                    "reference": "Section 1798.121"
                 },
                 {
                     "name": "Right to No Retaliation for Following Opt Out or Exercise of Other Rights",
-                    "reference": ["Section 1798.125"]
+                    "reference": "Section 1798.125"
                 }
             ],
             "businessObligations": {
-                "notice": [
+                "notice": 
                     {
                         "description": "Businesses are required to provide notice to consumers at or before the point of data collection regarding the categories of personal information collected and the purposes for which it will be used.",
                         "reference": "Section 1798.100.b"
-                    }
-                ],
-                "lawfulBasis": [
+                    },
+                "lawfulBasis":
                     {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [
+                    },
+                "purposeLimitation":
                     {
                         "description": "Personal information is sold or disclosed by the business only for limited and specified purposes",
                         "reference": "Section 1798.100.d"
-                    }
-                ],
-                "dataMinimization": [
+                    },
+                "dataMinimization":
                     {
                         "description": "The collection of personal information must be reasonably necessary and proportionate to the purposes for which it is collected.",
                         "reference": "Section 1798.100.c"
-                    }
-                ],
-                "securityReqs": [
+                    },
+                "securityReqs":
                     {
                         "description": "A business that collects a consumer’s personal information shall implement reasonable security procedures and practices appropriate to the nature of the personal information to protect the personal information from unauthorized or illegal access, destruction, use, modification, or disclosure in accordance with Section 1798.81.5.",
                         "reference": "Section 1798.100.e"
-                    }
-                ],
-                "privacyByDesign": [
+                    },
+                "privacyByDesign": 
                     {
                         "description": "Perform all other acts necessary or appropriate in the exercise of its power, authority, and jurisdiction and seek to balance the goals of strengthening consumer privacy while giving attention to the impact on businesses.",
                         "reference": "Section 1798.199.40"
-                    }
-                ],
-                "processorReqs": [
+                    },
+                "processorReqs":
                     {
                         "description": "Businesses using service providers must ensure they meet contractual obligations regarding the handling of personal information.",
                         "reference": "Section 1798.100.d.2"
-                    }
-                ],
-                "recordKeeper": [
+                    },
+                "recordKeeper":
                     {
                         "description": "Not Specified but Implied",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [
+                    },
+                "riskImpact":
                     {
                         "description": "Assessing and mitigating risks to consumer privacy is a mandatory obligation.",
                         "reference": "Section 1798.185.15"
-                    }
-                ],
-                "breachNotification": [
+                    },
+                "breachNotification":
                     {
                         "description": "Notify consumers and the relevant authorities in case of a data breach.",
                         "reference": "Section 1798.82"
-                    }
-                ],
-                "registration": [
+                    },
+                "registration":
                     {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [
+                    },
+                "dpo":
                     {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [
+                    },
+                "dataTransfer":
                     {
                         "description": "Grants the business rights to take reasonable and appropriate steps to help ensure that the third party, service provider, or contractor uses the personal information transferred in a manner consistent with the business’ obligations under this title.",
                         "reference": "Section 1798.100.d.3"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -337,19 +307,19 @@
                             "type": "Local Government",
                             "description": "California State and local governmental entities"
                         }
-                    ],             
-                    "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": ["This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers’ personal information by a business."]
-                }
-            ],
+                    ]
+                    ,             
+                    "nonProfitsCovered": "Non-Profits are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": "This title is a matter of statewide concern and supersedes and preempts all rules, regulations, codes, ordinances, and other laws adopted by a city, county, city and county, municipality, or local agency regarding the collection and sale of consumers’ personal information by a business."
+                },
             "enforcement": {
-                "enforcementAuthority": ["The State of California Department of Justice"],
-                "rulemakingAuthority": ["Attorney General"],
-                "finingAuthority": ["The Consumer Privacy Fund within the General Fund of the state"],
-                "penalties": [ "Administrative fine of up to two thousand five hundred dollars ($2,500) for each violation, or up to seven thousand five hundred dollars ($7,500) for each intentional violation and each violation involving the personal information of minor consumers to the Consumer Privacy Fund within the General Fund of the state."],
-                "personalLiability": ["Individuals within the business may have personal liability for violations"],
-                "privateRightOfAction" : ["The private right of action is limited to data breaches, and consumers that have the right to seek statutory damages between $100 and $750 per consumer per incident, or actual damages, whichever is greater."]
+                "enforcementAuthority": "The State of California Department of Justice",
+                "rulemakingAuthority": "Attorney General",
+                "finingAuthority": "The Consumer Privacy Fund within the General Fund of the state",
+                "penalties": "Administrative fine of up to two thousand five hundred dollars ($2,500) for each violation, or up to seven thousand five hundred dollars ($7,500) for each intentional violation and each violation involving the personal information of minor consumers to the Consumer Privacy Fund within the General Fund of the state.",
+                "personalLiability": "Individuals within the business may have personal liability for violations",
+                "privateRightOfAction" : "The private right of action is limited to data breaches, and consumers that have the right to seek statutory damages between $100 and $750 per consumer per incident, or actual damages, whichever is greater."
             },
             "threshold": [ 
                 {
@@ -373,7 +343,7 @@
             "reference": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=8.&chapter=22.&lawCode=BPC",
             "billStatus": "In force",
             "inEffect" : "July 2004",
-            "applicability": [ 
+            "applicability":  
                 {
                     "roles": ["operators of an online service", "third party"],
                     "personalDataCategories": ["First and last name", 
@@ -386,90 +356,76 @@
                                                 "Information concerning a user that the Web site or online service collects online from the user and maintains in personally identifiable form in combination with an identifier described in this subdivision."],
                     "processingPurposes": [""],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know what personal information is collected",
-                    "reference": ["Section 22575"]
+                    "reference": "Section 22575"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 22575"]
+                    "reference": "Section 22575"
                 },
                 {
                     "name": "Right to Opt-out",
-                    "reference": ["Section 22575"]
+                    "reference": "Section 22575"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice":  {
                         "description": "A Web page on which the actual privacy policy is posted if the Web page is the homepage or first significant page after entering the Web site.",
                         "reference": "Section 22577"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation":   {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Identify the categories of personally identifiable information that the operator collects through the Web site or online service about individual consumers who use or visit its commercial Web site or online service and the categories of third-party persons or entities with whom the operator may share that personally identifiable information.",
                         "reference": "22575"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -477,20 +433,18 @@
                             "description": "Non-commercial websites in California are exempt from CalOPPA."
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The State of California Department of Justice"],
-                "rulemakingAuthority": ["Attorney General"],
-                "finingAuthority": ["The Consumer Privacy Fund within the General Fund of the state"],
-                "penalties": [ "If you fail to comply within the 30-day grace period, you face a maximum penalty of $2,500 per violation."],
-                "personalLiability": ["An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance."],
-                "privateRightOfAction" : [""]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The State of California Department of Justice",
+                "rulemakingAuthority": "Attorney General",
+                "finingAuthority": "The Consumer Privacy Fund within the General Fund of the state",
+                "penalties": "If you fail to comply within the 30-day grace period, you face a maximum penalty of $2,500 per violation.",
+                "personalLiability": "An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance.",
+                "privateRightOfAction" : ""
+                },
             "threshold": [
                 {
                     "type": "Accessiblity",

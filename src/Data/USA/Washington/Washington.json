@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Washington",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "House Bill 1616",
             "type": "Introduced",

@@ -1,32 +1,52 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Hungary",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Act CXII of 2011 on the right to informational self-determination and on the freedom of information",
+            "acronym": "Act CXII",
+            "description": "Act CXII of 2011 on the Right to Informational Self-Determination and on the Freedom of Information, commonly referred to as the Hungarian Data Protection and Freedom of Information Act, establishes the legal framework for the protection of personal data and the promotion of transparency in public sector information management in Hungary. It aligns with the principles of the European Union's data protection framework, including the General Data Protection Regulation (GDPR).",
+            "reference": "https://njt.hu/jogszabaly/en/2011-112-00-00#:~:text=Section%201%20The%20purpose%20of%20this%20Act,transparency%20in%20public%20affairs%20through%20the%20effective",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "26 April, 2019",
             "applicability": [ 
                 {
-                    "roles": [""],
-                    "personalDataCategories": [""],
-                    "processingPurposes": [""],
-                    "consentRequired": ""
+                    "roles": ["Controller", "Processor", "Data Subject"],
+                    "personalDataCategories": ["Racial or Ethnic origin", "Political Opinion", "Religious belief or worldview",
+                    "Trade union membership", "Genetic data", "Biometric data", "Health data", "Sex life",
+                    "Sexual orientation"],
+                    "processingPurposes": ["Collection", "Entering", "Recording", "Organisation",
+                    "Storage", "Alteration", "Use", "Retrieval", "Data transfer", "Disclosure", "Alignment or combination",
+                    "Blocking", "Erasure and destruction", "Taking photos and making audio or visual recordings", "Recording of physical characteristics suitable for identification (such as fingerprints or palm prints, DNA samples and iris scans)"],
+                    "consentRequired": "True"
                 }
             ],
             "individualRights": [
                 {
-                    "name": "",
-                    "reference": [""]
+                    "name": "Right to Prior Information",
+                    "reference": ["Section 14.a"]
+                },
+                {
+                    "name": "Right of Access",
+                    "reference": ["Section 14.b"]
+                },
+                {
+                    "name": "Right to Rectification",
+                    "reference": ["Section 14.c"]
+                },
+                {
+                    "name": "Right to Restriction of Processing",
+                    "reference": ["Section 14.d"]
+                },
+                {
+                    "name": "Right to Erasure",
+                    "reference": ["Section 14.e"]
                 }
             ],
             "businessObligations": {
                 "notice": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "To facilitate securing data subject rights, the controller shall take appropriate technical and organisational measures and in particular it shall ensure that any notification and information to be provided to the data subject in the cases set out in this Act be provided in an easily accessible and legible form using concise, clear and plain language",
+                        "reference": "Section 15"
                     }
                 ],
                 "lawfulBasis": [ {
@@ -35,18 +55,18 @@
                     }
                 ],
                 "purposeLimitation": [  {
-                        "description": "",
-                        "reference": ""
+                        "description": "Personal data shall be processed only for clearly specified and legitimate purposes, for exercising a right and fulfilling an obligation. Processing shall comply with the purpose of processing in all stages; data shall be collected and processed fairly and lawfully",
+                        "reference": "Section 4.a"
                     }
                 ],
                 "dataMinimization": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Personal data shall be essential and adequate in relation to the purposes for which they are processed. The processing of personal data shall be limited to the extent and period of time necessary in relation to the purposes for which they are processed.",
+                        "reference": "Section 4.b"
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Data controllers and processors are mandated to implement appropriate technical and organizational measures to ensure the security of personal data, particularly sensitive data, based on the risk to data subjects' fundamental rights. These measures must consider the state of the art, implementation costs, and the nature, scope, and purpose of data processing, as well as the likelihood and severity of risks. Specific requirements include preventing unauthorized access to data processing systems and data storage media, ensuring that only authorized individuals can access or alter data, verifying data transfers and access, and maintaining data integrity during transmission and transportation. Additionally, measures must be in place to restore data systems in case of a breakdown and to ensure the system's operational integrity. For electronically processed data in various registers, appropriate technical solutions must prevent unauthorized interconnection or assignment of data to individuals, unless legally permitted.",
+                        "reference": "Section 25/I"
                     }
                 ],
                 "privacyByDesign": [  {
@@ -55,18 +75,18 @@
                     }
                 ],
                 "processorReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Processors must provide sufficient guarantees of appropriate technical and organizational measures to ensure lawful processing and protect data subjects' rights, demonstrating these guarantees to the controller before starting processing. Processors can engage sub-processors only with specific or general prior authorization from the controller, and must inform the controller of any planned sub-processor engagements. The legal relationship between the controller and processor must be governed by a law or written contract, specifying details such as the nature, purpose, and duration of processing, types of personal data, and data subjects involved. The contract must obligate the processor to act on the controller's instructions, ensure confidentiality, assist in fulfilling data subjects' rights, delete or return personal data after processing, provide necessary compliance information, and comply with conditions for engaging sub-processors. If a processor independently determines the purposes and means of processing, it will be considered a controller for that processing.",
+                        "reference": "Section 25/C and 25/D"
                     }
                 ],
                 "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers and processors are mandated to maintain detailed records of their personal data processing activities. Controllers must document information such as their contact details, the purposes of processing, recipients of data transfers, scope of data subjects and processed data, use of profiling, legal bases for processing, data retention periods, security measures, details of any data breaches, and reasons for restricting or refusing data subject access. Processors must keep records of their activities on behalf of controllers, including contact details, types of processing activities, details of international data transfers, and security measures. These records must be kept in written or electronic form and be available to the Authority upon request. For national security purposes, relevant organs can fulfill these requirements through documentation specified in the Act on national security services, provided it meets the necessary standards.",
+                        "reference": "Section 25/E"
                     }
                 ],
                 "riskImpact": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The controller shall, prior to the start of the intended processing, carry out an assessment of the expected impact of the envisaged processing operations on the data subjects’ fundamental rights, taking into account the circumstances of processing, in particular its purpose, the scope of data subjects and the technology used during the processing operations.",
+                        "reference": "Section 25/G"
                     }
                 ],
                 "breachNotification": [ {
@@ -80,13 +100,13 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "Controllers and processors must appoint a DPO if they perform state or public duties, or if mandated by law or EU regulations. The DPO must have a solid understanding of data protection laws and practices. A DPO can serve multiple controllers or processors simultaneously, provided this does not compromise their efficiency. Controllers and processors must notify the Authority of the DPO's contact details and involve the DPO in all decisions related to data protection, ensuring they have the necessary resources and information. The DPO's primary duties include advising on and ensuring compliance with data protection laws, monitoring processing activities, assisting in exercising data subjects' rights, overseeing data protection impact assessments, cooperating with authorities on legal matters, and helping to draft internal data protection policies. The DPO must maintain confidentiality regarding all sensitive information encountered during and after their tenure. Additionally, a conference of DPOs, convened by the Authority's president at least once a year, aims to maintain professional contact and develop consistent legal practices in personal data protection and access to public information.",
+                        "reference": "Section 25/L, 25/M, and 25/N"
                     }
                 ],
                 "dataTransfer": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Before transferring personal data, controllers or processors must verify its accuracy and completeness. If data is found to be inaccurate or outdated, it may only be transferred if it is essential for the intended purpose, and the recipient must be informed of the data's status. Post-transfer inaccuracies must be reported to the recipient without delay. Recipients must process personal data according to specified conditions, such as purposes, duration, and recipients, unless prior authorization is obtained for any deviations. International data transfers are permissible if the data subject consents explicitly or if the transfer is necessary for processing purposes, adheres to legal conditions, and ensures adequate protection by the recipient. Specific rules apply for law enforcement purposes, requiring prior authorization or allowing transfers under urgent conditions. If adequate protection isn't presumed, transfers can still occur to protect vital interests, public security, legal inquiries, or defend legal claims, provided they do not disproportionately restrict the data subject's rights. Controllers must inform the Authority about international data transfers and maintain detailed records, including safeguard assessments. Transfers within the EEA or to EU bodies are treated as domestic transfers, and international transfers based on specific treaties continue under those terms until amended or terminated. This comprehensive framework ensures thorough checks, adherence to conditions, explicit consent for international transfers, and meticulous documentation to maintain compliance with data protection standards.",
+                        "reference": "Chapter 6"
                     }
                 ]
             },
@@ -104,12 +124,12 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["Hungarian National Authority for Data Protection and Freedom of Information (Nemzeti Adatvédelmi és Információszabadság Hatóság)"],
+                "rulemakingAuthority": ["Hungarian National Authority for Data Protection and Freedom of Information"],
+                "finingAuthority": ["Hungarian National Authority for Data Protection and Freedom of Information"],
                 "penalties": [ ""],
                 "personalLiability": [""],
-                "privateRightOfAction" : [""]
+                "privateRightOfAction" : ["The data subject may bring proceedings before the court against the controller or, in the context of processing operations within the processor’s scope of activity, the processor if he considers that in processing his personal data, the controller or the processor acting on behalf of, or instructed by, the controller infringes the personal data processing provisions laid down in the national law or a binding legal act of the European Union."]
                 }
             ],
             "threshold": [
@@ -118,8 +138,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -278,12 +298,11 @@
          }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "",
+            "type": "Introduced, Minor or Inactive",
+            "description": "",
+            "reference": ""
+        }
     ]
 }

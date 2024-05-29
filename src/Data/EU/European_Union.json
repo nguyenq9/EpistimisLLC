@@ -49,6 +49,10 @@
                 {
                     "name": "Right to Object",
                     "reference": ["Article 21"]
+                },
+                {
+                    "name": "Right to not be subject to a decision based solely on automated processing",
+                    "reference": ["Article 22"]
                 }
             ],
             "businessObligations": {
@@ -154,7 +158,7 @@
                     "description": "This Regulation applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system."
                 }
             ]
-         }
+        }
     ],
     "otherPrivacyLaws":[
                 {

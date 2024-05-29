@@ -1,7 +1,7 @@
 {
     "jurisdiction": "South Carolina",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Personal Financial Security Act",
             "type": "Minor",

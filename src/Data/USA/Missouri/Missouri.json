@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Missouri",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "House Bill 667",
             "type": "Introduced",

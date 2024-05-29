@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Maine",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Data Privacy and Protection Act (House LD 1977)",
             "type": "Introduced",

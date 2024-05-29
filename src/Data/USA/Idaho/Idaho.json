@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Idaho",
     "filterCategories": [""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Title 28, Chapter  51 of the Idaho Statutes",
             "type": "Minor",

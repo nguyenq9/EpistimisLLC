@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Kentucky",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Section 365.732 of Kentucky's Revised Statutes",
             "type": "Minor",

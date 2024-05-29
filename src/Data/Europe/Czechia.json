@@ -1,14 +1,14 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Czechia",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Czech Act No. 110/2019 Coll.",
+            "acronym": "ZZOÚ",
+            "description": "The Czech Act No. 110/2019 Coll. on the Processing of Personal Data (also known as Zákon o zpracování osobních údajů or ZZOÚ) is the national legislation that regulates personal data protection in the Czech Republic. This act implements and complements the European Union's General Data Protection Regulation (GDPR), ensuring a cohesive data protection framework across the country.",
+            "reference": "https://uoou.gov.cz/media/act-no-110-2019-coll.pdf",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "24 April, 2019",
             "applicability": [ 
                 {
                     "roles": [""],
@@ -45,8 +45,8 @@
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The controlling authority must implement organizational and technical measures to ensure a security level for personal data that is appropriate to the nature, scope, circumstances, purpose, and risk of the data processing. When personal data are processed by automated means, the authority must take necessary measures to protect the data against unauthorized access, transmission, alteration, destruction, loss, theft, abuse, or other unauthorized processing. Additionally, they must ensure data recoverability, verify and track the individuals who enter or access the data, maintain the security and reliability of the information system, and prevent unauthorized access to the data carriers or equipment used for processing. These obligations extend to data processors in a similar manner.",
+                        "reference": "Section 40"
                     }
                 ],
                 "privacyByDesign": [  {
@@ -70,8 +70,8 @@
                     }
                 ],
                 "breachNotification": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The controlling authority is required to notify the Office of any personal data breach without undue delay unless the risk to the rights and freedoms of data subjects is low. If the notification is made more than 72 hours after the breach is discovered, the delay must be justified. The notification should include the following details if known: a description of the breach, categories and approximate number of data subjects and records affected, contact details for more information, likely consequences of the breach, and measures taken or proposed to mitigate the damage. Any additional information not known at the time must be provided without undue delay. The controlling authority must also inform relevant authorities in other EU Member States and document each breach, its consequences, and remedial actions for at least three years. Additionally, if the breach poses a high risk to the rights and freedoms of the data subjects, the controlling authority must communicate the breach to the affected individuals without undue delay. This communication must include a description of the breach, contact details for more information, likely consequences, and measures taken or proposed to mitigate the damage. If direct communication requires disproportionate effort, a public announcement should be made. Communication is not required if technical and organizational measures prevent data misuse or if subsequent actions significantly reduce the risk. The Office may assess the risk level and determine the necessity of communication. Communication may be restricted if it would create a specific danger as outlined in Section 28 (2).",
+                        "reference": "Sectino 41 and 42"
                     }
                 ],
                 "registration": [ {
@@ -80,8 +80,8 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
@@ -104,9 +104,9 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["The Office for Personal Data Protection (UOOU)"],
+                "rulemakingAuthority": ["The Office for Personal Data Protection (UOOU)"],
+                "finingAuthority": ["The Office for Personal Data Protection (UOOU)"],
                 "penalties": [ ""],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -278,12 +278,11 @@
          }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "Data Protection Act 2000",
+            "type": "Inactive",
+            "description": "The Data Protection Act 2000, formally known as Act No. 101/2000 Coll. on the Protection of Personal Data and on Amendment to Some Acts, was the primary legislation governing data protection in the Czech Republic.",
+            "reference": "https://www.ff.cuni.cz/wp-content/uploads/2015/11/Consolidated-version-of-the-Personal-Data-Protection-Act.pdf"
+        }
     ]
 }

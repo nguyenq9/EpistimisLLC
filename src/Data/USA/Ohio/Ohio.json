@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Ohio",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Section 1349.19, Private disclosure of security breach of computerized personal information data",
             "type": "Minor",

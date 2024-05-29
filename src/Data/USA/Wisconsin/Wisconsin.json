@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Wisconsin",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Assembly Bill 466",
             "type": "Introduced",

@@ -1,14 +1,14 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Bulgaria",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Personal Data Protection Act",
+            "acronym": "PDPA",
+            "description": "The Personal Data Protection Act (PDPA) of Bulgaria, initially enacted on January 1, 2002, has undergone numerous amendments and supplements to adapt to evolving privacy standards, especially ensuring compliance with EU regulations.",
+            "reference": "https://cpdp.bg/en/legislation/personal-data-protection-act/",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "1 January, 2002",
             "applicability": [ 
                 {
                     "roles": [""],
@@ -19,14 +19,14 @@
             ],
             "individualRights": [
                 {
-                    "name": "",
-                    "reference": [""]
+                    "name": "Right to Lodge a Complaint",
+                    "reference": ["Article 54"]
                 }
             ],
             "businessObligations": {
                 "notice": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The data controller, taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Act.",
+                        "reference": "Article 59"
                     }
                 ],
                 "lawfulBasis": [ {
@@ -35,43 +35,43 @@
                     }
                 ],
                 "purposeLimitation": [  {
-                        "description": "",
-                        "reference": ""
+                        "description": "The processing of personal data must be adequate, relevant and limited to what is necessary in relation to the purposes for which the data are processed.",
+                        "reference": "Article 45"
                     }
                 ],
                 "dataMinimization": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "By default, only the necessary personal data for each specific processing purpose should be processed. This applies to the amount of data collected, extent of processing, storage period, and data accessibility.",
+                        "reference": "Article 59"
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers and processors must implement appropriate security measures considering the state of the art, costs, nature, scope, context, purposes of processing, and risks to individuals’ rights and freedoms.",
+                        "reference": "Article 66"
                     }
                 ],
                 "privacyByDesign": [  {
-                        "description": "",
-                        "reference": ""
+                        "description": "The controller shall ensure the protection of personal data by design, taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing, as well as the risks for rights and freedoms of natural persons posed by the processing. The measures must comply with the requirements of Article 45, they shall be planned at the time of the determination of the means for processing of personal data and shall be implemented at the time of the processing itself.",
+                        "reference": "Article 59"
                     }
                 ],
                 "processorReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "A data controller can only entrust the processing of personal data to processors who provide sufficient guarantees of appropriate technical and organizational measures to meet legal requirements and protect data subjects' rights. Processors must have written authorization from the controller to engage sub-processors and must inform the controller of any changes, allowing the controller to object. The processing agreement must be in writing and detail the processing's subject, duration, purpose, type of data, and categories of data subjects, along with the obligations and rights of the controller. This agreement must ensure that processors act only on the controller's instructions, maintain data confidentiality, assist in respecting data subjects' rights, and either return or delete personal data after processing ends unless legally required to retain it. Additionally, processors must provide necessary compliance information to the controller and follow the conditions for engaging other processors. If a processor independently determines the purposes and means of processing, they become a data controller for that processing. Finally, processors and their authorized personnel must process data only as instructed by the controller, unless otherwise legally mandated.",
+                        "reference": "Article 61"
                     }
                 ],
                 "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers and processors must maintain logs for processing operations such as collection, alteration, consultation, disclosure, combination, and erasure. Logs must indicate the justification, date, time, and identity of individuals involved in consultation or disclosure.",
+                        "reference": "Article 63"
                     }
                 ],
                 "riskImpact": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers must assess the impact on data protection for processing likely to result in high risks, especially using new technologies. Assessments must include a description of processing operations, risk assessment, measures to address risks, safeguards, security measures, and mechanisms for compliance.",
+                        "reference": "Article 64"
                     }
                 ],
                 "breachNotification": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "When a breach likely risks data subjects' rights and freedoms, the data controller must notify the relevant authority within 72 hours, including details about the breach, its consequences, and remedial actions. The processor must also inform the controller within the same timeframe. If the breach involves data from another EU member state, that state's controller must be informed within seven days. Additionally, if the breach poses a risk to data subjects, they must be notified within seven days, unless protective measures like encryption mitigate the risk, or if notifying each subject would involve disproportionate effort. The Commission or Inspectorate can mandate notification if they deem the risk significant. Documentation of breaches, including facts, effects, and actions taken, must be maintained by the controller.",
+                        "reference": "Article 67, 68"
                     }
                 ],
                 "registration": [ {
@@ -80,13 +80,13 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "The data controller must appoint a DPO based on professional qualities, particularly expertise in data protection law and practice. A DPO can serve multiple controllers, depending on organizational structure and size. The controller must publicize the DPO's contact details and inform the Commission accordingly. Judicial authorities' DPOs are excluded from certain tasks when processing data for judicial purposes. The controller must involve the DPO in data protection issues and assign tasks such as informing and advising on legal obligations, monitoring compliance, providing advice on data protection impact assessments, cooperating with supervisory authorities, and acting as the contact point for these authorities. The controller must also support the DPO with necessary resources and access to personal data and processing operations, ensuring the DPO's knowledge remains current.",
+                        "reference": "Article 69, 70"
                     }
                 ],
                 "dataTransfer": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Article 72 outlines the conditions under which a competent authority may transfer personal data to third countries or international organizations. The transfer must align with the purposes specified in Article 42(1) and meet several criteria: the recipient must be a competent authority for those purposes, prior authorization from relevant EU Member States is required for transfers within the EU, and adequate protections must be ensured. This includes either a European Commission decision on adequate protection, appropriate safeguards under Article 74, or necessity as outlined in Article 75. Additionally, onward transfers require authorization from the original transferring authority or another competent authority in Bulgaria, considering factors like the seriousness of the offense and the level of data protection in the recipient country or organization.",
+                        "reference": "Article 72"
                     }
                 ]
             },
@@ -104,12 +104,12 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
-                "penalties": [ ""],
+                "enforcementAuthority": ["The Commission for Personal Data Protection (CPDP)"],
+                "rulemakingAuthority": ["The Commission for Personal Data Protection (CPDP)"],
+                "finingAuthority": ["The Commission for Personal Data Protection (CPDP)"],
+                "penalties": [ "Article 85 specifies fines or pecuniary sanctions for various violations, such as those related to data controllers or processors, with amounts determined according to Regulation (EU) 2016/679 criteria. Repeated violations result in doubled penalties. Article 86 outlines fines of up to BGN 5,000 for other violations, with double penalties for repeated offenses."],
                 "personalLiability": [""],
-                "privateRightOfAction" : [""]
+                "privateRightOfAction" : ["The exercise of the rights referred to in Articles 54, 55 and 56, where the personal data are contained in a judicial decision or record or case file prepared in the course of criminal proceedings, shall be without prejudice and may not be contrary to the provisions of the Criminal Procedure Code."]
                 }
             ],
             "threshold": [
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -275,15 +275,14 @@
                     "description": "This Regulation applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system."
                 }
             ]
-         }
+        }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "string",
+            "type": "Introduced, Minor or Inactive",
+            "description": "string",
+            "reference": ""
+        }
     ]
 }

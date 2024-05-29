@@ -1,7 +1,7 @@
 {
     "jurisdiction": "New Mexico",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "New Mexico’s Privacy Protection Act (PPA)",
             "type": "Minor",

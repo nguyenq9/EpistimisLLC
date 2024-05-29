@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Maryland",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Maryland Personal Information Protection Act",
             "type": "Minor",

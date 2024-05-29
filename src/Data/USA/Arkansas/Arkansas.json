@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Arkansas",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Arkansas Personal Information Protection Act",
             "type": "Minor",

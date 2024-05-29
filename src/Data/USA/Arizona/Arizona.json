@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Arizona",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Title 18 - Information Technology, Chapter 4",
             "type": "Minor",

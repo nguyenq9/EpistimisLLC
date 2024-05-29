@@ -11,27 +11,27 @@
             "inEffect" : "May 25, 2018",
             "applicability": [ 
                 {
-                    "roles": ["string"],
-                    "personalDataCategories": ["string"],
-                    "processingPurposes": ["string"],
-                    "consentRequired": "boolean"
+                    "roles": [""],
+                    "personalDataCategories": [""],
+                    "processingPurposes": [""],
+                    "consentRequired": ""
                 }
             ],
             "individualRights": [
                 {
-                    "name": "string",
-                    "reference": ["string"]
+                    "name": "",
+                    "reference": [""]
                 }
             ],
             "businessObligations": {
                 "notice": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "lawfulBasis": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "purposeLimitation": [  {
@@ -40,53 +40,53 @@
                     }
                 ],
                 "dataMinimization": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "privacyByDesign": [  {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "processorReqs": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "recordKeeper": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "riskImpact": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "breachNotification": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "registration": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dpo": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
-                        "description": "string",
-                        "reference": "string"
+                        "description": "",
+                        "reference": ""
                     }
                 ]
             },
@@ -94,28 +94,28 @@
                 {
                     "exemptions": [
                         {
-                            "type": "string",
-                            "description": "string"
+                            "type": "",
+                            "description": ""
                         }
                     ],             
-                    "nonProfitsCovered": ["string"],
-                    "verticalCarveouts" : ["string"],
-                    "preemption": ["string"]
+                    "nonProfitsCovered": [""],
+                    "verticalCarveouts" : [""],
+                    "preemption": [""]
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": ["string"],
-                "rulemakingAuthority": ["string"],
-                "finingAuthority": ["string"],
-                "penalties": [ "string"],
-                "personalLiability": ["string"],
-                "privateRightOfAction" : ["string"]
+                "enforcementAuthority": [""],
+                "rulemakingAuthority": [""],
+                "finingAuthority": [""],
+                "penalties": [ ""],
+                "personalLiability": [""],
+                "privateRightOfAction" : [""]
                 }
             ],
             "threshold": [
                 {
-                    "type": "string",
-                    "description": "string"
+                    "type": "",
+                    "description": ""
                 }
             ]
          },
@@ -166,6 +166,10 @@
                 {
                     "name": "Right to Object",
                     "reference": ["Article 21"]
+                },
+                {
+                    "name": "Right to not be subject to a decision based solely on automated processing",
+                    "reference": ["Article 22"]
                 }
             ],
             "businessObligations": {

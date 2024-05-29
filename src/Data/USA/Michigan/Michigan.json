@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Michigan",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Identity Theft Protection Act",
             "type": "Minor",

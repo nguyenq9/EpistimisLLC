@@ -1,7 +1,7 @@
 {
     "jurisdiction": "North Dakota",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Notice of Security Breach for Personal Information",
             "type": "Minor",

@@ -9,7 +9,7 @@
             "reference": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=HB4",
             "billStatus": "Signed",
             "inEffect" : "July 1, 2024",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["businesses", "processor", "controller"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -22,111 +22,97 @@
                                                "Precise geolocation data"],
                     "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 541.051.b.1"]
+                    "reference": "Section 541.051.b.1"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 541.051.b.1"]
+                    "reference": "Section 541.051.b.1"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 541.051.b.2"]
+                    "reference": "Section 541.051.b.2"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 541.051.b.3"]
+                    "reference": "Section 541.051.b.3"
                 },
                 {
                     "name": "Right to Portability",
-                    "reference": ["Section 541.051.b.4"]
+                    "reference": "Section 541.051.b.4"
                 },
                 {
                     "name": "Right to Opt Out of targeted advertising, sale of personal data, profiling, automated decision making",
-                    "reference": ["Section 541.051.b.5"]
+                    "reference": "Section 541.051.b.5"
                 },
                 {
                     "name": "Right to Non-Discrimination",
-                    "reference": ["Section 541.101.2"]
+                    "reference": "Section 541.101.2"
                 },
                 {
                     "name": "Right to Opt-in consent for certain types of data processing",
-                    "reference": ["Section 541.052.f"]
+                    "reference": "Section 541.052.f"
                 }
                 
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "A controller shall provide consumers with a reasonably accessible and clear privacy notice",
                         "reference": "Section 541.102"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation":  {
                     "description": "Personal data processed by a controller under this subchapter may not be processed for any purpose other than a purpose listed in this subchapter unless otherwise allowed by this chapter",
                     "reference": "Section 541.204" 
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "A controller shall limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the purposes for which that personal data is processed, as disclosed to the consumer",
                         "reference": "Section 541.101.1" 
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "A controller for purposes ofAprotecting the confidentiality, integrity, and accessibility of personal data, shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices that are appropriate to the volume and nature of the personal data at issue.",
                         "reference": "Section 541.101.2"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "The processor must follow the instructions of the controller and assist the controller in meeting its obligations under the relevant chapter",
                         "reference": "Section 541.104"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "A data protection assessment conducted must: identify and weigh the direct or indirect benefits that may flow from the processing to the controller, the consumer, other stakeholders, and the public, against the potential risks to the rights of the consumer associated with that processing, as mitigated by safeguards that can be employed by the controller to reduce the risks",
                         "reference": "Section 541.105"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "Notification required following breach of security of computerized data",
                         "reference": "Chapter 521"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
+                        "description": "",
+                        "reference": ""
+                    },
+                "dpo": {
+                        "description": "",
+                        "reference": ""
+                    },
+                "dataTransfer": {
                         "description": "",
                         "reference": ""
                     }
-                ],
-                "dpo": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ]
             },
-            "scope": [
+            "scope": 
                 {
                     "exemptions": [
                         {
@@ -154,20 +140,18 @@
                             "description": "Terms are defined by Section 31.002, Utilities Code"
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General"],
-                "rulemakingAuthority": ["The Attorney General"],
-                "finingAuthority": ["The Attorney General"],
-                "penalties": ["A person who violates this chapter is liable for a civil penalty in an amount not to exceed $7,500 for each violation"],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["This chapter may not be construed as providing a basis for, or being subject to, a private right of action for a violation of this chapter or any other law"]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profit organizations are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General",
+                "rulemakingAuthority": "The Attorney General",
+                "finingAuthority": "The Attorney General",
+                "penalties": "A person who violates this chapter is liable for a civil penalty in an amount not to exceed $7,500 for each violation",
+                "personalLiability": "",
+                "privateRightOfAction" : "This chapter may not be construed as providing a basis for, or being subject to, a private right of action for a violation of this chapter or any other law"
+                },
             "threshold": [
                 {
                     "type": "Company Size",

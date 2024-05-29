@@ -1,7 +1,7 @@
 {
     "jurisdiction": "New York",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "New York Data Protection Act (Assembly Bill 2587)",
             "type": "Introduced",

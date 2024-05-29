@@ -166,6 +166,10 @@
                 {
                     "name": "Right to Object",
                     "reference": ["Article 21"]
+                },
+                {
+                    "name": "Right to not be subject to a decision based solely on automated processing",
+                    "reference": ["Article 22"]
                 }
             ],
             "businessObligations": {

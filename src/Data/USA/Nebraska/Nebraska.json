@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Nebraska",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Personal Privacy Protection Act",
             "type": "Introduced",

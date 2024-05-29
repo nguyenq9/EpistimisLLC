@@ -9,7 +9,7 @@
             "reference": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter53/",
             "billStatus": "In force",
             "inEffect" : "January 1, 2023",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Processor", "Third party", "Consumer"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -22,110 +22,96 @@
                                                "Precise geolocation data"],
                     "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 59.1-577.A.1"]
+                    "reference": "Section 59.1-577.A.1"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 59.1-577.A.1"]
+                    "reference": "Section 59.1-577.A.1"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 59.1-577.A.2"]
+                    "reference": "Section 59.1-577.A.2"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 59.1-577.A.3"]
+                    "reference": "Section 59.1-577.A.3"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Section 59.1-577.A.4"]
+                    "reference": "Section 59.1-577.A.4"
                 },
                 {
                     "name": "Right to Opt Out of Targeted Advertising, Profiling, or Sale of Personal information",
-                    "reference": ["Section 59.1-577.A.5"]
+                    "reference": "Section 59.1-577.A.5"
                 },
                 {
                     "name": "Right to Appeal",
-                    "reference": ["Section 59.1-577.B.2"]
+                    "reference": "Section 59.1-577.B.2"
                 },
                 {
                     "name": "Right to Non-Discrimination",
-                    "reference": ["Section 59.1-578.4"]
+                    "reference": "Section 59.1-578.4"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "Controllers shall provide consumers with a reasonably accessible, clear, and meaningful privacy notice.",
                         "reference": "Section 59.1-578.C"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "A controller shall limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the purposes for which such data is processed, as disclosed to the consumer",
                         "reference": "Section 59.1-578.A.1"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices to protect the confidentiality, integrity, and accessibility of personal data. Such data security practices shall be appropriate to the volume and nature of the personal data at issue",
                         "reference": "Section 59.1-578.A.3"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "Processors are required to adhere to the instructions provided by the controller and assist the controller in fulfilling its obligations under the relevant legislation. This assistance includes responding to consumer rights requests, ensuring the security of processing personal data, and notifying the controller of any breaches of security. Additionally, processors must enter into a contract with the controller that governs the processing procedures. This contract should clearly outline instructions for processing data, including confidentiality obligations, data deletion or return procedures, and cooperation with assessments. The processor is also responsible for engaging subcontractors under written contracts that impose similar obligations.",
                         "reference": "Section 59.1-579"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers are mandated to conduct and document data protection assessments for specific processing activities involving personal data. These activities include targeted advertising, sale of personal data, profiling with foreseeable risks to consumers, processing of sensitive data, and any activities posing heightened risks to consumers. During these assessments, controllers must weigh the benefits of processing against potential risks to consumer rights, considering factors such as the use of de-identified data, consumer expectations, and the nature of the controller-consumer relationship.",
                         "reference": "Section 59.1-580"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Sale of personal data does not include the disclosure or transfer of personal data to an affiliate of the controller or the disclosure or transfer of personal data to a third party as an asset that is part of a merger, acquisition, bankruptcy, or other transaction in which the third party assumes control of all or part of the controller's assets",
                         "reference": "Section 59.1-575"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -149,20 +135,18 @@
                             "description": "A body, authority, board, bureau, commission, district, or Virginian agency or any Virginian political subdivision."
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General"],
-                "rulemakingAuthority": ["The Attorney General"],
-                "finingAuthority": ["The Attorney General"],
-                "penalties": [ "Any violations of this chapter and civil penalties of up to $7,500 for each violation under this chapter. All civil penalties, expenses, and attorney fees collected pursuant to this chapter shall be paid into the state treasury and credited to the Regulatory, Consumer Advocacy, Litigation, and Enforcement Revolving Trust Fund."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Nothing in this chapter shall be construed as providing the basis for, or be subject to, a private right of action for violations of this chapter or under any other law."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profit organizations are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General",
+                "rulemakingAuthority": "The Attorney General",
+                "finingAuthority": "The Attorney General",
+                "penalties": "Any violations of this chapter and civil penalties of up to $7,500 for each violation under this chapter. All civil penalties, expenses, and attorney fees collected pursuant to this chapter shall be paid into the state treasury and credited to the Regulatory, Consumer Advocacy, Litigation, and Enforcement Revolving Trust Fund.",
+                "personalLiability": "",
+                "privateRightOfAction" : "Nothing in this chapter shall be construed as providing the basis for, or be subject to, a private right of action for violations of this chapter or under any other law."
+                },
             "threshold": [
                 {
                     "type": "Annual Processing",

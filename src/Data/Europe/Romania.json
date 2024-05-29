@@ -1,14 +1,14 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Romania",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Law no. 190/2018",
+            "acronym": "Law 190/2018",
+            "description": "Law no. 190/2018, also known as the implementation law of the General Data Protection Regulation (GDPR) in Romania, provides additional provisions to complement the GDPR.",
+            "reference": "https://www.dataprotection.ro/servlet/ViewDocument?id=1685",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "July 31, 2018",
             "applicability": [ 
                 {
                     "roles": [""],
@@ -80,8 +80,8 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
@@ -104,10 +104,10 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
-                "penalties": [ ""],
+                "enforcementAuthority": ["National Supervisory Authority"],
+                "rulemakingAuthority": ["National Supervisory Authority"],
+                "finingAuthority": ["National Supervisory Authority"],
+                "penalties": [ "Specific violations of the GDPR, including obligations of controllers and processors, certification bodies, and monitoring bodies, as well as violations of Articles 3-9 of Law no. 190/2018, are considered contraventions and are subject to fines ranging from 10,000 lei to 100,000 lei. More severe violations, such as those concerning data processing principles, data subjects' rights, international data transfers, and non-compliance with supervisory authority orders, can incur fines from 10,000 lei to 200,000 lei. This also applies to violations of decisions issued by the National Supervisory Authority."],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
                 }
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -275,15 +275,14 @@
                     "description": "This Regulation applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system."
                 }
             ]
-         }
+        }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "Law no. 102/2005",
+            "type": "Minor",
+            "description": "Law no. 102/2005 of Romania establishes the organization and functioning of the National Supervisory Authority for Personal Data Processing.",
+            "reference": "https://www.dataprotection.ro/servlet/ViewDocument?id=172#:~:text=of%20Law%20no.-,102%2F2005%20on%20the%20set%20up%2C%20organisation%20and%20functioning%20of,free%20movement%20of%20these%20data."
+        }
     ]
 }

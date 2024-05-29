@@ -1,19 +1,19 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Lithuania",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Republic Of Lithuania Law On Legal Protection Of Personal Data",
+            "acronym": "LLPPD",
+            "description": "The Republic of Lithuania's Law on Legal Protection of Personal Data (LLPPD) is the primary legislation governing the processing and protection of personal data within Lithuania. This law aligns with the European Union's General Data Protection Regulation (GDPR), ensuring that Lithuania meets EU data protection standards.",
+            "reference": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/ef70b5d2f14811e78f3dc265493430ae",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "July 16, 2018",
             "applicability": [ 
                 {
                     "roles": [""],
                     "personalDataCategories": [""],
-                    "processingPurposes": [""],
+                    "processingPurposes": ["Collection", "Recording", "Accumulation", "Storage", "Classification", "Grouping", "Combining", "Alteration (supplementing or rectifying)", "Disclosure", "Making available", "Use", "Logical and/or arithmetic operations", "Retrieval", "Dissemination", "Destruction", "Any other operation or a set of operations."],
                     "consentRequired": ""
                 }
             ],
@@ -45,8 +45,8 @@
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Data controllers and processors must implement appropriate organizational and technical measures to protect personal data against accidental or unlawful destruction, alteration, disclosure, and other unlawful processing, ensuring a level of security commensurate with the nature of the data and the processing risks. These measures must be documented in written regulations or contracts. The State Data Protection Inspectorate sets general requirements for these security measures. Data controllers may process data themselves or authorize processors, choosing only those who guarantee adequate protection and comply with the controller’s instructions. A written contract must regulate the relationship between the controller and a non-controller processor, except where laws or legal acts govern these relations. Employees and representatives of data controllers and processors must maintain data confidentiality, even after their employment or contractual relationship ends. Notifications containing personal data sent to data subjects must be securely enclosed to ensure visibility only to the addressee or an authorized third party. These provisions do not apply when notifications are delivered personally and confidentially. Data controllers and requesters of such notifications are responsible for ensuring compliance with these requirements.",
+                        "reference": "Article 30"
                     }
                 ],
                 "privacyByDesign": [  {
@@ -75,18 +75,18 @@
                     }
                 ],
                 "registration": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Data controllers shall be registered in the State Register of Personal Data Controllers.",
+                        "reference": "Article 34"
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "",
+                        "reference": ""
                     }
                 ],
                 "dataTransfer": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The transfer of personal data to recipients in EU Member States or other countries within the European Economic Area follows the same conditions and procedures as transfers within Lithuania. However, transfers to recipients in third countries require authorization from the State Data Protection Inspectorate, except in specific cases. The Inspectorate grants or refuses authorization within two months of receiving the application from the data controller, considering the level of legal protection of personal data in the destination country, including its laws, nature of the data, processing methods, purposes, duration, and safeguards. Authorization may be granted even if the destination country lacks adequate legal protection if the data controller implements sufficient safeguards, such as contractual agreements. Without Inspectorate authorization, data can only be transferred to third countries or international law enforcement organizations if certain conditions are met, including data subject consent, contractual necessity, public interest, vital interests, crime prevention, or compliance with legal requirements. Additionally, transfers from public data files must follow prescribed procedures.",
+                        "reference": "Article 35"
                     }
                 ]
             },
@@ -104,9 +104,9 @@
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["The State Data Protection Inspectorate (SDPI)"],
+                "rulemakingAuthority": ["The State Data Protection Inspectorate (SDPI)"],
+                "finingAuthority": ["The State Data Protection Inspectorate (SDPI)"],
                 "penalties": [ ""],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
@@ -118,8 +118,8 @@
                     "description": ""
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -278,12 +278,11 @@
          }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "",
+            "type": "Introduced, Minor or Inactive",
+            "description": "",
+            "reference": ""
+        }
     ]
 }

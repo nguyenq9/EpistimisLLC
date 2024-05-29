@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Kansas",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Protection of Consumer Information Act",
             "type": "Minor",

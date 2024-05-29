@@ -9,7 +9,7 @@
             "reference": "https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled",
             "billStatus": "Signed",
             "inEffect" : "July 2024",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Third Party", "Processor"],
                     "personalDataCategories": ["Racial or Ethnic background",
@@ -26,102 +26,88 @@
                                                "Derived data or any unique identifier that is linked to or is reasonably linkable to a consumer"],
                     "processingPurposes": ["Businesses must clearly state the specific reasons why they gather personal data, whether it's for providing services, marketing purposes, or any other legitimate business interests. The purposes put forth by the bussiness must be proportionate in relation to and limited to the purposes disclosed in the OCPA "],
                     "consentRequired": "True"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 3.A"]
+                    "reference": "Section 3.A"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 3.B"]
+                    "reference": "Section 3.B"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 3.C"]
+                    "reference": "Section 3.C"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 3.C"]
+                    "reference": "Section 3.C"
                 },
                 {
                     "name": "Right to Opt Out of targeted advertising, sale of personal data, profiling in furtherance of a decision that produces a legal or similarly significant effect, or automated decision making",
-                    "reference": ["Section 3.C"]
+                    "reference": "Section 3.C"
                 },
                 {
                     "name": "Right to Portability",
-                    "reference": ["Section 3.C"]
+                    "reference": "Section 3.C"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "A controller shall provide to consumers a reasonably accessible, clear and meaningful privacy notice",
                         "reference": "Section 5.d"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Personal information may be processed only for limited and specified purposes specified in the subsection (3) in Section 2.",
                         "reference": "Section 2"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "Personal information may only be collected proportionate to accomplish the limited and specified purposes specified in the subsection (3) in Section 2.",
                         "reference": "Section 2"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "The personal data must be subject to reasonable administrative, technical and physical measures to protect the confidentiality, integrity and security of the personal data and reduce reasonably foreseeable risks of harm to consumers from the collection, use or retention.",
                         "reference": "Section 2.6"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "Processors must adhere to the instructions of controllers and assist them in responding to consumer requests, implementing appropriate safeguards for data security, and providing necessary information for data protection assessments. Additionally, processors must enter into a contract with controllers that specifies the terms of data processing, including data deletion, confidentiality, and subcontracting arrangements.",
                         "reference": "Section 6"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "Not Specified but Implied",
                         "reference": "string"
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "The personal data must be subject to reasonable administrative, technical and physical measures to protect the confidentiality, integrity and security of the personal data and reduce reasonably foreseeable risks of harm to consumers from the collection, use or retention.",
                         "reference": "Section 2.6"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "A 'Controller' must register with the Secretary of State",
                         "reference": "Section 5.4"
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "The legislation does not explicitly mention data transfer. However, it outlines the responsibilities of processors in assisting controllers with their obligations under the Oregon Consumer Privacy Act. This includes ensuring the security and confidentiality of personal data processed by the processor and providing necessary information for data protection assessments.",
                         "reference": "Section 1.17"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -150,20 +136,18 @@
                         }
 
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General"],
-                "rulemakingAuthority": ["The Attorney General"],
-                "finingAuthority": ["The Attorney General"],
-                "penalties": [ "Entities that violate the OCPA could receive fines of up to $7,500 per violation."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Consumers do not have a private right of action."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General",
+                "rulemakingAuthority": "The Attorney General",
+                "finingAuthority": "The Attorney General",
+                "penalties": "Entities that violate the OCPA could receive fines of up to $7,500 per violation.",
+                "personalLiability": "",
+                "privateRightOfAction" : "Consumers do not have a private right of action."
+                },
             "threshold": [
                 {
                     "type": "Processing Population",

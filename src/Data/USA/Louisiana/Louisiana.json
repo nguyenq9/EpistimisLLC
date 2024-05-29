@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Louisiana",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Louisiana Consumer Privacy Act (Senate Bill 199)",
             "type": "Introduced",

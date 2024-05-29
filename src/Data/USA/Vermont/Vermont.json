@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Vermont",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "House Bill 121",
             "type": "Introduced",

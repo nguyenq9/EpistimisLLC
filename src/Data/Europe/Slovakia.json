@@ -1,77 +1,112 @@
 {
-    "jurisdiction": "Norway",
+    "jurisdiction": "Slovakia",
     "filterCategories": ["", ""],
     "privacyLaws": [
         {
-            "lawName": "Personal Data Act (LOV-2018-06-15-38) (PDA)",
-            "acronym": "PDA",
-            "description": "The Norwegian Personal Data Act, also known as Lov om behandling av personopplysninger or LOV-2018-06-15-38, is legislation that implements the GDPR within Norway.",
-            "reference": "https://lovdata.no/dokument/NLE/lov/2018-06-15-38",
+            "lawName": "Slovak Data Protection Act",
+            "acronym": "string",
+            "description": "The Slovak Data Protection Act (Act No. 18/2018 Coll.) is the primary legislation governing personal data protection in Slovakia. This act aligns with the European Union's General Data Protection Regulation (GDPR), ensuring that Slovakia adheres to EU data protection standards.",
+            "reference": "https://dataprotection.gov.sk/files/personal-data-sample/2019_10_03_act_18_2018_on_personal_data_protection_and_amending_and_supplementing_certain_acts.pdf",
             "billStatus": "In force",
-            "inEffect" : "July 20, 2018",
+            "inEffect" : "May 25, 2018",
             "applicability": [ 
                 {
-                    "roles": [""],
-                    "personalDataCategories": [""],
-                    "processingPurposes": [""],
-                    "consentRequired": ""
+                    "roles": ["Controller", "Processor", "Data Subject"],
+                    "personalDataCategories": ["Racial or ethnic origin", 
+                                               "Political opinions", 
+                                               "Religious or philosophical beliefs", 
+                                               "Trade union membership", 
+                                               "Genetic data", 
+                                               "Biometric data", 
+                                               "Data concerning health", 
+                                               "Data concerning a natural person's sex life or sexual orientation"],
+                    "processingPurposes": ["Collection", "Recording", "Organisation", "Structuring", "Storage", "Alteration", "Retrieval", "Consultation", "Use", "Disclosure by transmission", "Dissemination", "Making available", "Alignment or combination", "Restriction", "Erasure"],
+                    "consentRequired": "True"
                 }
             ],
             "individualRights": [
                 {
-                    "name": "",
-                    "reference": [""]
+                    "name": "Right to Access",
+                    "reference": ["Section 21"]
+                },
+                {
+                    "name": "Right to Rectification",
+                    "reference": ["Section 22"]
+                },
+                {
+                    "name": "Right to Erasure",
+                    "reference": ["Section 23"]
+                },
+                {
+                    "name": "Right to Restriction of Processing",
+                    "reference": ["Section 24"]
+                },
+                {
+                    "name": "Right to Data Portability",
+                    "reference": ["Section 26"]
+                },
+                {
+                    "name": "Right to Object",
+                    "reference": ["Section 27"]
+                },
+                {
+                    "name": "Right to not be subject to a decision based solely on automated processing",
+                    "reference": ["Section 28"]
+                },
+                {
+                    "name": "Right to Withdraw Consent",
+                    "reference": ["Section 14"]
                 }
             ],
             "businessObligations": {
                 "notice": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "If the controller requires the data subject to consent to personal data processing, such consent must be distinguished from other matters and must be made in a clear and understandable and accessible form.",
+                        "reference": "Section 14"
                     }
                 ],
                 "lawfulBasis": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "The Slovak Data Protection Act outlines the conditions under which personal data processing is considered lawful, requiring at least one legal basis such as the data subject's consent, necessity for contract performance, compliance with a special regulation or international treaty, protection of life, health, or property, performance of a task in the public interest or official authority, or legitimate interests of the controller or third party. The Act mandates that the legal basis for data processing be specified by law or treaty and requires that the purposes, categories of data subjects, and data scope be clearly defined. If processing for a new purpose, not originally consented to, is considered, the controller must evaluate its compatibility with the original purpose, considering factors such as the relationship between the purposes, context, nature of the data, potential consequences for the data subject, and the presence of safeguards like encryption or pseudonymisation.",
+                        "reference": "Section 13"
                     }
                 ],
                 "purposeLimitation": [  {
-                        "description": "",
-                        "reference": ""
+                        "description": "Personal data shall be collected only for specified, explicit and legitimate purpose and not further processed in a manner that is incompatible with this purpose; further processing of personal data for archiving purpose, scientific or historical research purpose, or statistical purpose, if in compliance with special regulation) and if appropriate safeguards of the protection of data subject's rights in accordance with section 78 paragraph 8, shall not be considered to be incompatible with the initial purpose.",
+                        "reference": "Section 7"
                     }
                 ],
                 "dataMinimization": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Personal data processed shall be adequate, relevant and limited to what is necessary in relation to the purpose for which they are processed.",
+                        "reference": "Section 8"
                     }
                 ],
                 "securityReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Both data controllers and processors are mandated to implement appropriate technical and organizational measures to ensure a level of security suitable to the risks associated with personal data processing. These measures must consider the current state of technology, implementation costs, and the nature, scope, context, and purpose of processing, as well as the risk to individuals' rights. Specifically, measures should include pseudonymisation and encryption of personal data, maintaining the confidentiality, integrity, availability, and resilience of processing systems, ensuring data recovery in case of incidents, and regularly testing the effectiveness of security measures. The level of security must address risks such as accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access to personal data. Compliance with approved codes of conduct or certifications can help demonstrate adherence to these requirements. Additionally, individuals processing data on behalf of the controller or processor must do so based on specific instructions or applicable regulations.",
+                        "reference": "Section 39"
                     }
                 ],
                 "privacyByDesign": [  {
-                        "description": "",
-                        "reference": ""
+                        "description": "Data controllers are required to integrate data protection measures both by design and by default. Before and during data processing, controllers must implement appropriate technical and organizational measures, such as pseudonymisation, to ensure data protection. This approach must adhere to fundamental principles and take into account current technology, implementation costs, and the specific nature, scope, context, and purposes of the processing, along with the associated risks to individuals' rights and freedoms. Data protection by default means that controllers must ensure personal data is processed only for specific purposes, minimizing the amount and scope of data collected, limiting storage periods, and restricting access to personal data. By default, personal data should not be accessible to an indefinite number of individuals without the data subject's intervention.",
+                        "reference": "Section 32"
                     }
                 ],
                 "processorReqs": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Processors must not engage another processor without the controller’s prior written consent. The processing must be governed by a contract that outlines the processing's subject matter, duration, nature, purpose, scope, data categories, and both parties' obligations and rights. Processors must follow written instructions from controllers, ensure confidentiality, take necessary security measures, assist controllers in fulfilling data subject requests, and comply with data protection obligations. Upon service completion, processors must delete or return personal data as directed by the controller. Processors must also provide information to demonstrate compliance and cooperate with audits. If a processor engages another processor, they must impose the same data protection obligations. If a processor determines the purposes and means of processing in violation of the Act, it will be considered a controller for that processing. Contracts must be in written or electronic form, and compliance can be demonstrated through approved codes of conduct or certifications.",
+                        "reference": "Section 34"
                     }
                 ],
                 "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers and their representatives are required to maintain detailed records of their data processing activities, including information on the controller and data protection officer, purposes of processing, categories of data subjects and data, recipient categories, intended transfers to third countries or international organizations with safeguards documentation, data retention periods, and a general description of security measures. Processors must similarly maintain records of processing activities conducted on behalf of controllers, including their own and the controller's contact information, categories of processing, intended data transfers with safeguards, and a description of security measures. These records must be in written or electronic form and made available to the supervisory authority upon request. Exemptions apply to employers with fewer than 250 employees unless the processing poses risks to data subjects' rights, is not occasional, or involves special data categories or criminal data. The supervisory authority will provide a template for these records on its website.",
+                        "reference": "Section 37"
                     }
                 ],
                 "riskImpact": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Controllers are required to conduct a data protection impact assessment (DPIA) before processing activities that may pose a high risk to individuals' rights, especially when using new technologies. This assessment should consider the nature, scope, context, and purposes of the processing. Controllers must consult their data protection officer during the DPIA process. DPIAs are particularly required in the case of systematic and extensive evaluation of personal aspects, large-scale processing of special categories of data or criminal data, and systematic monitoring of publicly accessible areas on a large scale. The assessment must include a systematic description of processing operations and purposes, an evaluation of necessity and proportionality, an analysis of risks to data subjects' rights, and measures to mitigate risks and ensure compliance with the law while safeguarding data subjects' rights and legitimate interests. Compliance with approved codes of conduct or certificates may be considered in assessing processing impacts. Controllers may seek input from data subjects or their representatives regarding planned processing, ensuring that commercial or public interests and processing security are maintained. Controllers must verify that processing aligns with the DPIA, especially when risks change.",
+                        "reference": "Section 42"
                     }
                 ],
                 "breachNotification": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "In the event of a personal data breach, the controller must notify the Office for Personal Data Protection within 72 hours of becoming aware of the breach unless the breach is unlikely to result in a risk to individuals' rights. If the controller fails to notify within this timeframe, they must provide reasoning for the delay. Additionally, the processor must inform the controller promptly upon becoming aware of the breach. The notification to the Office must include a description of the breach, the categories and approximate number of affected data subjects and records, contact details for obtaining more information, the likely consequences of the breach, and the measures taken or proposed to address it. If not all information is available at the time of notification, the controller must provide it as soon as it becomes known. Furthermore, the controller must document all breaches, including the facts, effects, and remedial actions taken. If the breach is likely to result in a high risk to individuals' rights, the controller must also communicate the breach to the data subjects without undue delay, providing clear and plain language descriptions of the breach, along with information on its likely consequences and measures taken to address it, unless certain conditions apply, such as the implementation of appropriate protection measures or disproportionate effort required for communication.",
+                        "reference": "Section 40 and 41"
                     }
                 ],
                 "registration": [ {
@@ -80,13 +115,13 @@
                     }
                 ],
                 "dpo": [ {
-                        "description": "DPOs must prevent unauthorized access to or knowledge of sensitive information they encounter while performing their duties. This includes details about an individual's personal affairs, confidential business information (such as technical devices, production methods, business analyses, and business secrets), security measures under Article 32 of the GDPR, and reports of breaches of the Act. The obligation to maintain secrecy persists even after the DPO has left their position. However, this duty can be waived if the DPO obtains consent from the affected individual or if disclosure is necessary to fulfill their statutory duties. Additionally, DPOs are prohibited from using such information for personal gain or in any other employment.",
-                        "reference": "Section 18"
+                        "description": "The designation of a data protection officer (DPO) is mandated by controllers and processors under specific circumstances. These include situations where processing is conducted by a public authority or institution, where core activities involve large-scale monitoring of individuals or processing of special categories of data, or when required by special regulation or international treaty. DPOs must possess professional qualities and expert knowledge of data protection law and practices. They can be employees or contracted individuals and must be provided with necessary resources and access to personal data by the controller or processor. DPOs are tasked with advising on data protection obligations, monitoring compliance, providing guidance on data protection impact assessments, cooperating with supervisory authorities, serving as the point of contact for data protection issues, and considering the risks associated with processing operations. They are bound by confidentiality and must avoid conflicts of interest in carrying out their duties. The controller or processor must make the DPO's contact details publicly available and communicate them to the Office for Personal Data Protection.",
+                        "reference": "Section 44, 45, 46"
                     }
                 ],
                 "dataTransfer": [ {
-                        "description": "",
-                        "reference": ""
+                        "description": "Transfer of personal data to third countries or international organizations can only occur if necessary for tasks related to criminal proceedings or if authorized by the competent authority. Prior authorization from the member state is required for transfers originating from another member state. Alternatively, transfers may proceed if adequate safeguards or derogations apply, as determined by the Commission or under specific situations outlined in the Act. For onward transfers to additional third countries or international organizations, authorization from the competent authority is necessary, considering factors such as the seriousness of the offense and the level of data protection in the receiving country or organization. In urgent cases where prior authorization cannot be obtained in time, immediate transfers may be allowed if essential to public security or the vital interests of a member state, with subsequent notification to the relevant authority. Additionally, when transferring data with special processing requirements, the competent authority must inform the recipient accordingly. Transfers within the EU or to EU agencies must adhere to the same conditions as transfers within Slovakia.",
+                        "reference": "Section 74"
                     }
                 ]
             },
@@ -98,15 +133,15 @@
                             "description": ""
                         }
                     ],             
-                    "nonProfitsCovered": [""],
+                    "nonProfitsCovered": ["Not-for-profit bodies are exempt from he prohibiton to process special categories of persoanl data"],
                     "verticalCarveouts" : [""],
                     "preemption": [""]
                 }
             ],
             "enforcement": [ {
-                "enforcementAuthority": [""],
-                "rulemakingAuthority": [""],
-                "finingAuthority": [""],
+                "enforcementAuthority": ["The Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov Slovenskej republiky)"],
+                "rulemakingAuthority": ["The Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov Slovenskej republiky)"],
+                "finingAuthority": ["The Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov Slovenskej republiky)"],
                 "penalties": [ ""],
                 "personalLiability": [""],
                 "privateRightOfAction" : [""]
@@ -114,12 +149,12 @@
             ],
             "threshold": [
                 {
-                    "type": "",
-                    "description": ""
+                    "type": "Any Organization",
+                    "description": "The Slovak Data Protection Act applies to all personal data processing activities carried out by public and private sector entities within Slovakia."
                 }
             ]
-         },
-         {
+        },
+        {
             "lawName": "General Data Protection Regulation (GDPR)",
             "acronym": "GDPR",
             "description": "The General Data Protection Regulation (GDPR) is a comprehensive data protection and privacy law enacted by the European Union (EU) in 2016 and enforced since May 25, 2018. It replaces the Data Protection Directive 95/46/EC and aims to harmonize data privacy laws across Europe, enhance the protection of individuals' personal data, and reshape the way organizations approach data privacy.",
@@ -275,15 +310,14 @@
                     "description": "This Regulation applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system."
                 }
             ]
-         }
+        }
     ],
     "otherPrivacyLaws":[
-                {
-                    "lawName": "",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "",
-                    "reference": ""
-                }
-
+        {
+            "lawName": "Act No. 428/2002 Coll. on Protection of Personal Data",
+            "type": "Inactive",
+            "description": "Act No. 428/2002 Coll. aligns with the broader framework of European data protection regulations, including the EU Data Protection Directive 95/46/EC, which has since been succeeded by the General Data Protection Regulation (GDPR).",
+            "reference": "https://www.afapdp.org/wp-content/uploads/2018/05/Slovaquie-Loi-n%C2%B0428-2002-coll.-sur-la-protection-des-donnees.pdf"
+        }
     ]
 }

@@ -1,7 +1,7 @@
 {
     "jurisdiction": "South Dakota",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "South Dakota Codified Laws, Chapter 40, Title 22",
             "type": "Minor",

@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Rhode_Island",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Rhode Island Personal Data And Online Privacy Protection Act (House Bill 5745)",
             "type": "Introduced",

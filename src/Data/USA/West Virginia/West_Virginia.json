@@ -1,7 +1,7 @@
 {
     "jurisdiction": "West Virginia",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "House Bill 3453",
             "type": "Introduced",

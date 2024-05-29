@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Georgia",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Personal Identity Protection Act (PIPA)",
             "type": "Minor",

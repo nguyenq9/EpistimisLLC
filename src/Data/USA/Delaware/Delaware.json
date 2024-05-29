@@ -9,7 +9,7 @@
             "reference": "https://legis.delaware.gov/BillDetail?LegislationId=140388",
             "billStatus": "Signed",
             "inEffect" : "January 1, 2025",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Processor", "Third party"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -25,110 +25,96 @@
                                                "Precise geolocation data"],
                     "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 12D-104.a.1"]
+                    "reference": "Section 12D-104.a.1"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 12D-104.a.1"]
+                    "reference":"Section 12D-104.a.1"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 12D-104.a.2"]
+                    "reference": "Section 12D-104.a.2"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 12D-104.a.3"]
+                    "reference": "Section 12D-104.a.3"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Section 12D-104.a.4"]
+                    "reference": "Section 12D-104.a.4"
                 },
                 {
                     "name": "Right to Obtain a List of Categories of Third Partes to which the controller disclosed the personal information",
-                    "reference": ["Section 12D-104.a.5"]
+                    "reference": "Section 12D-104.a.5"
                 },
                 {
                     "name": "Right to Opt Out of Targeted Advertising, Sale of Personal information, or Automated Profiling",
-                    "reference": ["Section 12D-104.a.6"]
+                    "reference": "Section 12D-104.a.6"
                 },
                 {
                     "name": "Right to Appeal",
-                    "reference": ["Section 12D-104.b"]
+                    "reference": "Section 12D-104.b"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "A controller shall provide consumers with a reasonably accessible, clear, and meaningful privacy notice that includes six key components. Firstly, it should outline the categories of personal data that the controller processes. Secondly, it must clarify the purpose for which personal data is being processed. Thirdly, it should elucidate how consumers can exercise their rights, including the process for appealing a decision made by the controller regarding their request. Fourthly, the notice should specify the categories of personal data that the controller shares with third parties, if any. Fifthly, it must disclose the categories of third parties with whom the controller shares personal data, if applicable. Lastly, the notice must provide an active electronic mail address or another online mechanism through which consumers can contact the controller for inquiries or concerns regarding their personal data.",
                         "reference": "Section 12D-106.a.8"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Except as otherwise permitted by this chapter, not process personal data for purposes that are neither reasonably necessary to, nor compatible with, the disclosed purposes for which such personal data is processed, as disclosed to the consumer, unless the controller obtains the consumer’s consent.",
                         "reference": "Section 12D-106.a.2"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": " Limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the purposes for which such data is processed, as disclosed to the consumer.",
                         "reference": "Section 12D-106.a.1"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "Establish, implement, and maintain reasonable administrative, technical, and physical data security practices to protect the confidentiality, integrity, and accessibility of personal data appropriate to the volume and nature of the personal data at issue.",
                         "reference": "Section 12D-106.a.3"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "Processors must adhere to several requirements. Firstly, they must implement appropriate technical and organizational measures to assist controllers in responding to consumer rights requests. Secondly, processors are tasked with aiding controllers in ensuring the security of processing personal data and in notifying the controller of any breaches of security. Thirdly, processors must provide necessary information to enable controllers to conduct and document data protection assessments. Additionally, contracts between controllers and processors must govern the data processing procedures, outlining instructions for processing data, the nature and purpose of processing, the type of data subject to processing, and the duration of processing. Furthermore, processors must ensure confidentiality, delete or return personal data to the controller upon request, provide information to demonstrate compliance with obligations, engage subcontractors as per controller's direction, and allow for assessments of their compliance.",
                         "reference": "Section 12D-107"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact":{
                         "description": "A controller that manages or handles the data of at least 100,000 consumers, excluding data specifically processed for payment transactions, is required to conduct and document regular data protection assessments for each processing activity that poses an elevated risk of harm to consumers. These assessments are necessary for activities such as processing data for targeted advertising, selling personal data, or conducting profiling that could lead to unfair treatment or unlawful discrimination against consumers.",
                         "reference": "Section 12D-108.a"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Sale of personal data does not include the disclosure or transfer of personal data to an affiliate of the controller or The disclosure or transfer of personal data to a third party as an asset that is part of a merger, acquisition, bankruptcy, or other similar transaction in which the third party assumes control of all or part of the controller’s assets, or a proposed merger, acquisition, bankruptcy, or other similar transaction in which the third party assumes control of all or part of the controller’s assets.",
                         "reference": "Section 12D-102.29"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -152,20 +138,18 @@
                             "description": "National securities associations registered under Section 15A of the Securities Exchange Act of 1934 and registered futures associations designated under Section 17 of the Commodity Exchange Act."
                         }
                     ],             
-                    "nonProfitsCovered": ["Not all nonprofit organization are exempt"],
-                    "verticalCarveouts" : [""],
-                    "preemption": ["Personal data collected, processed, sold, or disclosed in relation to price, route, or service, as such terms are used in the Airline Deregulation Act, 49 U.S.C. § 40101, et seq., as amended, by an air carrier subject to said act, to the extent any part of this chapter is preempted by the Airline Deregulation Act, 49 U.S.C. § 41713, as amended."]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Department of Justice"],
-                "rulemakingAuthority": ["The Department of Justice"],
-                "finingAuthority": ["The Department of Justice"],
-                "penalties": [ "Fines and penalties may reach as high as $10,000 for each violation."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Nothing in this chapter shall be construed as providing the basis for, or be subject to, a private right of action for violations of said sections or any other law."]
-                }
-            ],
+                    "nonProfitsCovered": "Not all nonprofit organization are exempt",
+                    "verticalCarveouts" : "",
+                    "preemption": "Personal data collected, processed, sold, or disclosed in relation to price, route, or service, as such terms are used in the Airline Deregulation Act, 49 U.S.C. § 40101, et seq., as amended, by an air carrier subject to said act, to the extent any part of this chapter is preempted by the Airline Deregulation Act, 49 U.S.C. § 41713, as amended."
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Department of Justice",
+                "rulemakingAuthority": "The Department of Justice",
+                "finingAuthority": "The Department of Justice",
+                "penalties": "Fines and penalties may reach as high as $10,000 for each violation.",
+                "personalLiability": "",
+                "privateRightOfAction" : "Nothing in this chapter shall be construed as providing the basis for, or be subject to, a private right of action for violations of said sections or any other law."
+                },
             "threshold": [
                 {
                     "type": "Controlled or processed data",

@@ -1,7 +1,7 @@
 {
     "jurisdiction": "string",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "string",
             "type": "Introduced, Minor or Inactive",

@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Pennsylvania",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Pennsylvania Consumer Data Privacy Act (House Bill 1201)",
             "type": "Introduced",

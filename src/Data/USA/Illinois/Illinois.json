@@ -1,7 +1,7 @@
 {
     "jurisdiction": "Illinois",
     "filterCategories": ["", ""],
-    "privacyLaws": [
+    "otherPrivacyLaws": [
         {
             "lawName": "Chapter 815, Personal Information Protection Act",
             "type": "Minor",

@@ -9,7 +9,7 @@
             "reference": "https://publications.tnsosfiles.com/acts/113/pub/pc0408.pdf",
             "billStatus": "Signed",
             "inEffect" : "July 1, 2025",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Controller", "Processor", "Third Party"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -21,110 +21,96 @@
                                                "Precise geolocation data"],
                     "processingPurposes": ["Collection", "Use", "Storage", "Disclosure", "Analysis", "Deletion", "Modification"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Know if a controller is processing the consumer’s personal information",
-                    "reference": ["Section 47-18-3203.a.2.A"]
+                    "reference": "Section 47-18-3203.a.2.A"
                 },
                 {
                     "name": "Right to Access",
-                    "reference": ["Section 47-18-3203.a.2.A"]
+                    "reference": "Section 47-18-3203.a.2.A"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Section 47-18-3203.a.2.B"]
+                    "reference": "Section 47-18-3203.a.2.B"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Section 47-18-3203.a.2.C"]
+                    "reference": "Section 47-18-3203.a.2.C"
                 },
                 {
                     "name": "Right to Portability",
-                    "reference": ["Section 47-18-3203.a.2.D"]
+                    "reference": "Section 47-18-3203.a.2.D"
                 },
                 {
                     "name": "Right to Opt Out of targeted advertising, sale of personal data, profiling, automated decision making",
-                    "reference": ["Section 47-18-3203.a.2.E"]
+                    "reference": "Section 47-18-3203.a.2.E"
                 },
                 {
                     "name": "Right to Non-Discrimination",
-                    "reference": ["Section 47-18-3204.a"]
+                    "reference": "Section 47-18-3204.a"
                 },
                 {
                     "name": "Right to Opt-in for processing of sensitive data",
-                    "reference": ["Section 47-18-3204.d"]
+                    "reference": "Section 47-18-3204.d"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "A controller is required to provide a privacy notice that is easily accessible, clear, and meaningful to consumers. This notice should include: (1) the types of personal information that the controller processes, (2) the reasons for processing this personal information, (3) instructions on how consumers can exercise their rights under the law, including the process for appealing a decision made by the controller, (4) details about any categories of personal information that the controller sells to third parties, and (5) information about the categories of third parties to whom the controller sells personal information. This comprehensive notice aims to inform consumers about how their personal information is handled and shared by the controller.",
                         "reference": "Section 47-18-3204.c"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Must not process personal data for purposes beyond what is reasonably necessary to achieve the objectives for the processing, as disclosed to the consumer, unless you obtain consumer consent.",
                         "reference": "Section 47-18-3204.a"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "A controller shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices, as described in§ 47-18-3213, to protect the confidentiality, integrity, and accessibility of personal information. The data security practices must be appropriate to the volume and nature of the personal information at issue",
                         "reference": "Section 47-18-3204"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": " Processors must follow the instructions of the controller and aid them in meeting their duties under the law. This assistance includes implementing appropriate technical and organizational measures to help the controller respond to consumer rights requests effectively and providing necessary information for data protection assessments. Additionally, contracts between controllers and processors must specify data processing procedures, including instructions for processing data, the duration, and the rights and obligations of both parties. Processors must ensure confidentiality, delete or return personal information as directed by the controller, and cooperate with assessments.",
                         "reference": "Section 47-18-3205"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers must conduct and properly document data protection assessments for specific processing activities involving personal information.",
                         "reference": "Section 4 7-18-3206"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "The sale of personal information excludes the disclosure or transfer of personal information as part of specific business transactions like mergers, acquisitions, or bankruptcies where control of the controller's assets is assumed by a third party.",
                         "reference": "Section 47-18-3201.25"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -152,20 +138,18 @@
                             "description": "Patient identifying information for purposes of 42 U.S.C. § 290dd-2"
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profit organizations are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": ["This act supersedes and preempts any conflicting provisions of any public or private act and laws, ordinances, resolutions, regulations, or the equivalent adopted by a home rule municipality, county, including a metropolitan government, or city regarding the processing of personal data by controllers or processors"]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Attorney General"],
-                "rulemakingAuthority": ["The Attorney General"],
-                "finingAuthority": ["The Attorney General"],
-                "penalties": [ "A court may impose a civil penalty of up to seven thousand five hundred dollars ($7,500) for each violation of this part. If the court finds the controller or processor willfully or knowingly violated this part, then the court may, in its discretion, award treble damages"],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["If a business violates the TIPA, customers are not permitted to file a class action lawsuit or take a private right of action against it."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profit organizations are exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": "This act supersedes and preempts any conflicting provisions of any public or private act and laws, ordinances, resolutions, regulations, or the equivalent adopted by a home rule municipality, county, including a metropolitan government, or city regarding the processing of personal data by controllers or processors"
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Attorney General",
+                "rulemakingAuthority": "The Attorney General",
+                "finingAuthority": "The Attorney General",
+                "penalties": "A court may impose a civil penalty of up to seven thousand five hundred dollars ($7,500) for each violation of this part. If the court finds the controller or processor willfully or knowingly violated this part, then the court may, in its discretion, award treble damages",
+                "personalLiability": "",
+                "privateRightOfAction" : "If a business violates the TIPA, customers are not permitted to file a class action lawsuit or take a private right of action against it."
+                },
             "threshold": [
                 {
                     "type": "Revenue",
