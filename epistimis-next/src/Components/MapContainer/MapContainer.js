@@ -2,6 +2,7 @@
 import { useState } from "react";
 import MapView from "../MapView/MapView";
 import MapController from "../MapController/MapController";
+import AdminDialog from "../AdminDialog/AdminDialog";
 
 const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
@@ -9,7 +10,7 @@ const MapContainer = () => {
     const [comparing, setComparing] = useState(false);
     const [editable, setEditable] = useState(false);
 
-    const handleSetIsUS = (val) =>  {
+    const handleSetIsUS = (val) => {
         setIsUS(val);
     }
 
@@ -20,9 +21,10 @@ const MapContainer = () => {
     const handleSetEditable = (val) => {
         setEditable(val);
     }
-    
+
     return (
         <div>
+            <AdminDialog />
             <MapController
                 isUS={isUS}
                 handleSetIsUS={handleSetIsUS}

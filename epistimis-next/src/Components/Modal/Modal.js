@@ -37,7 +37,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
   }, [openModal]);
 
   useEffect(() => {
-    if (editable) {
+    if (editable && !comparing) {
       // Call displayEditableObject with the required object when entering editable mode
       displayEditableObject(modalInfo[0] /* or any relevant object */);
     }
@@ -58,12 +58,12 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
                 Compare
               </button>
               <button onClick={() => handleSetEditable(!editable)}>
-                {editable ? "Submit" : "Edit"}
+                {editable ? ("Submit") : ("✏️")}
               </button>
             </div>
 
             {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
-            {!editable ? (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
+            {/* {!editable ? (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
               <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
             ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
               <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
@@ -74,7 +74,19 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
             ) : null) : 
             (
               <textarea id="editor">hehe</textarea>
-            )}
+            )} */}
+
+            {(editable && !comparing) ? (
+              <textarea id="editor">hehe</textarea>
+            ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+            ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
+              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
+            ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
+            ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
+              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+            ) : null) }
 
 
 
