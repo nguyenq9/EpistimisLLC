@@ -5,16 +5,11 @@
     text-decoration: none;
 }
 
-/* :root {
-    --mainColor: #202020;
-    --mainColorLight: #5c5c5c; 
-    --secondaryColor: #353f85; 
-    --textColor: #E6E6E6;
-    --purple: #4D2DB7;
-} */
+.menu-container {
+    user-select: none;
+}
 
 .trigger {
-    /* position: fixed; */
     top: 15px;
     right: 20px;
     overflow: visible;
@@ -22,31 +17,25 @@
     background-color: var(--region-initial);
     width: 100px;
     height: 36px;
-    /* border-radius: 20px; */
     z-index: 999;
     border: none;
 }
 
 .trigger span {
-    /* position: absolute; */
     top: 7px;
     right: 33px;
     pointer-events: none;
     font-weight: 1000;
-    color: var(--text);
+    color: #fff;
     margin-left: 5px;
 }
 
 .dropdown-menu {
     position: fixed;
-    /* top: 7vh; */
-    /* right: 1.5em; */
-    /* background-color: var(--purple); */
     border-radius: 12px;
-    /* padding: 10px 20px; */
-    /* width: 180px; */
     z-index: 998;
     margin-top: 10px;
+    color: #fff;
 }
 
 .dropdown-menu::before {
@@ -83,11 +72,8 @@
 
 .dropdown-menu ul li {
     padding: 5px 15px;
-    /* border-top: 1px solid var(--mainColorLight); */
-    color: var(--text);
     align-items: center;
     position: relative;
-    /* border-radius: 10px; */
     font-size: 13px;
     text-decoration: none;
     background-color: var(--region-selected);
@@ -115,22 +101,17 @@
 .dropdown-menu .sub-options {
     display: none; 
     padding: 0;
-    /* position: absolute; */
     left: 100%; 
     top: 0;
     background-color: var(--text);
-    /* border-radius: 10%; */
     width: 180px;
     z-index: 997;
-    
 }
 
 .dropdown-menu .sub-options li {
     padding: 5px 20px;
-    /* border-top: 1px solid var(--mainColorLight); */
     background-color: var(--region-selected);
     color: #5c5c5c;
-    color: var(--text);
     position: relative;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -153,6 +134,7 @@
 .dropdownItem.selected{
     background-color: var(--region-hover);
     transition: 0.5s ease;
+    color: #fff;
 }
 
 .dropdownItem input[type="checkbox"] {
