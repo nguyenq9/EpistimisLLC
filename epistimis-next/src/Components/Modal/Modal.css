@@ -114,3 +114,8 @@
 .law-name {
   font-size: 1.5em;
 }
+
+#editor {
+  width: 100%;
+  height: 100%;
+}
