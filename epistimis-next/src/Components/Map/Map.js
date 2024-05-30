@@ -15,7 +15,7 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditable, filterOpen, setFilterOpen }) => {
+const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditable, setFilterOpen }) => {
   const [currCode, setCode] = useState("");
   const [modal, setModal] = useState(false);
   const [currRegion, setRegion] = useState("");
@@ -134,7 +134,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
   };
 
   return (
-    <div id="map">
+    <div>
       <Modal
         openModal={modal}
         closeModal={handleCloseModal}
@@ -144,7 +144,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
         editable={editable}
         setEditable={setEditable}
       />
-      <div className="map-container">
+      <div id="map">
         <VectorMap
           mapRef={mapRef}
           key={isUS ? "usLcc" + comparing + filterOption : "worldMill" + comparing + filterOption}

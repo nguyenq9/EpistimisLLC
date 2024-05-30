@@ -14,8 +14,6 @@ const MapContainer = () => {
     const [editable, setEditable] = useState(false);
     const [filterOpen, setFilterOpen] = useState(false);
 
-    // const filterRef = useRef(null);
-
     const handleSetIsUS = (val) =>  {
         setIsUS(val);
     }
@@ -31,21 +29,6 @@ const MapContainer = () => {
     const handleSetFilterOpen = (val) => {
         setFilterOpen(val);
     }
-
-    // useEffect(() => {
-    //     console.log("filterOpen: ", filterOpen );
-    //     const handleClick = (event) => {
-    //         if (filterOpen && filterRef.current && !filterRef.current.getDropdownRef().contains(event.target)) {
-    //             filterRef.current.closeDropdown();
-    //         }
-    //     }
-    
-    //     document.addEventListener('mousedown', handleClick);
-    
-    //     return () => {
-    //         document.removeEventListener('mousedown', handleClick);
-    //     }
-    // }, [filterOpen, filterRef]);
 
     return (
         <div id="app_container">
