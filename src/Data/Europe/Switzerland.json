@@ -9,7 +9,7 @@
             "reference": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
             "billStatus": "In force",
             "inEffect" : "September 1, 2023",
-            "applicability": [ 
+            "applicability":  
                 {
                     "roles": ["Controller", "Processor", "Data Subject"],
                     "personalDataCategories": ["Religious, philosophical, political or trade union-related views or activities", 
@@ -20,94 +20,80 @@
                                                "Data relating to social assistance measures"],
                     "processingPurposes": ["Collection", "Storage", "Keeping", "Use", "Modification", "Disclosure", "Archiving", "Deletion", "Destruction"],
                     "consentRequired": "True"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Information",
-                    "reference": ["Article 25"]
+                    "reference": "Article 25"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Article 28"]
+                    "reference": "Article 28"
                 },
                 {
                     "name": "Right to Correct",
-                    "reference": ["Article 32"]
+                    "reference": "Article 32"
                 },
                 {
                     "name": "Right to Delete",
-                    "reference": ["Article 32"]
+                    "reference": "Article 32"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "Controllers are mandated to inform data subjects appropriately, even when data is not obtained directly from them. When collecting data, controllers must provide necessary information for data subjects to exercise their rights and ensure transparent data processing. This includes disclosing the controller's identity and contact details, the purpose of processing, and if applicable, the recipients or categories of recipients receiving the data. If data is acquired from sources other than the data subject, the controller must also disclose the categories of processed personal data. Additionally, if personal data is disclosed abroad, the controller must inform the data subject of the destination country or international body and any relevant safeguards or exceptions. If data is obtained from sources other than the data subject, the controller must provide this information within one month of receiving the data or at the time of disclosure, if earlier.",
                         "reference": "Article 19"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "Processing must have a statutory basis, either in a formal law or a substantive law. A formal law is required in cases involving sensitive personal data, profiling, or when the processing may seriously violate the data subject's fundamental rights. However, a substantive law is sufficient for processing sensitive data or profiling if it's essential for a task required by law and poses no particular risks to the data subject's rights. Additionally, federal bodies may process personal data without a formal law basis if certain conditions are met. These conditions include authorization by the Federal Council if rights are not at risk, explicit consent from the data subject, or when processing is necessary to protect the life or physical integrity of the data subject or a third party and obtaining consent is not feasible within a reasonable time.",
                         "reference": "Article 34"
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Personal data may only be collected for a specific purpose that the data subject can recognise; personal data may only be further processed in a manner that is compatible with this purpose.",
                         "reference": "Article 6"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "The controller is obliged to ensure by means of suitable default settings that the processing of personal data is limited to the minimum required for the purpose intended, unless the data subject specifies otherwise.",
                         "reference": "Article 7"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "Controllers and processors are required to ensure an adequate level of data security in accordance with the risk involved. They are mandated to implement appropriate technical and organizational measures to prevent data breaches. Additionally, the Federal Council is tasked with establishing regulations specifying the minimum standards for data security.",
                         "reference": "Article 8"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "The controller is obliged to arrange the data processing in technical and organisational terms so that the data protection regulations, and in particular the principles under Article 6, are respected. It shall take account of this from the planning stage.",
                         "reference": "Article 7"
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "string",
                         "reference": "string"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "Both the controller and the processor are mandated to maintain records of their processing activities. For the controller, these records must include details such as the controller's identity, the purpose of processing, categories of data subjects and processed personal data, recipients, retention period for personal data, measures for data security, and details if data is disclosed abroad. The processor's record should include information on their identity, the controller's identity, categories of processing carried out for the controller, and details of data security measures and data disclosure abroad. Federal bodies are required to notify the Federal Data Protection and Information Commissioner (FDPIC) of their processing activity records. Additionally, the Federal Council is tasked with providing exceptions for smaller legal entities with fewer than 250 employees, whose data processing presents minimal risk to data subjects' privacy.",
                         "reference": "Article 12"
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers are required to conduct a data protection impact assessment (DPIA) before processing activities that pose a high risk to data subjects' personality or fundamental rights. The assessment should describe the planned processing, evaluate risks to data subjects' rights, and outline measures to protect those rights. High-risk scenarios include large-scale processing of sensitive personal data and systematic monitoring of public areas. Private controllers are exempt from DPIAs if mandated by law to process the data. Alternatively, they may forgo a DPIA if using certified systems, products, or services intended for the specific use, or if they adhere to a code of conduct meeting certain criteria, including being based on a DPIA, outlining measures to protect data subjects' rights, and being submitted to the Federal Data Protection and Information Commissioner (FDPIC).",
                         "reference": "Article 22"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "Controllers are mandated to promptly notify the Federal Data Protection and Information Commissioner (FDPIC) of any data security breach likely to pose a high risk to data subjects' personality or fundamental rights. The notification should include details of the breach, its consequences, and the measures taken or planned to address it. Processors must also promptly inform the controller of any breaches. The controller should inform affected data subjects if necessary for their protection or if requested by the FDPIC, except when certain conditions apply, such as statutory duty of confidentiality or disproportionate effort required. Notifications made under this provision cannot be used against the notifier in criminal proceedings without their consent.",
                         "reference": "Article 24"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "Private controllers in Switzerland have the option to appoint a data protection officer (DPO). The DPO serves as the primary contact point for data subjects and authorities responsible for data protection. Their key tasks include training and advising the controller on data protection matters and providing support in applying data protection regulations. Private controllers can utilize an exception if certain conditions are met, including ensuring the DPO's professional independence, absence of conflicting activities, and possessing the necessary expertise. Controllers must publish the DPO's contact details and inform the Federal Data Protection and Information Commissioner (FDPIC) accordingly. Additionally, the Federal Council is tasked with regulating the appointment of DPOs by federal bodies.",
                         "reference": "Article 10"
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "The data subject in Switzerland has the right to request the controller to transfer their personal data to another controller if certain requirements are met and no disproportionate effort is needed. The controller is obligated to deliver or transfer the personal data free of charge, although exceptions may be provided by the Federal Council, especially in cases where the effort required is disproportionate. However, the controller has the authority to refuse, restrict, or delay the delivery or transfer of personal data based on the reasons outlined in Article 26, paragraphs 1 and 2. If such a decision is made, the controller must provide reasons for their refusal, restriction, or delay.",
                         "reference": "Article 28 and 29"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -119,20 +105,18 @@
                             "description": "This Act does not apply to personal data being processed by institutional beneficiaries under Article 2 paragraph 1 of the Host State Act of 22 June 20073 who enjoy immunity from jurisdiction in Switzerland."
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Federal Data Protection and Information Commissioner (FDPIC)"],
-                "rulemakingAuthority": ["The Federal Data Protection and Information Commissioner (FDPIC)"],
-                "finingAuthority": ["The Federal Data Protection and Information Commissioner (FDPIC)"],
-                "penalties": [ "Any person who wilfully discloses secret personal data acquired during the practice of their profession or while carrying out an activity for or training with a person subject to a duty of confidentiality may be liable to a fine not exceeding 250,000 francs. Any private person who wilfully fails to comply with a ruling issued by the Federal Data Protection and Information Commissioner (FDPIC) or a decision of the appeal courts referring to the penalty under this Article may be liable to a fine not exceeding 250,000 francs. The criminal liability of businesses is governed by Articles 6 and 7 of the Federal Act of 22 March 1974 on Administrative Criminal Law (ACLA). If a fine not exceeding 50,000 francs is under consideration and identifying the perpetrators requires disproportionate measures, the authority may decide to order the business to pay the fine instead."],
-                "personalLiability": ["Any private person who wilfully fails to comply with a ruling issued by the FDPIC or a decision of the appeal courts that refers to the penalty under this Article shall be liable to a fine."],
-                "privateRightOfAction" : [""]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The Federal Data Protection and Information Commissioner (FDPIC)",
+                "rulemakingAuthority": "The Federal Data Protection and Information Commissioner (FDPIC)",
+                "finingAuthority": "The Federal Data Protection and Information Commissioner (FDPIC)",
+                "penalties": "Any person who wilfully discloses secret personal data acquired during the practice of their profession or while carrying out an activity for or training with a person subject to a duty of confidentiality may be liable to a fine not exceeding 250,000 francs. Any private person who wilfully fails to comply with a ruling issued by the Federal Data Protection and Information Commissioner (FDPIC) or a decision of the appeal courts referring to the penalty under this Article may be liable to a fine not exceeding 250,000 francs. The criminal liability of businesses is governed by Articles 6 and 7 of the Federal Act of 22 March 1974 on Administrative Criminal Law (ACLA). If a fine not exceeding 50,000 francs is under consideration and identifying the perpetrators requires disproportionate measures, the authority may decide to order the business to pay the fine instead.",
+                "personalLiability": "Any private person who wilfully fails to comply with a ruling issued by the FDPIC or a decision of the appeal courts that refers to the penalty under this Article shall be liable to a fine.",
+                "privateRightOfAction" : ""
+                },
             "threshold": [
                 {
                     "type": "Processing Data",

@@ -1,168 +1,133 @@
 {
-    "jurisdiction": "Alberta",
-    "filterCategories": ["", ""],
-    "privacyLaws": [
+    "lawName": "Personal Information Protection Act (PIPA Alberta)",
+    "acronym": "PIPA Alberta",
+    "description": "The Personal Information Protection Act (PIPA) Alberta is provincial legislation in Alberta, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations in the province. PIPA Alberta is similar in purpose to the federal Personal Information Protection and Electronic Documents Act (PIPEDA), but it specifically applies to organizations operating within Alberta's jurisdiction.",
+    "reference": "https://kings-printer.alberta.ca/1266.cfm?page=P06P5.cfm&leg_type=Acts&isbncln=9780779843312&display=html",
+    "billStatus": "In force",
+    "inEffect" : "April 01, 2023",
+    "applicability":  
         {
-            "lawName": "Personal Information Protection Act (PIPA Alberta)",
-            "description": "The Personal Information Protection Act (PIPA) Alberta is provincial legislation in Alberta, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations in the province. PIPA Alberta is similar in purpose to the federal Personal Information Protection and Electronic Documents Act (PIPEDA), but it specifically applies to organizations operating within Alberta's jurisdiction.",
-            "reference": "https://kings-printer.alberta.ca/1266.cfm?page=P06P5.cfm&leg_type=Acts&isbncln=9780779843312&display=html",
-            "billStatus": "In force",
-            "inEffect" : "April 01, 2023",
-            "applicability": [ 
-                {
-                    "roles": ["Organizations", "Individual"],
-                    "personalDataCategories": ["Age", 
-                                               "Name", 
-                                               "ID numbers", 
-                                               "Income", 
-                                               "Ethnic origin", 
-                                               "Blood type", 
-                                               "Opinions", 
-                                               "Evaluations", 
-                                               "Comments", 
-                                               "Social status", 
-                                               "Disciplinary actions",
-                                               "Employee files", 
-                                               "Credit records", 
-                                               "Loan records", 
-                                               "Medical records", 
-                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
-                    "processingPurposes": ["Collection", "Use", "Disclosure"],
-                    "consentRequired": "True"
-                }
-            ],
-            "individualRights": [
-                {
-                    "name": "Right to Access",
-                    "reference": ["Section 24"]
-                },
-                {
-                    "name": "Right to Correct",
-                    "reference": ["Section 25"]
-                },
-                {
-                    "name": "Right to Withdraw Consent",
-                    "reference": ["Section 9"]
-                },
-                {
-                    "name": "Right to Know how their personal information is being processed",
-                    "reference": ["Section 24"]
-                }
-            ],
-            "businessObligations": {
-                "notice": [ {
-                        "description": "Before or at the time of collecting personal information about an individual from the individual, an organization must notify that individual in writing or orally as to the purposes for which the information is collected, and of the name or position name or title of a person who is able to answer on behalf of the organization the individual’s questions about the collection",
-                        "reference": "Section 13"
-                    }
-                ],
-                "lawfulBasis": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
-                        "description": "An organization may collect personal information only for purposes that are reasonable. Where an organization collects personal information, it may do so only to the extent that is reasonable for meeting the purposes for which the information is collected.",
-                        "reference": "Section 11"
-                    }
-                ],
-                "dataMinimization": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
-                        "description": "An organization must protect personal information that is in its custody or under its control by making reasonable security arrangements against such risks as unauthorized access, collection, use, disclosure, copying, modification, disposal or destruction.",
-                        "reference": "Section 34"
-                    }
-                ],
-                "privacyByDesign": [  {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
-                        "description": "Organizations are held responsible for all personal information under their custody or control, including data handled by third parties engaged by the organization. Designating specific individuals within the organization to oversee compliance is mandatory, highlighting the importance of accountability. Additionally, organizations must develop and adhere to reasonable policies and practices tailored to meet their obligations under the Act, ensuring effective privacy management. Specifically, if an organization utilizes service providers located outside Canada, its policies must disclose the countries involved and the purposes for which these providers are authorized to handle personal information. Furthermore, organizations must make written information about their privacy policies and practices, including those concerning international data transfers, available upon request, promoting transparency and enabling individuals to understand how their personal information is managed.",
-                        "reference": "Section 5 and 6"
-                    }
-                ],
-                "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "breachNotification": [ {
-                        "description": "An organization having personal information under its control must, without unreasonable delay, provide notice to the Commissioner of any incident involving the loss of or unauthorized access to or disclosure of the personal information where a reasonable person would consider that there exists a real risk of significant harm to an individual as a result of the loss or unauthorized access or disclosure.",
-                        "reference": "Section 34.1"
-                    }
-                ],
-                "registration": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "dpo": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": "An organization that, directly or indirectly, transfers to a service provider outside Canada personal information about an individual that was collected with the individual’s consent must notify the individual in accordance with subsection.",
-                        "reference": "Section 13.1"
-                    }
-                ]
-            },
-            "scope": [
-                {
-                    "exemptions": [
-                        {
-                            "type": "Public Bodies",
-                            "description": "This Act does not apply to a public body or any personal information that is in the custody of or under the control of a public body."
-                        },
-                        {
-                            "type": "Non-Profits",
-                            "description": "This Act does not apply to a non‑profit organization or any personal information that is in the custody of or under the control of a non‑profit organization."
-                        }
-
-                    ],             
-                    "nonProfitsCovered": ["Non-Profits are exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Commissioner"],
-                "rulemakingAuthority": ["The Commissioner"],
-                "finingAuthority": ["The Commissioner"],
-                "penalties": [ "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["No action lies and no proceeding may be brought against an organization, or any person acting on behalf of or under the direction of an organization, for damages resulting from the disclosure of or failure to disclose, in good faith, all or part of a record or personal information under this Act, or any consequences of that disclosure or failure to disclose, or the failure to give a notice required under this Act if reasonable care was taken to give the required notice."]
-                }
-            ],
-            "threshold": [
-                {
-                    "type": "Commercial Use",
-                    "description": "Except as provided in this Act and subject to the regulations, this Act applies to every organization and in respect of all personal information."
-                }
-            ]
-         }
+            "roles": ["Organizations", "Individual"],
+            "personalDataCategories": ["Age", 
+                                       "Name", 
+                                       "ID numbers", 
+                                       "Income", 
+                                       "Ethnic origin", 
+                                       "Blood type", 
+                                       "Opinions", 
+                                       "Evaluations", 
+                                       "Comments", 
+                                       "Social status", 
+                                       "Disciplinary actions",
+                                       "Employee files", 
+                                       "Credit records", 
+                                       "Loan records", 
+                                       "Medical records", 
+                                       "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+            "processingPurposes": ["Collection", "Use", "Disclosure"],
+            "consentRequired": "True"
+        },
+    "individualRights": [
+        {
+            "name": "Right to Access",
+            "reference": "Section 24"
+        },
+        {
+            "name": "Right to Correct",
+            "reference": "Section 25"
+        },
+        {
+            "name": "Right to Withdraw Consent",
+            "reference": "Section 9"
+        },
+        {
+            "name": "Right to Know how their personal information is being processed",
+            "reference": "Section 24"
+        }
     ],
-    "otherPrivacyLaws":[
+    "businessObligations": {
+        "notice": {
+                "description": "Before or at the time of collecting personal information about an individual from the individual, an organization must notify that individual in writing or orally as to the purposes for which the information is collected, and of the name or position name or title of a person who is able to answer on behalf of the organization the individual’s questions about the collection",
+                "reference": "Section 13"
+            },
+        "lawfulBasis": {
+                "description": "",
+                "reference": ""
+            },
+        "purposeLimitation": {
+                "description": "An organization may collect personal information only for purposes that are reasonable. Where an organization collects personal information, it may do so only to the extent that is reasonable for meeting the purposes for which the information is collected.",
+                "reference": "Section 11"
+            },
+        "dataMinimization": {
+                "description": "",
+                "reference": ""
+            },
+        "securityReqs": {
+                "description": "An organization must protect personal information that is in its custody or under its control by making reasonable security arrangements against such risks as unauthorized access, collection, use, disclosure, copying, modification, disposal or destruction.",
+                "reference": "Section 34"
+            },
+        "privacyByDesign": {
+                "description": "",
+                "reference": ""
+            },
+        "processorReqs": {
+                "description": "Organizations are held responsible for all personal information under their custody or control, including data handled by third parties engaged by the organization. Designating specific individuals within the organization to oversee compliance is mandatory, highlighting the importance of accountability. Additionally, organizations must develop and adhere to reasonable policies and practices tailored to meet their obligations under the Act, ensuring effective privacy management. Specifically, if an organization utilizes service providers located outside Canada, its policies must disclose the countries involved and the purposes for which these providers are authorized to handle personal information. Furthermore, organizations must make written information about their privacy policies and practices, including those concerning international data transfers, available upon request, promoting transparency and enabling individuals to understand how their personal information is managed.",
+                "reference": "Section 5 and 6"
+            },
+        "recordKeeper": {
+                "description": "",
+                "reference": ""
+            },
+        "riskImpact": {
+                "description": "",
+                "reference": ""
+            },
+        "breachNotification": {
+                "description": "An organization having personal information under its control must, without unreasonable delay, provide notice to the Commissioner of any incident involving the loss of or unauthorized access to or disclosure of the personal information where a reasonable person would consider that there exists a real risk of significant harm to an individual as a result of the loss or unauthorized access or disclosure.",
+                "reference": "Section 34.1"
+            },
+        "registration": {
+                "description": "",
+                "reference": ""
+            },
+        "dpo": {
+                "description": "",
+                "reference": ""
+            },
+        "dataTransfer": {
+                "description": "An organization that, directly or indirectly, transfers to a service provider outside Canada personal information about an individual that was collected with the individual’s consent must notify the individual in accordance with subsection.",
+                "reference": "Section 13.1"
+            }
+    },
+    "scope": 
         {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
+            "exemptions": [
                 {
-                    "lawName": "string",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "string",
-                    "reference": ""
+                    "type": "Public Bodies",
+                    "description": "This Act does not apply to a public body or any personal information that is in the custody of or under the control of a public body."
+                },
+                {
+                    "type": "Non-Profits",
+                    "description": "This Act does not apply to a non‑profit organization or any personal information that is in the custody of or under the control of a non‑profit organization."
                 }
-            ]
+
+            ],             
+            "nonProfitsCovered": "Non-Profits are exempted",
+            "verticalCarveouts" : "",
+            "preemption": ""
+        },
+    "enforcement": {
+        "enforcementAuthority": "The Commissioner",
+        "rulemakingAuthority": "The Commissioner",
+        "finingAuthority": "The Commissioner",
+        "penalties": "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000.",
+        "personalLiability": "",
+        "privateRightOfAction" : "No action lies and no proceeding may be brought against an organization, or any person acting on behalf of or under the direction of an organization, for damages resulting from the disclosure of or failure to disclose, in good faith, all or part of a record or personal information under this Act, or any consequences of that disclosure or failure to disclose, or the failure to give a notice required under this Act if reasonable care was taken to give the required notice."
+        },
+    "threshold": [
+        {
+            "type": "Commercial Use",
+            "description": "Except as provided in this Act and subject to the regulations, this Act applies to every organization and in respect of all personal information."
         }
     ]
-}
+ }

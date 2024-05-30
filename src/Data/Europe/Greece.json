@@ -9,88 +9,74 @@
             "reference": "https://www.dpa.gr/sites/default/files/2020-08/LAW%204624_2019_EN_TRANSLATED%20BY%20THE%20HDPA.PDF",
             "billStatus": "In force",
             "inEffect" : "August 28, 2019",
-            "applicability": [ 
+            "applicability":
                 {
                     "roles": ["string"],
                     "personalDataCategories": ["string"],
                     "processingPurposes": ["string"],
                     "consentRequired": "boolean"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "string",
-                    "reference": ["string"]
+                    "reference": "string"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "lawfulBasis": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "purposeLimitation": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "dataMinimization": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "securityReqs": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "privacyByDesign": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "processorReqs": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "recordKeeper": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "riskImpact": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "breachNotification": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "registration": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "dpo": {
+                        "description": "string",
+                        "reference": "string"
+                    },
+                "dataTransfer": {
                         "description": "string",
                         "reference": "string"
                     }
-                ],
-                "lawfulBasis": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "purposeLimitation": [  {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dataMinimization": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "securityReqs": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "privacyByDesign": [  {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "processorReqs": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "recordKeeper": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "riskImpact": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "breachNotification": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "registration": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dpo": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -98,20 +84,18 @@
                             "description": "string"
                         }
                     ],             
-                    "nonProfitsCovered": ["string"],
-                    "verticalCarveouts" : ["string"],
-                    "preemption": ["string"]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["string"],
-                "rulemakingAuthority": ["string"],
-                "finingAuthority": ["string"],
-                "penalties": [ "string"],
-                "personalLiability": ["string"],
-                "privateRightOfAction" : ["string"]
-                }
-            ],
+                    "nonProfitsCovered": "string",
+                    "verticalCarveouts" : "string",
+                    "preemption": "string"
+                },
+            "enforcement": {
+                "enforcementAuthority": "string",
+                "rulemakingAuthority": "string",
+                "finingAuthority": "string",
+                "penalties": "string",
+                "personalLiability": "string",
+                "privateRightOfAction" : "string"
+                },
             "threshold": [
                 {
                     "type": "string",

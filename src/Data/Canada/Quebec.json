@@ -1,163 +1,128 @@
 {
-    "jurisdiction": "Quebec",
-    "filterCategories": ["", ""],
-    "privacyLaws": [
+    "lawName": "Act Respecting the Protection of Personal Information in the Private Sector ('Quebec Private Sector Act')",
+    "acronym": "Quebec Private Sector Act",
+    "description": "At the provincial level, the Act Respecting the Protection of Personal Information in the Private Sector, CQLR P-39.1 ('the Quebec Private Sector Act') regulates the collection, use, and disclosure of personal information by private organizations.",
+    "reference": "https://www.legisquebec.gouv.qc.ca/en/document/cs/p-39.1",
+    "billStatus": "In force",
+    "inEffect" : "1 January, 1994",
+    "applicability":
         {
-            "lawName": "Act Respecting the Protection of Personal Information in the Private Sector ('Quebec Private Sector Act')",
-            "description": "At the provincial level, the Act Respecting the Protection of Personal Information in the Private Sector, CQLR P-39.1 ('the Quebec Private Sector Act') regulates the collection, use, and disclosure of personal information by private organizations.",
-            "reference": "https://www.legisquebec.gouv.qc.ca/en/document/cs/p-39.1",
-            "billStatus": "In force",
-            "inEffect" : "1 January, 1994",
-            "applicability": [ 
-                {
-                    "roles": ["Enterprises", "Persons"],
-                    "personalDataCategories": ["Age", 
-                                               "Name", 
-                                               "ID numbers", 
-                                               "Income", 
-                                               "Ethnic origin", 
-                                               "Blood type", 
-                                               "Opinions", 
-                                               "Evaluations", 
-                                               "Comments", 
-                                               "Social status", 
-                                               "Disciplinary actions",
-                                               "Employee files", 
-                                               "Credit records", 
-                                               "Loan records", 
-                                               "Medical records", 
-                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
-                    "processingPurposes": ["Collect, Held, Use or Communicate"],
-                    "consentRequired": "true"
-                }
-            ],
-            "individualRights": [
-                {
-                    "name": "Right to Access",
-                    "reference": ["Section 8"]
-                },
-                {
-                    "name": "Right to Rectification",
-                    "reference": ["Section 8"]
-                },
-                {
-                    "name": "Right to Withdraw Consent",
-                    "reference": ["Section 8"]
-                },
-                {
-                    "name": "Right to Know how their personal information is being processed",
-                    "reference": ["Section 8"]
-                }
-            ],
-            "businessObligations": {
-                "notice": [ {
-                        "description": "Any person who collects personal information through technological means must publish on the enterprise’s website, if applicable, a confidentiality policy drafted in clear and simple language and disseminate it by any appropriate means to reach the persons concerned. The person must do the same for the notice required for any amendment to such a policy.",
-                        "reference": "Section 8.2"
-                    }
-                ],
-                "lawfulBasis": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
-                        "description": "Unless the person concerned gives his consent, personal information may not be used within the enterprise except for the purposes for which it was collected.",
-                        "reference": "Setion 12"
-                    }
-                ],
-                "dataMinimization": [ {
-                        "description": "Any person collecting personal information on another person may collect only the information necessary for the purposes determined before collecting it. Such information must be collected by lawful means.",
-                        "reference": "Section 5"
-                    }
-                ],
-                "securityReqs": [ {
-                        "description": "A person carrying on an enterprise must take the security measures necessary to ensure the protection of the personal information collected, used, communicated, kept or destroyed and that are reasonable given the sensitivity of the information, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
-                        "reference": "Section 10"
-                    }
-                ],
-                "privacyByDesign": [  {
-                        "description": "The person must also ensure that the project allows computerized personal information collected from the person concerned to be communicated to him in a structured, commonly used technological format.",
-                        "reference": "Section 3.3"
-                    }
-                ],
-                "processorReqs": [ {
-                        "description": "The Act mandates that any person engaged in an enterprise must ensure the protection of personal data held by them, with the highest-ranking individual in the enterprise overseeing compliance with the Act and serving as the person responsible for personal information protection, whose contact details must be publicly available. Enterprises are further required to establish governance policies and practices governing personal information protection, including procedures for data retention and disposal, delineating roles and responsibilities, and establishing a complaint resolution process, with detailed information about these policies made accessible to the public. Additionally, enterprises must conduct privacy impact assessments for projects involving personal information and consult the designated individual responsible for personal information protection within the enterprise. The Act also empowers this individual to propose protection measures during projects, and enterprises are obligated to take reasonable measures to mitigate the risk of confidentiality incidents involving personal information, with serious incidents requiring prompt notification to relevant authorities and affected individuals. Finally, enterprises must maintain a register of confidentiality incidents, with its contents subject to government regulation.",
-                        "reference": "Division I.1"
-                    }
-                ],
-                "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
-                        "description": "The conduct of a privacy impact assessment under this Act must be proportionate to the sensitivity of the information concerned, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
-                        "reference": "Section 3.3"
-                    }
-                ],
-                "breachNotification": [ {
-                        "description": "If the incident presents a risk of serious injury, the person carrying on an enterprise must promptly notify the Commission d’accès à l’information established by section 103 of the Act respecting Access to documents held by public bodies and the Protection of personal information (chapter A-2.1). He must also notify any person whose personal information is concerned by the incident, failing which the Commission may order him to do so. He may also notify any person or body that could reduce the risk, by communicating to the person or body only the personal information necessary for that purpose without the consent of the person concerned. In the latter case, the person in charge of the protection of personal information must record the communication of the information.",
-                        "reference": "Section 3.5"
-                    }
-                ],
-                "registration": [ {
-                        "description": "Every personal information agent carrying on an enterprise in Québec must be registered with the Commission.",
-                        "reference": "Section 70"
-                    }
-                ],
-                "dpo": [ {
-                        "description": "Any person carrying on an enterprise is responsible for protecting the personal information held by the person. Within the enterprise, the person exercising the highest authority shall see to ensuring that this Act is implemented and complied with. That person shall exercise the function of person in charge of the protection of personal information; he may delegate all or part of that function in writing to any person. The title and contact information of the person in charge of the protection of personal information must be published on the enterprise’s website or, if the enterprise does not have a website, be made available by any other appropriate means.",
-                        "reference": "Section 3.1"
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": " A person carrying on an enterprise may, without the consent of the person concerned, communicate personal information concerning another person to an archival agency if the archival agency is a person carrying on an enterprise whose object is the acquisition, preservation and distribution of documents for their general informational value and if the information is communicated as part of the transfer or deposit of the archives of the enterprise.",
-                        "reference": "Section 18.2"
-                    }
-                ]
-            },
-            "scope": [
-                {
-                    "exemptions": [
-                        {
-                            "type": "Public Bodies",
-                            "description": "This Act does not apply to a public body within the meaning of the Act respecting Access to documents held by public bodies and the Protection of personal information and to information held on behalf of a public body by a person other than a public body."
-                        }
-                    ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Commission"],
-                "rulemakingAuthority": ["The Commission"],
-                "finingAuthority": ["The Commission"],
-                "penalties": [ "The maximum amount of the monetary administrative penalty is $50,000 in the case of a natural person and, in all other cases, $10,000,000 or, if greater, the amount corresponding to 2% of worldwide turnover for the preceding fiscal year. Anyone who commits an offence and is liable to a fine of $5,000 to $100,000 in the case of a natural person and, in all other cases, of $15,000 to $25,000,000, or, if greater, the amount corresponding to 4% of worldwide turnover for the preceding fiscal year."],
-                "personalLiability": ["Where an offence under this Act is committed by a legal person, the administrator, director or representative of the legal person who ordered or authorized the act or omission constituting the offence, or who consented thereto, is a party to the offence and is liable to the prescribed penalty."],
-                "privateRightOfAction" : [""]
-                }
-            ],
-            "threshold": [
-                {
-                    "type": "All Enterprises",
-                    "description": "The Act applies to such information, whether the enterprise keeps the information itself or through the agency of a third person, whatever the nature of its medium and whatever the form in which it is accessible, whether written, graphic, taped, filmed, computerized, or other."
-                }
-            ]
-         }
+            "roles": ["Enterprises", "Persons"],
+            "personalDataCategories": ["Age", 
+                                       "Name", 
+                                       "ID numbers", 
+                                       "Income", 
+                                       "Ethnic origin", 
+                                       "Blood type", 
+                                       "Opinions", 
+                                       "Evaluations", 
+                                       "Comments", 
+                                       "Social status", 
+                                       "Disciplinary actions",
+                                       "Employee files", 
+                                       "Credit records", 
+                                       "Loan records", 
+                                       "Medical records", 
+                                       "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+            "processingPurposes": ["Collect, Held, Use or Communicate"],
+            "consentRequired": "true"
+        },
+    "individualRights": [
+        {
+            "name": "Right to Access",
+            "reference": "Section 8"
+        },
+        {
+            "name": "Right to Rectification",
+            "reference": "Section 8"
+        },
+        {
+            "name": "Right to Withdraw Consent",
+            "reference": "Section 8"
+        },
+        {
+            "name": "Right to Know how their personal information is being processed",
+            "reference": "Section 8"
+        }
     ],
-    "otherPrivacyLaws":[
+    "businessObligations": {
+        "notice": {
+                "description": "Any person who collects personal information through technological means must publish on the enterprise’s website, if applicable, a confidentiality policy drafted in clear and simple language and disseminate it by any appropriate means to reach the persons concerned. The person must do the same for the notice required for any amendment to such a policy.",
+                "reference": "Section 8.2"
+            },
+        "lawfulBasis": {
+                "description": "",
+                "reference": ""
+            },
+        "purposeLimitation":  {
+                "description": "Unless the person concerned gives his consent, personal information may not be used within the enterprise except for the purposes for which it was collected.",
+                "reference": "Setion 12"
+            },
+        "dataMinimization": {
+                "description": "Any person collecting personal information on another person may collect only the information necessary for the purposes determined before collecting it. Such information must be collected by lawful means.",
+                "reference": "Section 5"
+            },
+        "securityReqs": {
+                "description": "A person carrying on an enterprise must take the security measures necessary to ensure the protection of the personal information collected, used, communicated, kept or destroyed and that are reasonable given the sensitivity of the information, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
+                "reference": "Section 10"
+            },
+        "privacyByDesign": {
+                "description": "The person must also ensure that the project allows computerized personal information collected from the person concerned to be communicated to him in a structured, commonly used technological format.",
+                "reference": "Section 3.3"
+            },
+        "processorReqs": {
+                "description": "The Act mandates that any person engaged in an enterprise must ensure the protection of personal data held by them, with the highest-ranking individual in the enterprise overseeing compliance with the Act and serving as the person responsible for personal information protection, whose contact details must be publicly available. Enterprises are further required to establish governance policies and practices governing personal information protection, including procedures for data retention and disposal, delineating roles and responsibilities, and establishing a complaint resolution process, with detailed information about these policies made accessible to the public. Additionally, enterprises must conduct privacy impact assessments for projects involving personal information and consult the designated individual responsible for personal information protection within the enterprise. The Act also empowers this individual to propose protection measures during projects, and enterprises are obligated to take reasonable measures to mitigate the risk of confidentiality incidents involving personal information, with serious incidents requiring prompt notification to relevant authorities and affected individuals. Finally, enterprises must maintain a register of confidentiality incidents, with its contents subject to government regulation.",
+                "reference": "Division I.1"
+            },
+        "recordKeeper": {
+                "description": "",
+                "reference": ""
+            },
+        "riskImpact": {
+                "description": "The conduct of a privacy impact assessment under this Act must be proportionate to the sensitivity of the information concerned, the purposes for which it is to be used, the quantity and distribution of the information and the medium on which it is stored.",
+                "reference": "Section 3.3"
+            },
+        "breachNotification": {
+                "description": "If the incident presents a risk of serious injury, the person carrying on an enterprise must promptly notify the Commission d’accès à l’information established by section 103 of the Act respecting Access to documents held by public bodies and the Protection of personal information (chapter A-2.1). He must also notify any person whose personal information is concerned by the incident, failing which the Commission may order him to do so. He may also notify any person or body that could reduce the risk, by communicating to the person or body only the personal information necessary for that purpose without the consent of the person concerned. In the latter case, the person in charge of the protection of personal information must record the communication of the information.",
+                "reference": "Section 3.5"
+            },
+        "registration": {
+                "description": "Every personal information agent carrying on an enterprise in Québec must be registered with the Commission.",
+                "reference": "Section 70"
+            },
+        "dpo": {
+                "description": "Any person carrying on an enterprise is responsible for protecting the personal information held by the person. Within the enterprise, the person exercising the highest authority shall see to ensuring that this Act is implemented and complied with. That person shall exercise the function of person in charge of the protection of personal information; he may delegate all or part of that function in writing to any person. The title and contact information of the person in charge of the protection of personal information must be published on the enterprise’s website or, if the enterprise does not have a website, be made available by any other appropriate means.",
+                "reference": "Section 3.1"
+            },
+        "dataTransfer": {
+                "description": " A person carrying on an enterprise may, without the consent of the person concerned, communicate personal information concerning another person to an archival agency if the archival agency is a person carrying on an enterprise whose object is the acquisition, preservation and distribution of documents for their general informational value and if the information is communicated as part of the transfer or deposit of the archives of the enterprise.",
+                "reference": "Section 18.2"
+            }
+    },
+    "scope":
         {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
+            "exemptions": [
                 {
-                    "lawName": "string",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "string",
-                    "reference": ""
+                    "type": "Public Bodies",
+                    "description": "This Act does not apply to a public body within the meaning of the Act respecting Access to documents held by public bodies and the Protection of personal information and to information held on behalf of a public body by a person other than a public body."
                 }
-            ]
+            ],             
+            "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+            "verticalCarveouts" : "",
+            "preemption": ""
+        },
+    "enforcement": {
+        "enforcementAuthority": "The Commission",
+        "rulemakingAuthority": "The Commission",
+        "finingAuthority": "The Commission",
+        "penalties": "The maximum amount of the monetary administrative penalty is $50,000 in the case of a natural person and, in all other cases, $10,000,000 or, if greater, the amount corresponding to 2% of worldwide turnover for the preceding fiscal year. Anyone who commits an offence and is liable to a fine of $5,000 to $100,000 in the case of a natural person and, in all other cases, of $15,000 to $25,000,000, or, if greater, the amount corresponding to 4% of worldwide turnover for the preceding fiscal year.",
+        "personalLiability": "Where an offence under this Act is committed by a legal person, the administrator, director or representative of the legal person who ordered or authorized the act or omission constituting the offence, or who consented thereto, is a party to the offence and is liable to the prescribed penalty.",
+        "privateRightOfAction" : ""
+        },
+    "threshold": [
+        {
+            "type": "All Enterprises",
+            "description": "The Act applies to such information, whether the enterprise keeps the information itself or through the agency of a third person, whatever the nature of its medium and whatever the form in which it is accessible, whether written, graphic, taped, filmed, computerized, or other."
         }
     ]
-}
+ }

@@ -1,163 +1,128 @@
 {
-    "jurisdiction": "British Columbia",
-    "filterCategories": ["", ""],
-    "privacyLaws": [
+    "lawName": "Personal Information Protection Act (PIPA BC)",
+    "acronym": "PIPA BC",
+    "description": "The Personal Information Protection Act (PIPA BC) is provincial legislation in British Columbia, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations. It outlines rules and principles for handling personal information responsibly and protecting individuals' privacy rights.",
+    "reference": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
+    "billStatus": "In force",
+    "inEffect" : "January 1, 2004",
+    "applicability": 
         {
-            "lawName": "Personal Information Protection Act (PIPA BC)",
-            "description": "The Personal Information Protection Act (PIPA BC) is provincial legislation in British Columbia, Canada, that governs the collection, use, and disclosure of personal information by private sector organizations. It outlines rules and principles for handling personal information responsibly and protecting individuals' privacy rights.",
-            "reference": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
-            "billStatus": "In force",
-            "inEffect" : "January 1, 2004",
-            "applicability": [ 
-                {
-                    "roles": ["Organizations", "Individual"],
-                    "personalDataCategories": ["Age", 
-                                               "Name", 
-                                               "ID numbers", 
-                                               "Income", 
-                                               "Ethnic origin", 
-                                               "Blood type", 
-                                               "Opinions", 
-                                               "Evaluations", 
-                                               "Comments", 
-                                               "Social status", 
-                                               "Disciplinary actions",
-                                               "Employee files", 
-                                               "Credit records", 
-                                               "Loan records", 
-                                               "Medical records", 
-                                               "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
-                    "processingPurposes": ["Collection, Use and Disclosure"],
-                    "consentRequired": "true"
-                }
-            ],
-            "individualRights": [
-                {
-                    "name": "Right to Access",
-                    "reference": ["Section 23"]
-                },
-                {
-                    "name": "Right to Correct",
-                    "reference": ["Section 24"]
-                },
-                {
-                    "name": "Right to Withdraw Consent",
-                    "reference": ["Section 9"]
-                },
-                {
-                    "name": "Right to Know how their personal information is being processed",
-                    "reference": ["Section 23"]
-                }
-            ],
-            "businessObligations": {
-                "notice": [ {
-                        "description": "An organization may collect, use or disclose personal information about an individual for specified purposes if the organization provides the individual with a notice, in a form the individual can reasonably be considered to understand, that it intends to collect, use or disclose the individual's personal information for those purposes",
-                        "reference": "Section 8"
-                    }
-                ],
-                "lawfulBasis": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
-                        "description": "An organization may use personal information only for purposes that a reasonable person would consider appropriate in the circumstances and that fulfill the purposes that the organization discloses under section 10, for information collected before this Act comes into force, fulfill the purposes for which it was collected, or are otherwise permitted under this Act.",
-                        "reference": "Section 14"
-                    }
-                ],
-                "dataMinimization": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "securityReqs": [ {
-                        "description": "An organization must protect personal information in its custody or under its control by making reasonable security arrangements to prevent unauthorized access, collection, use, disclosure, copying, modification or disposal or similar risks.",
-                        "reference": "Section 34"
-                    }
-                ],
-                "privacyByDesign": [  {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "processorReqs": [ {
-                        "description": "Organizations must act in a manner that a reasonable person would consider appropriate in the circumstances to meet their responsibilities under the Act. They are responsible for all personal information under their control, even if it's not physically in their possession. Additionally, organizations must designate individuals to ensure compliance with the Act, and these individuals can delegate their duties. Furthermore, organizations must make the contact information of these designated individuals available to the public. Organizations must develop and adhere to policies and practices necessary for compliance with the Act, including procedures to address complaints. They must also provide information upon request about their policies, practices, and complaint process.",
-                        "reference": "Section 4 and 5"
-                    }
-                ],
-                "recordKeeper": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "breachNotification": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "registration": [ {
-                        "description": "",
-                        "reference": ""
-                    }
-                ],
-                "dpo": [ {
-                        "description": "An organization must designate one or more individuals to be responsible for ensuring that the organization complies with this Act.",
-                        "reference": "Section 4"
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": "Organizations are allowed to disclose personal information about employees, customers, directors, officers, or shareholders to prospective parties without their consent if necessary for evaluating a potential business transaction. However, this disclosure is permitted only if the organization and prospective party have an agreement ensuring that the information will be used solely for transaction-related purposes. If the business transaction proceeds, the organization may disclose personal information to the party under certain conditions, including notifying the individuals affected. Prospective parties are also allowed to collect and use personal information under specific conditions outlined in the Act. If a business transaction does not proceed, the prospective party must destroy or return any personal information collected.",
-                        "reference": "Section 20"
-                    }
-                ]
-            },
-            "scope": [
-                {
-                    "exemptions": [
-                        {
-                            "type": "Public Bodies",
-                            "description": "This Act does not apply to Ministries of the government of British Columbia; Agencies, boards, commissions, corporations, offices, or other bodies specified in, or added to, Schedule 2 of the Freedom of Information and Protection of Privacy Act through regulation. And local public bodies as defined in the Freedom of Information and Protection of Privacy Act."
-                        }
-                    ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The Commissioner"],
-                "rulemakingAuthority": ["The Commissioner"],
-                "finingAuthority": ["The Commissioner"],
-                "penalties": [ "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["If the commissioner has made an order under this Act against an organization and the order has become final as a result of there being no further right of appeal, an individual affected by the order has a cause of action against the organization for damages for actual harm that the individual has suffered as a result of the breach by the organization of obligations under this Act."]
-                }
-            ],
-            "threshold": [
-                {
-                    "type": "All Organizations",
-                    "description": "Applies to all organizations and to all personal information held by organizations unless PIPA says that it does not apply."
-                }
-            ]
-         }
+            "roles": ["Organizations", "Individual"],
+            "personalDataCategories": ["Age", 
+                                       "Name", 
+                                       "ID numbers", 
+                                       "Income", 
+                                       "Ethnic origin", 
+                                       "Blood type", 
+                                       "Opinions", 
+                                       "Evaluations", 
+                                       "Comments", 
+                                       "Social status", 
+                                       "Disciplinary actions",
+                                       "Employee files", 
+                                       "Credit records", 
+                                       "Loan records", 
+                                       "Medical records", 
+                                       "Existence of a dispute between a consumer and a merchant, intentions (for example, to acquire goods or services, or change jobs)"],
+            "processingPurposes": ["Collection, Use and Disclosure"],
+            "consentRequired": "true"
+        },
+    "individualRights": [
+        {
+            "name": "Right to Access",
+            "reference": "Section 23"
+        },
+        {
+            "name": "Right to Correct",
+            "reference": "Section 24"
+        },
+        {
+            "name": "Right to Withdraw Consent",
+            "reference": "Section 9"
+        },
+        {
+            "name": "Right to Know how their personal information is being processed",
+            "reference": "Section 23"
+        }
     ],
-    "otherPrivacyLaws":[
+    "businessObligations": {
+        "notice": {
+                "description": "An organization may collect, use or disclose personal information about an individual for specified purposes if the organization provides the individual with a notice, in a form the individual can reasonably be considered to understand, that it intends to collect, use or disclose the individual's personal information for those purposes",
+                "reference": "Section 8"
+            },
+        "lawfulBasis":  {
+                "description": "",
+                "reference": ""
+            },
+        "purposeLimitation": {
+                "description": "An organization may use personal information only for purposes that a reasonable person would consider appropriate in the circumstances and that fulfill the purposes that the organization discloses under section 10, for information collected before this Act comes into force, fulfill the purposes for which it was collected, or are otherwise permitted under this Act.",
+                "reference": "Section 14"
+            },
+        "dataMinimization": {
+                "description": "",
+                "reference": ""
+            },
+        "securityReqs": {
+                "description": "An organization must protect personal information in its custody or under its control by making reasonable security arrangements to prevent unauthorized access, collection, use, disclosure, copying, modification or disposal or similar risks.",
+                "reference": "Section 34"
+            },
+        "privacyByDesign": {
+                "description": "",
+                "reference": ""
+            },
+        "processorReqs": {
+                "description": "Organizations must act in a manner that a reasonable person would consider appropriate in the circumstances to meet their responsibilities under the Act. They are responsible for all personal information under their control, even if it's not physically in their possession. Additionally, organizations must designate individuals to ensure compliance with the Act, and these individuals can delegate their duties. Furthermore, organizations must make the contact information of these designated individuals available to the public. Organizations must develop and adhere to policies and practices necessary for compliance with the Act, including procedures to address complaints. They must also provide information upon request about their policies, practices, and complaint process.",
+                "reference": "Section 4 and 5"
+            },
+        "recordKeeper": {
+                "description": "",
+                "reference": ""
+            },
+        "riskImpact": {
+                "description": "",
+                "reference": ""
+            },
+        "breachNotification": {
+                "description": "",
+                "reference": ""
+            },
+        "registration": {
+                "description": "",
+                "reference": ""
+            },
+        "dpo": {
+                "description": "An organization must designate one or more individuals to be responsible for ensuring that the organization complies with this Act.",
+                "reference": "Section 4"
+            },
+        "dataTransfer": {
+                "description": "Organizations are allowed to disclose personal information about employees, customers, directors, officers, or shareholders to prospective parties without their consent if necessary for evaluating a potential business transaction. However, this disclosure is permitted only if the organization and prospective party have an agreement ensuring that the information will be used solely for transaction-related purposes. If the business transaction proceeds, the organization may disclose personal information to the party under certain conditions, including notifying the individuals affected. Prospective parties are also allowed to collect and use personal information under specific conditions outlined in the Act. If a business transaction does not proceed, the prospective party must destroy or return any personal information collected.",
+                "reference": "Section 20"
+            }
+    },
+    "scope": 
         {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
+            "exemptions": [
                 {
-                    "lawName": "string",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "string",
-                    "reference": ""
+                    "type": "Public Bodies",
+                    "description": "This Act does not apply to Ministries of the government of British Columbia; Agencies, boards, commissions, corporations, offices, or other bodies specified in, or added to, Schedule 2 of the Freedom of Information and Protection of Privacy Act through regulation. And local public bodies as defined in the Freedom of Information and Protection of Privacy Act."
                 }
-            ]
+            ],             
+            "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+            "verticalCarveouts" : "",
+            "preemption": ""
+        },
+    "enforcement": {
+        "enforcementAuthority": "The Commissioner",
+        "rulemakingAuthority": "The Commissioner",
+        "finingAuthority": "The Commissioner",
+        "penalties": "For offenses punishable by summary conviction fines can range up to CAD 10,000 and for indictable offenses, fines can range up to CAD 100,000.",
+        "personalLiability": "",
+        "privateRightOfAction" : "If the commissioner has made an order under this Act against an organization and the order has become final as a result of there being no further right of appeal, an individual affected by the order has a cause of action against the organization for damages for actual harm that the individual has suffered as a result of the breach by the organization of obligations under this Act."
+        },
+    "threshold": [
+        {
+            "type": "All Organizations",
+            "description": "Applies to all organizations and to all personal information held by organizations unless PIPA says that it does not apply."
         }
     ]
-}
+ }

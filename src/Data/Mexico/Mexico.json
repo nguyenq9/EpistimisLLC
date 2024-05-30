@@ -9,7 +9,7 @@
             "reference": "https://www.duanemorris.com/site/static/Mexico_Federal_Protection_Law_Personal_Data.pdf",
             "billStatus": "In force",
             "inEffect" : "July 6, 2010",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": ["Data Processor", "Data Controller", "Data Owner", "Third Party"],
                     "personalDataCategories": ["Racial or ethnic origin" ,
@@ -22,94 +22,80 @@
                                                "Sexual preference"],
                     "processingPurposes": ["Retrieval, Use, Disclosure or Storage"],
                     "consentRequired": "true"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Access",
-                    "reference": ["Article 23"]
+                    "reference": "Article 23"
                 },
                 {
                     "name": "Right to Rectify",
-                    "reference": ["Article 24"]
+                    "reference": "Article 24"
                 },
                 {
                     "name": "Right to Cancel Personal Data",
-                    "reference": ["Article 25"]
+                    "reference": "Article 25"
                 },
                 {
                     "name": "Right to Object",
-                    "reference": ["Article 27"]
+                    "reference": "Article 27"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "The privacy notice required under the Federal Law on the Protection of Personal Data Held by Private Parties in Mexico must include specific information to inform individuals about the processing of their personal data. Firstly, it should clearly state the identity and address of the data controller responsible for collecting the data. Secondly, it must outline the purposes for which the data will be processed, providing transparency about how the information will be used. Additionally, the notice should detail the options and mechanisms available to data subjects to limit the use or disclosure of their data. It must also specify the procedures for individuals to exercise their rights of access, rectification, cancellation, or objection in accordance with the law. If data transfers are planned, the notice must disclose this information. Lastly, the notice should explain how any changes to the privacy notice will be communicated to data subjects, ensuring ongoing transparency and compliance with legal requirements.",
                         "reference": "Article 16"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Processing of personal data must be limited to fulfillment of the purposes set out in the privacy notice. If the data controller intends to process data for another purpose which is not compatible or analogous to the purposes set out in the privacy notice, the data owner's consent must be obtained again",
                         "reference": "Article 12"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "Processing of personal data will be done as necessary, appropriate and relevant with relation to the purposes set out in the privacy notice. In particular, for sensitive personal data, the data controller must make reasonable efforts to limit the processing period thereof to the minimum required. ",
                         "reference": "Article 13"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "All responsible parties that process personal data must establish and maintain physical and technical administrative security measures designed to protect personal data from damage, loss, alteration, destruction or unauthorized use, access or processing.",
                         "reference": "Article 19"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "In all processing of personal data, it is presumed that there is a reasonable expectation of privacy, understood as the trust any one person places in another for personal data provided to be treated pursuant to any agreement of the parties in the terms established by this Law. ",
                         "reference": "Article 7"
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "The data controller shall ensure compliance with the personal data protection principles established by this Law, and shall adopt all necessary measures for their application. The foregoing will apply even when this data has been processed by a third party at the request of the data controller. The data controller must take all necessary and sufficient action to ensure that the privacy notice given to the data owner is respected at all times by it or by any other parties with which it has any legal relationship.",
                         "reference": "Article 14"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Data controllers will not adopt security measures inferior to those they keep to manage their own information. Moreover, risk involved, potential consequences for the data owners, sensitivity of the data, and technological development will be taken into account.",
                         "reference": "Article 19"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "Security breaches occurring at any stage of processing that materially affect the property or moral rights of data owners will be reported immediately by the data controller to the data owner, so that the latter can take appropriate action to defend its rights.",
                         "reference": "Article 20"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "All data controllers must designate a personal data person or department who will process requests from data owners for the exercise of the rights referred to in this Law. In addition, data controllers will promote protection of personal data within their organizations",
                         "reference": "Article 30"
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Data controllers that intend to transfer personal data must provide recipients with the privacy notice and specify the purposes to which the data owner has limited data processing. The transfer must adhere to the terms agreed upon in the privacy notice, which should include a clause indicating whether the data owner agrees to the transfer. Furthermore, the recipient third party is obligated to assume the same responsibilities as the data controller that transferred the data. Article 37 outlines cases where domestic or international transfers of data may be carried out without the consent of the data owner, including transfers pursuant to laws or treaties, transfers necessary for medical purposes, transfers within the same corporate group, transfers pursuant to contractual obligations, transfers for public interest or legal requirements, transfers for judicial proceedings, and transfers necessary to maintain or fulfill a legal relationship between the data controller and the data owner.",
                         "reference": "Chapter 5"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -125,20 +111,18 @@
                             "description": "Any government institution in Mexico"
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The National Institute of Transparency for Access to Information and Personal Data Protection"],
-                "rulemakingAuthority": ["The Ministry of Economy"],
-                "finingAuthority": ["The National Institute of Transparency for Access to Information and Personal Data Protection"],
-                "penalties": [ "Violations of the Federal Law on Protection of Personal Data Held by Private Parties will result in penalties administered by the Institute as outlined in Article 64. For cases described in section I of the preceding article, where the data controller fails to comply with actions requested by the data owner, a warning will be issued. In cases falling under sections II to VII, fines ranging from 100 to 160,000 days of the Mexico City minimum wage will be imposed. For violations described in sections VIII to XVIII, fines will range from 200 to 320,000 days of the Mexico City minimum wage. In cases of repeated violations, an additional fine ranging from 100 to 320,000 days of the current Mexico City minimum wage may be imposed. Sanctions for violations involving sensitive data may be increased up to double the established amounts."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Not explicitly granted but it is impolied that a data owner has the right of action."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The National Institute of Transparency for Access to Information and Personal Data Protection",
+                "rulemakingAuthority": "The Ministry of Economy",
+                "finingAuthority": "The National Institute of Transparency for Access to Information and Personal Data Protection",
+                "penalties": "Violations of the Federal Law on Protection of Personal Data Held by Private Parties will result in penalties administered by the Institute as outlined in Article 64. For cases described in section I of the preceding article, where the data controller fails to comply with actions requested by the data owner, a warning will be issued. In cases falling under sections II to VII, fines ranging from 100 to 160,000 days of the Mexico City minimum wage will be imposed. For violations described in sections VIII to XVIII, fines will range from 200 to 320,000 days of the Mexico City minimum wage. In cases of repeated violations, an additional fine ranging from 100 to 320,000 days of the current Mexico City minimum wage may be imposed. Sanctions for violations involving sensitive data may be increased up to double the established amounts.",
+                "personalLiability": "",
+                "privateRightOfAction" : "Not explicitly granted but it is impolied that a data owner has the right of action."
+                },
             "threshold": [
                 {
                     "type": "Data Processor",

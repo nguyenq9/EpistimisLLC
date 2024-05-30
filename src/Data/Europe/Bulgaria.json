@@ -9,14 +9,13 @@
             "reference": "https://cpdp.bg/en/legislation/personal-data-protection-act/",
             "billStatus": "In force",
             "inEffect" : "1 January, 2002",
-            "applicability": [ 
+            "applicability": 
                 {
                     "roles": [""],
                     "personalDataCategories": [""],
                     "processingPurposes": [""],
                     "consentRequired": ""
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Lodge a Complaint",
@@ -24,73 +23,60 @@
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "The data controller, taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Act.",
                         "reference": "Article 59"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "The processing of personal data must be adequate, relevant and limited to what is necessary in relation to the purposes for which the data are processed.",
                         "reference": "Article 45"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "By default, only the necessary personal data for each specific processing purpose should be processed. This applies to the amount of data collected, extent of processing, storage period, and data accessibility.",
                         "reference": "Article 59"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "Controllers and processors must implement appropriate security measures considering the state of the art, costs, nature, scope, context, purposes of processing, and risks to individuals’ rights and freedoms.",
                         "reference": "Article 66"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "The controller shall ensure the protection of personal data by design, taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing, as well as the risks for rights and freedoms of natural persons posed by the processing. The measures must comply with the requirements of Article 45, they shall be planned at the time of the determination of the means for processing of personal data and shall be implemented at the time of the processing itself.",
                         "reference": "Article 59"
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "A data controller can only entrust the processing of personal data to processors who provide sufficient guarantees of appropriate technical and organizational measures to meet legal requirements and protect data subjects' rights. Processors must have written authorization from the controller to engage sub-processors and must inform the controller of any changes, allowing the controller to object. The processing agreement must be in writing and detail the processing's subject, duration, purpose, type of data, and categories of data subjects, along with the obligations and rights of the controller. This agreement must ensure that processors act only on the controller's instructions, maintain data confidentiality, assist in respecting data subjects' rights, and either return or delete personal data after processing ends unless legally required to retain it. Additionally, processors must provide necessary compliance information to the controller and follow the conditions for engaging other processors. If a processor independently determines the purposes and means of processing, they become a data controller for that processing. Finally, processors and their authorized personnel must process data only as instructed by the controller, unless otherwise legally mandated.",
                         "reference": "Article 61"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "Controllers and processors must maintain logs for processing operations such as collection, alteration, consultation, disclosure, combination, and erasure. Logs must indicate the justification, date, time, and identity of individuals involved in consultation or disclosure.",
                         "reference": "Article 63"
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers must assess the impact on data protection for processing likely to result in high risks, especially using new technologies. Assessments must include a description of processing operations, risk assessment, measures to address risks, safeguards, security measures, and mechanisms for compliance.",
                         "reference": "Article 64"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "When a breach likely risks data subjects' rights and freedoms, the data controller must notify the relevant authority within 72 hours, including details about the breach, its consequences, and remedial actions. The processor must also inform the controller within the same timeframe. If the breach involves data from another EU member state, that state's controller must be informed within seven days. Additionally, if the breach poses a risk to data subjects, they must be notified within seven days, unless protective measures like encryption mitigate the risk, or if notifying each subject would involve disproportionate effort. The Commission or Inspectorate can mandate notification if they deem the risk significant. Documentation of breaches, including facts, effects, and actions taken, must be maintained by the controller.",
                         "reference": "Article 67, 68"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo": {
                         "description": "The data controller must appoint a DPO based on professional qualities, particularly expertise in data protection law and practice. A DPO can serve multiple controllers, depending on organizational structure and size. The controller must publicize the DPO's contact details and inform the Commission accordingly. Judicial authorities' DPOs are excluded from certain tasks when processing data for judicial purposes. The controller must involve the DPO in data protection issues and assign tasks such as informing and advising on legal obligations, monitoring compliance, providing advice on data protection impact assessments, cooperating with supervisory authorities, and acting as the contact point for these authorities. The controller must also support the DPO with necessary resources and access to personal data and processing operations, ensuring the DPO's knowledge remains current.",
                         "reference": "Article 69, 70"
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer": {
                         "description": "Article 72 outlines the conditions under which a competent authority may transfer personal data to third countries or international organizations. The transfer must align with the purposes specified in Article 42(1) and meet several criteria: the recipient must be a competent authority for those purposes, prior authorization from relevant EU Member States is required for transfers within the EU, and adequate protections must be ensured. This includes either a European Commission decision on adequate protection, appropriate safeguards under Article 74, or necessity as outlined in Article 75. Additionally, onward transfers require authorization from the original transferring authority or another competent authority in Bulgaria, considering factors like the seriousness of the offense and the level of data protection in the recipient country or organization.",
                         "reference": "Article 72"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -98,18 +84,17 @@
                             "description": ""
                         }
                     ],             
-                    "nonProfitsCovered": [""],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
+                    "nonProfitsCovered": "",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
             "enforcement": [ {
-                "enforcementAuthority": ["The Commission for Personal Data Protection (CPDP)"],
-                "rulemakingAuthority": ["The Commission for Personal Data Protection (CPDP)"],
-                "finingAuthority": ["The Commission for Personal Data Protection (CPDP)"],
-                "penalties": [ "Article 85 specifies fines or pecuniary sanctions for various violations, such as those related to data controllers or processors, with amounts determined according to Regulation (EU) 2016/679 criteria. Repeated violations result in doubled penalties. Article 86 outlines fines of up to BGN 5,000 for other violations, with double penalties for repeated offenses."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["The exercise of the rights referred to in Articles 54, 55 and 56, where the personal data are contained in a judicial decision or record or case file prepared in the course of criminal proceedings, shall be without prejudice and may not be contrary to the provisions of the Criminal Procedure Code."]
+                "enforcementAuthority": "The Commission for Personal Data Protection (CPDP)",
+                "rulemakingAuthority": "The Commission for Personal Data Protection (CPDP)",
+                "finingAuthority": "The Commission for Personal Data Protection (CPDP)",
+                "penalties": "Article 85 specifies fines or pecuniary sanctions for various violations, such as those related to data controllers or processors, with amounts determined according to Regulation (EU) 2016/679 criteria. Repeated violations result in doubled penalties. Article 86 outlines fines of up to BGN 5,000 for other violations, with double penalties for repeated offenses.",
+                "personalLiability": "",
+                "privateRightOfAction" : "The exercise of the rights referred to in Articles 54, 55 and 56, where the personal data are contained in a judicial decision or record or case file prepared in the course of criminal proceedings, shall be without prejudice and may not be contrary to the provisions of the Criminal Procedure Code."
                 }
             ],
             "threshold": [
@@ -126,7 +111,7 @@
             "reference": "https://gdpr-info.eu/",
             "billStatus": "In force",
             "inEffect" : "May 25, 2018",
-            "applicability": [ 
+            "applicability":
                 {
                     "roles": ["Controller", "Processor", "Data Subject"],
                     "personalDataCategories": ["Racial or ethnic origin", 
@@ -140,106 +125,92 @@
                                                "Sexual orientation"],
                     "processingPurposes": ["Collection", "Recording", "Organisation", "Structuring", "Storage", "Adaptation", "Alteration", "Retrieval", "Consultation", "Use", "Disclosure by transmission", "Dissemination or otherwise making available", "Alignment or combination", "Restriction", "Erasure or destruction"],
                     "consentRequired": "True"
-                }
-            ],
+                },
             "individualRights": [
                 {
                     "name": "Right to Access",
-                    "reference": ["Article 15"]
+                    "reference": "Article 15"
                 },
                 {
                     "name": "Right to Rectification",
-                    "reference": ["Article 16"]
+                    "reference": "Article 16"
                 },
                 {
                     "name": "Right to Erasure",
-                    "reference": ["Article 17"]
+                    "reference": "Article 17"
                 },
                 {
                     "name": "Right to Restriction of Processing",
-                    "reference": ["Article 18"]
+                    "reference": "Article 18"
                 },
                 {
                     "name": "Right to Data Portability",
-                    "reference": ["Article 20"]
+                    "reference": "Article 20"
                 },
                 {
                     "name": "Right to Object",
-                    "reference": ["Article 21"]
+                    "reference": "Article 21"
                 },
                 {
                     "name": "Right to not be subject to a decision based solely on automated processing",
-                    "reference": ["Article 22"]
+                    "reference": "Article 22"
                 }
             ],
             "businessObligations": {
-                "notice": [ {
+                "notice": {
                         "description": "Articles 12, 13, and 14 of the General Data Protection Regulation (GDPR) collectively outline the requirements for providing information to data subjects. Article 12 emphasizes transparency, requiring that information provided to data subjects be clear, accessible, and understandable. Article 13 focuses on the provision of information at the point of data collection, mandating that data subjects receive specific details about the processing of their personal data, including the identity of the data controller and the purposes of processing. Similarly, Article 14 addresses situations where personal data is obtained from sources other than the data subject, specifying the information that must be provided to data subjects, such as the categories of data collected and the source of the data.",
                         "reference": "Articles 12, 13, 14"
-                    }
-                ],
-                "lawfulBasis": [ {
+                    },
+                "lawfulBasis": {
                         "description": "Processing is considered lawful if at least one of the following conditions applies: the data subject has given consent for a specific purpose; processing is necessary for fulfilling a contract with the data subject or for pre-contractual measures at their request; processing is required to comply with a legal obligation; processing is necessary to protect vital interests; processing is performed in the public interest or exercise of official authority; or processing is necessary for legitimate interests, provided that such interests do not override the rights and freedoms of the data subject, especially if they are a child. Additionally, Member States may establish more specific provisions to adapt the application of the rules for certain processing situations. The legal basis for processing under points (c) and (e) must be laid down by Union law or Member State law. When processing personal data for a purpose different from the one initially collected, the controller must ensure compatibility, taking into account various factors such as the purpose of collection, the nature of the data, and potential consequences for data subjects, while also considering appropriate safeguards.",
                         "reference": "Article 6"
-                    }
-                ],
-                "purposeLimitation": [  {
+                    },
+                "purposeLimitation": {
                         "description": "Personal data shall be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes.",
                         "reference": "Article 5"
-                    }
-                ],
-                "dataMinimization": [ {
+                    },
+                "dataMinimization": {
                         "description": "Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed",
                         "reference": "Article 5"
-                    }
-                ],
-                "securityReqs": [ {
+                    },
+                "securityReqs": {
                         "description": "Personal data shall be processed in a manner that ensures appropriate security, including protection against unauthorized or unlawful processing and against accidental loss, destruction, or damage, using appropriate technical or organizational measures. The controller and processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, taking into account the state of the art, the costs of implementation, the nature, scope, context, and purposes of processing, as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons. These measures may include pseudonymization and encryption of personal data, ensuring the ongoing confidentiality, integrity, availability, and resilience of processing systems and services, as well as the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident. Additionally, the controller and processor shall conduct regular assessments of the effectiveness of the security measures and implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk.",
                         "reference": "Articles 5, 32"
-                    }
-                ],
-                "privacyByDesign": [  {
+                    },
+                "privacyByDesign": {
                         "description": "Controllers are required to implement appropriate technical and organizational measures, taking into consideration various factors such as the state of the art, implementation costs, and the nature of processing activities. These measures should be implemented both during the determination of the means for processing and during the processing itself. Examples of such measures include pseudonymization, which helps to implement data protection principles like data minimization effectively. The goal is to integrate necessary safeguards into the processing activities to ensure compliance with the GDPR requirements and to protect the rights of data subjects effectively.",
                         "reference": "Article 25"
-                    }
-                ],
-                "processorReqs": [ {
+                    },
+                "processorReqs": {
                         "description": "Processors must provide sufficient guarantees to implement appropriate technical and organizational measures to ensure compliance with the Regulation and protect the rights of data subjects. They are not allowed to engage another processor without prior authorization from the controller, and any such engagement must be governed by a contract or legal act that specifies the details of the processing. This includes processing data only according to documented instructions from the controller, ensuring confidentiality, implementing security measures as per Article 32, and assisting the controller in fulfilling data subject rights and compliance obligations. Processors must also delete or return all personal data to the controller after the provision of services, provide necessary compliance information, and allow for audits by the controller. Additionally, if a processor engages another processor, it must impose the same data protection obligations through a contract or legal act, and it remains fully liable to the controller for the other processor's obligations. Adherence to approved codes of conduct or certification mechanisms can demonstrate sufficient guarantees, and standard contractual clauses may be used in contracts between controllers and processors. If a processor infringes the GDPR by determining processing purposes and means, it will be considered a controller for that processing, with relevant liability implications.",
                         "reference": "Article 28"
-                    }
-                ],
-                "recordKeeper": [ {
+                    },
+                "recordKeeper": {
                         "description": "Each controller and processor is mandated to maintain a record of processing activities under their responsibility. For controllers, this record must include their contact details, purposes of processing, categories of data subjects and personal data, recipients of personal data, information on data transfers, envisaged time limits for data erasure, and descriptions of security measures. Processors must maintain similar records, including details of the controller(s) on whose behalf they process data. These records must be in writing or electronic form and made available to the supervisory authority upon request. However, these obligations do not apply to enterprises with fewer than 250 employees unless their processing activities pose risks to data subjects' rights and freedoms, are not occasional, or involve special categories of data or data relating to criminal convictions and offenses.",
                         "reference": "Article 30"
-                    }
-                ],
-                "riskImpact": [ {
+                    },
+                "riskImpact": {
                         "description": "Controllers are required to conduct a Data Protection Impact Assessment (DPIA) before processing operations that are likely to result in a high risk to the rights and freedoms of individuals, especially when using new technologies. This assessment should consider the nature, scope, context, and purposes of the processing. Controllers should seek the advice of the data protection officer when conducting a DPIA. Such assessments are particularly necessary for processing involving automated decision-making, large-scale processing of sensitive data, or systematic monitoring of public areas. Supervisory authorities establish and publish lists of processing operations requiring a DPIA and those exempt from it. The DPIA must include a systematic description of the processing, an assessment of its necessity and proportionality, an evaluation of risks to data subjects' rights and freedoms, and proposed measures to mitigate these risks. Compliance with approved codes of conduct is considered in DPIAs, and where appropriate, the views of data subjects or their representatives should be sought. If processing is regulated by Union or Member State law and a DPIA has already been conducted, further assessments may not be necessary unless deemed necessary by Member States or if there is a change in the risk posed by processing operations, in which case a review should be conducted.",
                         "reference": "Article 35"
-                    }
-                ],
-                "breachNotification": [ {
+                    },
+                "breachNotification": {
                         "description": "In case of a personal data breach, controllers must promptly, and if feasible, within 72 hours after becoming aware of it, notify the supervisory authority unless the breach is unlikely to result in risks to individuals' rights and freedoms. The processor must also inform the controller without undue delay upon discovering a breach. The notification should describe the breach's nature, the categories of affected individuals and personal data records, provide contact details for further information, outline the likely consequences, and detail measures taken or proposed to address the breach. Controllers must document breaches, including the facts, effects, and remedial actions taken. When a breach poses a high risk to individuals, controllers must promptly inform affected individuals, describing the breach clearly, providing necessary information and measures, unless certain conditions exempt them from doing so, such as having implemented effective protection measures or when communication would involve disproportionate effort. If the controller hasn't notified affected individuals, the supervisory authority may require them to do so or determine if exemption conditions apply.",
                         "reference": "Articles 33, 34"
-                    }
-                ],
-                "registration": [ {
+                    },
+                "registration": {
                         "description": "",
                         "reference": ""
-                    }
-                ],
-                "dpo": [ {
+                    },
+                "dpo":{
                         "description": "The designation of a data protection officer (DPO) is required in certain cases, such as when processing involves a public authority, large-scale monitoring of individuals, or processing special categories of data on a large scale. A group of companies may appoint a single DPO, ensuring accessibility from each establishment. Public authorities may designate one DPO for several bodies, considering their organizational structure and size. In other cases, controllers, processors, or representative bodies may appoint a DPO, mandated by Union or Member State law when necessary. The DPO should possess expert knowledge in data protection law and practices and be designated based on professional qualities. They may be a staff member or engage through a service contract, and their contact details must be published and communicated to the supervisory authority. The DPO must be involved in all matters related to data protection and should receive support from the controller or processor, including access to resources and data. They should act independently, reporting directly to the highest management level, and should not be penalized for carrying out their duties. Data subjects can contact the DPO regarding any issues related to their personal data processing. The DPO is bound by secrecy or confidentiality as per applicable laws and should avoid conflicts of interest. The DPO's tasks include informing and advising on data protection obligations, monitoring compliance with regulations and organizational policies, providing advice on data protection impact assessments, cooperating with supervisory authorities, acting as a point of contact for regulatory matters, and considering risks associated with processing operations.",
                         "reference": "Articles 37, 38, 39"
-                    }
-                ],
-                "dataTransfer": [ {
+                    },
+                "dataTransfer":{
                         "description": "The GDPR establishes stringent requirements for the transfer of personal data to third countries or international organizations. These regulations ensure that the rights and freedoms of data subjects are adequately protected, regardless of where the data is processed. Data transfers can only occur if specific conditions outlined in Chapter V of the GDPR are met. These conditions include obtaining an adequacy decision from the European Commission, implementing appropriate safeguards such as standard contractual clauses or binding corporate rules, or relying on specific derogations for certain situations. The GDPR also emphasizes the importance of international cooperation to facilitate the enforcement of data protection legislation and to promote the exchange of information and best practices among relevant stakeholders. Compliance with these regulations is essential for organizations involved in international data transfers to avoid penalties and ensure the privacy and security of personal data.",
                         "reference": "Chapter 5"
                     }
-                ]
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -255,20 +226,18 @@
                             "description": "The GDPR does not apply to the processing of personal data by a natural person in the course of a purely personal or household activity."
                         }
                     ],             
-                    "nonProfitsCovered": ["Non-Profits are not explicitly exempted"],
-                    "verticalCarveouts" : [""],
-                    "preemption": [""]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["The supervisory authority, as outlined in the GDPR (General Data Protection Regulation), is an independent public authority established by each EU member state to oversee the application of the regulation. Its primary objectives are to safeguard the fundamental rights and freedoms of individuals concerning the processing of personal data and to facilitate the free movement of such data within the European Union."],
-                "rulemakingAuthority": ["The Supervisory Authority"],
-                "finingAuthority": ["The Supervisory Authority"],
-                "penalties": [ "For infringements related to certain obligations of controllers, processors, certification bodies, and monitoring bodies (Articles 8, 11, 25-39, 42, and 43), the fine can be up to €10,000,000 or up to 2% of the total worldwide annual turnover of the preceding financial year, whichever is higher. For infringements related to fundamental principles of data processing, data subjects' rights, international data transfers, obligations under Member State law, and non-compliance with supervisory authority orders (Articles 5, 6, 7, 9, 12-22, 44-49, Chapter IX, and Article 58(2)), the fine can be up to €20,000,000 or up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher."],
-                "personalLiability": [""],
-                "privateRightOfAction" : ["Data subjects have the right to an effective judicial remedy if they believe that their rights under the GDPR have been violated due to the processing of their personal data not complying with the regulation. This right to judicial remedy is in addition to other available administrative or non-judicial remedies, including the right to lodge a complaint with a supervisory authority as per Article 77. Data subjects have the option to initiate legal proceedings against a controller or processor in the courts of the Member State where the controller or processor has an establishment. Alternatively, such proceedings may be brought before the courts of the Member State where the data subject has their habitual residence, unless the controller or processor is a public authority of a Member State acting in the exercise of its public powers."]
-                }
-            ],
+                    "nonProfitsCovered": "Non-Profits are not explicitly exempted",
+                    "verticalCarveouts" : "",
+                    "preemption": ""
+                },
+            "enforcement": {
+                "enforcementAuthority": "The supervisory authority, as outlined in the GDPR (General Data Protection Regulation), is an independent public authority established by each EU member state to oversee the application of the regulation. Its primary objectives are to safeguard the fundamental rights and freedoms of individuals concerning the processing of personal data and to facilitate the free movement of such data within the European Union.",
+                "rulemakingAuthority": "The Supervisory Authority",
+                "finingAuthority": "The Supervisory Authority",
+                "penalties": "For infringements related to certain obligations of controllers, processors, certification bodies, and monitoring bodies (Articles 8, 11, 25-39, 42, and 43), the fine can be up to €10,000,000 or up to 2% of the total worldwide annual turnover of the preceding financial year, whichever is higher. For infringements related to fundamental principles of data processing, data subjects' rights, international data transfers, obligations under Member State law, and non-compliance with supervisory authority orders (Articles 5, 6, 7, 9, 12-22, 44-49, Chapter IX, and Article 58(2)), the fine can be up to €20,000,000 or up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+                "personalLiability": "",
+                "privateRightOfAction" : "Data subjects have the right to an effective judicial remedy if they believe that their rights under the GDPR have been violated due to the processing of their personal data not complying with the regulation. This right to judicial remedy is in addition to other available administrative or non-judicial remedies, including the right to lodge a complaint with a supervisory authority as per Article 77. Data subjects have the option to initiate legal proceedings against a controller or processor in the courts of the Member State where the controller or processor has an establishment. Alternatively, such proceedings may be brought before the courts of the Member State where the data subject has their habitual residence, unless the controller or processor is a public authority of a Member State acting in the exercise of its public powers."
+                },
             "threshold": [
                 {
                     "type": "All Organizations and Individuals",
