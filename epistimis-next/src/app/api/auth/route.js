@@ -10,6 +10,6 @@ export async function POST(request) {
     if (password === validPassword) {
         return NextResponse.json({ status: 'success', message: 'Authenticated', providedPassword: password });
     } else {
-        return NextResponse.json({ status: 'error', message: process.env.ADMIN_PASSWORD, providedPassword: password }, { status: 401 });
+        return NextResponse.json({ status: 'error', message: 'Unauthorized', providedPassword: password }, { status: 401 });
     }
 }
