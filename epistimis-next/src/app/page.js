@@ -1,10 +1,10 @@
 import "./page.css";
-import MapContainer from "@/Components/MapContainer/MapContainer";
+import App from "@/Components/App/App";
 
 export default function Home() {
   return (
     <main className="whole-bg">
-      <MapContainer/>
+      <App/>
     </main>
   );
 }
