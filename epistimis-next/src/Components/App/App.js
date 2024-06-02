@@ -4,6 +4,7 @@ import Map from "../Map/Map";
 import MapToggle from "../MapToggle/MapToggle";
 import Title from "../Title/Title";
 import Filter from "../Filter/Filter";
+import AdminDialog from "../AdminDialog/AdminDialog";
 
 import "./App.css";
 
@@ -14,7 +15,7 @@ const MapContainer = () => {
     const [editable, setEditable] = useState(false);
     const [filterOpen, setFilterOpen] = useState(false);
 
-    const handleSetIsUS = (val) =>  {
+    const handleSetIsUS = (val) => {
         setIsUS(val);
     }
 
@@ -33,18 +34,19 @@ const MapContainer = () => {
     return (
         <div id="app_container">
             <div id="header">
+                <AdminDialog />
                 <MapToggle
                     isUS={isUS}
                     handleSetIsUS={handleSetIsUS}
                     comparing={comparing}
                 />
-                <Title isUS={isUS}/>
+                <Title isUS={isUS} />
                 <Filter
                     filterOption={filter}
                     handleSetFilterOption={setFilter}
                     filterOpen={filterOpen}
                     setFilterOpen={handleSetFilterOpen}
-                    // ref={filterRef}
+                // ref={filterRef}
                 />
             </div>
             <div id="map_container">
