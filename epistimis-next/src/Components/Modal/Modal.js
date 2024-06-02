@@ -7,7 +7,7 @@ import LawTabs from './LawTabs.js';
 import OtherLaws from "./OtherLaws.js";
 import ComprehensiveLaw from "./ComprehensiveLaw.js";
 
-function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo }) {
+function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo, admin, setAdmin }) {
   const [editable, setEditable] = useState(false);
 
   const displayEditableObject = (obj) => {
@@ -38,8 +38,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
 
   useEffect(() => {
     if (editable && !comparing) {
-      // Call displayEditableObject with the required object when entering editable mode
-      displayEditableObject(modalInfo[0] /* or any relevant object */);
+      displayEditableObject(modalInfo[0]);
     }
   }, [editable]);
 
@@ -57,9 +56,10 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
               >
                 Compare
               </button>
-              <button onClick={() => handleSetEditable(!editable)}>
+              {admin ? (    <button onClick={() => handleSetEditable(!editable)}>
                 {editable ? ("Submit") : ("✏️")}
-              </button>
+              </button>) : null}
+        
             </div>
 
             {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
@@ -76,7 +76,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
               <textarea id="editor">hehe</textarea>
             )} */}
 
-            {(editable && !comparing) ? (
+            {(editable && !comparing && admin) ? (
               <textarea id="editor">hehe</textarea>
             ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
               <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
