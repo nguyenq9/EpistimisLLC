@@ -12,7 +12,7 @@ const MapContainer = () => {
     const [isUS, setIsUS] = useState(true);
     const [filter, setFilter] = useState(null);
     const [comparing, setComparing] = useState(false);
-    const [editable, setEditable] = useState(false);
+    const [admin, setAdmin] = useState(false);
     const [filterOpen, setFilterOpen] = useState(false);
 
     const handleSetIsUS = (val) => {
@@ -23,8 +23,8 @@ const MapContainer = () => {
         setComparing(val);
     }
 
-    const handleSetEditable = (val) => {
-        setEditable(val);
+    const handleSetAdmin = (val) => {
+        setAdmin(val);
     }
 
     const handleSetFilterOpen = (val) => {
@@ -34,7 +34,7 @@ const MapContainer = () => {
     return (
         <div id="app_container">
             <div id="header">
-                <AdminDialog />
+                <AdminDialog setAdmin={handleSetAdmin}/>
                 <MapToggle
                     isUS={isUS}
                     handleSetIsUS={handleSetIsUS}
@@ -55,8 +55,8 @@ const MapContainer = () => {
                     filterOption={filter}
                     comparing={comparing}
                     setComparing={handleSetComparing}
-                    editable={editable}
-                    setEditable={handleSetEditable}
+                    admin={admin}
+                    setAdmin={handleSetAdmin}
                     filterOpen={filterOpen}
                     setFilterOpen={handleSetFilterOpen}
                 />

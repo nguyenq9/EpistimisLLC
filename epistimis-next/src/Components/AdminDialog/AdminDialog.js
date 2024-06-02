@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import "./AdminDialog.css"
 
-const AdminDialog = () => {
+const AdminDialog = ({setAdmin}) => {
 
     useEffect(() => {
         window.addEventListener('keydown', function (event) {
@@ -28,6 +28,7 @@ const AdminDialog = () => {
             .then((res) => {
                 if (res.status === 'success') {
                     console.log('success: ', res.message);
+                    setAdmin(true)
                 } else {
                     console.error('ERROR', res.message);
                 }
@@ -35,6 +36,8 @@ const AdminDialog = () => {
             .catch((err) => {
                 console.log(err);
             });
+
+        document.getElementById("admin-password").value = ""
     }
 
     return (
@@ -42,7 +45,7 @@ const AdminDialog = () => {
             <form method="dialog">
                 <label htmlFor="lname">Password:</label>
                 <input type="password" id="admin-password" name="admin-password" autoComplete="true" />
-                <button id="loginButton" onClick={handleAuth}>OK</button>
+                <button id="loginButton" onClick={handleAuth}>SUBMIT</button>
             </form>
         </dialog>
     );

@@ -4,7 +4,7 @@ export async function POST(request) {
     const { password } = await request.json();
 
     // Replace with your actual password validation logic
-    const validPassword = 'ghost';
+    const validPassword = process.env.ADMIN_PASSWORD;
     if (password === validPassword) {
         return NextResponse.json({ status: 'success', message: 'Authenticated', providedPassword: password });
     } else {

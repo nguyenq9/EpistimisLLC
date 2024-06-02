@@ -15,7 +15,7 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditable, setFilterOpen }) => {
+const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, setFilterOpen }) => {
   const [currCode, setCode] = useState("");
   const [modal, setModal] = useState(false);
   const [currRegion, setRegion] = useState("");
@@ -141,8 +141,8 @@ const Map = ({ isUS, filterOption, comparing, setComparing, editable, setEditabl
         handleCompareClicked={handleCompareClicked}
         comparing={comparing}
         modalInfo={modalInfo}
-        editable={editable}
-        setEditable={setEditable}
+        admin={admin}
+        setAdmin={setAdmin}
       />
       <div id="map">
         <VectorMap
