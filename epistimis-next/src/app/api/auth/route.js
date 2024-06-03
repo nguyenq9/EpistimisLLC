@@ -1,15 +1,23 @@
 import { NextResponse } from 'next/server';
+import CryptoJS from 'crypto-js';
 
 export async function POST(request) {
-    const { password } = await request.json();
+    try {
+        const { password } = await request.json();
 
-    // Log the admin password to the console (for debugging purposes only)
+        // Decrypt the provided password
+        var decrypted = CryptoJS.AES.decrypt(password, "Secret Passphrase");
+        var decryptedPassword = decrypted.toString(CryptoJS.enc.Utf8);
 
-    // Replace with your actual password validation logic
-    const validPassword = process.env.ADMIN_PASSWORD;
-    if (password === validPassword) {
-        return NextResponse.json({ status: 'success', message: 'Authenticated', providedPassword: password });
-    } else {
-        return NextResponse.json({ status: 'error', message: 'Unauthorized', providedPassword: password }, { status: 401 });
+        // Get the valid password from environment variables
+        const validPassword = process.env.ADMIN_PASSWORD;
+
+        if (decryptedPassword === validPassword) {
+            return NextResponse.json({ status: 'success', message: 'Authenticated', providedPassword: password });
+        } else {
+            return NextResponse.json({ status: 'error', message: 'Unauthorized', providedPassword: password }, { status: 401 });
+        }
+    } catch (error) {
+        return NextResponse.json({ status: 'error', message: 'Internal Server Error', error: error.message }, { status: 500 });
     }
 }
