@@ -1,24 +1,30 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.law-info {
+    display: flex;
+    justify-content: space-between;
 }
 
-#accordian-container {
+.law-reference {
+    text-decoration: underline;
+}
+
+.accordions-container {
+    padding-top: 10px;
+}
+
+#accordion-container {
     max-width: 650px;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Changed from absolute to relative */
+    left: 0; /* Removed left positioning */
+    transform: none; /* Removed transform */
 }
 
-.accordian-item-container {
+.accordion-item-container {
     border-bottom: 1px solid var(--text);
     overflow: hidden;
 }
 
-.accordian-item-container .question-container {
+.accordion-item-container .question-container {
     width: 100%;
     text-align: left;
     padding: 20px 10px;
@@ -38,11 +44,11 @@
     background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
 }
 
-.accordian-item-container .question-container:hover {
+.accordion-item-container .question-container:hover {
     background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
 }
 
-.accordian-item-container .arrow {
+.accordion-item-container .arrow {
     font-size: 2rem;
     transition: .5s ease-in-out;
 }
@@ -52,13 +58,24 @@
     color: var(--region-initial);
 }
 
-.accordian-item-container .answer-container {
+.accordion-item-container .answer-container {
     padding: 0 1rem;
     transition: height .7s ease-in-out;
 }
 
-.accordian-item-container .answer-content {
+.accordion-item-container .answer-content {
     padding: 1rem 0;
     font-size: 20px;
     font-style: italic;
 }
+
+.answer-list {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.answer-list li {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
