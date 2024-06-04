@@ -78,8 +78,7 @@ export default function ComprehensiveLaw({ law }) {
                     </AccordionItem>
                 </Accordion>
             </div>
-            {/* Display the law object as a formatted JSON string */}
-            <pre>{JSON.stringify(law, null, 2)}</pre>
+            {/* Display the law object as a formatted JSON string <pre>{JSON.stringify(law, null, 2)}</pre>*/}
         </div>
     );
 }
