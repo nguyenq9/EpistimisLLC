@@ -1,3 +1,7 @@
+.law{
+    max-width: 675px;
+}
+
 .law-info {
     display: flex;
     justify-content: space-between;
