@@ -102,7 +102,7 @@
                         "reference": "Section 6-1-1303.23"
                     }
             },
-            "scope": [
+            "scope":
                 {
                     "exemptions": [
                         {
@@ -137,8 +137,7 @@
                     "nonProfitsCovered": "Non-Profits are not explicitly exempted",
                     "verticalCarveouts" : "",
                     "preemption": "This legislation supersedes and preempts laws, ordinances, resolutions, regulations, or the equivalent adopted by any statutory or home rule municipality, county, or city and county regarding the processing of personal data by controllers or processors"
-                }
-            ],
+                },
             "enforcement": {
                 "enforcementAuthority": "The Attorney General and District Attorneys",
                 "rulemakingAuthority": "Attorney General",
