@@ -1,9 +1,20 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import './Accordion.css';
 
 const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
     const contentHeight = useRef();
+    const [contentVisible, setContentVisible] = useState(isOpen);
+
+    useEffect(() => {
+        if (isOpen) {
+            setContentVisible(true);
+            //contentHeight.current.style.height = `${contentHeight.current.scrollHeight}px`;
+        } else {
+            //contentHeight.current.style.height = '0px';
+            setContentVisible(false);
+        }
+    }, [isOpen]);
 
     const renderInfoContent = () => {
         if (Array.isArray(info)) {
@@ -27,11 +38,13 @@ const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
             </button>
             <div
                 ref={contentHeight}
-                className="answer-container"
-                style={isOpen ? { height: contentHeight.current.scrollHeight } : { height: "0px" }}
+                className={`answer-container ${isOpen ? 'active' : ''}`}
+                style={contentVisible ? { height: 'auto' } : { height: '0px', overflow: 'hidden' }}
             >
-                {renderInfoContent()}
-                {children}
+                <div>
+                    {renderInfoContent()}
+                    {children}
+                </div>
             </div>
         </div>
     );
@@ -47,7 +60,7 @@ const Accordion = ({ children }) => {
     const allItems = React.Children.toArray(children);
 
     return (
-        <div id="accordion-container">
+        <div className="accordion-container">
             {allItems.map((item, index) => (
                 <AccordionItem
                     key={index}
@@ -63,4 +76,6 @@ const Accordion = ({ children }) => {
     );
 };
 
+
 export { Accordion, AccordionItem };
+

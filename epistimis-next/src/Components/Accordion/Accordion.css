@@ -60,12 +60,32 @@
 
 .accordion-item-container .answer-container {
     padding: 0 1rem;
-    transition: height .7s ease-in-out;
+    display: grid; 
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.7s ease-in-out, max-height 0.7s ease-in-out;
+    /*overflow: hidden;
+    padding: 0 1rem;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;
+    overflow: hidden;*/
+}
+
+.accordion-item-container .answer-container.active {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.7s ease-in-out, max-height 0.7s ease-in-out;
+    /*padding: 1rem;
+    max-height: 2000px;
+    transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;*/
+    
+}
+
+.accordion-item-container .answer-container > div {
+    overflow: hidden;
 }
 
 .accordion-item-container .answer-content {
     padding: 1rem 0;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
 }
 
@@ -77,5 +97,6 @@
 .answer-list li {
     margin-bottom: 8px;
     font-size: 18px;
+    font-style: italic;
 }
 
