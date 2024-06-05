@@ -27,7 +27,7 @@ export default function ComprehensiveLaw({ law }) {
                         </Accordion>
                     </AccordionItem>
                     <AccordionItem category="Individual Rights" info="">
-                        <ul>
+                        <ul className='answer-content'>
                             {law.individualRights.map((right, index) => (
                                 <li key={index}>
                                     {right.name} - <a href={law.reference} target="_blank" className="law-reference">{right.reference}</a>
@@ -54,7 +54,7 @@ export default function ComprehensiveLaw({ law }) {
                     </AccordionItem>
                     <AccordionItem category="Scope" info="">
                         {law.scope.exemptions.map((exemption, index) => (
-                            <li key={index}>
+                            <li key={index} className='answer-content'>
                                 {exemption.type} : <p>{exemption.description}</p>
                             </li>
                         ))}
@@ -70,11 +70,13 @@ export default function ComprehensiveLaw({ law }) {
                         </Accordion>
                     </AccordionItem>
                     <AccordionItem category="Thresholds" info="">
-                        {law.threshold.map((threshold, index) => (
-                            <li key={index}>
-                                {threshold.type} : <p>{threshold.description}</p>
-                            </li>
-                        ))}
+                        <ul className='answer-content'>
+                            {law.threshold.map((threshold, index) => (
+                                <li key={index}>
+                                    {threshold.type} : <p>{threshold.description}</p>
+                                </li>
+                            ))}
+                        </ul>
                     </AccordionItem>
                 </Accordion>
             </div>
@@ -82,3 +84,4 @@ export default function ComprehensiveLaw({ law }) {
         </div>
     );
 }
+
