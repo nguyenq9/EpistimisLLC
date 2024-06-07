@@ -10,3 +10,10 @@
 .small-title {
     margin-bottom: 2.5vh;
 }
+
+@media (max-width: 1000px) {
+    .title-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

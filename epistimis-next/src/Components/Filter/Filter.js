@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, use } from 'react';
+import FilterListIcon from '@mui/icons-material/FilterList';
 import "./Filter.css";
 
 const Filter = ({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen }) => {
@@ -42,7 +43,8 @@ const Filter = ({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen
     return (
         <div className='menu-container filter-component' ref={dropdownRef}>
             <button className='trigger' onClick={() => setFilterOpen(!filterOpen)}>
-                <span>Filter</span>
+                <span className='filter-text'>Filter</span>
+                <FilterListIcon className="filter-icon" />
             </button>
             <div className={`dropdown-menu ${filterOpen ? 'active' : 'inactive'}`}>
                 <ul>

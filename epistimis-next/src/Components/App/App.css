@@ -6,12 +6,13 @@
     width: 100%;
     padding: 0 10%;
     /* margin-bottom: 20px; */
-    padding-top: 25px;
+    padding-top: 15px;
     border-bottom: 1px solid var(--background-secondary)
 }
-/* 
-#map_container {
-    position: relative;
-    z-index: 1000;
-    background-color: transparent;
-} */
+
+@media (max-width: 1100px) {
+    #header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

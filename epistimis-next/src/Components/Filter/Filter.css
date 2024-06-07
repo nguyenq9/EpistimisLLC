@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 .menu-container {
     user-select: none;
 }
 
 .trigger {
-    top: 15px;
-    right: 20px;
+    /* top: 15px;
+    right: 20px; */
     overflow: visible;
     cursor: pointer;
     background-color: var(--region-initial);
@@ -22,12 +17,12 @@
 }
 
 .trigger span {
-    top: 7px;
-    right: 33px;
+    /* top: 7px;
+    right: 33px; */
     pointer-events: none;
     font-weight: 1000;
     color: #fff;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 .dropdown-menu {
@@ -139,4 +134,23 @@
 
 .dropdownItem input[type="checkbox"] {
     margin-left: 10px; 
+}
+
+.filter-icon {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .filter-icon {
+        display: inline;
+        color: white;
+    }
+
+    .filter-text {
+        display: none;
+    }
+
+    .trigger {
+        width: 36px;
+    }
 }

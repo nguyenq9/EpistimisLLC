@@ -7,6 +7,7 @@ const MapToggle = ({ isUS, handleSetIsUS, comparing }) => {
             <div className="MapToggle">
                 <span 
                     className={`link ${isUS ? "maptoggled" : ""}`} 
+                    id="us-link"
                     onClick={() => { 
                         if (!isUS && !comparing) handleSetIsUS(true) 
                     }}
