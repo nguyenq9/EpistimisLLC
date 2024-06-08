@@ -17,7 +17,9 @@ const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
     }, [isOpen]);
 
     const renderInfoContent = () => {
-        if (Array.isArray(info)) {
+        if (!children && (!info || (Array.isArray(info) && info.length === 0) || (typeof info === 'string' && info.trim() === '') || (typeof info === 'string' && info.trim() === '()'))) {
+            return <p className="answer-content">No Data Available</p>;
+        } else if (Array.isArray(info)) {
             return (
                 <ul className="answer-list">
                     {info.map((item, index) => (
@@ -29,6 +31,18 @@ const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
             return <p className="answer-content">{info}</p>;
         }
     };
+
+    // Render only the category if it's "Consent Required"
+    if (category === "Consent Required") {
+        return (
+            <div className="accordion-item-container">
+                <button className={`question-container`} onClick={onClick}>
+                    <p className='question-content'>{category}</p>
+                    {renderInfoContent()}
+                </button>
+            </div>
+        );
+    }
 
     return (
         <div className="accordion-item-container">
