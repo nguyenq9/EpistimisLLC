@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./Title.css"
 
 const Title = ({isUS}) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 660);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
