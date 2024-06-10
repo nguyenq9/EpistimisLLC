@@ -3,8 +3,6 @@ import { Accordion, AccordionItem } from "../Accordion/Accordion";
 import './ComprehensiveLaw.css';
 
 export default function ComprehensiveLaw({ law }) {
-    console.log("Law object:", law);
-    console.log("Law applicability:", law.applicability);
 
     return (
         <div className="law">
@@ -23,7 +21,7 @@ export default function ComprehensiveLaw({ law }) {
                             <AccordionItem category="Roles" info={law.applicability.roles} />
                             <AccordionItem category="Personal Data Categories" info={law.applicability.personalDataCategories} />
                             <AccordionItem category="Processing Purposes" info={law.applicability.processingPurposes} />
-                            <AccordionItem category="Consent Required" info={law.applicability.consentRequired} />
+                            <AccordionItem category="Consent Required" info={law.applicability.consentRequired}/>
                         </Accordion>
                     </AccordionItem>
                     <AccordionItem category="Individual Rights" info="">
