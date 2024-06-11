@@ -115,6 +115,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
       </div>
       <Close onClick={closeModal} className="close-button" />
     </dialog>
+    </ThemeProvider>
   );
 }
 
