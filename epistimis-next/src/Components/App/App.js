@@ -34,7 +34,7 @@ const MapContainer = () => {
     return (
         <div id="app_container">
             <div id="header">
-                <AdminDialog setAdmin={handleSetAdmin}/>
+                <AdminDialog setAdmin={handleSetAdmin} />
                 <MapToggle
                     isUS={isUS}
                     handleSetIsUS={handleSetIsUS}

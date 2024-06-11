@@ -1,0 +1,7 @@
+.law-table {
+    background-color: var(--background);
+}
+
+.law-table-cell {
+    color: var(--text);
+}

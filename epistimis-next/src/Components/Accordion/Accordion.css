@@ -1,27 +1,16 @@
-.law-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.law-reference {
-    text-decoration: underline;
-}
-
-.accordions-container {
-    padding-top: 10px;
-}
-
-#accordion-container {
-    max-width: 650px;
-    width: 100%;
-    position: relative; /* Changed from absolute to relative */
-    left: 0; /* Removed left positioning */
-    transform: none; /* Removed transform */
+.accordion-container {
+    margin-bottom: 2rem;
 }
 
 .accordion-item-container {
     border-bottom: 1px solid var(--text);
     overflow: hidden;
+    /* max-height: 0; */
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-container.open {
+    max-height: 1000px;
 }
 
 .accordion-item-container .question-container {
@@ -39,14 +28,14 @@
     color: var(--text);
 }
 
-.question-container.active {
+/* .question-container.active {
     color: var(--region-initial);
     background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
 }
 
 .accordion-item-container .question-container:hover {
     background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
-}
+} */
 
 .accordion-item-container .arrow {
     font-size: 2rem;
@@ -62,22 +51,22 @@
     padding: 0 1rem;
     display: grid; 
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.7s ease-in-out, max-height 0.7s ease-in-out;
-    /*overflow: hidden;
-    padding: 0 1rem;
-    max-height: 0;
+    /* transition: grid-template-rows 0.7s ease-in-out, max-height 0.7s ease-in-out; */
+    overflow: hidden;
+    max-height: 0px;
     transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;
-    overflow: hidden;*/
 }
 
 .accordion-item-container .answer-container.active {
-    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
+    /* background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent); */
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.7s ease-in-out, max-height 0.7s ease-in-out;
-    /*padding: 1rem;
+    padding: 1rem;
     max-height: 2000px;
-    transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;*/
-    
+    /* transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out; */
+    background-color: var(--modal-background);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .accordion-item-container .answer-container > div {
@@ -85,7 +74,7 @@
 }
 
 .accordion-item-container .answer-content {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     font-size: 18px;
     font-style: italic;
 }

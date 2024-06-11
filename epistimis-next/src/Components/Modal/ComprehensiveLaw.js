@@ -1,19 +1,24 @@
 import * as React from 'react';
 import { Accordion, AccordionItem } from "../Accordion/Accordion";
+
 import './ComprehensiveLaw.css';
+
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import Stack from "@mui/material/Stack";
 
 export default function ComprehensiveLaw({ law }) {
 
     return (
         <div className="law">
-            <h2>{law.lawName}</h2>
-            <div className="law-info">
-                <p>Acronym: {law.acronym}</p>
-                <a href={law.reference} target="_blank" className="law-reference">Reference</a>
-                <p>Status: {law.billStatus}</p>
-                <p>Enacted: {law.inEffect}</p>
-            </div>
-            <p>{law.description}</p>
+            <Stack alignItems="center" spacing={2}>
+                <h4 style={{ fontSize: "1.5em" }} id="law-name" className="reference"><a href={law.reference} target="_blank">{law.lawName}<OpenInNewIcon /></a></h4>
+                <Stack direction="row" spacing={5}>
+                    <p>Status: {law.billStatus}</p>
+                    <p>Enacted: {law.inEffect}</p>
+                </Stack>
+                <p style={{ textAlign: "center", width: "70%" }}>{law.description}</p>
+            </Stack>
+            
             <div className="accordions-container">
                 <Accordion>
                     <AccordionItem category="Applicability" info="">
@@ -21,14 +26,14 @@ export default function ComprehensiveLaw({ law }) {
                             <AccordionItem category="Roles" info={law.applicability.roles} />
                             <AccordionItem category="Personal Data Categories" info={law.applicability.personalDataCategories} />
                             <AccordionItem category="Processing Purposes" info={law.applicability.processingPurposes} />
-                            <AccordionItem category="Consent Required" info={law.applicability.consentRequired}/>
+                            <AccordionItem category="Consent Required" info={law.applicability.consentRequired} />
                         </Accordion>
                     </AccordionItem>
                     <AccordionItem category="Individual Rights" info="">
                         <ul className='answer-content'>
                             {law.individualRights.map((right, index) => (
                                 <li key={index}>
-                                    {right.name} - <a href={law.reference} target="_blank" className="law-reference">{right.reference}</a>
+                                    {right.name} - <a href={law.reference} target="_blank" className="reference">{right.reference}</a>
                                 </li>
                             ))}
                         </ul>

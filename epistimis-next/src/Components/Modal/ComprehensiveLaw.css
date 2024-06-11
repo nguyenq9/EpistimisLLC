@@ -1,20 +1,24 @@
 .law{
     max-width: 100%;
-    background-color: white;
-    padding: 1rem;
-    margin-top: 5px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+    background-color: var(--background-secondary);
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.reference {
+    text-decoration: underline;
+}
+
+.reference:hover {
+    color: var(--region-initial);
 }
 
 .law-info {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0rem;
-}
-
-.law-reference {
-    text-decoration: underline;
+    margin: 0 15em;
 }
 
 .consent-required {
@@ -24,4 +28,3 @@
 .consent-not-required {
     background-color: lightcoral; /* color when consent is not required */
 }
-
