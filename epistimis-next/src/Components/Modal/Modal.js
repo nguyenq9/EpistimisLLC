@@ -45,15 +45,15 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
     const { jurisdiction } = modalInfo[0];
 
     try {
-        handleUpdateCall(jurisdiction, updatedData);
-        // console.log('Update successful:', response);
-        closeModal();
-        setEditable(false);
-        console.log("passed handleUpdateCall")
+      handleUpdateCall(jurisdiction, updatedData);
+      // console.log('Update successful:', response);
+      closeModal();
+      setEditable(false);
+      console.log("passed handleUpdateCall")
     } catch (error) {
-        console.error('Error updating law:', error);
+      console.error('Error updating law:', error);
     }
-};
+  };
 
   const ref = useRef();
 
@@ -90,31 +90,31 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
                   >
                     Compare
                   </Button>
-                  {admin ? (<button onClick={() => handleSetEditable(!editable)}>
+                  {admin ? (<button onClick={() => { editable ? (handleSubmit()) : (handleSetEditable(!editable)) }}>
                     {editable ? ("Submit") : ("✏️")}
                   </button>) : null}
                 </div>
               </div>
 
-            {(editable && !comparing && admin) ? (
-              <textarea id="editor"></textarea>
-            ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-            ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
-              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
-            ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
-            ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
-              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-            ) : null)}
+              {(editable && !comparing && admin) ? (
+                <textarea id="editor"></textarea>
+              ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
+                <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+              ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
+                <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
+              ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
+                <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
+              ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
+                <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+              ) : null)}
 
 
 
-          </div>
-        ))}
-      </div>
-      <Close onClick={closeModal} className="close-button" />
-    </dialog>
+            </div>
+          ))}
+        </div>
+        <Close onClick={closeModal} className="close-button" />
+      </dialog>
     </ThemeProvider>
   );
 }
