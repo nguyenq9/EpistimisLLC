@@ -45,7 +45,7 @@
 
   --text: #000;
   --background: #f5f5f5;
-  --background-secondary: #d4d4d4;
+  --background-secondary: #ececec;
   --modal-background: #f5f5f5;
   --region-initial: #38A8A3;
   --region-hover: #0F2E2C;
@@ -86,7 +86,7 @@
 
     --text: #fff;
     --background: #000;
-    --background-secondary: #111;
+    --background-secondary: #232323;
     --modal-background: #111;
   }
 }

@@ -1,11 +1,25 @@
 import { useState, useEffect, useRef } from "react";
 import { Close } from "@mui/icons-material";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { handleUpdateCall } from "@/js/API";
 import "./Modal.css";
 
 import LawTabs from './LawTabs.js';
 import OtherLaws from "./OtherLaws.js";
 import ComprehensiveLaw from "./ComprehensiveLaw.js";
+
+const theme = createTheme({
+  palette: {
+    buttons: {
+      main: '#38A8A3',
+      dark: '#95DAD8',
+      light: '#0F2E2C',
+      contrastText: '#000'
+    }
+  }
+});
 
 function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalInfo, admin, setAdmin }) {
   const [editable, setEditable] = useState(false);
@@ -59,38 +73,28 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
   }, [editable]);
 
   return (
-    <dialog ref={ref} onCancel={closeModal} className={`modal ${comparing ? 'comparing' : 'not-comparing'}`}>
-      <div className={`content-container ${modalInfo.length === 2 ? 'two-items' : 'one-item'}`}>
-        {modalInfo.map((item, index) => (
-          <div key={index} className="modal-section">
-            <div className="modal-header">
-              <h2>{item.jurisdiction}</h2>
-              <button
-                onClick={handleCompareClicked}
-                style={{ display: comparing ? 'none' : '' }}
-                className="compare-button"
-              >
-                Compare
-              </button>
-              {admin ? (<button onClick={() => {editable ? (handleSubmit()): ( handleSetEditable(!editable))}}>
-                {editable ? ("Submit") : ("✏️")}
-              </button>) : null}
-
-            </div>
-
-            {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
-            {/* {!editable ? (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-            ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
-              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
-            ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
-              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
-            ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
-              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-            ) : null) : 
-            (
-              <textarea id="editor">hehe</textarea>
-            )} */}
+    <ThemeProvider theme={theme}>
+      <dialog ref={ref} onCancel={closeModal} className={`modal ${comparing ? 'comparing' : 'not-comparing'}`}>
+        <div className={`content-container ${modalInfo.length === 2 ? 'two-items' : 'one-item'}`}>
+          {modalInfo.map((item, index) => (
+            <div key={index} className="modal-section">
+              <div id="modal-header">
+                <h3 id="modal-region-name">{item.jurisdiction}</h3>
+                <div id="modal-buttons">
+                  <Button
+                    onClick={handleCompareClicked}
+                    style={{ display: comparing ? 'none' : '' }}
+                    id="compare-button"
+                    color="buttons"
+                    variant="contained"
+                  >
+                    Compare
+                  </Button>
+                  {admin ? (<button onClick={() => handleSetEditable(!editable)}>
+                    {editable ? ("Submit") : ("✏️")}
+                  </button>) : null}
+                </div>
+              </div>
 
             {(editable && !comparing && admin) ? (
               <textarea id="editor"></textarea>
@@ -111,8 +115,8 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
       </div>
       <Close onClick={closeModal} className="close-button" />
     </dialog>
+    </ThemeProvider>
   );
 }
 
 export default Modal;
-
