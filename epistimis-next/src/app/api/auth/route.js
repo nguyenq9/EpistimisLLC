@@ -11,6 +11,7 @@ export async function POST(request) {
 
         // Get the valid password from environment variables
         const validPassword = process.env.ADMIN_PASSWORD;
+        console.log(validPassword)
 
         if (decryptedPassword === validPassword) {
             return NextResponse.json({ status: 'success', message: 'Authenticated', providedPassword: password });
