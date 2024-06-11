@@ -44,17 +44,18 @@ const handleCompareCall = (name1, name2, setModalInfo) => {
 const handleUpdateCall = (jurisdiction, updatedData) => {
   console.log(jurisdiction)
   console.log(updatedData)
-  fetch(`/api/update?jurisdiction=${jurisdiction}`, {
+  fetch(`/api/update/uslaw?jurisdiction=${jurisdiction}`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ password: updatedData })
+    body: JSON.stringify({ updatedData })
 })
   .then((res) => res.json())
   .then((res) => {
     if (res.status === "success") {
       console.log("Success:", res.message);
+      console.log(res.data)
     } else {
       console.error("Error:", res.message);
     }

@@ -7,7 +7,7 @@ const AdminDialog = ({ setAdmin }) => {
     useEffect(() => {
         const handleKeyDown = (event) => {
             // Check if SHIFT + ALT + A is pressed
-            if (event.shiftKey && event.altKey && event.key === 'A') {
+            if (event.shiftKey && (event.altKey || event.ctrlKey) && event.key === 'Q') {  
                 document.getElementById('login').showModal();
             }
         };

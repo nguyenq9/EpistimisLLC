@@ -33,7 +33,8 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
     try {
         handleUpdateCall(jurisdiction, updatedData);
         // console.log('Update successful:', response);
-        // setEditable(false);
+        closeModal();
+        setEditable(false);
         console.log("passed handleUpdateCall")
     } catch (error) {
         console.error('Error updating law:', error);
