@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Close } from "@mui/icons-material";
-
+import { handleUpdateCall } from "@/js/API";
 import "./Modal.css";
 
 import LawTabs from './LawTabs.js';
@@ -24,6 +24,21 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
   const handleSetEditable = (val) => {
     setEditable(val);
   }
+
+  const handleSubmit = async () => {
+    const editor = document.getElementById('editor');
+    const updatedData = JSON.parse(editor.value);
+    const { jurisdiction } = modalInfo[0];
+
+    try {
+        handleUpdateCall(jurisdiction, updatedData);
+        // console.log('Update successful:', response);
+        // setEditable(false);
+        console.log("passed handleUpdateCall")
+    } catch (error) {
+        console.error('Error updating law:', error);
+    }
+};
 
   const ref = useRef();
 
@@ -56,10 +71,10 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
               >
                 Compare
               </button>
-              {admin ? (    <button onClick={() => handleSetEditable(!editable)}>
+              {admin ? (<button onClick={() => {editable ? (handleSubmit()): ( handleSetEditable(!editable))}}>
                 {editable ? ("Submit") : ("✏️")}
               </button>) : null}
-        
+
             </div>
 
             {/* check to make sure there are comprehensize laws AND other privacy laws before making the button group */}
@@ -77,7 +92,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
             )} */}
 
             {(editable && !comparing && admin) ? (
-              <textarea id="editor">hehe</textarea>
+              <textarea id="editor"></textarea>
             ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
               <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
             ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
@@ -86,7 +101,7 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
               <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
             ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
               <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-            ) : null) }
+            ) : null)}
 
 
 

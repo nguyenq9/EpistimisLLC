@@ -8,7 +8,7 @@ const handleSingleStateRetrieval = (name, setModalInfo) => {
     .then((res) => res.json())
     .then((res) => {
       if (res.status === "success") {
-        console.log("success: ", res.message);
+        // console.log("success: ", res.message);
         setModalInfo(prev => [...prev, res.data.law])
       } else {
         console.error("ERROR", res.message);
@@ -29,8 +29,8 @@ const handleCompareCall = (name1, name2, setModalInfo) => {
     .then((res) => res.json())
     .then((res) => {
       if (res.status === "success") {
-        console.log("success: ", res.message);
-        console.log(res.data.laws);
+        // console.log("success: ", res.message);
+        // console.log(res.data.laws);
         setModalInfo(res.data.laws)
       } else {
         console.error("ERROR", res.message);
@@ -41,6 +41,30 @@ const handleCompareCall = (name1, name2, setModalInfo) => {
     });
 };
 
+const handleUpdateCall = (jurisdiction, updatedData) => {
+  console.log(jurisdiction)
+  console.log(updatedData)
+  fetch(`/api/update?jurisdiction=${jurisdiction}`, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ password: updatedData })
+})
+  .then((res) => res.json())
+  .then((res) => {
+    if (res.status === "success") {
+      console.log("Success:", res.message);
+    } else {
+      console.error("Error:", res.message);
+    }
+  })
+  .catch((err) => {
+    console.error("Error:", err);
+  });
+};
 
 
-export { handleSingleStateRetrieval, handleCompareCall }
+
+
+export { handleSingleStateRetrieval, handleCompareCall, handleUpdateCall }
