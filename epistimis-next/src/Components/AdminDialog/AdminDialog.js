@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import CryptoJS from 'crypto-js';
 import "./AdminDialog.css";
 
@@ -7,7 +7,7 @@ const AdminDialog = ({ setAdmin }) => {
     useEffect(() => {
         const handleKeyDown = (event) => {
             // Check if SHIFT + ALT + A is pressed
-            if (event.shiftKey && event.altKey && event.key === 'A') {
+            if (event.shiftKey && (event.altKey || event.ctrlKey) && event.key === 'Q') {  
                 document.getElementById('login').showModal();
             }
         };
@@ -23,7 +23,7 @@ const AdminDialog = ({ setAdmin }) => {
         const input_value = document.getElementById("admin-password").value;
         // Encrypt the input value
         var encrypted_value = CryptoJS.AES.encrypt(input_value, "Secret Passphrase").toString();
-        console.log(encrypted_value);
+        // console.log(encrypted_value);
 
         fetch('/api/auth', {
             method: 'POST',
@@ -35,8 +35,10 @@ const AdminDialog = ({ setAdmin }) => {
             .then((res) => res.json())
             .then((res) => {
                 if (res.status === 'success') {
-                    console.log('success: ', res.message);
+                    // console.log('success: ', res.message);
                     setAdmin(true);
+                    // Close the dialog
+                    document.getElementById('login').close();
                 } else {
                     console.error('ERROR', res.message);
                 }
@@ -50,10 +52,10 @@ const AdminDialog = ({ setAdmin }) => {
 
     return (
         <dialog id="login" className='login-modal'>
-            <form method="dialog">
+            <form method="dialog" onSubmit={handleAuth}>
                 <label htmlFor="admin-password">Password:</label>
                 <input type="password" id="admin-password" name="admin-password" autoComplete="true" />
-                <button id="loginButton" onClick={handleAuth}>SUBMIT</button>
+                <button type="submit">SUBMIT</button>
             </form>
         </dialog>
     );

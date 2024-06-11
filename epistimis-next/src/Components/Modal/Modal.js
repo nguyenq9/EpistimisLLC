@@ -3,7 +3,7 @@ import { Close } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { handleUpdateCall } from "@/js/API";
 import "./Modal.css";
 
 import LawTabs from './LawTabs.js';
@@ -38,6 +38,22 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
   const handleSetEditable = (val) => {
     setEditable(val);
   }
+
+  const handleSubmit = async () => {
+    const editor = document.getElementById('editor');
+    const updatedData = JSON.parse(editor.value);
+    const { jurisdiction } = modalInfo[0];
+
+    try {
+        handleUpdateCall(jurisdiction, updatedData);
+        // console.log('Update successful:', response);
+        closeModal();
+        setEditable(false);
+        console.log("passed handleUpdateCall")
+    } catch (error) {
+        console.error('Error updating law:', error);
+    }
+};
 
   const ref = useRef();
 
@@ -80,23 +96,25 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
                 </div>
               </div>
 
-              {(editable && !comparing && admin) ? (
-                <textarea id="editor">hehe</textarea>
-              ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
-                <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} theme={theme} />
-              ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
-                <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
-              ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
-                <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
-              ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
-                <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
-              ) : null)}
-            </div>
-          ))}
-        </div>
-        <Close onClick={closeModal} className="close-button" />
-      </dialog>
-    </ThemeProvider>
+            {(editable && !comparing && admin) ? (
+              <textarea id="editor"></textarea>
+            ) : (item.privacyLaws.length > 0 && item.otherPrivacyLaws.length > 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+            ) : item.privacyLaws.length === 1 && item.otherPrivacyLaws.length <= 0 ? (
+              <ComprehensiveLaw law={item.privacyLaws[0]} editable={editable} />
+            ) : item.privacyLaws.length > 0 && item.otherPrivacyLaws.length <= 0 ? (
+              <LawTabs comprehensiveLaws={item.privacyLaws} editable={editable} />
+            ) : item.privacyLaws.length <= 0 && item.otherPrivacyLaws.length > 0 ? (
+              <OtherLaws otherPrivacyLaws={item.otherPrivacyLaws} editable={editable} />
+            ) : null)}
+
+
+
+          </div>
+        ))}
+      </div>
+      <Close onClick={closeModal} className="close-button" />
+    </dialog>
   );
 }
 
