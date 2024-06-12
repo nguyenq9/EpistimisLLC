@@ -52,6 +52,7 @@ const MapContainer = () => {
             <div id="map_container">
                 <Map
                     isUS={isUS}
+                    handleSetIsUS={handleSetIsUS}
                     filterOption={filter}
                     comparing={comparing}
                     setComparing={handleSetComparing}
