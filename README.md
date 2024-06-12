@@ -1,172 +1,35 @@
-# EpistimisLLC
-Group: Joseph Karper, Dima Melnik, Thai Nguyen, Saunder VanWoerden
+# Epistimis | Interactive Data Privacy Laws Map | Dynamic Infographics
+Project Members 23-24:
+- [Joseph Karper]()
+- [Dima Melnik](https://www.linkedin.com/in/dima-melnikmv/)
+- [Thai Nguyen](https://www.linkedin.com/in/quocdthaidnguyen/)
+- [Saunder vanWoerden](https://www.linkedin.com/in/saunder-vanwoerden-8a1a2a242/)
 
-## How to run
-To launch the web app, navigate to the /epistimis-next folder.\
+## Getting Started
+To launch the web app, navigate to the directory:
+```bash
+/epistimis-next
+```
+
 Then use the following commands:\
-npm install\
+```bash
+npm install
+#then
 npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 ## Figma Design
-https://www.figma.com/file/0ia0WrbUrXdLhmNNPbrAlv/Epistimis-REAL?type=design&node-id=0-1&mode=design&t=1HgqZaHhhhjmtj27-0
+Here's our original idea for the application is in this
+[Figma](https://www.figma.com/file/0ia0WrbUrXdLhmNNPbrAlv/Epistimis-REAL?type=design&node-id=0-1&mode=design&t=1HgqZaHhhhjmtj27-0). Although things have changed quite a bit during development, the essence our plan remained the same.
 
-## Q2 Demo
-Click on the image below to navigate to the video:
+## Q3 Deliverables
+Click on the image below to navigate to the website or click [here](https://epistimis-llc.vercel.app/):
 
-[![Epistimis U.S DATA PRIVACY LAWS TRACKER](q2demo.png)](https://youtu.be/JRdDvdl6Las)
+[![Epistimis U.S DATA PRIVACY LAWS TRACKER](q3.jpeg)](https://epistimis-llc.vercel.app/)
 
 ## MongoDB
 ![Laws collection in MongoDB](mongodb.png)
 
-## Final Database Schema
-{
-    "jurisdiction": "string",
-    "filterCategories": ["", ""],
-    "privacyLaws": [
-        {
-            "lawName": "string",
-            "description": "string",
-            "reference": "string",
-            "billStatus": "introduced, signed or in force",
-            "inEffect" : "date",
-            "applicability": [ 
-                {
-                    "roles": ["string"],
-                    "personalDataCategories": ["string"],
-                    "processingPurposes": ["string"],
-                    "consentRequired": "boolean"
-                }
-            ],
-            "individualRights": [
-                {
-                    "name": "string",
-                    "reference": ["string"]
-                }
-            ],
-            "businessObligations": {
-                "notice": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "lawfulBasis": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "purposeLimitation": [  {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dataMinimization": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "securityReqs": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "privacyByDesign": [  {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "processorReqs": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "recordKeeper": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "riskImpact": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "breachNotification": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "registration": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dpo": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ],
-                "dataTransfer": [ {
-                        "description": "string",
-                        "reference": "string"
-                    }
-                ]
-            },
-            "scope": [
-                {
-                    "exemptions": [
-                        {
-                            "type": "string",
-                            "description": "string"
-                        }
-                    ],             
-                    "nonProfitsCovered": ["string"],
-                    "verticalCarveouts" : ["string"],
-                    "preemption": ["string"]
-                }
-            ],
-            "enforcement": [ {
-                "enforcementAuthority": ["string"],
-                "rulemakingAuthority": ["string"],
-                "finingAuthority": ["string"],
-                "penalties": [ "string"],
-                "personalLiability": ["string"],
-                "privateRightOfAction" : ["string"]
-                }
-            ],
-            "threshold": [
-                {
-                    "type": "string",
-                    "description": "string"
-                }
-            ]
-         }
-    ],
-    "otherPrivacyLaws":[
-        {
-            "jurisdiction": "string",
-            "filterCategories": ["", ""],
-            "privacyLaws": [
-                {
-                    "lawName": "string",
-                    "type": "Introduced, Minor or Inactive",
-                    "description": "string",
-                    "reference": ""
-                }
-            ]
-        }
-    ]
-}
-
-
-## New Color Theme Proposals
-
-### Blue - Productivity
-Some research sugests that people are more productive in a blue environment. Blue in general is a relaxing and calming color.
-![](./themes/Blue.png)
-
-### Green - Concentration
-Low wavelength colors promote restfulness and calm, and they improve efficiency and focus. Easiest color on the eyes.
-![](./themes/Green.png)
-
-### Teal - A Mix of Both
-![](./themes/Teal.png)
