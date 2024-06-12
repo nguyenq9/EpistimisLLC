@@ -26,7 +26,7 @@ export default function OtherLaws({ otherPrivacyLaws }) {
                 <TableHead>
                     <TableRow>
                         <TableCell className="law-table-cell">Law Name</TableCell>
-                        <TableCell className="law-table-cell">Status</TableCell>
+                        <TableCell className="law-table-cell">Type/Status</TableCell>
                         <TableCell className="law-table-cell">Description</TableCell>
                     </TableRow>
                 </TableHead>

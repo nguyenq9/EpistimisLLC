@@ -4,6 +4,8 @@ import { Accordion, AccordionItem } from "../Accordion/Accordion";
 import './ComprehensiveLaw.css';
 
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 import Stack from "@mui/material/Stack";
 
 export default function ComprehensiveLaw({ law }) {
@@ -26,7 +28,9 @@ export default function ComprehensiveLaw({ law }) {
                             <AccordionItem category="Roles" info={law.applicability.roles} />
                             <AccordionItem category="Personal Data Categories" info={law.applicability.personalDataCategories} />
                             <AccordionItem category="Processing Purposes" info={law.applicability.processingPurposes} />
-                            <AccordionItem category="Consent Required" info={law.applicability.consentRequired} />
+                            <AccordionItem category="Consent Required" info="">
+                                {law.applicability.consentRequired.toLowerCase() === "true" ? <CheckBoxIcon /> : <DisabledByDefaultIcon />}
+                            </AccordionItem>
                         </Accordion>
                     </AccordionItem>
                     <AccordionItem category="Individual Rights" info="">

@@ -27,6 +27,8 @@ const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
                     ))}
                 </ul>
             );
+        } else if (children) {
+            return children;
         } else {
             return <p className="answer-content">{info}</p>;
         }
@@ -53,11 +55,11 @@ const AccordionItem = ({ category, info, isOpen, onClick, children }) => {
             <div
                 ref={contentHeight}
                 className={`answer-container ${isOpen ? 'active' : ''}`}
-                style={contentVisible ? { height: 'auto' } : { height: '0px', overflow: 'hidden' }}
+                style={contentVisible ? { maxHeight: '2000px' } : { maxHeight: '0px', overflow: 'hidden' }}
             >
                 <div>
                     {renderInfoContent()}
-                    {children}
+                    {/* {children} */}
                 </div>
             </div>
         </div>
