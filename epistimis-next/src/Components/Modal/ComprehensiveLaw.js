@@ -11,7 +11,7 @@ export default function ComprehensiveLaw({ law }) {
     return (
         <div className="law">
             <Stack alignItems="center" spacing={2}>
-                <h4 style={{ fontSize: "1.5em" }} id="law-name" className="reference"><a href={law.reference} target="_blank">{law.lawName}<OpenInNewIcon /></a></h4>
+                <h4 style={{ fontSize: "1.5em", textAlign: "center" }} id="law-name" className="reference"><a href={law.reference} target="_blank">{law.lawName}<OpenInNewIcon /></a></h4>
                 <Stack direction="row" spacing={5}>
                     <p>Status: {law.billStatus}</p>
                     <p>Enacted: {law.inEffect}</p>
