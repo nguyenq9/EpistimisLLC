@@ -19,6 +19,11 @@ const Filter = ({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen
         // setFilterOpen(false);
     };
 
+    useEffect(() => {
+        setShowBusinessObligationsOptions(false);
+        setShowConsumerRightsOptions(false);
+    }, [filterOpen]);
+
     const toggleConsumerRightsOptions = () => {
         setShowConsumerRightsOptions(prev => !prev);
     };
@@ -32,7 +37,7 @@ const Filter = ({ filterOption, handleSetFilterOption, filterOpen, setFilterOpen
             <div className='menu-container filter-component' ref={dropdownRef}>
                 <button className='trigger' onClick={() => setFilterOpen(!filterOpen)}>
                     <span className='filter-text'>Filter</span>
-                    <FilterListIcon className="filter-icon" />
+                    <FilterListIcon className="filter-icon"/>
                 </button>
                 <div className={`dropdown-menu ${filterOpen ? 'active' : 'inactive'}`}>
                     <ul>

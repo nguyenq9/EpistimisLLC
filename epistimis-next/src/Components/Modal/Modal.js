@@ -90,9 +90,13 @@ function Modal({ openModal, closeModal, handleCompareClicked, comparing, modalIn
                   >
                     Compare
                   </Button>
-                  {admin ? (<button onClick={() => { editable ? (handleSubmit()) : (handleSetEditable(!editable)) }}>
-                    {editable ? ("Submit") : ("✏️")}
-                  </button>) : null}
+                  {admin ? (<Button onClick={() => { editable ? (handleSubmit()) : (handleSetEditable(!editable)) }} 
+                                    color="buttons" 
+                                    variant="contained"
+                                    sx={{ marginLeft: 2}}
+                  >
+                    {editable ? ("Submit") : ("Edit")}
+                  </Button>) : null}
                 </div>
               </div>
 
