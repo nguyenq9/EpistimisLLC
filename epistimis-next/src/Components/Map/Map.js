@@ -15,7 +15,7 @@ const VectorMap = dynamic(
   { ssr: false, }
 );
 
-const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, setFilterOpen }) => {
+const Map = ({ isUS, handleSetIsUS, filterOption, comparing, setComparing, admin, setAdmin, setFilterOpen }) => {
   const [currCode, setCode] = useState("");
   const [modal, setModal] = useState(false);
   const [currRegion, setRegion] = useState("");
@@ -69,7 +69,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, set
   const getCSSVariableValue = (variable) => {
     if (typeof window !== "undefined") {
       return getComputedStyle(document.documentElement).getPropertyValue(variable);
-    } 
+    }
     return '';
   };
 
@@ -88,7 +88,7 @@ const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, set
       return newConfig;
     });
   };
-  
+
 
   const handleCloseModal = () => {
     setCode("");
@@ -116,6 +116,10 @@ const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, set
   };
 
   const handleRegionSelected = (event, newCode) => {
+    if (newCode === "US") {
+      handleSetIsUS(true)
+      return
+    }
     setCode(newCode);
     if (comparing) {
       addRegion(currCode);
@@ -160,6 +164,11 @@ const Map = ({ isUS, filterOption, comparing, setComparing, admin, setAdmin, set
           backgroundColor="transparent"
           series={regionsConfig}
           selectedRegions={currCode}
+          onRegionTipShow={(e, label, code) => {
+            if (!isUS) {
+              e.preventDefault(); // Prevent the tooltip for US regions
+            }
+          }}
         />
       </div>
     </div>
